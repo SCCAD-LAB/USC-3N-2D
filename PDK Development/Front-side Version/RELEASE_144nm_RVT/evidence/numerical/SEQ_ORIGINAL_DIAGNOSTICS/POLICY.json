@@ -1,0 +1,61 @@
+{
+  "frozen_before_results": true,
+  "epoch": 1793762099.3173747,
+  "cell": "DFFHQNx1",
+  "condition": {
+    "VDD_V": 0.7,
+    "temp_C": 25,
+    "clock_slew_10_90_ps": 20,
+    "data_slew_10_90_ps": 20,
+    "output_load_fF": 5.76,
+    "physical_full_RC_unchanged": true
+  },
+  "modes": [
+    "spectre_actual_traponly_1e-3_0.2ps",
+    "spectre_native_gear2only_1e-6_0.2ps",
+    "hspice_gear_1e-6_0.02ps"
+  ],
+  "predeclared_acceptance": {
+    "clock_to_Q_relative_change_max": 0.01,
+    "constraint_delay_degradation": "max(10% of same-mode nominal clock-to-Q,2ps)",
+    "boundary_bisection_bracket_ps": 0.1,
+    "boundary_absolute_shift_target_ps": 0.2,
+    "production_search_time_abstol_s": 2e-12,
+    "production_snap_to_bound": 1,
+    "production_effective_minimum_search_window_ps": 4,
+    "near_zero_comparison": "Absolute ps and bracket intervals, never a relative constraint percentage",
+    "physical_capture": "Warmup prior state at3.5ns, final expected complementary QN at5.5ns must reach10%/90% rails."
+  },
+  "timing": {
+    "clock_50pct_ps": [
+      1000,
+      4000
+    ],
+    "clock_fall_50pct_ps": [
+      2000,
+      5000
+    ],
+    "initial_data": "Opposite of target sampled data; firstclockforces known state.",
+    "setup_data_50pct_ps": "4000 - signedsetup",
+    "hold_data_50pct_ps": [
+      3000,
+      "4000 + signedhold"
+    ],
+    "nominal_data_50pct_ps": 3000,
+    "delay_measurement": "Secondclock50%tofirsttargetQN50%after3.5ns"
+  },
+  "criterion_sources": [
+    "defaults_TOKENS.log",
+    "constraint_search_time_abstol.txt",
+    "constraint_delay_degrade.txt",
+    "constraint_delay_degrade_abstol.txt"
+  ],
+  "scope": "One representative physical fullRC sequential point, both outputpolarities, setup andhold. Diagnostic independently approximates documented Liberate degradation criterion; not new Liberty characterization.",
+  "maximum_parallel_jobs": 8,
+  "source_hashes": {
+    "cells.sp": "fbccd51c883fa8978d5c15e0f98d40a33256d5c01406e2ba134823e65cd6129a",
+    "model_native.scs": "1878ed3b42a64a0481393a2e9bcd8024c803a4c6ff0bff0c32b9da4fd6447a53",
+    "model_hspice.sp": "5c1ed2c2f0bc5038369e86f95f12b9239eeabbe87668f49e92e63015f8e2be7b",
+    "aliases_hspice.sp": "a13fa015bb74d8212ae9512b0e32fe142f25d6a914858f74de23f9a07ae0274b"
+  }
+}

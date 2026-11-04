@@ -1,0 +1,219 @@
+{
+  "schema": "usc144_paired_active_portable_inputs_v1",
+  "total": 1,
+  "physical57_ready": false,
+  "published_base_card_sha256": "5c1ed2c2f0bc5038369e86f95f12b9239eeabbe87668f49e92e63015f8e2be7b",
+  "actual_solver_policy": {
+    "method": "traponly",
+    "reltol": 0.001,
+    "vabstol_V": 1e-09,
+    "iabstol_A": 1e-15,
+    "maxstep_s": 2e-13
+  },
+  "cells": [
+    {
+      "cell": "DFFHx1",
+      "execution_status": "active_native_inputs_verified",
+      "electrical_status": "full_native_pending_recovery_output_review",
+      "functional64_passed": true,
+      "native_OSrc_may_be_unknown": true,
+      "source_artifact_note": "Actual-used input bytes are copied from immutable shared preparation and independently matched against native-host LAUNCH actual_input_sha256; original local executed files remain on srv17.",
+      "inputs": {
+        "final_gds": {
+          "path": "cells/DFFHx1/final_gds.gds",
+          "sha256": "46473c808103537d8082da21232d1ca1a6fe79a603e01c1491d3b6aed1664184",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/inputs/cell.gds"
+        },
+        "native_dimensions": {
+          "path": "cells/DFFHx1/native_dimensions.json",
+          "sha256": "4b52399023cc798537fb3e6036c31d3460a5f3dd3e0c65b86c55dbed9f4fee15",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/pex/ACTUAL_DEVICE_DIMENSIONS.json"
+        },
+        "physical_binding": {
+          "path": "cells/DFFHx1/physical_binding.json",
+          "sha256": "4aa0db2d41b09d85813af82c67a53cf21ec20fb4bde583d58dc88398ea9b01f4",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/pex/DEVICE_GEOMETRY_BINDING_v2.json"
+        },
+        "raw_native_dspf": {
+          "path": "cells/DFFHx1/raw_native_dspf.dspf",
+          "sha256": "793ae05ef87235090946458bc37c7222814a4cc0e5042b6fc0d742ab55e91ebb",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/pex/cell.raw.dspf"
+        },
+        "body_normalized_dspf": {
+          "path": "cells/DFFHx1/body_normalized_dspf.dspf",
+          "sha256": "8023a990312d40652e4705f709d971af27a33098624e108c99b47d2c5395c25d",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/pex/cell.dspf"
+        },
+        "cdl_reference": {
+          "path": "cells/DFFHx1/cdl_reference.cdl",
+          "sha256": "477bdb192062f86ab9411fe2952797d54608c18c714f1eed2afa646c2eaff8ba",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/inputs/topology.cdl"
+        },
+        "native_drc_report": {
+          "path": "cells/DFFHx1/native_drc_report.RESULTS",
+          "sha256": "1e9e90f67845b6ad8d4773c5510a4f3692df5f0956a43ebbd7c3b15cdcf72dde",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/DFFHx1.RESULTS"
+        },
+        "native_lvs_report": {
+          "path": "cells/DFFHx1/native_lvs_report.LVS_ERRORS",
+          "sha256": "a383e289e7f9f421427dd224184a14ce1c4e0bb374c82c8e5c0e488b742274c7",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/pex/DFFHx1.LVS_ERRORS"
+        },
+        "body_reference_audit": {
+          "path": "cells/DFFHx1/body_reference_audit.json",
+          "sha256": "01814a384109fdf9e74ffe9d9d05ce5eb9b26c2278fcfe5da83e0812669a73da",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/pex/BULK_REFERENCE_AUDIT.json"
+        },
+        "terminal_connectivity_audit": {
+          "path": "cells/DFFHx1/terminal_connectivity_audit.json",
+          "sha256": "75bd716306aa866f1c051e66a0d5713cbdbb8b43e7a3aa592bb7383dca034c14",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/pex/TERMINAL_CONNECTIVITY_AUDIT.json"
+        },
+        "original_geometry_provenance": {
+          "path": "cells/DFFHx1/original_geometry_provenance.json",
+          "sha256": "75236c088b69d62aabe5cfcd98bdf811a29d4905b175010df40ee1d077f91dd9",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/GEOMETRY_PROVENANCE.json"
+        },
+        "derived_reference_4t": {
+          "path": "cells/DFFHx1/derived_reference_4t.cdl",
+          "sha256": "11aa90e98bfee5ababefad3deeee446651fa667fb3259b892a0889a05f4a3ef5",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/inputs/derived_topology_4t.cdl"
+        },
+        "paired_topology_audit": {
+          "path": "cells/DFFHx1/paired_topology_audit.json",
+          "sha256": "c253266853137ac12e8a85d7bd328dc4ae14a0a81da7e6861898e3cfbc565dc1",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/PAIRED_TOPOLOGY_GATE_ADAPTER.json"
+        },
+        "body_rail_source_proof": {
+          "path": "cells/DFFHx1/body_rail_source_proof.json",
+          "sha256": "ea20fc00466081da43555d4f22b567be3939e9e5338ce58f880442195d38bc60",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/BODY_RAIL_PROVENANCE.json"
+        },
+        "prepared_cells_sp": {
+          "path": "cells/DFFHx1/prepared_cells_sp.sp",
+          "sha256": "cb9d94dcc947dfae48c062640b65b6ad8d60f5eaacbbcd0148247e1bfe74e466",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/inputs/cells.sp"
+        },
+        "prepared_model_native": {
+          "path": "cells/DFFHx1/prepared_model_native.scs",
+          "sha256": "1878ed3b42a64a0481393a2e9bcd8024c803a4c6ff0bff0c32b9da4fd6447a53",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/inputs/model_native.scs"
+        },
+        "actual_cells_sp": {
+          "path": "cells/DFFHx1/actual_cells_sp.sp",
+          "sha256": "cb9d94dcc947dfae48c062640b65b6ad8d60f5eaacbbcd0148247e1bfe74e466",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/inputs/cells.sp"
+        },
+        "actual_model_native": {
+          "path": "cells/DFFHx1/actual_model_native.scs",
+          "sha256": "1878ed3b42a64a0481393a2e9bcd8024c803a4c6ff0bff0c32b9da4fd6447a53",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/inputs/model_native.scs"
+        },
+        "actual_run_tcl": {
+          "path": "cells/DFFHx1/actual_run_tcl.tcl",
+          "sha256": "4ba70827e0c267cadcc4cc876d7b3bb693478a3d01c8bcf0b36b263bcdcbe3cc",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/inputs/run.tcl"
+        },
+        "final_channel_binding": {
+          "path": "cells/DFFHx1/final_channel_binding.json",
+          "sha256": "77c005f1f78298af8601017cabd0a5875ac05237e30cf8711eaad5fb73bd3ae4",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/inputs/FINAL_GEOMETRY_MODEL_BINDING.json"
+        },
+        "native_launch_receipt": {
+          "path": "cells/DFFHx1/native_launch_receipt.json",
+          "sha256": "300cbd8c7f066d2a7940c556670fbc1f9c658f03eb1a931b0138768e334619ac",
+          "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/LAUNCH.json"
+        }
+      },
+      "native_Tcl_dependencies": [
+        "cells.sp",
+        "model_native.scs"
+      ],
+      "native_Tcl_embeds": "Allcell7x7/1D templates, async/pin/model declarations, actual64workers and0.7V25C are embedded; no externalTclsource",
+      "actual_numeric_policy": "traponly/reltol1e-3/maxstep0.2ps/abs1e-9V,1e-15A; ignored legacygear requests are retained in actualTcl"
+    }
+  ],
+  "software": {
+    "geometry_binding.py": {
+      "path": "software/geometry_binding.py",
+      "sha256": "46e8c6cd31d2543831b6f2e92acafefb674ac22ad2bb412c61efa4ce5254a03d",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/reproduction_bundle/software/geometry_binding.py"
+    },
+    "map_device_geometry.py": {
+      "path": "software/map_device_geometry.py",
+      "sha256": "a995c152dc2b849d792c073add920dc0ec2a43f4953662c25a4ecca9c1531952",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/reproduction_bundle/software/map_device_geometry.py"
+    },
+    "input_functions.py": {
+      "path": "software/input_functions.py",
+      "sha256": "2e23b618604fd7277d56bf3507dfaf839659513567b0a89c8f59fae8d7850900",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/reproduction_bundle/software/input_functions.py"
+    },
+    "alias_generator.py": {
+      "path": "software/alias_generator.py",
+      "sha256": "6560f4fffc5174daaf440b557a4bb9369d6f5e0025c818d825973d4ef5be119a",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/reproduction_bundle/software/alias_generator.py"
+    },
+    "FUNCTION_SOURCE_MANIFEST.json": {
+      "path": "software/FUNCTION_SOURCE_MANIFEST.json",
+      "sha256": "40510bb32265240ba79bf9a9554be5058bac38b99f6e27b284eebfd55be31da5",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/reproduction_bundle/software/FUNCTION_SOURCE_MANIFEST.json"
+    }
+  },
+  "models": {
+    "github_FSPR_RVT.sp": {
+      "path": "models/github_FSPR_RVT.sp",
+      "sha256": "5c1ed2c2f0bc5038369e86f95f12b9239eeabbe87668f49e92e63015f8e2be7b",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/reproduction_bundle/models/github_FSPR_RVT.sp"
+    },
+    "geometry_aliases.scs": {
+      "path": "models/geometry_aliases.scs",
+      "sha256": "73b63f91e346ca00c18de9a067f3a910fc91b403ba9ef17e1d35aae3889f6975",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/reproduction_bundle/models/geometry_aliases.scs"
+    },
+    "geometry_aliases.sp": {
+      "path": "models/geometry_aliases.sp",
+      "sha256": "a13fa015bb74d8212ae9512b0e32fe142f25d6a914858f74de23f9a07ae0274b",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/reproduction_bundle/models/geometry_aliases.sp"
+    }
+  },
+  "controls": {
+    "physical_support": {
+      "path": "controls/physical_support.json",
+      "sha256": "e52e1e2b771d8120e0141a4795a2558704d6ed2c04076530e213f561709e0dcd",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/CHARACTERIZATION_SUPPORT_HANDOFF.json"
+    },
+    "physical_approval": {
+      "path": "controls/physical_approval.json",
+      "sha256": "f854a877207b3f3cea6f77f897d691fc0fce15d662cd8e4e489d4f3f86863d18",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/control/ROOT_PAIRED_CLOCK_PHYSICAL_REVIEW.json"
+    },
+    "functional64": {
+      "path": "controls/functional64.json",
+      "sha256": "fd2eb5b23634cc17d77108a82a6961f68f54f43f2cf2cad6e5840975da880b7f",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/failure_review_DFFH_removal/clock_retap_functional_screen/actual_paired_master_freshPEX_r1/FINAL_SCREEN_AUDIT.json"
+    },
+    "production_crosscheck": {
+      "path": "controls/production_crosscheck.json",
+      "sha256": "6b234d0c5f401ecd55fe523449a579d95ffcff03233f2eb288626bf056869fd3",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/PRODUCTION_SOLVER_CORRELATION.json"
+    },
+    "base_numeric_approval": {
+      "path": "controls/base_numeric_approval.json",
+      "sha256": "9bf3d043934d8cca2f25d0df9d7138c1b67f56df5a70c5b678f05cad0da7cd18",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/ACTUAL_PRODUCTION_NUMERICAL_APPROVAL.json"
+    },
+    "full_compute_authorization": {
+      "path": "controls/full_compute_authorization.json",
+      "sha256": "e4754403476461f840438039e5e1d395c97dfe007f37d058922fcdb42e1d3a6a",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/FULL_LAUNCH_AUTHORIZATION.json"
+    }
+  },
+  "portable_API": "python portable_replay_inputs.py --bundle . --cell DFFHx1 --output <new-local-directory>",
+  "prepared_inputs_are_not_execution_evidence": true,
+  "no_controller_included_in_API": true,
+  "qualified_for_release": false,
+  "canonical_adoption": false,
+  "publication_authorized": false,
+  "original57_snapshot_untouched": true
+}

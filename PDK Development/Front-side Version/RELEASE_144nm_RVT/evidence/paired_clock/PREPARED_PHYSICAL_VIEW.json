@@ -1,0 +1,14 @@
+{
+  "prepared_complete": true,
+  "physical_cells": 57,
+  "other56_manifest_rows_unchanged": true,
+  "aggregate57geometry_labels_exact": true,
+  "release_qualified": false,
+  "publication_allowed": false,
+  "all_actual_targeted_checks_still_pending": true,
+  "full_new_DFFH_native_characterization_pending": true,
+  "canonical_mutations": false,
+  "combined_GDS_sha256": "016fd13516b7b580610ef282860fb315251e688cfec776a353c655d32a938b7e",
+  "PEX_manifest_sha256": "242ddf2e491e7192464d7d3188e5a3d6d44dd1b30da65378c4d6e40fffe08f0d",
+  "LEF": "Root-ownednewpairedabstractrequired; donotuseoldretap/strengthabstractasfinal"
+}

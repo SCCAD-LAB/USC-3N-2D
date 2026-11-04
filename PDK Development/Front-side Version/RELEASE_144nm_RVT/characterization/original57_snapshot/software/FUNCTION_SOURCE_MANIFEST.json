@@ -1,0 +1,9 @@
+{
+  "original_runner_sha256": "6562bf5e8e97cb0e11f58576d15a6612f72c5ef075a84da224660dabd182d9e5",
+  "retained_functions": [
+    "normalize_dspf",
+    "spectre_syntax_adapter"
+  ],
+  "source_body_unchanged": true,
+  "extracted_file_sha256": "2e23b618604fd7277d56bf3507dfaf839659513567b0a89c8f59fae8d7850900"
+}

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "rc": 0,
+  "work": "/tmp/yhuang861/usc144_github_release_20261103/native57_interface_query_1793802469",
+  "scope": "Read-only physical-only fixture; all57 native widths/heights and all signal/PG PIN names compared with selected LEF. No timing DB or PNR.",
+  "native_errors": [],
+  "log_sha256": "dfddbcb6968526f12b2db966fbf72b06711d8a254ca418d2ad48cdf79860f34a",
+  "interface_count": 57,
+  "interfaces_sha256": "c28e283040133f911e4584a60b2165424b972f10c99909ad074f7ef8519c45ed"
+}

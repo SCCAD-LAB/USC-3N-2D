@@ -3,6 +3,11 @@
 This folder contains generic OpenROAD run scripts for the 3nm front-side examples.
 The selected design is controlled by a Tcl config file under `design_configs/`.
 
+The front-side platform sources the repository-wide exact 144 nm collateral map.
+The selected57 native LIB/DB, LEF and matched NDM passed their release checks.
+The readiness gate binds the exact matched inputs. Prior chip PNR results are
+historical. See the verification package README.
+
 ## Main Run
 
 Run from this folder:

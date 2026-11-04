@@ -1,0 +1,1670 @@
+{
+  "passed": true,
+  "unchanged_delay_relative_gate": 0.01,
+  "unchanged_rail_gate_V": 0.001,
+  "actual_policy": "SPICE2G ignored method/reltol: native traponly/reltol1e-3,maxstep0.2ps,absolute tolerances retained",
+  "model_and_stimulus_unchanged": true,
+  "total": 21,
+  "rows": [
+    {
+      "passed": true,
+      "group": "base9",
+      "label": "slew160ps_load0.36fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 1.52122e-11,
+        "tplh": 1.397e-11,
+        "out_min": 2.40247e-07,
+        "out_max": 0.699999
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 1.521226615e-11,
+            "tplh": 1.397000729e-11,
+            "out_min": 5.410372704e-07,
+            "out_max": 0.6999993572
+          },
+          "relative_delay_difference": {
+            "tphl": 4.348464544889907e-06,
+            "tplh": 5.218322258748742e-07
+          },
+          "rail_difference_V": {
+            "out_min": 3.0079027039999994e-07,
+            "out_max": 3.5719999991190576e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 1.52119e-11,
+            "tplh": 1.39697e-11,
+            "out_min": 5.4228e-07,
+            "out_max": 0.699999
+          },
+          "relative_delay_difference": {
+            "tphl": 1.9721402323202852e-05,
+            "tplh": 2.1475049571506588e-05
+          },
+          "rail_difference_V": {
+            "out_min": 3.0203299999999994e-07,
+            "out_max": 0.0
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/base9/slew160ps_load0.36fF",
+      "wall_s": 1.6899487972259521,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_fast_r1/slew160ps_load0.36fF/spectre/RESULT.json",
+        "sha256": "efbf3b59a81173f54d5bc678ca8e45a783b41dedbe578ed2fdb3fdc4212e4149"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_r1/slew160ps_load0.36fF/hspice/RESULT.json",
+        "sha256": "92c29f193f68901d5d207165c52dc510c9233159b41b58f5be956c4534b78801"
+      },
+      "actual_deck_sha256": "5828c1720f3205c0e76e74bcb9829e0ab03dcabd65de688aa650206ea88165b0",
+      "actual_log_sha256": "6cca87d85b179446c913de92a00aebb989568cd3cf3d9a6d0c9d854b245ed321"
+    },
+    {
+      "passed": true,
+      "group": "base9",
+      "label": "slew160ps_load1fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 2.31578e-11,
+        "tplh": 2.29015e-11,
+        "out_min": 5.12857e-07,
+        "out_max": 0.7
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 2.31578425e-11,
+            "tplh": 2.29013509e-11,
+            "out_min": 5.410372692e-07,
+            "out_max": 0.6999993572
+          },
+          "relative_delay_difference": {
+            "tphl": 1.8352314123948332e-06,
+            "tplh": 6.510532965853244e-06
+          },
+          "rail_difference_V": {
+            "out_min": 2.8180269200000044e-08,
+            "out_max": 6.428000000058276e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 2.31576e-11,
+            "tplh": 2.29012e-11,
+            "out_min": 5.42232e-07,
+            "out_max": 0.699999
+          },
+          "relative_delay_difference": {
+            "tphl": 8.636473554979318e-06,
+            "tplh": 1.3099750231448937e-05
+          },
+          "rail_difference_V": {
+            "out_min": 2.9375000000000036e-08,
+            "out_max": 9.999999999177334e-07
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/base9/slew160ps_load1fF",
+      "wall_s": 1.6635181903839111,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_fast_r1/slew160ps_load1fF/spectre/RESULT.json",
+        "sha256": "7d2edae56819e72fbc1ef8fd82f952ddeadc8e7d49ffa7ed1a50306251c0c96f"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_r1/slew160ps_load1fF/hspice/RESULT.json",
+        "sha256": "20a2d5020025ca5a900218c46ba52e4ae0b949dc7fe471b20157caec09d8183e"
+      },
+      "actual_deck_sha256": "1c3d43f520a176b7517c870a344d2bf7397c77abce4a7c253661a6e69f5b01f5",
+      "actual_log_sha256": "1213e9710859f56330a64e6f270000a1a96947fedfce59aa9ec9f9a3de8a2364"
+    },
+    {
+      "passed": true,
+      "group": "base9",
+      "label": "slew160ps_load23.04fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 1.12051e-10,
+        "tplh": 1.38755e-10,
+        "out_min": 0.00129729,
+        "out_max": 0.699686
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 1.120511831e-10,
+            "tplh": 1.387549806e-10,
+            "out_min": 0.001298207337,
+            "out_max": 0.6996854762
+          },
+          "relative_delay_difference": {
+            "tphl": 1.6340746695764352e-06,
+            "tplh": 1.398148010700595e-07
+          },
+          "rail_difference_V": {
+            "out_min": 9.17336999999973e-07,
+            "out_max": 5.238000000407084e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 1.12051e-10,
+            "tplh": 1.38755e-10,
+            "out_min": 0.00129817,
+            "out_max": 0.699685
+          },
+          "relative_delay_difference": {
+            "tphl": 0.0,
+            "tplh": 0.0
+          },
+          "rail_difference_V": {
+            "out_min": 8.79999999999978e-07,
+            "out_max": 1.0000000000287557e-06
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/base9/slew160ps_load23.04fF",
+      "wall_s": 1.7013449668884277,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_fast_r1/slew160ps_load23.04fF/spectre/RESULT.json",
+        "sha256": "def65b2195fab9793c3252d46436e32aa6a25671d0cbecd21196c663037156db"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_r1/slew160ps_load23.04fF/hspice/RESULT.json",
+        "sha256": "24bd366debe98d412987bc081344e7173380672f3436e0b08570eb56eb702fe8"
+      },
+      "actual_deck_sha256": "ada51584dcf3926096edf72d138721aac30f2bc81377ffced788b9205d6741b3",
+      "actual_log_sha256": "d44dc2e92a201d3a7abc418afabd82aca4558ea0e43b8ddbac7c17ca809c5f99"
+    },
+    {
+      "passed": true,
+      "group": "base9",
+      "label": "slew2.5ps_load0.36fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 2.80814e-12,
+        "tplh": 3.72487e-12,
+        "out_min": 5.76856e-08,
+        "out_max": 0.699999
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 2.809948531e-12,
+            "tplh": 3.726440531e-12,
+            "out_min": 5.410372697e-07,
+            "out_max": 0.6999993572
+          },
+          "relative_delay_difference": {
+            "tphl": 0.0006436171268077162,
+            "tplh": 0.00042145607502253046
+          },
+          "rail_difference_V": {
+            "out_min": 4.833516697e-07,
+            "out_max": 3.5719999991190576e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 2.80996e-12,
+            "tplh": 3.72648e-12,
+            "out_min": 5.42328e-07,
+            "out_max": 0.699999
+          },
+          "relative_delay_difference": {
+            "tphl": 0.0006476960526127229,
+            "tplh": 0.00043204310770494914
+          },
+          "rail_difference_V": {
+            "out_min": 4.846424000000001e-07,
+            "out_max": 0.0
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/base9/slew2.5ps_load0.36fF",
+      "wall_s": 1.5835754871368408,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_fast_r1/slew2.5ps_load0.36fF/spectre/RESULT.json",
+        "sha256": "58f4c32ed95c80440306df386cc70e8059005ba181777a62e059e7a02c88a9fe"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_r1/slew2.5ps_load0.36fF/hspice/RESULT.json",
+        "sha256": "0ecd2d13be301b6926ad32001038438ba4c1b453bc6f15d2ed7dd1046c74c8f2"
+      },
+      "actual_deck_sha256": "806a83d8c4fee1f4ec9ea90d1e9a1a81109949aacc4862d998c16376adad04d5",
+      "actual_log_sha256": "c480f7930b08db0c4a8c57c8084a1c45434a3d9428ce6b2828ab813fa9a60ce5"
+    },
+    {
+      "passed": true,
+      "group": "base9",
+      "label": "slew2.5ps_load1fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 4.88366e-12,
+        "tplh": 6.72311e-12,
+        "out_min": 1.76972e-07,
+        "out_max": 0.699999
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 4.885769958e-12,
+            "tplh": 6.725041767e-12,
+            "out_min": 5.410372708e-07,
+            "out_max": 0.6999993572
+          },
+          "relative_delay_difference": {
+            "tphl": 0.00043185782755605917,
+            "tplh": 0.00028724981448879916
+          },
+          "rail_difference_V": {
+            "out_min": 3.640652708e-07,
+            "out_max": 3.5719999991190576e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 4.88561e-12,
+            "tplh": 6.72465e-12,
+            "out_min": 5.42231e-07,
+            "out_max": 0.699999
+          },
+          "relative_delay_difference": {
+            "tphl": 0.0003991313264875007,
+            "tplh": 0.00022900820117022214
+          },
+          "rail_difference_V": {
+            "out_min": 3.6525899999999995e-07,
+            "out_max": 0.0
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/base9/slew2.5ps_load1fF",
+      "wall_s": 1.0472724437713623,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_fast_r1/slew2.5ps_load1fF/spectre/RESULT.json",
+        "sha256": "305f75ccecb1829bea442f1b62ffa08c65a08914e0fb819f0b1ecea5063c9429"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_r1/slew2.5ps_load1fF/hspice/RESULT.json",
+        "sha256": "bebeca224888016d053db640a0368cf22599d8af123d5dd7506ac2fb7da46a77"
+      },
+      "actual_deck_sha256": "26473e7b6952875c7f03ecadb440fc28a72f3b770654953a0aa618373fbc1b75",
+      "actual_log_sha256": "a1de9ca2d28548aeebf6d1eed7148a897628f1fb168548d2590e43696012e44f"
+    },
+    {
+      "passed": true,
+      "group": "base9",
+      "label": "slew2.5ps_load23.04fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 7.34264e-11,
+        "tplh": 1.05036e-10,
+        "out_min": 8.37947e-05,
+        "out_max": 0.699997
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 7.342884585e-11,
+            "tplh": 1.050380964e-10,
+            "out_min": 8.421312105e-05,
+            "out_max": 0.6999965325
+          },
+          "relative_delay_difference": {
+            "tphl": 3.3309116760471547e-05,
+            "tplh": 1.9958472895598156e-05
+          },
+          "rail_difference_V": {
+            "out_min": 4.1842104999999577e-07,
+            "out_max": 4.674999999343399e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 7.34235e-11,
+            "tplh": 1.05033e-10,
+            "out_min": 8.42002e-05,
+            "out_max": 0.699997
+          },
+          "relative_delay_difference": {
+            "tphl": 3.9496891322432504e-05,
+            "tplh": 2.8562451800828725e-05
+          },
+          "rail_difference_V": {
+            "out_min": 4.0550000000000145e-07,
+            "out_max": 0.0
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/base9/slew2.5ps_load23.04fF",
+      "wall_s": 1.040776252746582,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_fast_r1/slew2.5ps_load23.04fF/spectre/RESULT.json",
+        "sha256": "4163a1bc5bdb86b73e4059a344c48a6954a7c3caae8a49d5f64f561836391c1c"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_r1/slew2.5ps_load23.04fF/hspice/RESULT.json",
+        "sha256": "b7c23defd2c3c747613488f905492f12af684dc4d19c4924d0e5f05d0cc482b4"
+      },
+      "actual_deck_sha256": "f21b7e1ad532575e4f9360ac0453214143eb5d9e58c552f227da0a402a01f909",
+      "actual_log_sha256": "584216eb3156f59efee3bc4e67c2f848da4ba2f3e695eb82ea631e8cad80b606"
+    },
+    {
+      "passed": true,
+      "group": "base9",
+      "label": "slew20ps_load0.36fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 5.96129e-12,
+        "tplh": 6.5972e-12,
+        "out_min": 5.6347e-08,
+        "out_max": 0.699999
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 5.961594804e-12,
+            "tplh": 6.597454444e-12,
+            "out_min": 5.410372704e-07,
+            "out_max": 0.6999993572
+          },
+          "relative_delay_difference": {
+            "tphl": 5.1127929693417506e-05,
+            "tplh": 3.856699612858616e-05
+          },
+          "rail_difference_V": {
+            "out_min": 4.846902703999999e-07,
+            "out_max": 3.5719999991190576e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 5.96143e-12,
+            "tplh": 6.59731e-12,
+            "out_min": 5.42283e-07,
+            "out_max": 0.699999
+          },
+          "relative_delay_difference": {
+            "tphl": 2.34842982305139e-05,
+            "tplh": 1.6673462365668357e-05
+          },
+          "rail_difference_V": {
+            "out_min": 4.85936e-07,
+            "out_max": 0.0
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/base9/slew20ps_load0.36fF",
+      "wall_s": 1.0052473545074463,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_fast_r1/slew20ps_load0.36fF/spectre/RESULT.json",
+        "sha256": "eeab6c69faf33e37f5631e2482dda576a03719a0d937dedf1966785c4e242c26"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_r1/slew20ps_load0.36fF/hspice/RESULT.json",
+        "sha256": "4526ecef03baaa06646c36163974af02365b1a6a3be358ffaea6fc43904cb1e2"
+      },
+      "actual_deck_sha256": "f6cbb527243afb3f345d9b618709174e3fa461ea8f63e53552f4c91bcbf16ff7",
+      "actual_log_sha256": "544cafc1326f4f89673326ec98725efbe0f29481f109b918f974b61a497df01f"
+    },
+    {
+      "passed": true,
+      "group": "base9",
+      "label": "slew20ps_load1fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 8.91915e-12,
+        "tplh": 1.02316e-11,
+        "out_min": -1.2547e-07,
+        "out_max": 0.699999
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 8.919322655e-12,
+            "tplh": 1.023142068e-11,
+            "out_min": 5.410372706e-07,
+            "out_max": 0.6999993572
+          },
+          "relative_delay_difference": {
+            "tphl": 1.9357411619402853e-05,
+            "tplh": 1.752640279462092e-05
+          },
+          "rail_difference_V": {
+            "out_min": 6.665072706e-07,
+            "out_max": 3.5719999991190576e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 8.91893e-12,
+            "tplh": 1.0231e-11,
+            "out_min": 5.42293e-07,
+            "out_max": 0.699999
+          },
+          "relative_delay_difference": {
+            "tphl": 2.4666636020409527e-05,
+            "tplh": 5.8645293715020586e-05
+          },
+          "rail_difference_V": {
+            "out_min": 6.67763e-07,
+            "out_max": 0.0
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/base9/slew20ps_load1fF",
+      "wall_s": 1.0888986587524414,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_fast_r1/slew20ps_load1fF/spectre/RESULT.json",
+        "sha256": "e77e9c383ada80774530879992b8db5b9e7fb584d7494f403cbe507e901d26a2"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_r1/slew20ps_load1fF/hspice/RESULT.json",
+        "sha256": "851eca2442d9150e65f95320830e5cdc92d89fe43a3d5a5d679a0bab80abcff0"
+      },
+      "actual_deck_sha256": "e191fbd9bddc5aadfa931354f93ab2ddf6b3ecc33ccec8ab9ea74b9d3afde3c1",
+      "actual_log_sha256": "56763825f9b1103cc30a403a08a8ebf3f29b5b4176e0fbc2e8c01d45fba84578"
+    },
+    {
+      "passed": true,
+      "group": "base9",
+      "label": "slew20ps_load23.04fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 7.76539e-11,
+        "tplh": 1.08699e-10,
+        "out_min": 0.000113236,
+        "out_max": 0.699995
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 7.765423191e-11,
+            "tplh": 1.086989885e-10,
+            "out_min": 0.0001138393078,
+            "out_max": 0.6999945969
+          },
+          "relative_delay_difference": {
+            "tphl": 4.274203631027262e-06,
+            "tplh": 1.0579675269184463e-07
+          },
+          "rail_difference_V": {
+            "out_min": 6.033078000000001e-07,
+            "out_max": 4.031000000459528e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 7.76528e-11,
+            "tplh": 1.08698e-10,
+            "out_min": 0.000113832,
+            "out_max": 0.699995
+          },
+          "relative_delay_difference": {
+            "tphl": 1.4165619269368435e-05,
+            "tplh": 9.199801284331954e-06
+          },
+          "rail_difference_V": {
+            "out_min": 5.960000000000058e-07,
+            "out_max": 0.0
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/base9/slew20ps_load23.04fF",
+      "wall_s": 0.9857125282287598,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_fast_r1/slew20ps_load23.04fF/spectre/RESULT.json",
+        "sha256": "eed0b3f3163c1be487f513b6c793ed57777fd8fc176e5a4c250bf61427f71825"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/model_correlation_r1/slew20ps_load23.04fF/hspice/RESULT.json",
+        "sha256": "7f341f819c61f2ee4ae23b856ecfbe81b17e5aca8bf94a0574abf4a174dcdf00"
+      },
+      "actual_deck_sha256": "fee3b018832ee61a6a18026d592952ab3fb5462629ca7c1ae197b084ff11400c",
+      "actual_log_sha256": "491db7b81f21283b4dabe756208998610843f3f7a4e30e11662f03a3e887741f"
+    },
+    {
+      "passed": true,
+      "group": "width12",
+      "label": "wgaa15nm_slew160ps_load0.36fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 1.93857e-11,
+        "tplh": 1.80149e-11,
+        "out_min": 3.57772e-07,
+        "out_max": 0.7
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 1.938573603e-11,
+            "tplh": 1.801477857e-11,
+            "out_min": 3.566636328e-07,
+            "out_max": 0.6999995677
+          },
+          "relative_delay_difference": {
+            "tphl": 1.8585830295902994e-06,
+            "tplh": 6.7405768839901015e-06
+          },
+          "rail_difference_V": {
+            "out_min": 1.1083671999999838e-09,
+            "out_max": 4.322999999084587e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 1.93854e-11,
+            "tplh": 1.80145e-11,
+            "out_min": 3.58911e-07,
+            "out_max": 0.7
+          },
+          "relative_delay_difference": {
+            "tphl": 1.5475564084210802e-05,
+            "tplh": 2.2204335396347474e-05
+          },
+          "rail_difference_V": {
+            "out_min": 1.1389999999999945e-09,
+            "out_max": 0.0
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/width12/wgaa15nm_slew160ps_load0.36fF",
+      "wall_s": 0.9241623878479004,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa15nm_slew160ps_load0.36fF/spectre/RESULT.json",
+        "sha256": "66eb1b9bed8f73a4330f580c203b5aefb8258389a0e12ba82c36b579edb7a4ca"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa15nm_slew160ps_load0.36fF/hspice/RESULT.json",
+        "sha256": "b8da1419af8b01005b3505fdfcbdad8b822e05ea90a6e4a0f58bcf2ff1052e6f"
+      },
+      "actual_deck_sha256": "a163fe0140882b6e19d3d95261ee44cd9d8cdf996a2417faba74845da49e4f15",
+      "actual_log_sha256": "07b5037f0422b5dba964424cf931c6d573856840072059e27ea33efed3e7920b"
+    },
+    {
+      "passed": true,
+      "group": "width12",
+      "label": "wgaa15nm_slew160ps_load23.04fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 1.67771e-10,
+        "tplh": 2.16474e-10,
+        "out_min": 0.0353961,
+        "out_max": 0.684328
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 1.67770736e-10,
+            "tplh": 2.164735315e-10,
+            "out_min": 0.03539669395,
+            "out_max": 0.6843273859
+          },
+          "relative_delay_difference": {
+            "tphl": 1.5735759781865255e-06,
+            "tplh": 2.1642368781549237e-06
+          },
+          "rail_difference_V": {
+            "out_min": 5.939500000023967e-07,
+            "out_max": 6.141000000736696e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 1.67771e-10,
+            "tplh": 2.16473e-10,
+            "out_min": 0.0353966,
+            "out_max": 0.684327
+          },
+          "relative_delay_difference": {
+            "tphl": 0.0,
+            "tplh": 4.619513749970494e-06
+          },
+          "rail_difference_V": {
+            "out_min": 5.000000000005e-07,
+            "out_max": 1.0000000000287557e-06
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/width12/wgaa15nm_slew160ps_load23.04fF",
+      "wall_s": 1.0421462059020996,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa15nm_slew160ps_load23.04fF/spectre/RESULT.json",
+        "sha256": "236e2db3a49949d4f0f6a003ed1f58432e0c78899e2f498e7cd140366749a2f7"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa15nm_slew160ps_load23.04fF/hspice/RESULT.json",
+        "sha256": "546cd6f934312de44f1ccec56a3f0b60496358820e81b518684118c1823e0ec6"
+      },
+      "actual_deck_sha256": "65c40e109d9a54ba1c64645f9afb9319a3c571e03deed0cb5347f869c4b05832",
+      "actual_log_sha256": "f9dba5299eb538c77a8548ab7b8690ceb137f0cf51ccaadbbb67c94d8aa83173"
+    },
+    {
+      "passed": true,
+      "group": "width12",
+      "label": "wgaa15nm_slew2.5ps_load0.36fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 3.57561e-12,
+        "tplh": 4.79511e-12,
+        "out_min": -7.597e-07,
+        "out_max": 0.7
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 3.577645423e-12,
+            "tplh": 4.796975139e-12,
+            "out_min": 3.566636331e-07,
+            "out_max": 0.6999995677
+          },
+          "relative_delay_difference": {
+            "tphl": 0.000568928096371657,
+            "tplh": 0.00038881564860249185
+          },
+          "rail_difference_V": {
+            "out_min": 1.1163636331e-06,
+            "out_max": 4.322999999084587e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 3.5776e-12,
+            "tplh": 4.79688e-12,
+            "out_min": 3.58922e-07,
+            "out_max": 0.7
+          },
+          "relative_delay_difference": {
+            "tphl": 0.0005562388193202095,
+            "tplh": 0.00036898984339817087
+          },
+          "rail_difference_V": {
+            "out_min": 1.118622e-06,
+            "out_max": 0.0
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/width12/wgaa15nm_slew2.5ps_load0.36fF",
+      "wall_s": 0.8666219711303711,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa15nm_slew2.5ps_load0.36fF/spectre/RESULT.json",
+        "sha256": "8d39a6fb788e3cd7901c1d4fa5573db51aa85d52ab2dc630cb3d05849858d8ff"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa15nm_slew2.5ps_load0.36fF/hspice/RESULT.json",
+        "sha256": "f314e5eb5330542d86340e18aa36ea5d517caef4507c821f797f8f498a141e9a"
+      },
+      "actual_deck_sha256": "fe6eef72fa582c9ae5eeeeebc558068a9b3262eb2561e02a842148460061c607",
+      "actual_log_sha256": "12534363e2aa9e75e0e0106dab66823a69d62f3af6cc265cdf2c19b7345fbd78"
+    },
+    {
+      "passed": true,
+      "group": "width12",
+      "label": "wgaa15nm_slew2.5ps_load23.04fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 1.28607e-10,
+        "tplh": 1.81032e-10,
+        "out_min": 0.00742745,
+        "out_max": 0.698967
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 1.286096003e-10,
+            "tplh": 1.810339423e-10,
+            "out_min": 0.007428282033,
+            "out_max": 0.6989666618
+          },
+          "relative_delay_difference": {
+            "tphl": 2.0218552844508686e-05,
+            "tplh": 1.0728927268166544e-05
+          },
+          "rail_difference_V": {
+            "out_min": 8.320329999995241e-07,
+            "out_max": 3.3820000000517325e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 1.28603e-10,
+            "tplh": 1.81027e-10,
+            "out_min": 0.00742762,
+            "out_max": 0.698967
+          },
+          "relative_delay_difference": {
+            "tphl": 3.110347348056486e-05,
+            "tplh": 2.7620189253729777e-05
+          },
+          "rail_difference_V": {
+            "out_min": 1.6999999999985776e-07,
+            "out_max": 0.0
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/width12/wgaa15nm_slew2.5ps_load23.04fF",
+      "wall_s": 1.0369672775268555,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa15nm_slew2.5ps_load23.04fF/spectre/RESULT.json",
+        "sha256": "32d5fc3307e47908116c26aa1533a29094f0a44ba00699aadfa37ad7a0bf6eb2"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa15nm_slew2.5ps_load23.04fF/hspice/RESULT.json",
+        "sha256": "d89fb006486e2b19c1d1e925a0f2bbc4b3813dd4c7c09fece7b9f9c4cdbaa23c"
+      },
+      "actual_deck_sha256": "ad6c0bbf2605ef1d9847f92505e4dd01b903918351f704c27236cc6cc96abb09",
+      "actual_log_sha256": "6eda2d76e58c8a96b55acc32a4a2ad7cbd954f4657dba7212dfecc1162e0ed68"
+    },
+    {
+      "passed": true,
+      "group": "width12",
+      "label": "wgaa19nm_slew160ps_load0.36fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 1.7839e-11,
+        "tplh": 1.65118e-11,
+        "out_min": -4.62407e-07,
+        "out_max": 0.7
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 1.783909999e-11,
+            "tplh": 1.651172439e-11,
+            "out_min": 4.178883335e-07,
+            "out_max": 0.6999994972
+          },
+          "relative_delay_difference": {
+            "tphl": 5.60510339964182e-06,
+            "tplh": 4.579170425511592e-06
+          },
+          "rail_difference_V": {
+            "out_min": 8.802953334999999e-07,
+            "out_max": 5.027999999684951e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 1.78387e-11,
+            "tplh": 1.65114e-11,
+            "out_min": 4.19763e-07,
+            "out_max": 0.699999
+          },
+          "relative_delay_difference": {
+            "tphl": 1.6817368978738756e-05,
+            "tplh": 2.422568649551593e-05
+          },
+          "rail_difference_V": {
+            "out_min": 8.8217e-07,
+            "out_max": 9.999999999177334e-07
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/width12/wgaa19nm_slew160ps_load0.36fF",
+      "wall_s": 0.8238606452941895,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa19nm_slew160ps_load0.36fF/spectre/RESULT.json",
+        "sha256": "df01fd919254522f12d478fe1a359c4c397b3a9d2484868ffde52b29c21f6507"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa19nm_slew160ps_load0.36fF/hspice/RESULT.json",
+        "sha256": "b182727f09bec8ada1830f5dce9ac77e5a1fad8171c8622cfa66ea77cb42dadf"
+      },
+      "actual_deck_sha256": "f7e37124eed55e9af96cfa5d69d2a752216f7f0d8aaeea37b764045d846cf2c1",
+      "actual_log_sha256": "fa3dd66b9a1b83c631d3879679322f7f9a6168047a6d3bf88e3610e576419a42"
+    },
+    {
+      "passed": true,
+      "group": "width12",
+      "label": "wgaa19nm_slew160ps_load23.04fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 1.45934e-10,
+        "tplh": 1.86359e-10,
+        "out_min": 0.0146835,
+        "out_max": 0.69448
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 1.459336271e-10,
+            "tplh": 1.863592652e-10,
+            "out_min": 0.01468396805,
+            "out_max": 0.6944798817
+          },
+          "relative_delay_difference": {
+            "tphl": 2.5552712379361964e-06,
+            "tplh": 1.423057768068503e-06
+          },
+          "rail_difference_V": {
+            "out_min": 4.6804999999892904e-07,
+            "out_max": 1.1830000001822327e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 1.45933e-10,
+            "tplh": 1.86359e-10,
+            "out_min": 0.0146839,
+            "out_max": 0.69448
+          },
+          "relative_delay_difference": {
+            "tphl": 6.852459690342982e-06,
+            "tplh": 0.0
+          },
+          "rail_difference_V": {
+            "out_min": 3.999999999993592e-07,
+            "out_max": 0.0
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/width12/wgaa19nm_slew160ps_load23.04fF",
+      "wall_s": 1.0310230255126953,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa19nm_slew160ps_load23.04fF/spectre/RESULT.json",
+        "sha256": "1f794076a081a4de4af74e498402b655ef6b14e0b5b030c387f2a51e56594bb8"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa19nm_slew160ps_load23.04fF/hspice/RESULT.json",
+        "sha256": "5f06a6f490d48a297e04d9e161cfcbed66e416f012523d583e4e2a9920833546"
+      },
+      "actual_deck_sha256": "ef2f8f79a35dbd59026301f638e35999e700b7590c14e9204ee26b7c281d12c6",
+      "actual_log_sha256": "f5f41636e5a0ad4363b0789a16492371ab76467f5fa79f6e0914f7817f8781c9"
+    },
+    {
+      "passed": true,
+      "group": "width12",
+      "label": "wgaa19nm_slew2.5ps_load0.36fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 3.28042e-12,
+        "tplh": 4.38675e-12,
+        "out_min": 2.90281e-07,
+        "out_max": 0.7
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 3.282409131e-12,
+            "tplh": 4.388592185e-12,
+            "out_min": 4.178883342e-07,
+            "out_max": 0.6999994972
+          },
+          "relative_delay_difference": {
+            "tphl": 0.0006059972784057122,
+            "tplh": 0.00041976673209609405
+          },
+          "rail_difference_V": {
+            "out_min": 1.2760733419999997e-07,
+            "out_max": 5.027999999684951e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 3.28237e-12,
+            "tplh": 4.38855e-12,
+            "out_min": 4.19705e-07,
+            "out_max": 0.699999
+          },
+          "relative_delay_difference": {
+            "tphl": 0.0005940829339775577,
+            "tplh": 0.0004101582527259451
+          },
+          "rail_difference_V": {
+            "out_min": 1.29424e-07,
+            "out_max": 9.999999999177334e-07
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/width12/wgaa19nm_slew2.5ps_load0.36fF",
+      "wall_s": 0.7927045822143555,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa19nm_slew2.5ps_load0.36fF/spectre/RESULT.json",
+        "sha256": "2fb6f853213546f95fec6c28e2efd6b8c4b72dc76f03688909059ed8440e9182"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa19nm_slew2.5ps_load0.36fF/hspice/RESULT.json",
+        "sha256": "3ddeeb88562d0dd48637f848271b043e73f894955d1b6ae122337f26c95d3f85"
+      },
+      "actual_deck_sha256": "292fadd8a3cc502a6b93cfcd60845b3c2b95aabe919ce67479311767818dd81b",
+      "actual_log_sha256": "22e76c2a1978060f477eff806f2565d8f8b72463dec5fe00b8f9f4aae79ef120"
+    },
+    {
+      "passed": true,
+      "group": "width12",
+      "label": "wgaa19nm_slew2.5ps_load23.04fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 1.06994e-10,
+        "tplh": 1.5213e-10,
+        "out_min": 0.00223634,
+        "out_max": 0.699785
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 1.069961749e-10,
+            "tplh": 1.521320342e-10,
+            "out_min": 0.002236868458,
+            "out_max": 0.6997845437
+          },
+          "relative_delay_difference": {
+            "tphl": 2.0326894882294333e-05,
+            "tplh": 1.3371279827367744e-05
+          },
+          "rail_difference_V": {
+            "out_min": 5.284579999999782e-07,
+            "out_max": 4.5630000000684845e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 1.0699e-10,
+            "tplh": 1.52125e-10,
+            "out_min": 0.00223663,
+            "out_max": 0.699785
+          },
+          "relative_delay_difference": {
+            "tphl": 3.7386671651651326e-05,
+            "tplh": 3.286770747723544e-05
+          },
+          "rail_difference_V": {
+            "out_min": 2.9000000000001247e-07,
+            "out_max": 0.0
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/width12/wgaa19nm_slew2.5ps_load23.04fF",
+      "wall_s": 0.9547128677368164,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa19nm_slew2.5ps_load23.04fF/spectre/RESULT.json",
+        "sha256": "fbadebb3ed2e852fad87fbaa3c54c95629d8e85e5e8dbc9a53a6fddd15943681"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa19nm_slew2.5ps_load23.04fF/hspice/RESULT.json",
+        "sha256": "6ff07366b994744bc1d46863e5db524837c4ccb7b2815f86f81d7da1007076bb"
+      },
+      "actual_deck_sha256": "c25e281015449f34dd5435888cb3a20c4267386b0ad159e3ee2c004f3630d244",
+      "actual_log_sha256": "e36f14297dc666f661e8ca6bcff4817ddec88ac762181cd281e57d0d2b60c2d7"
+    },
+    {
+      "passed": true,
+      "group": "width12",
+      "label": "wgaa20nm_slew160ps_load0.36fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 1.75193e-11,
+        "tplh": 1.62017e-11,
+        "out_min": 9.50734e-08,
+        "out_max": 0.7
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 1.751942129e-11,
+            "tplh": 1.620159434e-11,
+            "out_min": 4.315789106e-07,
+            "out_max": 0.6999994816
+          },
+          "relative_delay_difference": {
+            "tphl": 6.923173887507517e-06,
+            "tplh": 6.521580393936688e-06
+          },
+          "rail_difference_V": {
+            "out_min": 3.365055106e-07,
+            "out_max": 5.183999999269773e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 1.75191e-11,
+            "tplh": 1.62013e-11,
+            "out_min": 4.33382e-07,
+            "out_max": 0.699999
+          },
+          "relative_delay_difference": {
+            "tphl": 1.1416111558304465e-05,
+            "tplh": 2.4689376778352923e-05
+          },
+          "rail_difference_V": {
+            "out_min": 3.3830859999999997e-07,
+            "out_max": 9.999999999177334e-07
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/width12/wgaa20nm_slew160ps_load0.36fF",
+      "wall_s": 0.8319127559661865,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa20nm_slew160ps_load0.36fF/spectre/RESULT.json",
+        "sha256": "0998a368890386efb8912b1390406aefee1f247ad430439fe2d2822a927b43fc"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa20nm_slew160ps_load0.36fF/hspice/RESULT.json",
+        "sha256": "5c7877b1fcd3d850edc0aa3d4fefd9158fc89b5d3aadd94f0e2d1112348a0952"
+      },
+      "actual_deck_sha256": "d6dbb463ae656becd0857bc25e5827c076bc5ac4ab2f412a05c6638c8ed35fea",
+      "actual_log_sha256": "3672a4f38c6cd311207761674500189671908813d217c9ac601c2ac828686bd9"
+    },
+    {
+      "passed": true,
+      "group": "width12",
+      "label": "wgaa20nm_slew160ps_load23.04fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 1.41591e-10,
+        "tplh": 1.80299e-10,
+        "out_min": 0.0117758,
+        "out_max": 0.695749
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 1.41590604e-10,
+            "tplh": 1.802987598e-10,
+            "out_min": 0.01177635356,
+            "out_max": 0.6957485956
+          },
+          "relative_delay_difference": {
+            "tphl": 2.796795753434722e-06,
+            "tplh": 1.332233234840885e-06
+          },
+          "rail_difference_V": {
+            "out_min": 5.535599999998558e-07,
+            "out_max": 4.043999999314707e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 1.4159e-10,
+            "tplh": 1.80299e-10,
+            "out_min": 0.0117763,
+            "out_max": 0.695749
+          },
+          "relative_delay_difference": {
+            "tphl": 7.062645667188505e-06,
+            "tplh": 0.0
+          },
+          "rail_difference_V": {
+            "out_min": 5.000000000005e-07,
+            "out_max": 0.0
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/width12/wgaa20nm_slew160ps_load23.04fF",
+      "wall_s": 1.057201623916626,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa20nm_slew160ps_load23.04fF/spectre/RESULT.json",
+        "sha256": "2fccc3df63ddadb0d485da452b3f79493481e7c1fdc528bcc9a203c5167cecdc"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa20nm_slew160ps_load23.04fF/hspice/RESULT.json",
+        "sha256": "8c129c67e21f3215142a1fc7f18f25de4856aba023663ecc0b58eff297472e2a"
+      },
+      "actual_deck_sha256": "e25303da8d53e4cee20dbac4426b56f91d24c2ac29eb5f98575035fda4d2a01a",
+      "actual_log_sha256": "6d391d01550fbe421fac3782a5d8d7790ea26e4bf1a2634e977ebcbdd9fcc1cd"
+    },
+    {
+      "passed": true,
+      "group": "width12",
+      "label": "wgaa20nm_slew2.5ps_load0.36fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 3.221e-12,
+        "tplh": 4.30421e-12,
+        "out_min": 3.60437e-07,
+        "out_max": 0.7
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 3.222953085e-12,
+            "tplh": 4.305874316e-12,
+            "out_min": 4.315789107e-07,
+            "out_max": 0.6999994816
+          },
+          "relative_delay_difference": {
+            "tphl": 0.0006059923767086639,
+            "tplh": 0.00038652219685453293
+          },
+          "rail_difference_V": {
+            "out_min": 7.114191070000003e-08,
+            "out_max": 5.183999999269773e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 3.22292e-12,
+            "tplh": 4.30588e-12,
+            "out_min": 4.33343e-07,
+            "out_max": 0.699999
+          },
+          "relative_delay_difference": {
+            "tphl": 0.0005957330619438261,
+            "tplh": 0.00038784174198991384
+          },
+          "rail_difference_V": {
+            "out_min": 7.290600000000003e-08,
+            "out_max": 9.999999999177334e-07
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/width12/wgaa20nm_slew2.5ps_load0.36fF",
+      "wall_s": 0.9441952705383301,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa20nm_slew2.5ps_load0.36fF/spectre/RESULT.json",
+        "sha256": "70da552dd7511bc864d7e3eeb0ace41072ff4d75a76f5743b3ca588f704d8685"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa20nm_slew2.5ps_load0.36fF/hspice/RESULT.json",
+        "sha256": "7b0108fa063e6b4c3f43e37abf67447b9a9457c346458f5f39a2745159ee6e57"
+      },
+      "actual_deck_sha256": "7f58e8a03d33c88d83e9e2fb2aa848dfc9d625054a8d0f4eb573b1db92d63ee7",
+      "actual_log_sha256": "be574de7b3e4dc06ad176c54f72d9200354f78bc5f9f976e800e85de48d51512"
+    },
+    {
+      "passed": true,
+      "group": "width12",
+      "label": "wgaa20nm_slew2.5ps_load23.04fF",
+      "rc": 0,
+      "actual_metrics": {
+        "tphl": 1.02694e-10,
+        "tplh": 1.46197e-10,
+        "out_min": 0.00165676,
+        "out_max": 0.699855
+      },
+      "actual_logged_policy": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200 fs",
+          "200 fs, default 30 ps"
+        ],
+        "vabstol": [
+          "1e-09"
+        ],
+        "iabstol": [
+          "1e-15"
+        ]
+      },
+      "comparisons": {
+        "strict_HSPICE20fs": {
+          "reference": {
+            "tphl": 1.02696439e-10,
+            "tplh": 1.461983689e-10,
+            "out_min": 0.001657717645,
+            "out_max": 0.6998545153
+          },
+          "relative_delay_difference": {
+            "tphl": 2.3749606351874952e-05,
+            "tplh": 9.363305557341661e-06
+          },
+          "rail_difference_V": {
+            "out_min": 9.576450000000226e-07,
+            "out_max": 4.847000000252066e-07
+          },
+          "passed": true
+        },
+        "approved_Spectre200fs": {
+          "reference": {
+            "tphl": 1.0269e-10,
+            "tplh": 1.46191e-10,
+            "out_min": 0.00165753,
+            "out_max": 0.699855
+          },
+          "relative_delay_difference": {
+            "tphl": 3.895218619143215e-05,
+            "tplh": 4.104219822020916e-05
+          },
+          "rail_difference_V": {
+            "out_min": 7.699999999999808e-07,
+            "out_max": 0.0
+          },
+          "passed": true
+        }
+      },
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/actual_production_numeric_correlation/width12/wgaa20nm_slew2.5ps_load23.04fF",
+      "wall_s": 0.8710227012634277,
+      "frozen_Spectre_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa20nm_slew2.5ps_load23.04fF/spectre/RESULT.json",
+        "sha256": "014ee6b26491b2ab2a06e1b4855a2e0cc61db46f37b31f434aaf4ee4b0e5e3df"
+      },
+      "frozen_HSPICE_result": {
+        "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/width_alias_transient/wgaa20nm_slew2.5ps_load23.04fF/hspice/RESULT.json",
+        "sha256": "fb6fcbfd296bd2cd7cb906681ff444abd8ad4ceb8759780041ba6050dac58e2d"
+      },
+      "actual_deck_sha256": "9e99d55f38b369fe38d50fddb81aec98df295bd0738245be2940e546ad45499d",
+      "actual_log_sha256": "e3bece80d478df8aed742c99ed670f2cdb28de1ad90e8569266b0067e076e0d6"
+    }
+  ],
+  "script_sha256": "a2a058f1ba97ce1ac12bfc2160fb9325a9de886d3c04b65a3235d998944d8af5"
+}

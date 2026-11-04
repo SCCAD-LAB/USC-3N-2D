@@ -1,0 +1,53 @@
+CUDA memory test done for device 0; used mem = 67108864
+
+
+
+                              IC Compiler II (TM)
+
+                Version X-2025.06-SP3 for linux64 - Feb 27, 2026
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2026 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+      Inc.  This software may only be used in accordance with the terms and
+  conditions of a written license agreement with Synopsys, Inc.  All other use,
+   reproduction, or distribution of this software is strictly prohibited.  By
+   installing, accessing, using, or executing this software, you agree that it
+  will reside on, operate within, and have access to the computers and networks
+    where such software is used ("Host System"), and that Synopsys may access
+     components and data of the Host System as necessary for it to function
+ properly, to authenticate and validate license keys, to verify that it is used
+ only in conformity with the applicable license restrictions, and to communicate
+                 error messages and associated data to Synopsys.
+
+ 
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+# Native ICC2 readback in a fresh process, never a reused workspace.
+proc usc144_readback {} {
+    source [file join $::env(USC144_NDM_WORK) inputs.tcl]
+    source [file join $::env(USC144_NDM_WORK) check_ndm_interfaces.tcl]
+    if {!$ndm_final_timing_gate} {error "Final native57 timing gate is not satisfied"}
+    open_lib $ndm_output
+    set names {}
+    foreach_in_collection cell [get_lib_cells */*] {lappend names [lindex [split [get_attribute $cell name] /] end]}
+    set names [lsort -unique $names]
+    if {$names ne $ndm_expected_cells || [llength $names] != 57} {error "Reopened NDM57 cell-name mismatch"}
+    if {[sizeof_collection [get_site_defs -quiet -exact $ndm_expected_site]] < 1} {error "Reopened NDM selected site is absent"}
+    usc144_check_interfaces $ndm_expected_interfaces [file join $::env(USC144_NDM_WORK) REOPENED_INTERFACES.tsv]
+    set stream [open [file join $::env(USC144_NDM_WORK) REOPENED_57_CELLS.txt] w]
+    puts $stream [join $names \n];close $stream
+    set stream [open [file join $::env(USC144_NDM_WORK) REOPENED_SITE.txt] w]
+    puts $stream $ndm_expected_site;close $stream
+    puts "USC144_NDM_REOPEN_PASS 57"
+}
+if {[catch {usc144_readback} message]} {puts stderr "USC144_NDM_REOPEN_ERROR $message";exit 1}
+Information: Loading library file '/tmp/yhuang861/usc144_github_release_20261103/matched_native_NDM_local_1793805882/native_build/3nm_GAA_FSPR_144nm_rvt.ndm' (FILE-007)
+USC144_NATIVE_INTERFACES_PASS 57
+USC144_NDM_REOPEN_PASS 57
+exit
+Maximum memory usage for this session: 420.61 MB
+Maximum memory usage for this session including child processes: 420.61 MB
+CPU usage for this session:     16 seconds (  0.00 hours)
+Elapsed time for this session:     18 seconds (  0.01 hours)
+Thank you for using IC Compiler II.

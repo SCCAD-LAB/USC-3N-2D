@@ -1,0 +1,18 @@
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NAND3x2.spf
+.SUBCKT NAND3x2 A B C VDD VSS Y
+MMM4 MM3:SRC C MM4:SRC nmos_rvt l=0.012u w=0.03u
+MMM8 Y B VDD pmos_rvt l=0.012u w=0.03u
+MMM7 Y A VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y A VDD pmos_rvt l=0.012u w=0.03u
+MMM3 Y B MM3:SRC nmos_rvt l=0.012u w=0.03u
+MMM2 Y C MM1:DRN nmos_rvt l=0.012u w=0.03u
+MMM1 MM1:DRN B MM0:DRN nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS nmos_rvt l=0.012u w=0.03u
+MMM5 MM4:SRC A VSS nmos_rvt l=0.012u w=0.03u
+MMM11 Y C VDD pmos_rvt l=0.012u w=0.03u
+MMM9 Y B VDD pmos_rvt l=0.012u w=0.03u
+MMM10 Y C VDD pmos_rvt l=0.012u w=0.03u
+.ends NAND3x2

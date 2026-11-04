@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "epoch": 1793803320.0299053,
+  "cases": [
+    {
+      "design": "ECG",
+      "passed": true,
+      "rc": 0,
+      "stdout": "PASS fresh_technology_and_site\nPASS matched_resume\nPASS historical_references\nPASS changed_release\nPASS changed_readiness\nPASS changed_reference_bytes\nPASS missing_provenance\nPASS missing_selected_site\nPASS drift_during_create\nPASS drift_during_open\nUSC144_RESUME_SITE_TEST_PASS ECG\n",
+      "stderr": ""
+    },
+    {
+      "design": "OpenPiton",
+      "passed": true,
+      "rc": 0,
+      "stdout": "PASS fresh_technology_and_site\nPASS matched_resume\nPASS historical_references\nPASS changed_release\nPASS changed_readiness\nPASS changed_reference_bytes\nPASS missing_provenance\nPASS missing_selected_site\nPASS drift_during_create\nPASS drift_during_open\nUSC144_RESUME_SITE_TEST_PASS OpenPiton\n",
+      "stderr": ""
+    }
+  ],
+  "native_simulations": 0,
+  "chip_PNR_runs": 0,
+  "harness_sha256": "3afaa8f6549c2ef8db8ace9a9efe0e94e9c19b6e6662fd279ed1d63e41f287f5",
+  "scope": "Actual createLibs and setupConfig procedures with native-command stubs; fresh technology/site, valid resume, legacy refs, changed release/readiness/payloads, missing provenance and absent site."
+}

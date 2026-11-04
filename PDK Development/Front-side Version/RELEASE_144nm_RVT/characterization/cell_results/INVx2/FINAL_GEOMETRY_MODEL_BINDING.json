@@ -1,0 +1,450 @@
+{
+  "passed": true,
+  "cell": "INVx2",
+  "gds_sha256": "cc75875f4f9a5e1b84051dd38c49a27d806a9e07780270b399874cf20bf61120",
+  "dspf_sha256": "b20e611bdcdf6830f68e34bcf7a808d7c155b35b85ea75c1ec1d2a47bd4bec9b",
+  "native_dimensions_sha256": "c2c1982d2d858f0140f8418f24c8d8b1bd721a202eebb373e61b97d75019dabd",
+  "physical_device_binding": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx2/iter001/pex_FSPR/attempt000/DEVICE_GEOMETRY_BINDING.json",
+  "physical_device_binding_sha256": "945b2b462be3044d8ec2889bd7257defc94dbf2b0b8d2b7e8c805543147c73f8",
+  "geometry_mapping": {
+    "passed": true,
+    "cell": "INVx2",
+    "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx2/iter001/inputs/cell.gds",
+    "gds_sha256": "cc75875f4f9a5e1b84051dd38c49a27d806a9e07780270b399874cf20bf61120",
+    "native_dimensions": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx2/iter001/lvs/ACTUAL_DEVICE_DIMENSIONS.json",
+    "native_dimensions_sha256": "c2c1982d2d858f0140f8418f24c8d8b1bd721a202eebb373e61b97d75019dabd",
+    "gds_precision_nm": 0.25,
+    "expression": "(Gate minus GCut) intersect N/Pselect intersect Fin intersect Active; identical final channel geometry to production LVS ngate/pgate",
+    "coordinate_policy": "Native extraction gate point must lie inside exactly one corresponding typed channel rectangle; native L/W must match its actual GDS extents withinhalfDBU. No classicW-onlycopy.",
+    "model_mapping_proposal": "WGAA=verified physical channel width. NGAA3,TGAA5nm and all calibrated coefficients unchanged. Hold ambiguous mergedW>30, M>1, nonrectangles, overlaps ormissingcorrespondence.",
+    "native_devices": 4,
+    "physical_channels": 4,
+    "widths_nm": [
+      30.0
+    ],
+    "unmatched_native_devices": [],
+    "unmatched_physical_channels": [],
+    "rows": [
+      {
+        "device": {
+          "device": "M1",
+          "type": "nmos_rvt",
+          "x_nm": 84.0,
+          "y_nm": 36.0,
+          "L_nm": 12.0,
+          "W_nm": 30.0
+        },
+        "physical_gate": {
+          "index": 0,
+          "type": "nmos_rvt",
+          "L_nm": 12.0,
+          "W_nm": 30.0,
+          "rectangle": true,
+          "box_nm": [
+            [
+              78.0,
+              21.0
+            ],
+            [
+              90.0,
+              51.0
+            ]
+          ],
+          "points_nm": [
+            [
+              90.0,
+              51.0
+            ],
+            [
+              78.0,
+              51.0
+            ],
+            [
+              78.0,
+              21.0
+            ],
+            [
+              90.0,
+              21.0
+            ]
+          ]
+        },
+        "candidates": 1,
+        "matched": true,
+        "proposed_model_WGAA_nm": 30.0,
+        "parallel_or_merged_ambiguous": false
+      },
+      {
+        "device": {
+          "device": "M2",
+          "type": "nmos_rvt",
+          "x_nm": 42.0,
+          "y_nm": 36.0,
+          "L_nm": 12.0,
+          "W_nm": 30.0
+        },
+        "physical_gate": {
+          "index": 1,
+          "type": "nmos_rvt",
+          "L_nm": 12.0,
+          "W_nm": 30.0,
+          "rectangle": true,
+          "box_nm": [
+            [
+              36.0,
+              21.0
+            ],
+            [
+              48.0,
+              51.0
+            ]
+          ],
+          "points_nm": [
+            [
+              48.0,
+              51.0
+            ],
+            [
+              36.0,
+              51.0
+            ],
+            [
+              36.0,
+              21.0
+            ],
+            [
+              48.0,
+              21.0
+            ]
+          ]
+        },
+        "candidates": 1,
+        "matched": true,
+        "proposed_model_WGAA_nm": 30.0,
+        "parallel_or_merged_ambiguous": false
+      },
+      {
+        "device": {
+          "device": "M3",
+          "type": "pmos_rvt",
+          "x_nm": 84.0,
+          "y_nm": 108.0,
+          "L_nm": 12.0,
+          "W_nm": 30.0
+        },
+        "physical_gate": {
+          "index": 2,
+          "type": "pmos_rvt",
+          "L_nm": 12.0,
+          "W_nm": 30.0,
+          "rectangle": true,
+          "box_nm": [
+            [
+              78.0,
+              93.0
+            ],
+            [
+              90.0,
+              123.0
+            ]
+          ],
+          "points_nm": [
+            [
+              90.0,
+              123.0
+            ],
+            [
+              78.0,
+              123.0
+            ],
+            [
+              78.0,
+              93.0
+            ],
+            [
+              90.0,
+              93.0
+            ]
+          ]
+        },
+        "candidates": 1,
+        "matched": true,
+        "proposed_model_WGAA_nm": 30.0,
+        "parallel_or_merged_ambiguous": false
+      },
+      {
+        "device": {
+          "device": "M4",
+          "type": "pmos_rvt",
+          "x_nm": 42.0,
+          "y_nm": 108.0,
+          "L_nm": 12.0,
+          "W_nm": 30.0
+        },
+        "physical_gate": {
+          "index": 3,
+          "type": "pmos_rvt",
+          "L_nm": 12.0,
+          "W_nm": 30.0,
+          "rectangle": true,
+          "box_nm": [
+            [
+              36.0,
+              93.0
+            ],
+            [
+              48.0,
+              123.0
+            ]
+          ],
+          "points_nm": [
+            [
+              48.0,
+              123.0
+            ],
+            [
+              36.0,
+              123.0
+            ],
+            [
+              36.0,
+              93.0
+            ],
+            [
+              48.0,
+              93.0
+            ]
+          ]
+        },
+        "candidates": 1,
+        "matched": true,
+        "proposed_model_WGAA_nm": 30.0,
+        "parallel_or_merged_ambiguous": false
+      }
+    ]
+  },
+  "DSPF_coordinates_unit": "micrometersconvertedtoNM; exact native-LVS gate-coordinate correspondence verified",
+  "coefficient_policy": "WGAA geometry only may differ; NGAA3,TGAA5nm and all fitted coefficients remain as published; classicW preserved but notmistakenfor modelinput",
+  "rows": [
+    {
+      "dspf_device": "MM1",
+      "native_device": "M1",
+      "type": "nmos_rvt",
+      "L_nm": 12.0,
+      "classic_W_nm": 29.999999999999996,
+      "physical_WGAA_nm": 30.0,
+      "model_alias": "NMOS_LVT",
+      "nfin": 1,
+      "nf": 1,
+      "m": 1,
+      "dspf_gate_coordinate_nm": [
+        84.0,
+        36.0
+      ],
+      "native_gate_coordinate_nm": [
+        84.0,
+        36.0
+      ],
+      "gds_channel": {
+        "index": 0,
+        "type": "nmos_rvt",
+        "L_nm": 12.0,
+        "W_nm": 30.0,
+        "rectangle": true,
+        "box_nm": [
+          [
+            78.0,
+            21.0
+          ],
+          [
+            90.0,
+            51.0
+          ]
+        ],
+        "points_nm": [
+          [
+            90.0,
+            51.0
+          ],
+          [
+            78.0,
+            51.0
+          ],
+          [
+            78.0,
+            21.0
+          ],
+          [
+            90.0,
+            21.0
+          ]
+        ]
+      }
+    },
+    {
+      "dspf_device": "MM2",
+      "native_device": "M2",
+      "type": "nmos_rvt",
+      "L_nm": 12.0,
+      "classic_W_nm": 29.999999999999996,
+      "physical_WGAA_nm": 30.0,
+      "model_alias": "NMOS_LVT",
+      "nfin": 1,
+      "nf": 1,
+      "m": 1,
+      "dspf_gate_coordinate_nm": [
+        42.0,
+        36.0
+      ],
+      "native_gate_coordinate_nm": [
+        42.0,
+        36.0
+      ],
+      "gds_channel": {
+        "index": 1,
+        "type": "nmos_rvt",
+        "L_nm": 12.0,
+        "W_nm": 30.0,
+        "rectangle": true,
+        "box_nm": [
+          [
+            36.0,
+            21.0
+          ],
+          [
+            48.0,
+            51.0
+          ]
+        ],
+        "points_nm": [
+          [
+            48.0,
+            51.0
+          ],
+          [
+            36.0,
+            51.0
+          ],
+          [
+            36.0,
+            21.0
+          ],
+          [
+            48.0,
+            21.0
+          ]
+        ]
+      }
+    },
+    {
+      "dspf_device": "MM3",
+      "native_device": "M3",
+      "type": "pmos_rvt",
+      "L_nm": 12.0,
+      "classic_W_nm": 29.999999999999996,
+      "physical_WGAA_nm": 30.0,
+      "model_alias": "PMOS_LVT",
+      "nfin": 1,
+      "nf": 1,
+      "m": 1,
+      "dspf_gate_coordinate_nm": [
+        84.0,
+        108.0
+      ],
+      "native_gate_coordinate_nm": [
+        84.0,
+        108.0
+      ],
+      "gds_channel": {
+        "index": 2,
+        "type": "pmos_rvt",
+        "L_nm": 12.0,
+        "W_nm": 30.0,
+        "rectangle": true,
+        "box_nm": [
+          [
+            78.0,
+            93.0
+          ],
+          [
+            90.0,
+            123.0
+          ]
+        ],
+        "points_nm": [
+          [
+            90.0,
+            123.0
+          ],
+          [
+            78.0,
+            123.0
+          ],
+          [
+            78.0,
+            93.0
+          ],
+          [
+            90.0,
+            93.0
+          ]
+        ]
+      }
+    },
+    {
+      "dspf_device": "MM4",
+      "native_device": "M4",
+      "type": "pmos_rvt",
+      "L_nm": 12.0,
+      "classic_W_nm": 29.999999999999996,
+      "physical_WGAA_nm": 30.0,
+      "model_alias": "PMOS_LVT",
+      "nfin": 1,
+      "nf": 1,
+      "m": 1,
+      "dspf_gate_coordinate_nm": [
+        42.0,
+        108.0
+      ],
+      "native_gate_coordinate_nm": [
+        42.0,
+        108.0
+      ],
+      "gds_channel": {
+        "index": 3,
+        "type": "pmos_rvt",
+        "L_nm": 12.0,
+        "W_nm": 30.0,
+        "rectangle": true,
+        "box_nm": [
+          [
+            36.0,
+            93.0
+          ],
+          [
+            48.0,
+            123.0
+          ]
+        ],
+        "points_nm": [
+          [
+            48.0,
+            123.0
+          ],
+          [
+            36.0,
+            123.0
+          ],
+          [
+            36.0,
+            93.0
+          ],
+          [
+            48.0,
+            93.0
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+CUDA memory test done for device 0; used mem = 67108864
+
+
+
+                              IC Compiler II (TM)
+
+                Version X-2025.06-SP3 for linux64 - Feb 27, 2026
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2026 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+      Inc.  This software may only be used in accordance with the terms and
+  conditions of a written license agreement with Synopsys, Inc.  All other use,
+   reproduction, or distribution of this software is strictly prohibited.  By
+   installing, accessing, using, or executing this software, you agree that it
+  will reside on, operate within, and have access to the computers and networks
+    where such software is used ("Host System"), and that Synopsys may access
+     components and data of the Host System as necessary for it to function
+ properly, to authenticate and validate license keys, to verify that it is used
+ only in conformity with the applicable license restrictions, and to communicate
+                 error messages and associated data to Synopsys.
+
+ 
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+proc run {} {
+open_lib {/tmp/yhuang861/usc144_github_release_20261103/matched_native_NDM_local_1793805882/native_build/3nm_GAA_FSPR_144nm_rvt.ndm}
+puts "USC144_INPUT_CAP_UNIT [get_user_units -input -type capacitance]"
+puts "USC144_OUTPUT_CAP_UNIT [get_user_units -output -type capacitance]"
+report_units
+report_lib -verbose [get_object_name [current_lib]]
+set checked 0
+set stream [open TIMING_ARCS.tsv w]
+foreach_in_collection cell [get_lib_cells */*] {set name [get_attribute $cell name];set count [sizeof_collection [get_lib_timing_arcs -of_objects $cell]];if {$count<1} {error "No timing arcs for $name"};puts $stream "$name\t$count";incr checked}
+close $stream
+puts "USC144_INV_A_CAP_RAW [get_attribute [get_lib_pins */INVx1/A] capacitance]"
+puts "USC144_TIMING_CONTENT_PASS $checked"
+}
+if {[catch {run} message]} {puts "USC144_TIMING_ERROR $message";exit 1}
+Information: Loading library file '/tmp/yhuang861/usc144_github_release_20261103/matched_native_NDM_local_1793805882/native_build/3nm_GAA_FSPR_144nm_rvt.ndm' (FILE-007)
+USC144_INPUT_CAP_UNIT 1.00pF
+USC144_OUTPUT_CAP_UNIT 1.00pF
+****************************************
+Report : user_units
+Version: X-2025.06-SP3
+Date   : Wed Nov  4 10:42:54 2026
+****************************************
+
+Input Units (set to default)
+----------------------------------------------
+time                         : 1.00ns
+resistance                   : 1.00kOhm
+capacitance                  : 1.00pF
+voltage                      : 1.00V
+current                      : 1.00mA
+power                        : 1.00mW
+length                       : 1.00um
+energy                       : 1.00pj/t
+
+Output Units (set to default)
+----------------------------------------------
+time                         : 1.00ns
+resistance                   : 1.00kOhm
+capacitance                  : 1.00pF
+voltage                      : 1.00V
+current                      : 1.00mA
+power                        : 1.00mW
+length                       : 1.00um
+energy                       : 1.00pj/t
+
+****************************************
+Report : library
+Library: 3nm_GAA_FSPR_144nm_rvt
+Version: X-2025.06-SP3
+Date   : Wed Nov  4 10:42:54 2026
+****************************************
+
+Full name: /tmp/yhuang861/usc144_github_release_20261103/matched_native_NDM_local_1793805882/native_build/3nm_GAA_FSPR_144nm_rvt.ndm:3nm_GAA_FSPR_144nm_rvt
+File name: /tmp/yhuang861/usc144_github_release_20261103/matched_native_NDM_local_1793805882/native_build/3nm_GAA_FSPR_144nm_rvt.ndm
+Design count: 57
+
+--------------------------------------------------------------------------------
+** Timing Data:
+
+Power rails:
+
+Index  Name        Type
+  0    <default>   power
+  1    VDD         power
+  2    VSS         ground
+
+Pane count: 1
+
+Pane 0:
+  Process label: (none)
+  Process number: 1
+  Voltage rail count: 3
+  Voltage for rail 0 (<default>): 0.7
+  Voltage for rail 1 (VDD): 0.7
+  Voltage for rail 2 (VSS): 0
+  Temperature: 25
+
+  Thresholds:
+    r/f InputDelay: 0.5/0.5  r/f OutputDelay: 0.5/0.5
+    l/h RiseTrans:  0.1/0.9  h/l FallTrans:   0.9/0.1
+    TransDerate:    1
+
+  Source .db file:
+    /tmp/yhuang861/usc144_github_release_20261103/matched_native_NDM_local_1793805882/native_build/cells.db
+
+
+
+
+Data Model Existence : 
+  nlpm,nldm 
+
+
+Source .db libraries:
+  cells.db:3nm_GAA_FSPR_rvt_nldm
+
+
+Operating Conditions:
+
+   Name                 Process   Label                Temp      Voltage   Original DB Name     Original DB Filename Pane#    Status
+   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   PVT_0P7V_25C         1.00      (none)               25.00     0.70      3nm_GAA_FSPR_rvt_nldm
+                                                                                                cells.db             0        active
+
+
+
+USC144_INV_A_CAP_RAW 0.000460
+USC144_TIMING_CONTENT_PASS 57
+exit
+Maximum memory usage for this session: 419.98 MB
+Maximum memory usage for this session including child processes: 419.98 MB
+CPU usage for this session:     16 seconds (  0.00 hours)
+Elapsed time for this session:     17 seconds (  0.00 hours)
+Thank you for using IC Compiler II.

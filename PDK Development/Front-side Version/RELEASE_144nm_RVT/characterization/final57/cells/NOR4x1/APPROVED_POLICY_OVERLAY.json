@@ -1,0 +1,25 @@
+{
+  "cell": "NOR4x1",
+  "approved": true,
+  "metadata_only": true,
+  "measurement_values_unchanged": true,
+  "original_result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/NOR4x1/08b4b98d8c5c4015/RESULT.json",
+  "original_result_sha256": "aa63a4cb7518d2d4faac2e4925452d3ec1b9e39165afa99a2f91f7de852e3119",
+  "original_claimed_policy": "gear2only,reltol1e-6,vabstol1e-9,iabstol1e-15,maxstep0.2ps; independentlycorrelatedwithstrict20fsHSPICE",
+  "actual_policy": {
+    "method": "traponly",
+    "reltol": 0.001,
+    "vabstol_V": 1e-09,
+    "iabstol_A": 1e-15,
+    "maxstep_s": 2e-13
+  },
+  "reason": "SPICE2G ignored method=gear2only and reltol=1e-6; actual traponly/reltol1e-3 recipe explicitly qualified against strict controls and approved by root",
+  "approval": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/ACTUAL_PRODUCTION_NUMERICAL_APPROVAL.json",
+  "approval_sha256": "9bf3d043934d8cca2f25d0df9d7138c1b67f56df5a70c5b678f05cad0da7cd18",
+  "native_library": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/NOR4x1/08b4b98d8c5c4015/candidate.lib",
+  "native_library_sha256": "e6e7f79adc0be147e1541148ea746a5a16a9b1620e72f656685f0adfc30970d3",
+  "native_cell_body_sha256": "010455e4a9cf494357c6f63a76f2eea7d33d2ed9effdde9bc9acfe2e43442b30",
+  "actual_Tcl_sha256": "f1b701217517b8dcfe8d34e4bced4c4f059131f6256802ca3ceafcfa2439c165",
+  "actual_model_card_sha256": "89aa7d86b6c33aefecb196fdbc3e29a655dfb68659bec436e8aa2cc42f5bc8f6",
+  "published_base_model_sha256": "5c1ed2c2f0bc5038369e86f95f12b9239eeabbe87668f49e92e63015f8e2be7b"
+}

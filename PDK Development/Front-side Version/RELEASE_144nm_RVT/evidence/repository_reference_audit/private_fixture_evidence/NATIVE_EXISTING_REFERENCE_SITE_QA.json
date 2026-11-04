@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "rc": 0,
+  "wall_s": 17.26029634475708,
+  "work": "/tmp/yhuang861/usc144_github_release_20261103/native guarded create 1793802308",
+  "reference": "/tmp/yhuang861/usc144_github_release_20261103/native guarded create 1793802308/reference frames/fixture_physical.ndm",
+  "provenance_unchanged": true,
+  "reference_unchanged": true,
+  "native_errors": [],
+  "scope": "Existing empty design library reference/site/provenance read-only query; mismatch rejected; no rebind, timing DB, simulation or routed design.",
+  "log_sha256": "fc8f90ad21b481e20d666acdaf7d81dbf9e18ee06a649fbc9590abc8b1a29146"
+}

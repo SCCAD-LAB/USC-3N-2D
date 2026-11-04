@@ -1,0 +1,14 @@
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NOR4x1.spf
+.SUBCKT NOR4x1 A B C D VDD VSS Y
+MMM3 Y D VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y C VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y D MM4:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM5 MM4:SRC C MM5:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM6 MM5:SRC B MM6:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM7 MM6:SRC A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends NOR4x1

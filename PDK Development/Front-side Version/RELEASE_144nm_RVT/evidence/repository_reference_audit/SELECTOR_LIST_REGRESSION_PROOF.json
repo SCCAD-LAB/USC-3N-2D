@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "old_stage_tree": "d8e61e49b35a8e92380c59c0420586a555da1e28",
+  "expected_old_Cadence_argument_contract_failures": [
+    {
+      "tool": "cadence",
+      "design": "ECG",
+      "optional_macro_and_cap": false,
+      "passed": false,
+      "stdout": "",
+      "stderr": "init_lef_file list length: 4 expected 2\n    while executing\n\"error \"$label list length: [llength $actual] expected [llength $expected]\"\"\n    (procedure \"same_list\" line 2)\n    invoked from within\n\"same_list $::init_lef_file $expected_lefs init_lef_file\"\n    invoked from within\n\"if {$tool eq \"cadence\"} {\n    set ::env(TECHLEF_DIR) [file dirname $::fspr_tech_lef(Cadence)]\n    set ::env(MACROLEF_DIR) [file dirname $::fspr_std_le...\"\n    (file \"/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/selector_tests/selector_argumen...\" line 77)"
+    },
+    {
+      "tool": "cadence",
+      "design": "ECG",
+      "optional_macro_and_cap": true,
+      "passed": false,
+      "stdout": "",
+      "stderr": "init_lef_file list length: 12 expected 3\n    while executing\n\"error \"$label list length: [llength $actual] expected [llength $expected]\"\"\n    (procedure \"same_list\" line 2)\n    invoked from within\n\"same_list $::init_lef_file $expected_lefs init_lef_file\"\n    invoked from within\n\"if {$tool eq \"cadence\"} {\n    set ::env(TECHLEF_DIR) [file dirname $::fspr_tech_lef(Cadence)]\n    set ::env(MACROLEF_DIR) [file dirname $::fspr_std_le...\"\n    (file \"/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/selector_tests/selector_argumen...\" line 77)"
+    },
+    {
+      "tool": "cadence",
+      "design": "OpenPiton",
+      "optional_macro_and_cap": false,
+      "passed": false,
+      "stdout": "",
+      "stderr": "init_lef_file list length: 4 expected 2\n    while executing\n\"error \"$label list length: [llength $actual] expected [llength $expected]\"\"\n    (procedure \"same_list\" line 2)\n    invoked from within\n\"same_list $::init_lef_file $expected_lefs init_lef_file\"\n    invoked from within\n\"if {$tool eq \"cadence\"} {\n    set ::env(TECHLEF_DIR) [file dirname $::fspr_tech_lef(Cadence)]\n    set ::env(MACROLEF_DIR) [file dirname $::fspr_std_le...\"\n    (file \"/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/selector_tests/selector_argumen...\" line 77)"
+    },
+    {
+      "tool": "cadence",
+      "design": "OpenPiton",
+      "optional_macro_and_cap": true,
+      "passed": false,
+      "stdout": "",
+      "stderr": "init_lef_file list length: 12 expected 3\n    while executing\n\"error \"$label list length: [llength $actual] expected [llength $expected]\"\"\n    (procedure \"same_list\" line 2)\n    invoked from within\n\"same_list $::init_lef_file $expected_lefs init_lef_file\"\n    invoked from within\n\"if {$tool eq \"cadence\"} {\n    set ::env(TECHLEF_DIR) [file dirname $::fspr_tech_lef(Cadence)]\n    set ::env(MACROLEF_DIR) [file dirname $::fspr_std_le...\"\n    (file \"/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/selector_tests/selector_argumen...\" line 77)"
+    }
+  ],
+  "fixed_current_source_all10_pass": "ACTUAL_SELECTOR_ARGUMENT_QA.json",
+  "native_tool_jobs": 0,
+  "scope": "Regression proof for root-found Tcl path-list serialization bug, not native PNR validation."
+}

@@ -1,0 +1,222 @@
+{
+  "complete": true,
+  "passed": true,
+  "comparisons": [
+    {
+      "case": "worker2_case1",
+      "primary_metrics": [
+        {
+          "metric": "delay_s",
+          "actual": 4.9362346514591445e-11,
+          "gear": 4.936440780745647e-11,
+          "relative_difference": 4.175666146066792e-05,
+          "passed": true
+        },
+        {
+          "metric": "output_fall_slew_s",
+          "actual": 1.1785321649711886e-10,
+          "gear": 1.1785334467728466e-10,
+          "relative_difference": 1.0876243364821292e-06,
+          "passed": true
+        },
+        {
+          "metric": "active_input_absolute_charge_C",
+          "actual": 1.4952398878152688e-16,
+          "gear": 1.4967257196684158e-16,
+          "relative_difference": 0.0009927215344947005,
+          "passed": true
+        },
+        {
+          "metric": "supply_draw_energy_J",
+          "actual": 1.3255108929968454e-17,
+          "gear": 1.3258208795622144e-17,
+          "relative_difference": 0.00023380727377853017,
+          "passed": true
+        }
+      ],
+      "rail_comparisons": [
+        {
+          "node": "v(y)",
+          "rail_max_difference_V": 1.9123049999999922e-07,
+          "passed": true
+        },
+        {
+          "node": "v(a:4)",
+          "rail_max_difference_V": 5.795147500000009e-10,
+          "passed": true
+        },
+        {
+          "node": "v(b:4)",
+          "rail_max_difference_V": 4.704996249999986e-10,
+          "passed": true
+        },
+        {
+          "node": "v(c:4)",
+          "rail_max_difference_V": 0.0,
+          "passed": true
+        },
+        {
+          "node": "v(d:4)",
+          "rail_max_difference_V": 0.0,
+          "passed": true
+        },
+        {
+          "node": "v(e:4)",
+          "rail_max_difference_V": 1.0403375000000213e-10,
+          "passed": true
+        },
+        {
+          "node": "v(f:4)",
+          "rail_max_difference_V": 0.0,
+          "passed": true
+        },
+        {
+          "node": "v(m6:gate)",
+          "rail_max_difference_V": 5.601107500000011e-10,
+          "passed": true
+        },
+        {
+          "node": "v(m6:src)",
+          "rail_max_difference_V": 8.184949999999174e-10,
+          "passed": true
+        }
+      ],
+      "notice_window_comparisons": [
+        {
+          "node": "v(m6:gate)",
+          "time_s": 3.149485e-09,
+          "actual_minus_gear_peak_abs_V": 2.2802345e-09,
+          "residual_peak_to_peak_V": 2.373138e-09,
+          "passed": true
+        },
+        {
+          "node": "v(m6:src)",
+          "time_s": 4.750685e-09,
+          "actual_minus_gear_peak_abs_V": 1.927710000000393e-09,
+          "residual_peak_to_peak_V": 2.761525000000403e-09,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "case": "worker3_case15",
+      "primary_metrics": [
+        {
+          "metric": "delay_s",
+          "actual": 4.895733403682532e-11,
+          "gear": 4.895764072926739e-11,
+          "relative_difference": 6.264444885384357e-06,
+          "passed": true
+        },
+        {
+          "metric": "output_fall_slew_s",
+          "actual": 1.0643924315629101e-10,
+          "gear": 1.0643938963927856e-10,
+          "relative_difference": 1.3762103300285489e-06,
+          "passed": true
+        },
+        {
+          "metric": "active_input_absolute_charge_C",
+          "actual": 1.7814436121593925e-16,
+          "gear": 1.7832959834484528e-16,
+          "relative_difference": 0.0010387346274836062,
+          "passed": true
+        },
+        {
+          "metric": "supply_draw_energy_J",
+          "actual": 1.3143131733565075e-17,
+          "gear": 1.3145541765526099e-17,
+          "relative_difference": 0.00018333454824537299,
+          "passed": true
+        }
+      ],
+      "rail_comparisons": [
+        {
+          "node": "v(y)",
+          "rail_max_difference_V": 1.484530000000052e-07,
+          "passed": true
+        },
+        {
+          "node": "v(a:4)",
+          "rail_max_difference_V": 6.110679499999998e-10,
+          "passed": true
+        },
+        {
+          "node": "v(b:4)",
+          "rail_max_difference_V": 1.6671866300000004e-09,
+          "passed": true
+        },
+        {
+          "node": "v(c:4)",
+          "rail_max_difference_V": 0.0,
+          "passed": true
+        },
+        {
+          "node": "v(d:4)",
+          "rail_max_difference_V": 0.0,
+          "passed": true
+        },
+        {
+          "node": "v(e:4)",
+          "rail_max_difference_V": 1.0462181999999983e-09,
+          "passed": true
+        },
+        {
+          "node": "v(f:4)",
+          "rail_max_difference_V": 1.8452417000000003e-09,
+          "passed": true
+        },
+        {
+          "node": "v(m6:gate)",
+          "rail_max_difference_V": 6.289259499999998e-10,
+          "passed": true
+        },
+        {
+          "node": "v(m6:src)",
+          "rail_max_difference_V": 1.1167039999999017e-09,
+          "passed": true
+        }
+      ],
+      "notice_window_comparisons": [
+        {
+          "node": "v(e:4)",
+          "time_s": 4.756358e-09,
+          "actual_minus_gear_peak_abs_V": 2.1057069999999818e-10,
+          "residual_peak_to_peak_V": 3.2201590000000127e-10,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "run_receipts": [
+    {
+      "case": "worker3_case15",
+      "mode": "actual",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/RINGING_CONTROL/runs/worker3_case15/actual/RESULT.json",
+      "sha256": "fb0acb972936e1b516ead934c8301a0cd26268ecfe1d35f631e9a9514a1dd67e"
+    },
+    {
+      "case": "worker2_case1",
+      "mode": "actual",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/RINGING_CONTROL/runs/worker2_case1/actual/RESULT.json",
+      "sha256": "8dc1b42e82070fe9d00ce8acef86014173af381b4889672471c2a2065fa0634e"
+    },
+    {
+      "case": "worker3_case15",
+      "mode": "gear",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/RINGING_CONTROL/runs/worker3_case15/gear/RESULT.json",
+      "sha256": "27aa03b3801c84b3b3dec6a4eb1af02345d417e4266c4a73ef5623d8c4e341c4"
+    },
+    {
+      "case": "worker2_case1",
+      "mode": "gear",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/RINGING_CONTROL/runs/worker2_case1/gear/RESULT.json",
+      "sha256": "2f6354220c14d9d2d08cb06607c65907dd5dd521b51f7d8ae6ff34791c7c6a0f"
+    }
+  ],
+  "policy_sha256": "1a0e0b419f9a2d6559613b2d8d699bc1c76c32bdaad82b0ab5020127cff86182",
+  "elapsed_s": 21.745675086975098,
+  "scope": "Two exact stable current AOI222 source cases. Original C:4batch overwritten; input-parasitic anddevice-gate/source notice class tested, no wholecellcharacterization."
+}

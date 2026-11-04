@@ -1,0 +1,71 @@
+CUDA memory test done for device 0; used mem = 67108864
+
+
+
+                              IC Compiler II (TM)
+
+                Version X-2025.06-SP3 for linux64 - Feb 27, 2026
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2026 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+      Inc.  This software may only be used in accordance with the terms and
+  conditions of a written license agreement with Synopsys, Inc.  All other use,
+   reproduction, or distribution of this software is strictly prohibited.  By
+   installing, accessing, using, or executing this software, you agree that it
+  will reside on, operate within, and have access to the computers and networks
+    where such software is used ("Host System"), and that Synopsys may access
+     components and data of the Host System as necessary for it to function
+ properly, to authenticate and validate license keys, to verify that it is used
+ only in conformity with the applicable license restrictions, and to communicate
+                 error messages and associated data to Synopsys.
+
+ 
+Information: Term was not able to be set up using xterm-256color . Using "xterm" by default instead. (CLE-10)
+proc load_actual_proc {path name} {
+ set f [open $path r];set text [read $f];close $f;set collecting 0;set body ""
+ foreach line [split $text \n] {
+  if {!$collecting && [string match "proc $name *" $line]} {set collecting 1}
+  if {$collecting} {append body $line \n;if {[info complete $body]} {uplevel #0 $body;return}}
+ }
+ error "Missing actual procedure $name"
+}
+proc run_fresh {} {
+ global fspr_ndm fspr_dev fspr_release_binding vars env
+ set env(PDK_ROOT) $env(USC144_QUERY_REPO)
+ uplevel #0 [list source [file join $env(USC144_QUERY_SOURCES) {PDK Development/Front-side Version/selected_collateral.tcl}]]
+ uplevel #0 [list source [file join $env(USC144_QUERY_SOURCES) {PDK Development/Front-side Version/icc2_matched_references.tcl}]]
+ set fspr_ndm $env(USC144_QUERY_REF)
+ set fspr_dev [file join [pwd] {fixture release}]
+ set fspr_release_binding $env(USC144_QUERY_BINDING)
+ unset -nocomplain env(HARDNDM)
+ set path [file join $env(USC144_QUERY_SOURCES) {PnR-Synopsys/Front-side Version/Runfiles/ECG_icc2.tcl}]
+ set f [open $path r];set text [read $f];close $f
+ foreach line [split $text \n] {
+  if {[regexp {^set vars\((Place,SiteDef|Route,VerticalMetals|Route,HorizontalMetals)\)} $line]} {uplevel #0 $line}
+ }
+ load_actual_proc $path prc_ICC_createLibs
+ load_actual_proc $path prc_ICC_setupConfig
+ prc_ICC_createLibs
+ puts "USC144_NATIVE_FRESH_REFS [get_attribute [current_lib] ref_libs]"
+ puts "USC144_NATIVE_FRESH_SITE [sizeof_collection [get_site_defs -quiet -exact $vars(Place,SiteDef)]]"
+ if {![catch {fspr_assert_current_references [list /historical/legacy.ndm]} rejected]} {error "Native reference mismatch was accepted"}
+ puts "USC144_NATIVE_MISMATCH_REJECTED $rejected"
+ puts USC144_NATIVE_EXISTING_READ_ONLY_PASS
+}
+if {[catch {run_fresh} message]} {puts "USC144_NATIVE_GUARD_ERROR $message";exit 1}
+{/tmp/yhuang861/usc144_github_release_20261103/native guarded create 1793802308/reference frames/fixture_physical.ndm}
+Information: Loading library file '/tmp/yhuang861/usc144_github_release_20261103/native guarded create 1793802308/impl_normal2D' (FILE-007)
+Information: Loading library file '/tmp/yhuang861/usc144_github_release_20261103/native guarded create 1793802308/reference frames/fixture_physical.ndm' (FILE-007)
+SCCAD: prc_ICC_createLibs done
+USC144_NATIVE_FRESH_REFS {/tmp/yhuang861/usc144_github_release_20261103/native guarded create 1793802308/reference frames/fixture_physical.ndm}
+USC144_NATIVE_FRESH_SITE 1
+USC144_NATIVE_MISMATCH_REJECTED Existing library reference mismatch; no rebind performed. Use its original matched release or a fresh work directory.
+USC144_NATIVE_EXISTING_READ_ONLY_PASS
+exit
+Maximum memory usage for this session: 420.33 MB
+Maximum memory usage for this session including child processes: 420.33 MB
+CPU usage for this session:     13 seconds (  0.00 hours)
+Elapsed time for this session:     15 seconds (  0.00 hours)
+Thank you for using IC Compiler II.

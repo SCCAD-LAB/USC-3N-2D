@@ -1,0 +1,12 @@
+{
+  "emitted_units": {
+    "time_unit": "1ps",
+    "current_unit": "1mA",
+    "voltage_unit": "1V",
+    "leakage_power_unit": "1pW",
+    "capacitive_load_unit": "1,ff"
+  },
+  "before_only": [],
+  "after_only": [],
+  "policy": "Every exact unmatched identity and raw value remains visible; no interpolation, forced legacy edge, or discarded native cell."
+}

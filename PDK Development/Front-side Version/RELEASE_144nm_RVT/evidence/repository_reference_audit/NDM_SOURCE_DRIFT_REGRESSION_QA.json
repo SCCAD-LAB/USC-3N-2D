@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "current": {
+    "mutation_injected": true,
+    "rejected": true,
+    "accepted_result_exists": false,
+    "reason_type": "ValueError",
+    "native_tools_invoked": 0,
+    "synthetic_only": true
+  },
+  "epoch": 1793803387.8529675,
+  "native_tools_invoked": 0,
+  "synthetic_only": true,
+  "local_post_build_drift_rejected": true,
+  "previous": {
+    "mutation_injected": true,
+    "rejected": false,
+    "accepted_result_exists": true,
+    "reason_type": null,
+    "native_tools_invoked": 0,
+    "synthetic_only": true
+  }
+}

@@ -1,4 +1,7 @@
 # USC-3N-2D (3nm PDK for 2D ICs)
+
+The front-side FSPR RVT update pairs 144 nm GDS and vendor LEFs with a native 57-cell LIB/DB and matched NDM. Native DRC/topology LVS, fresh PEX, characterization, Liberty compilation and NDM readback passed. Active front-side flows select exact repository-relative files through the shared collateral map. Historical OpenAccess/NDM and prior chip results remain evidence. See [the verification package](<PDK Development/Front-side Version/RELEASE_144nm_RVT/README.md>) for scope, raw data, source hashes and executable checks.
+
 USC-3N-2D is an open-source 3nm Process Design Kit (PDK) for 2D ICs developed by the <a href="https://sites.usc.edu/sccad"> Southern California Computer-Aided Design (SCCAD) Lab</a> at the University of Southern California (USC). This PDK is intended for academic research and educational use, and enables exploration of advanced-node physical design, device–interconnect interactions, and design-technology co-optimization (DTCO). Our key features include:
 - Customizable PDK – Enables researchers to <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PDK%20Development">modify PDK contents</a> including device, interconnect, cells, and place/route flow and explore new design methodologies.
 

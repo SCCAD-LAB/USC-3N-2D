@@ -1,0 +1,46 @@
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx10.spf
+.SUBCKT BUFx10 A VDD VSS Y
+MMM21 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM39 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM37 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM34 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM32 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM31 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM28 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM27 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM24 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM23 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM19 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM20 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM18 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM16 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM14 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM13 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM11 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM17 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM38 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM36 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM35 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM33 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM30 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM29 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM26 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM25 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM22 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM15 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM12 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM10 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM9 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+.ends BUFx10

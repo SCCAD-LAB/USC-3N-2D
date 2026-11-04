@@ -33,18 +33,21 @@
 # USER CONFIGURATION
 #=====================================================================
 # Set PDK_ROOT before invoking this script:
-#   export PDK_ROOT=/path/to/sccad_fspr
+#   export PDK_ROOT=/path/to/USC-3N-2D
 # All other paths derive from PDK_ROOT.
 
 if { ![info exists ::env(PDK_ROOT)] } {
-    puts "ERROR: please set PDK_ROOT to the released PDK root before sourcing this script"
+    puts "ERROR: please set PDK_ROOT to the USC-3N-2D repository root before sourcing this script"
     exit 1
 }
-set techDir $::env(PDK_ROOT)
-set ::env(NDM_DIR)     "$techDir/2d_ndm"
-set ::env(TF_DIR)      "$techDir/2d_tf"
-set ::env(TLU_DIR)     "$techDir/2d_tluplus"
-set ::env(MACRODB_DIR) "$techDir/2d_db"
+set techDir [file normalize $::env(PDK_ROOT)]
+source [file join $techDir {PDK Development/Front-side Version/selected_collateral.tcl}]
+fspr_require_matched_release 1
+source [file join $::fspr_dev icc2_matched_references.tcl]
+set ::env(NDM_DIR) [file dirname $::fspr_ndm]
+set ::env(TF_DIR) [file dirname $::fspr_tf]
+set ::env(TLU_DIR) [file join $::fspr_vendor_root(Synopsys) ITF]
+set ::env(MACRODB_DIR) [file dirname $::fspr_db]
 
 # Design name controls input filenames (.netlist.v, .sdc, etc.)
 set ::env(build_name) "point_scalar_mult"
@@ -71,7 +74,7 @@ set vars(PowerEffort)   high
 set vars(Route,HorizontalMetals) "M2 M4 M6 M8"
 set vars(Route,VerticalMetals)   "M1 M3 M5 M7"
 set vars(Route,DRIter)           20
-set vars(Place,SiteDef)          "core"
+set vars(Place,SiteDef)          $::fspr_site
 set vars(Route,RedundantVias)    0
 
 set vars(FloorPlan,AspectRatio)     1
@@ -292,8 +295,11 @@ proc prc_toFSV { str } {
 # Setup site/layer routing direction (single-die normal2D path)
 proc prc_ICC_setupConfig { } {
     uplevel \#0 {
-        set_attribute [get_site_defs ${vars(Place,SiteDef)}] symmetry Y
-        set_attribute [get_site_defs ${vars(Place,SiteDef)}] is_default true
+        set selected_sites [fspr_require_selected_site $vars(Place,SiteDef)]
+        set_attribute $selected_sites symmetry Y
+        set previous_defaults [get_site_defs -quiet -filter {is_default == true}]
+        if {[sizeof_collection $previous_defaults] > 0} {set_attribute $previous_defaults is_default false}
+        set_attribute $selected_sites is_default true
         set_attribute [get_layers ${vars(Route,VerticalMetals)}]   -name routing_direction -value vertical
         set_attribute [get_layers ${vars(Route,HorizontalMetals)}] -name routing_direction -value horizontal
     }
@@ -302,22 +308,16 @@ proc prc_ICC_setupConfig { } {
 # Create the design lib for normal2D
 proc prc_ICC_createLibs { } {
     uplevel \#0 {
-        set cellNdm ""
-        set techFile ""
-        set techFile "[glob -d $::env(TF_DIR) *.tf]"
-        foreach fileName [glob -d "$::env(NDM_DIR)" *.ndm] { lappend cellNdm "$fileName" }
+        set cellNdm {}
+        foreach fileName [list $::fspr_ndm] { lappend cellNdm $fileName }
 
         if { [info exists ::env(HARDNDM)] } {
             set hardNdm "$::env(HARDNDM)"
-            foreach fileName [glob -d $hardNdm *.ndm] { append cellNdm " $fileName " }
+            foreach fileName [lsort [glob -d $hardNdm *.ndm]] { lappend cellNdm $fileName }
         }
 
         echo $cellNdm
-        if { [file exists ./impl_normal2D] } {
-            open_lib ./impl_normal2D
-        } else {
-            create_lib -technology $techFile -ref_libs $cellNdm ./impl_normal2D
-        }
+        fspr_icc2_open_or_create ./impl_normal2D $cellNdm
     }
     echo "SCCAD: prc_ICC_createLibs done"
 }
@@ -329,12 +329,12 @@ proc prc_ICC_mcmmConfig { } {
         set tlu "$::env(TLU_DIR)"
 
         if { $tlu != "" } {
-            catch { set tluFile ""; set tluFile "[glob -d $tlu *.tluplus]" }
-            catch { set nxtGrd ""; set nxtGrd "[glob -d $tlu *.nxtgrd]" }
+            set tluFile $::fspr_tluplus
+            set nxtGrd $::fspr_extraction_grid
             if { $tluFile != "" } {
-                read_parasitic_tech -tlup "$tluFile" -name nomTLU
+                read_parasitic_tech -tlup $tluFile -name nomTLU
             } elseif { $nxtGrd != "" } {
-                read_parasitic_tech -tlup "$nxtGrd" -name nomTLU
+                read_parasitic_tech -tlup $nxtGrd -name nomTLU
             }
         }
 

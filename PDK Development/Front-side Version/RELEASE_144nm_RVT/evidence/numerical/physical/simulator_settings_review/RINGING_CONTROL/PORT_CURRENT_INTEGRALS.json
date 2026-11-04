@@ -1,0 +1,509 @@
+{
+  "rows": [
+    {
+      "case": "worker2_case1",
+      "mode": "actual",
+      "port_integrals": [
+        {
+          "pin": "A",
+          "window_s": [
+            0,
+            6.0233838e-09
+          ],
+          "signed_charge_C": -5.418597433849518e-19,
+          "positive_charge_C": 9.082625233225699e-18,
+          "negative_charge_magnitude_C": 9.624484976610651e-18,
+          "absolute_charge_C": 1.8707110209836344e-17
+        },
+        {
+          "pin": "B",
+          "window_s": [
+            0,
+            6.0233838e-09
+          ],
+          "signed_charge_C": -3.0201444849215655e-17,
+          "positive_charge_C": 1.1998620169937904e-17,
+          "negative_charge_magnitude_C": 4.220006501915356e-17,
+          "absolute_charge_C": 5.419868518909146e-17
+        },
+        {
+          "pin": "C",
+          "window_s": [
+            0,
+            6.0233838e-09
+          ],
+          "signed_charge_C": -3.026752707407427e-16,
+          "positive_charge_C": 0.0,
+          "negative_charge_magnitude_C": 3.026752707407427e-16,
+          "absolute_charge_C": 3.026752707407427e-16
+        },
+        {
+          "pin": "D",
+          "window_s": [
+            0,
+            6.0233838e-09
+          ],
+          "signed_charge_C": -5.4458702217757957e-17,
+          "positive_charge_C": 3.379926199132757e-17,
+          "negative_charge_magnitude_C": 8.825796420908553e-17,
+          "absolute_charge_C": 1.2205722620041308e-16
+        },
+        {
+          "pin": "E",
+          "window_s": [
+            0,
+            6.0233838e-09
+          ],
+          "signed_charge_C": -1.4070317170399472e-16,
+          "positive_charge_C": 1.2492866924459214e-17,
+          "negative_charge_magnitude_C": 1.5319603862845394e-16,
+          "absolute_charge_C": 1.6568890555291314e-16
+        },
+        {
+          "pin": "F",
+          "window_s": [
+            0,
+            6.0233838e-09
+          ],
+          "signed_charge_C": -1.9003173422193987e-16,
+          "positive_charge_C": 1.3547603201240283e-17,
+          "negative_charge_magnitude_C": 2.0357933742318015e-16,
+          "absolute_charge_C": 2.1712694062442043e-16
+        }
+      ],
+      "native_measurements": {
+        "altosbgnvoltage_a_000000": 0.0,
+        "altosbgnvoltage_b_000001": 0.0,
+        "altosbgnvoltage_c_000002": 0.0,
+        "altosbgnvoltage_d_000003": 0.7,
+        "altosbgnvoltage_e_000004": 0.0,
+        "altosbgnvoltage_f_000005": 0.7,
+        "altosbgnvoltage_y_000006": 0.6999718,
+        "altoscap": -1.49524e-16,
+        "altoscap1": -6.288497e-18,
+        "altoscap2": -3.115792e-17,
+        "altoscap3": -6.307965e-17,
+        "altoscap4": -8.027406e-17,
+        "altoscap5": -9.792337e-17,
+        "altoscap6": -1.157969e-16,
+        "altoscap7": -1.337023e-16,
+        "altoscap8": -1.51491e-16,
+        "altosconslastvoltage": 6.185277e-05,
+        "altosdelay": 4.936235e-11,
+        "altosecsm000": 7.283814e-12,
+        "altosecsm001": 9.604294e-12,
+        "altosecsm002": 1.340887e-11,
+        "altosecsm003": 2.096282e-11,
+        "altosecsm004": 2.865812e-11,
+        "altosecsm005": 3.764172e-11,
+        "altosecsm006": 4.936315e-11,
+        "altosecsm007": 6.186466e-11,
+        "altosecsm008": 7.756113e-11,
+        "altosecsm009": 9.786628e-11,
+        "altosecsm010": 1.312499e-10,
+        "altosecsm011": 1.649534e-10,
+        "altosecsm012": 2.115836e-10,
+        "altosendvoltage_a_000000": 0.0,
+        "altosendvoltage_b_000001": 0.0,
+        "altosendvoltage_c_000002": 0.7,
+        "altosendvoltage_d_000003": 0.7,
+        "altosendvoltage_e_000004": 0.0,
+        "altosendvoltage_f_000005": 0.7,
+        "altosendvoltage_y_000006": 6.185277e-05,
+        "altosfirstorlastdelay": 4.936235e-11,
+        "altosleakcross": 5.092485e-11,
+        "altosoutputvoltage000": 6.185365e-05,
+        "altospinpower000": -5.418596e-19,
+        "altospinpower001": -3.020145e-17,
+        "altospinpower002": -5.44587e-17,
+        "altospinpower003": -1.407032e-16,
+        "altospinpower004": -1.900318e-16,
+        "altospower000": 5.067322e-17,
+        "altospower001": 1.171812e-15,
+        "altostransition0": 1.496878e-11,
+        "altostransition1": 1.32822e-10,
+        "altostransitionfirstorlast0": 1.496878e-11,
+        "altostransitionfirstorlast1": 1.32822e-10
+      }
+    },
+    {
+      "case": "worker2_case1",
+      "mode": "gear",
+      "port_integrals": [
+        {
+          "pin": "A",
+          "window_s": [
+            0,
+            6.0233838e-09
+          ],
+          "signed_charge_C": -5.476259375352102e-19,
+          "positive_charge_C": 9.067300782766879e-18,
+          "negative_charge_magnitude_C": 9.614926720302088e-18,
+          "absolute_charge_C": 1.868222750306897e-17
+        },
+        {
+          "pin": "B",
+          "window_s": [
+            0,
+            6.0233838e-09
+          ],
+          "signed_charge_C": -3.022290452314636e-17,
+          "positive_charge_C": 1.1962542818997514e-17,
+          "negative_charge_magnitude_C": 4.2185447342143874e-17,
+          "absolute_charge_C": 5.414799016114139e-17
+        },
+        {
+          "pin": "C",
+          "window_s": [
+            0,
+            6.0233838e-09
+          ],
+          "signed_charge_C": -3.023721826881883e-16,
+          "positive_charge_C": 0.0,
+          "negative_charge_magnitude_C": 3.023721826881883e-16,
+          "absolute_charge_C": 3.023721826881883e-16
+        },
+        {
+          "pin": "D",
+          "window_s": [
+            0,
+            6.0233838e-09
+          ],
+          "signed_charge_C": -5.44869834279628e-17,
+          "positive_charge_C": 3.374436806205467e-17,
+          "negative_charge_magnitude_C": 8.823135149001747e-17,
+          "absolute_charge_C": 1.2197571955207215e-16
+        },
+        {
+          "pin": "E",
+          "window_s": [
+            0,
+            6.0233838e-09
+          ],
+          "signed_charge_C": -1.4071199920010977e-16,
+          "positive_charge_C": 1.2480650406418932e-17,
+          "negative_charge_magnitude_C": 1.531926496065287e-16,
+          "absolute_charge_C": 1.6567330001294763e-16
+        },
+        {
+          "pin": "F",
+          "window_s": [
+            0,
+            6.0233838e-09
+          ],
+          "signed_charge_C": -1.900422123028918e-16,
+          "positive_charge_C": 1.3528369659986521e-17,
+          "negative_charge_magnitude_C": 2.0357058196287836e-16,
+          "absolute_charge_C": 2.1709895162286485e-16
+        }
+      ],
+      "native_measurements": {
+        "altosbgnvoltage_a_000000": 0.0,
+        "altosbgnvoltage_b_000001": 0.0,
+        "altosbgnvoltage_c_000002": 0.0,
+        "altosbgnvoltage_d_000003": 0.7,
+        "altosbgnvoltage_e_000004": 0.0,
+        "altosbgnvoltage_f_000005": 0.7,
+        "altosbgnvoltage_y_000006": 0.6999718,
+        "altoscap": -1.496726e-16,
+        "altoscap1": -6.491569e-18,
+        "altoscap2": -3.144238e-17,
+        "altoscap3": -6.336059e-17,
+        "altoscap4": -8.055419e-17,
+        "altoscap5": -9.820423e-17,
+        "altoscap6": -1.160772e-16,
+        "altoscap7": -1.33978e-16,
+        "altoscap8": -1.517624e-16,
+        "altosconslastvoltage": 6.189536e-05,
+        "altosdelay": 4.936441e-11,
+        "altosecsm000": 7.285746e-12,
+        "altosecsm001": 9.606209e-12,
+        "altosecsm002": 1.341075e-11,
+        "altosecsm003": 2.096466e-11,
+        "altosecsm004": 2.866005e-11,
+        "altosecsm005": 3.764381e-11,
+        "altosecsm006": 4.936521e-11,
+        "altosecsm007": 6.186656e-11,
+        "altosecsm008": 7.756298e-11,
+        "altosecsm009": 9.786818e-11,
+        "altosecsm010": 1.312519e-10,
+        "altosecsm011": 1.649555e-10,
+        "altosecsm012": 2.115876e-10,
+        "altosendvoltage_a_000000": 0.0,
+        "altosendvoltage_b_000001": 0.0,
+        "altosendvoltage_c_000002": 0.7,
+        "altosendvoltage_d_000003": 0.7,
+        "altosendvoltage_e_000004": 0.0,
+        "altosendvoltage_f_000005": 0.7,
+        "altosendvoltage_y_000006": 6.189536e-05,
+        "altosfirstorlastdelay": 4.936441e-11,
+        "altosleakcross": 5.092691e-11,
+        "altosoutputvoltage000": 6.189622e-05,
+        "altospinpower000": -5.47627e-19,
+        "altospinpower001": -3.02229e-17,
+        "altospinpower002": -5.448698e-17,
+        "altospinpower003": -1.40712e-16,
+        "altospinpower004": -1.900422e-16,
+        "altospower000": 5.056886e-17,
+        "altospower001": 1.171754e-15,
+        "altostransition0": 1.497065e-11,
+        "altostransition1": 1.32824e-10,
+        "altostransitionfirstorlast0": 1.497065e-11,
+        "altostransitionfirstorlast1": 1.32824e-10
+      }
+    },
+    {
+      "case": "worker3_case15",
+      "mode": "actual",
+      "port_integrals": [
+        {
+          "pin": "A",
+          "window_s": [
+            0,
+            5.9956185e-09
+          ],
+          "signed_charge_C": -5.557873172383413e-19,
+          "positive_charge_C": 3.9299440018660446e-18,
+          "negative_charge_magnitude_C": 4.485731319104385e-18,
+          "absolute_charge_C": 8.415675320970431e-18
+        },
+        {
+          "pin": "B",
+          "window_s": [
+            0,
+            5.9956185e-09
+          ],
+          "signed_charge_C": -3.0231174703960444e-17,
+          "positive_charge_C": 6.228349710608525e-18,
+          "negative_charge_magnitude_C": 3.645952441456897e-17,
+          "absolute_charge_C": 4.26878741251775e-17
+        },
+        {
+          "pin": "C",
+          "window_s": [
+            0,
+            5.9956185e-09
+          ],
+          "signed_charge_C": -3.0340337267874315e-16,
+          "positive_charge_C": 0.0,
+          "negative_charge_magnitude_C": 3.0340337267874315e-16,
+          "absolute_charge_C": 3.0340337267874315e-16
+        },
+        {
+          "pin": "D",
+          "window_s": [
+            0,
+            5.9956185e-09
+          ],
+          "signed_charge_C": -5.602940545654514e-17,
+          "positive_charge_C": 2.563692819911233e-17,
+          "negative_charge_magnitude_C": 8.166633365565746e-17,
+          "absolute_charge_C": 1.0730326185476978e-16
+        },
+        {
+          "pin": "E",
+          "window_s": [
+            0,
+            5.9956185e-09
+          ],
+          "signed_charge_C": -1.1211807185449074e-16,
+          "positive_charge_C": 7.098732201533889e-18,
+          "negative_charge_magnitude_C": 1.1921680405602469e-16,
+          "absolute_charge_C": 1.2631553625755856e-16
+        },
+        {
+          "pin": "F",
+          "window_s": [
+            0,
+            5.9956185e-09
+          ],
+          "signed_charge_C": -1.4470404648259236e-16,
+          "positive_charge_C": 8.433193036250375e-18,
+          "negative_charge_magnitude_C": 1.5313723951884274e-16,
+          "absolute_charge_C": 1.615704325550931e-16
+        }
+      ],
+      "native_measurements": {
+        "altosbgnvoltage_a_000000": 0.0,
+        "altosbgnvoltage_b_000001": 0.0,
+        "altosbgnvoltage_c_000002": 0.0,
+        "altosbgnvoltage_d_000003": 0.7,
+        "altosbgnvoltage_e_000004": 0.0,
+        "altosbgnvoltage_f_000005": 0.0,
+        "altosbgnvoltage_y_000006": 0.6999822,
+        "altoscap": -1.781444e-16,
+        "altoscap1": -1.146354e-17,
+        "altoscap2": -4.778361e-17,
+        "altoscap3": -8.660824e-17,
+        "altoscap4": -1.057511e-16,
+        "altoscap5": -1.245877e-16,
+        "altoscap6": -1.431804e-16,
+        "altoscap7": -1.616788e-16,
+        "altoscap8": -1.803185e-16,
+        "altosconslastvoltage": 6.386351e-05,
+        "altosdelay": 4.895733e-11,
+        "altosecsm000": 9.627273e-12,
+        "altosecsm001": 1.192005e-11,
+        "altosecsm002": 1.571635e-11,
+        "altosecsm003": 2.332228e-11,
+        "altosecsm004": 3.102449e-11,
+        "altosecsm005": 3.93413e-11,
+        "altosecsm006": 4.895733e-11,
+        "altosecsm007": 6.047723e-11,
+        "altosecsm008": 7.465006e-11,
+        "altosecsm009": 9.282391e-11,
+        "altosecsm010": 1.221451e-10,
+        "altosecsm011": 1.51652e-10,
+        "altosecsm012": 1.926733e-10,
+        "altosendvoltage_a_000000": 0.0,
+        "altosendvoltage_b_000001": 0.0,
+        "altosendvoltage_c_000002": 0.7,
+        "altosendvoltage_d_000003": 0.7,
+        "altosendvoltage_e_000004": 0.0,
+        "altosendvoltage_f_000005": 0.0,
+        "altosendvoltage_y_000006": 6.386351e-05,
+        "altosfirstorlastdelay": 4.895733e-11,
+        "altosleakcross": 5.520733e-11,
+        "altosoutputvoltage000": 6.386444e-05,
+        "altospinpower000": -5.55787e-19,
+        "altospinpower001": -3.023118e-17,
+        "altospinpower002": -5.602941e-17,
+        "altospinpower003": -1.121181e-16,
+        "altospinpower004": -1.447041e-16,
+        "altospower000": 5.162335e-17,
+        "altospower001": 1.099372e-15,
+        "altostransition0": 2.196483e-11,
+        "altostransition1": 1.284041e-10,
+        "altostransitionfirstorlast0": 2.196483e-11,
+        "altostransitionfirstorlast1": 1.284041e-10
+      }
+    },
+    {
+      "case": "worker3_case15",
+      "mode": "gear",
+      "port_integrals": [
+        {
+          "pin": "A",
+          "window_s": [
+            0,
+            5.9956185e-09
+          ],
+          "signed_charge_C": -5.482933232417327e-19,
+          "positive_charge_C": 3.946638467997058e-18,
+          "negative_charge_magnitude_C": 4.4949317912387894e-18,
+          "absolute_charge_C": 8.441570259235847e-18
+        },
+        {
+          "pin": "B",
+          "window_s": [
+            0,
+            5.9956185e-09
+          ],
+          "signed_charge_C": -3.0223678614165805e-17,
+          "positive_charge_C": 6.2560181119760046e-18,
+          "negative_charge_magnitude_C": 3.647969672614181e-17,
+          "absolute_charge_C": 4.273571483811781e-17
+        },
+        {
+          "pin": "C",
+          "window_s": [
+            0,
+            5.9956185e-09
+          ],
+          "signed_charge_C": -3.034716575233794e-16,
+          "positive_charge_C": 0.0,
+          "negative_charge_magnitude_C": 3.034716575233794e-16,
+          "absolute_charge_C": 3.034716575233794e-16
+        },
+        {
+          "pin": "D",
+          "window_s": [
+            0,
+            5.9956185e-09
+          ],
+          "signed_charge_C": -5.60089871330166e-17,
+          "positive_charge_C": 2.566372587820583e-17,
+          "negative_charge_magnitude_C": 8.167271301122243e-17,
+          "absolute_charge_C": 1.0733643888942824e-16
+        },
+        {
+          "pin": "E",
+          "window_s": [
+            0,
+            5.9956185e-09
+          ],
+          "signed_charge_C": -1.1211289931611714e-16,
+          "positive_charge_C": 7.115264831150289e-18,
+          "negative_charge_magnitude_C": 1.1922816414726742e-16,
+          "absolute_charge_C": 1.2634342897841773e-16
+        },
+        {
+          "pin": "F",
+          "window_s": [
+            0,
+            5.9956185e-09
+          ],
+          "signed_charge_C": -1.4469843120426498e-16,
+          "positive_charge_C": 8.452471796948206e-18,
+          "negative_charge_magnitude_C": 1.531509030012132e-16,
+          "absolute_charge_C": 1.616033747981614e-16
+        }
+      ],
+      "native_measurements": {
+        "altosbgnvoltage_a_000000": 0.0,
+        "altosbgnvoltage_b_000001": 0.0,
+        "altosbgnvoltage_c_000002": 0.0,
+        "altosbgnvoltage_d_000003": 0.7,
+        "altosbgnvoltage_e_000004": 0.0,
+        "altosbgnvoltage_f_000005": 0.0,
+        "altosbgnvoltage_y_000006": 0.6999822,
+        "altoscap": -1.783296e-16,
+        "altoscap1": -1.176672e-17,
+        "altoscap2": -4.810936e-17,
+        "altoscap3": -8.693816e-17,
+        "altoscap4": -1.060816e-16,
+        "altoscap5": -1.249184e-16,
+        "altoscap6": -1.43511e-16,
+        "altoscap7": -1.620084e-16,
+        "altoscap8": -1.80647e-16,
+        "altosconslastvoltage": 6.397105e-05,
+        "altosdelay": 4.895764e-11,
+        "altosecsm000": 9.627405e-12,
+        "altosecsm001": 1.192019e-11,
+        "altosecsm002": 1.571645e-11,
+        "altosecsm003": 2.332237e-11,
+        "altosecsm004": 3.102464e-11,
+        "altosecsm005": 3.934158e-11,
+        "altosecsm006": 4.895764e-11,
+        "altosecsm007": 6.047748e-11,
+        "altosecsm008": 7.465023e-11,
+        "altosecsm009": 9.282411e-11,
+        "altosecsm010": 1.221453e-10,
+        "altosecsm011": 1.516524e-10,
+        "altosecsm012": 1.926748e-10,
+        "altosendvoltage_a_000000": 0.0,
+        "altosendvoltage_b_000001": 0.0,
+        "altosendvoltage_c_000002": 0.7,
+        "altosendvoltage_d_000003": 0.7,
+        "altosendvoltage_e_000004": 0.0,
+        "altosendvoltage_f_000005": 0.0,
+        "altosendvoltage_y_000006": 6.397105e-05,
+        "altosfirstorlastdelay": 4.895764e-11,
+        "altosleakcross": 5.520764e-11,
+        "altosoutputvoltage000": 6.397195e-05,
+        "altospinpower000": -5.482932e-19,
+        "altospinpower001": -3.022368e-17,
+        "altospinpower002": -5.600898e-17,
+        "altospinpower003": -1.121129e-16,
+        "altospinpower004": -1.446984e-16,
+        "altospower000": 5.160646e-17,
+        "altospower001": 1.099398e-15,
+        "altostransition0": 2.196493e-11,
+        "altostransition1": 1.284043e-10,
+        "altostransitionfirstorlast0": 2.196493e-11,
+        "altostransitionfirstorlast1": 1.284043e-10
+      }
+    }
+  ],
+  "scope": "Positive/negative/absolute currents separated; native signed measurements retained. Quiet-pin net integrals remain diagnostic."
+}

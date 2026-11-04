@@ -1,0 +1,199 @@
+
+                             Library Compiler (TM)
+                                 DesignWare (R)
+
+                Version X-2025.06-SP3 for linux64 - Jan 15, 2026
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2026 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+      Inc.  This software may only be used in accordance with the terms and
+  conditions of a written license agreement with Synopsys, Inc.  All other use,
+   reproduction, or distribution of this software is strictly prohibited.  By
+   installing, accessing, using, or executing this software, you agree that it
+  will reside on, operate within, and have access to the computers and networks
+    where such software is used ("Host System"), and that Synopsys may access
+     components and data of the Host System as necessary for it to function
+ properly, to authenticate and validate license keys, to verify that it is used
+ only in conformity with the applicable license restrictions, and to communicate
+                 error messages and associated data to Synopsys.
+
+ 
+Initializing...
+read_lib {assembled_exact.lib}
+Reading '/tmp/yhuang861/usc144_github_release_20261103/characterization/LC_SELECTED_PAIRED/assembled_exact.lib' ...
+Warning: Line 1, The 'default_inout_pin_cap' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_input_pin_cap' attribute is not specified. Using 1.00. (LBDB-172)
+Warning: Line 1, The 'default_leakage_power_density' attribute is not specified. Using 0.00. (LBDB-172)
+Warning: Line 1, The 'internal_power_calculation' attribute in char_config group is required for NLPM library. 
+	No default can be applied to this attribute. (LBDB-366)
+Warning: Line 66, Cell 'AND2x1', The cell_leakage_power attribute of the 'AND2x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 454, Cell 'AND3x1', The cell_leakage_power attribute of the 'AND3x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 1202, Cell 'AND4x1', The cell_leakage_power attribute of the 'AND4x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 2574, Cell 'AOI21x1', The cell_leakage_power attribute of the 'AOI21x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 3653, Cell 'AOI221x1', The cell_leakage_power attribute of the 'AOI221x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 8430, Cell 'AOI222x1', The cell_leakage_power attribute of the 'AOI222x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 18590, Cell 'AOI22x1', The cell_leakage_power attribute of the 'AOI22x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 21254, Cell 'AOI311x1', The cell_leakage_power attribute of the 'AOI311x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 25070, Cell 'AOI31x1', The cell_leakage_power attribute of the 'AOI31x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 27104, Cell 'BUFx1', The cell_leakage_power attribute of the 'BUFx1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 27268, Cell 'BUFx1', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 27280, Cell 'BUFx10', The cell_leakage_power attribute of the 'BUFx10' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 27444, Cell 'BUFx10', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 27456, Cell 'BUFx2', The cell_leakage_power attribute of the 'BUFx2' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 27620, Cell 'BUFx2', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 27632, Cell 'BUFx3', The cell_leakage_power attribute of the 'BUFx3' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 27796, Cell 'BUFx3', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 27808, Cell 'BUFx4', The cell_leakage_power attribute of the 'BUFx4' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 27972, Cell 'BUFx4', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 27984, Cell 'BUFx5', The cell_leakage_power attribute of the 'BUFx5' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 28148, Cell 'BUFx5', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 28160, Cell 'BUFx6', The cell_leakage_power attribute of the 'BUFx6' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 28324, Cell 'BUFx6', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 28336, Cell 'BUFx7', The cell_leakage_power attribute of the 'BUFx7' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 28500, Cell 'BUFx7', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 28512, Cell 'BUFx8', The cell_leakage_power attribute of the 'BUFx8' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 28676, Cell 'BUFx8', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 28688, Cell 'DFFHQNx1', The cell_leakage_power attribute of the 'DFFHQNx1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 29225, Cell 'DFFHx1', The cell_leakage_power attribute of the 'DFFHx1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 29643, Cell 'DFFHx1', pin 'QN', The when attribute uses 'CK * RESET' pins
+	that cannot be found in the clear attribute RESET. (LIBG-115)
+Warning: Line 29676, Cell 'DFFHx1', pin 'QN', The when attribute uses '!CK * D * RESET' pins
+	that cannot be found in the clear attribute RESET. (LIBG-115)
+Warning: Line 29676, Cell 'DFFHx1', pin 'QN', The when attribute uses '!CK * D * RESET' pins
+	that cannot be found in the clear attribute RESET. (LIBG-115)
+Warning: Line 29709, Cell 'DFFHx1', pin 'QN', The when attribute uses '!CK * !D * RESET' pins
+	that cannot be found in the clear attribute RESET. (LIBG-115)
+Warning: Line 29709, Cell 'DFFHx1', pin 'QN', The when attribute uses '!CK * !D * RESET' pins
+	that cannot be found in the clear attribute RESET. (LIBG-115)
+Warning: Line 31855, Cell 'DHLx1', The cell_leakage_power attribute of the 'DHLx1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 32385, Cell 'INVx1', The cell_leakage_power attribute of the 'INVx1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 32549, Cell 'INVx1', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 32561, Cell 'INVx10', The cell_leakage_power attribute of the 'INVx10' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 32725, Cell 'INVx10', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 32737, Cell 'INVx12', The cell_leakage_power attribute of the 'INVx12' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 32901, Cell 'INVx12', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 32913, Cell 'INVx14', The cell_leakage_power attribute of the 'INVx14' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 33077, Cell 'INVx14', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 33089, Cell 'INVx16', The cell_leakage_power attribute of the 'INVx16' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 33253, Cell 'INVx16', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 33265, Cell 'INVx2', The cell_leakage_power attribute of the 'INVx2' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 33429, Cell 'INVx2', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 33441, Cell 'INVx3', The cell_leakage_power attribute of the 'INVx3' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 33605, Cell 'INVx3', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 33617, Cell 'INVx4', The cell_leakage_power attribute of the 'INVx4' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 33781, Cell 'INVx4', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 33793, Cell 'INVx5', The cell_leakage_power attribute of the 'INVx5' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 33957, Cell 'INVx5', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 33969, Cell 'INVx6', The cell_leakage_power attribute of the 'INVx6' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 34133, Cell 'INVx6', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 34145, Cell 'INVx7', The cell_leakage_power attribute of the 'INVx7' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 34309, Cell 'INVx7', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 34321, Cell 'INVx8', The cell_leakage_power attribute of the 'INVx8' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 34485, Cell 'INVx8', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 34497, Cell 'MUX2x1', The cell_leakage_power attribute of the 'MUX2x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 35790, Cell 'NAND2x1', The cell_leakage_power attribute of the 'NAND2x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 36178, Cell 'NAND2x2', The cell_leakage_power attribute of the 'NAND2x2' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 36566, Cell 'NAND3x1', The cell_leakage_power attribute of the 'NAND3x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 37314, Cell 'NAND3x2', The cell_leakage_power attribute of the 'NAND3x2' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 38094, Cell 'NAND4x1', The cell_leakage_power attribute of the 'NAND4x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 39466, Cell 'NOR2x1', The cell_leakage_power attribute of the 'NOR2x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 39854, Cell 'NOR2x2', The cell_leakage_power attribute of the 'NOR2x2' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 40242, Cell 'NOR3x1', The cell_leakage_power attribute of the 'NOR3x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 40990, Cell 'NOR3x2', The cell_leakage_power attribute of the 'NOR3x2' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 41770, Cell 'NOR4x1', The cell_leakage_power attribute of the 'NOR4x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 43142, Cell 'OAI21x1', The cell_leakage_power attribute of the 'OAI21x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 44221, Cell 'OAI221x1', The cell_leakage_power attribute of the 'OAI221x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 48998, Cell 'OAI222x1', The cell_leakage_power attribute of the 'OAI222x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 59158, Cell 'OAI22x1', The cell_leakage_power attribute of the 'OAI22x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 61822, Cell 'OAI311x1', The cell_leakage_power attribute of the 'OAI311x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 65638, Cell 'OAI31x1', The cell_leakage_power attribute of the 'OAI31x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 67672, Cell 'OR2x1', The cell_leakage_power attribute of the 'OR2x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 68060, Cell 'OR3x1', The cell_leakage_power attribute of the 'OR3x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 68808, Cell 'OR4x1', The cell_leakage_power attribute of the 'OR4x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 70180, Cell 'XNOR2x1', The cell_leakage_power attribute of the 'XNOR2x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 70731, Cell 'XNOR2x1', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 70742, Cell 'XNOR2x1', pin 'B', The pin 'B' does not have a internal_power group. (LBDB-607)
+Warning: Line 70754, Cell 'XNOR3x1', The cell_leakage_power attribute of the 'XNOR3x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 72305, Cell 'XNOR3x1', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 72316, Cell 'XNOR3x1', pin 'B', The pin 'B' does not have a internal_power group. (LBDB-607)
+Warning: Line 72327, Cell 'XNOR3x1', pin 'C', The pin 'C' does not have a internal_power group. (LBDB-607)
+Warning: Line 72339, Cell 'XOR2x1', The cell_leakage_power attribute of the 'XOR2x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 72890, Cell 'XOR2x1', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 72901, Cell 'XOR2x1', pin 'B', The pin 'B' does not have a internal_power group. (LBDB-607)
+Warning: Line 72913, Cell 'XOR3x1', The cell_leakage_power attribute of the 'XOR3x1' cell is redundant
+	and not used in the leakage_power modeling. (LBDB-644)
+Warning: Line 74464, Cell 'XOR3x1', pin 'A', The pin 'A' does not have a internal_power group. (LBDB-607)
+Warning: Line 74475, Cell 'XOR3x1', pin 'B', The pin 'B' does not have a internal_power group. (LBDB-607)
+Warning: Line 74486, Cell 'XOR3x1', pin 'C', The pin 'C' does not have a internal_power group. (LBDB-607)
+Warning: Line 31845, Cell 'DFFHx1', The sequential element second variable 'IQNN' is unused in the cell function,
+	the 'clear_preset_var2' attribute should not be specified and will be removed. (LIBG-278)
+Technology library '3nm_GAA_FSPR_rvt_nldm' read successfully
+1
+write_lib {3nm_GAA_FSPR_rvt_nldm} -format db -output {final.db}
+Wrote the '3nm_GAA_FSPR_rvt_nldm' library to '/tmp/yhuang861/usc144_github_release_20261103/characterization/LC_SELECTED_PAIRED/final.db' successfully
+1
+exit
+Maximum memory usage for this session: 125.97 MB
+CPU usage for this session:      2 seconds (  0.00 hours)
+Elapsed time for this session:      2 seconds (  0.00 hours)
+Thank you for using Library Compiler.
+
+Thank you...

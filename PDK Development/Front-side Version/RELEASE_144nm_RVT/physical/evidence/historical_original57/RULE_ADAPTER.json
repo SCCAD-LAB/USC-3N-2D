@@ -1,0 +1,38 @@
+{
+  "source_production_LVS": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/ICV_3nm.rs",
+  "source_LVS_sha256": "436807dc4a02c04df641f19de5d612534669010584ae023377c4fa31e657f1b9",
+  "github_LVS_rejected": "Explicitly fin-deleted6T_drcclean-only; DUTcontainsfinlayer2",
+  "mapping_changes": [
+    {
+      "variable": "aMBPR",
+      "before": 103,
+      "after": 15
+    },
+    {
+      "variable": "tMBPR",
+      "before": 103,
+      "after": 15
+    },
+    {
+      "variable": "aV1",
+      "before": 25,
+      "after": 21
+    },
+    {
+      "variable": "aM6",
+      "before": 65,
+      "after": 60
+    },
+    {
+      "variable": "tM6",
+      "before": 65,
+      "after": 60
+    }
+  ],
+  "mapping_evidence": [
+    "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/ICV_3nm.rs",
+    "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/sccad_3nm.layermap"
+  ],
+  "numeric_geometry_rules_changed": false,
+  "rule_blocks_disabled": false
+}

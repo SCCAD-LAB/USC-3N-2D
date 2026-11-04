@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "cell": "DFFHx1",
+  "source_physical_binding_sha256": "4aa0db2d41b09d85813af82c67a53cf21ec20fb4bde583d58dc88398ea9b01f4",
+  "portable_rebase": "Only proof path fields rebased in a temporary wrapper; original proof and input bytes unchanged",
+  "GDS_LVS_PEX_channel_bijection": true,
+  "actual_solver_policy": {
+    "method": "traponly",
+    "reltol": 0.001,
+    "vabstol_V": 1e-09,
+    "iabstol_A": 1e-15,
+    "maxstep_s": 2e-13
+  },
+  "execution_status": "active_native_inputs_verified",
+  "cells_sp_sha256": "cb9d94dcc947dfae48c062640b65b6ad8d60f5eaacbbcd0148247e1bfe74e466",
+  "model_native_sha256": "1878ed3b42a64a0481393a2e9bcd8024c803a4c6ff0bff0c32b9da4fd6447a53",
+  "passive_RC_unchanged": true,
+  "native_runs": 0,
+  "dependency": "gdstk via explicit --dependency-path (or installed gdstk)",
+  "bundle_manifest_sha256": "0130ea94789c53ba930e5b73188102e4bf887e6d0629b78c05208f3224177cbc",
+  "source_functional64_passed": true,
+  "electrical_full_native_still_pending": true
+}

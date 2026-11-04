@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "gds_sha256": "46473c808103537d8082da21232d1ca1a6fe79a603e01c1491d3b6aed1664184",
+  "dspf_sha256": "8023a990312d40652e4705f709d971af27a33098624e108c99b47d2c5395c25d",
+  "same_circuit_model_RC_stimuli_nodesets_loads": true,
+  "only_changed_numerics": [
+    "method gear2only to traponly",
+    "reltol1e-6 to1e-3"
+  ],
+  "strict_solver_verified": true,
+  "production_solver_verified": true,
+  "all_original_windows_pass_both": true,
+  "max_window_peak_difference_V": 2.57002000000027e-06,
+  "predeclared_difference_limit_V": 0.001,
+  "windows": [
+    {
+      "window": "held_control_both_clock_edges",
+      "strict_peak_V": 0.0103744877,
+      "production_peak_V": 0.01037191768,
+      "peak_absolute_difference_V": 2.57002000000027e-06,
+      "min_absolute_difference_V": 6.42500000008761e-08,
+      "strict_passed": true,
+      "production_passed": true
+    },
+    {
+      "window": "safe_preclock_release",
+      "strict_peak_V": 0.0007038426233,
+      "production_peak_V": 0.0007040903871,
+      "peak_absolute_difference_V": 2.477638000000131e-07,
+      "min_absolute_difference_V": 1.0183249999999849e-07,
+      "strict_passed": true,
+      "production_passed": true
+    },
+    {
+      "window": "normal_capture_after_early_release",
+      "strict_peak_V": 0.7021607061,
+      "production_peak_V": 0.7021608443,
+      "peak_absolute_difference_V": 1.3819999999942212e-07,
+      "min_absolute_difference_V": 5.609999997879811e-08,
+      "strict_passed": true,
+      "production_passed": true
+    },
+    {
+      "window": "low_clock_assert_then_late_release_hold",
+      "strict_peak_V": 0.01201969048,
+      "production_peak_V": 0.01201755698,
+      "peak_absolute_difference_V": 2.133499999999386e-06,
+      "min_absolute_difference_V": 8.008099999998186e-07,
+      "strict_passed": true,
+      "production_passed": true
+    },
+    {
+      "window": "normal_capture_after_late_release",
+      "strict_peak_V": 0.6999952983,
+      "production_peak_V": 0.6999952982,
+      "peak_absolute_difference_V": 1.000000082740371e-10,
+      "min_absolute_difference_V": 7.000000579182597e-10,
+      "strict_passed": true,
+      "production_passed": true
+    },
+    {
+      "window": "high_clock_assert_settles_before_next_edge",
+      "strict_peak_V": 0.004331407656,
+      "production_peak_V": 0.004331806378,
+      "peak_absolute_difference_V": 3.9872200000012903e-07,
+      "min_absolute_difference_V": 2.723100000004419e-07,
+      "strict_passed": true,
+      "production_passed": true
+    }
+  ],
+  "strict_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/async_RESET_D0_ck160_L0.36/TARGETED_GATE.json",
+  "strict_gate_sha256": "2c8fedb80a63563b3fc0ed02a8fdb13698f6446825170e2ec0bed8134d5e05f5",
+  "production_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/async_RESET_D0_ck160_L0.36_production/TARGETED_GATE.json",
+  "production_gate_sha256": "ea2e203ca6941d8dcec09d72b0459d4bbf046be8ddeed8a04651875db3b43e1b",
+  "scope": "One matched65nsRESETfixture; not every Lib point or every functional fixture.",
+  "canonical_adoption": false
+}

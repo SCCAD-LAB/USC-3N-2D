@@ -1,0 +1,294 @@
+{
+  "checker_sha256": "3167e06dfeb5ce9b5c080d43216f87afbfb096806e0c17a6d07cf52fb259165f",
+  "original_checker": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/sequential_state_audit.py",
+  "original_checker_sha256": "c1440198f9ebce22981fab3d7314e4b9dd364b818b4ccbc7cad5597fe6edf1a9",
+  "pinned_physical_manifest": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/prepared_release57/physical/PEX_MANIFEST.json",
+  "pinned_physical_manifest_sha256": "242ddf2e491e7192464d7d3188e5a3d6d44dd1b30da65378c4d6e40fffe08f0d",
+  "supply_metadata_rule": "Only (!VDD)+(VSS) with VDD primary_power and VSS primary_ground may supplement historical absence; all original state/priority checks unchanged",
+  "passed": true,
+  "complete": true,
+  "sequential_cells": 3,
+  "rows": [
+    {
+      "cell": "DFFHQNx1",
+      "kind": "ff",
+      "reference_library_sha256": "99429d0bc7835bd0e2ccf2dd55c65230ac51937f78f8aee46c6dc45e64099f58",
+      "native_library_sha256": "ff2d0c2ac193ac8bcf1be0641c92114642ec0ce1b5de2d8910e47cd0b0a48243",
+      "independent_native_LVS_CDL": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/DFFHQNx1/iter002/inputs/topology.cdl",
+      "independent_native_LVS_CDL_sha256": "bd81fbaaeb8cbd90c01b8454c49382c132f8c4b1c7d5992a5559163ab905d448",
+      "actual_final_GDS_sha256": "a8898881d3176779b003081c43b6793632c9e09270de7eaf2b9a23322825ff21",
+      "fields": [
+        {
+          "property": "clocked_on",
+          "reference": "CK",
+          "native": "CK",
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "data_in",
+          "reference": null,
+          "native": null,
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "enable",
+          "reference": null,
+          "native": null,
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "next_state",
+          "reference": "!D",
+          "native": "!D",
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "clear",
+          "reference": null,
+          "native": null,
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "preset",
+          "reference": null,
+          "native": null,
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "power_down_function",
+          "reference": "(!VDD) + (VSS)",
+          "native": "(!VDD) + (VSS)",
+          "equal": true,
+          "counterexample": null,
+          "derived_supply_metadata_evidence": {
+            "native_primary_pin_roles": {
+              "VDD": "primary_power",
+              "VSS": "primary_ground"
+            },
+            "primary_pin_roles_valid": true,
+            "expected_invalid_supply_function": "(!VDD)+(VSS)",
+            "native_invalid_supply_truth_table_equal": true,
+            "legacy_property_absent": false
+          }
+        },
+        {
+          "property": "clear_preset_var1",
+          "reference": null,
+          "native": null,
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "clear_preset_var2",
+          "reference": null,
+          "native": null,
+          "equal": true,
+          "counterexample": null
+        }
+      ],
+      "reference_state_variables": [
+        "IQN",
+        "IQNN"
+      ],
+      "native_state_variables": [
+        "IQN",
+        "IQNN"
+      ],
+      "passed": true
+    },
+    {
+      "cell": "DFFHx1",
+      "kind": "ff",
+      "reference_library_sha256": "99429d0bc7835bd0e2ccf2dd55c65230ac51937f78f8aee46c6dc45e64099f58",
+      "native_library_sha256": "3d76761ee38645426b998936cb8ed90518054e146f6ccd44813d4bb0f785bacd",
+      "independent_native_LVS_CDL": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/prepared_release57/physical/cells/DFFHx1/iter004/inputs/topology.cdl",
+      "independent_native_LVS_CDL_sha256": "477bdb192062f86ab9411fe2952797d54608c18c714f1eed2afa646c2eaff8ba",
+      "actual_final_GDS_sha256": "46473c808103537d8082da21232d1ca1a6fe79a603e01c1491d3b6aed1664184",
+      "fields": [
+        {
+          "property": "clocked_on",
+          "reference": "CK",
+          "native": "CK",
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "data_in",
+          "reference": null,
+          "native": null,
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "enable",
+          "reference": null,
+          "native": null,
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "next_state",
+          "reference": "!D",
+          "native": "!D",
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "clear",
+          "reference": "RESET",
+          "native": "RESET",
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "preset",
+          "reference": "SET",
+          "native": "SET",
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "power_down_function",
+          "reference": "(!VDD) + (VSS)",
+          "native": "(!VDD) + (VSS)",
+          "equal": true,
+          "counterexample": null,
+          "derived_supply_metadata_evidence": {
+            "native_primary_pin_roles": {
+              "VDD": "primary_power",
+              "VSS": "primary_ground"
+            },
+            "primary_pin_roles_valid": true,
+            "expected_invalid_supply_function": "(!VDD)+(VSS)",
+            "native_invalid_supply_truth_table_equal": true,
+            "legacy_property_absent": false
+          }
+        },
+        {
+          "property": "clear_preset_var1",
+          "reference": "H",
+          "native": "H",
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "clear_preset_var2",
+          "reference": "L",
+          "native": "L",
+          "equal": true,
+          "counterexample": null
+        }
+      ],
+      "reference_state_variables": [
+        "IQN",
+        "IQNN"
+      ],
+      "native_state_variables": [
+        "IQN",
+        "IQNN"
+      ],
+      "passed": true
+    },
+    {
+      "cell": "DHLx1",
+      "kind": "latch",
+      "reference_library_sha256": "99429d0bc7835bd0e2ccf2dd55c65230ac51937f78f8aee46c6dc45e64099f58",
+      "native_library_sha256": "c1bd7ac17a1fefaa3fb1a75027a7392ba2a2e5eaec3baa3936ad0003018e0f2d",
+      "independent_native_LVS_CDL": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/DHLx1/iter003/inputs/topology.cdl",
+      "independent_native_LVS_CDL_sha256": "bde1575d6e054befe6a0fe91427672622a2da4c1555632e5e682b2727984c506",
+      "actual_final_GDS_sha256": "febfbf9ea765d0818788d4a0649dda30c42286753799419582ae337ac6ce06eb",
+      "fields": [
+        {
+          "property": "clocked_on",
+          "reference": null,
+          "native": null,
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "data_in",
+          "reference": "D",
+          "native": "D",
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "enable",
+          "reference": "CK",
+          "native": "CK",
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "next_state",
+          "reference": null,
+          "native": null,
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "clear",
+          "reference": null,
+          "native": null,
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "preset",
+          "reference": null,
+          "native": null,
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "power_down_function",
+          "reference": "(!VDD) + (VSS)",
+          "native": "(!VDD) + (VSS)",
+          "equal": true,
+          "counterexample": null,
+          "derived_supply_metadata_evidence": {
+            "native_primary_pin_roles": {
+              "VDD": "primary_power",
+              "VSS": "primary_ground"
+            },
+            "primary_pin_roles_valid": true,
+            "expected_invalid_supply_function": "(!VDD)+(VSS)",
+            "native_invalid_supply_truth_table_equal": true,
+            "legacy_property_absent": false
+          }
+        },
+        {
+          "property": "clear_preset_var1",
+          "reference": null,
+          "native": null,
+          "equal": true,
+          "counterexample": null
+        },
+        {
+          "property": "clear_preset_var2",
+          "reference": null,
+          "native": null,
+          "equal": true,
+          "counterexample": null
+        }
+      ],
+      "reference_state_variables": [
+        "IQ",
+        "IQN"
+      ],
+      "native_state_variables": [
+        "IQ",
+        "IQN"
+      ],
+      "passed": true
+    }
+  ],
+  "issues": [],
+  "scope": "Complete ff/latch equations compared with declared baseline intent and linked independent admitted circuit reference. Async release-edge timing is separately audited from native deassertion polarity. All native measurements remain unchanged."
+}

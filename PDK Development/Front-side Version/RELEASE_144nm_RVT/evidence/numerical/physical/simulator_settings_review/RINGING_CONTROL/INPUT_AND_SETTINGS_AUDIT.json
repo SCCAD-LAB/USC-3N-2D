@@ -1,0 +1,95 @@
+{
+  "complete": true,
+  "passed": true,
+  "rows": [
+    {
+      "case": "worker2_case1",
+      "mode": "actual",
+      "passed": true,
+      "errors": [],
+      "actual_numeric_settings": [
+        {
+          "maxstep": "2.000000e-13 s",
+          "reltol": "1.000000e-03",
+          "abstol(V)": "1.000000e-09 V",
+          "abstol(I)": "1.000000e-15 A",
+          "method": "traponly"
+        }
+      ],
+      "source_model_sha256": "89aa7d86b6c33aefecb196fdbc3e29a655dfb68659bec436e8aa2cc42f5bc8f6",
+      "device_and_RC_records_identical": true,
+      "stimulus_load_parameters_identical": true,
+      "selected_source_deck_sha256": "b4307dbb5506ae35183a31f9882cfe9063a5a775ea9c74c1dd77a02e5d34f0f4",
+      "actual_run_deck_sha256": "a5db42456c356199534252bbfb588f0507fa9ab09bd1d2b511b3dfb299a77843",
+      "component_record_sha256": "2973841b4bde34bc97795ad9553bdb418fbb27a8c6aa57e849a19a1201fcaeec",
+      "receipt_sha256": "8dc1b42e82070fe9d00ce8acef86014173af381b4889672471c2a2065fa0634e"
+    },
+    {
+      "case": "worker2_case1",
+      "mode": "gear",
+      "passed": true,
+      "errors": [],
+      "actual_numeric_settings": [
+        {
+          "maxstep": "2.000000e-13 s",
+          "reltol": "1.000000e-06",
+          "abstol(V)": "1.000000e-09 V",
+          "abstol(I)": "1.000000e-15 A",
+          "method": "gear2only"
+        }
+      ],
+      "source_model_sha256": "89aa7d86b6c33aefecb196fdbc3e29a655dfb68659bec436e8aa2cc42f5bc8f6",
+      "device_and_RC_records_identical": true,
+      "stimulus_load_parameters_identical": true,
+      "selected_source_deck_sha256": "b4307dbb5506ae35183a31f9882cfe9063a5a775ea9c74c1dd77a02e5d34f0f4",
+      "actual_run_deck_sha256": "25c1a6f109bf3af4d84f4fb3f80026d1e05c22c16b81794c5d8e982ebdae7e66",
+      "component_record_sha256": "2973841b4bde34bc97795ad9553bdb418fbb27a8c6aa57e849a19a1201fcaeec",
+      "receipt_sha256": "2f6354220c14d9d2d08cb06607c65907dd5dd521b51f7d8ae6ff34791c7c6a0f"
+    },
+    {
+      "case": "worker3_case15",
+      "mode": "actual",
+      "passed": true,
+      "errors": [],
+      "actual_numeric_settings": [
+        {
+          "maxstep": "2.000000e-13 s",
+          "reltol": "1.000000e-03",
+          "abstol(V)": "1.000000e-09 V",
+          "abstol(I)": "1.000000e-15 A",
+          "method": "traponly"
+        }
+      ],
+      "source_model_sha256": "89aa7d86b6c33aefecb196fdbc3e29a655dfb68659bec436e8aa2cc42f5bc8f6",
+      "device_and_RC_records_identical": true,
+      "stimulus_load_parameters_identical": true,
+      "selected_source_deck_sha256": "8aa28f578768da5667a0041d16351521b94951e948ede5aa22dfc596cf706715",
+      "actual_run_deck_sha256": "e9b70d28ea29fbcfd0fd7d391006a6d97fe804ec7d6e3785328c80b8db3efe3e",
+      "component_record_sha256": "2973841b4bde34bc97795ad9553bdb418fbb27a8c6aa57e849a19a1201fcaeec",
+      "receipt_sha256": "fb0acb972936e1b516ead934c8301a0cd26268ecfe1d35f631e9a9514a1dd67e"
+    },
+    {
+      "case": "worker3_case15",
+      "mode": "gear",
+      "passed": true,
+      "errors": [],
+      "actual_numeric_settings": [
+        {
+          "maxstep": "2.000000e-13 s",
+          "reltol": "1.000000e-06",
+          "abstol(V)": "1.000000e-09 V",
+          "abstol(I)": "1.000000e-15 A",
+          "method": "gear2only"
+        }
+      ],
+      "source_model_sha256": "89aa7d86b6c33aefecb196fdbc3e29a655dfb68659bec436e8aa2cc42f5bc8f6",
+      "device_and_RC_records_identical": true,
+      "stimulus_load_parameters_identical": true,
+      "selected_source_deck_sha256": "8aa28f578768da5667a0041d16351521b94951e948ede5aa22dfc596cf706715",
+      "actual_run_deck_sha256": "4291929065875c805d3fa9549c1f3e88ee4a6a435d628bf3ebf4e51425fee3bc",
+      "component_record_sha256": "2973841b4bde34bc97795ad9553bdb418fbb27a8c6aa57e849a19a1201fcaeec",
+      "receipt_sha256": "27aa03b3801c84b3b3dec6a4eb1af02345d417e4266c4a73ef5623d8c4e341c4"
+    }
+  ],
+  "errors": []
+}

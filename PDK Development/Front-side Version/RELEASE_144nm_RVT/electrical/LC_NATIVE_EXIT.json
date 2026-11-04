@@ -1,0 +1,20 @@
+{
+  "host": "gtcad-srv16.ece.gatech.edu",
+  "wrapper_pid": 2075198,
+  "wrapper_start_ticks": "259827716",
+  "native_pid": 2075214,
+  "native_start_ticks": "259827735",
+  "command": [
+    "/tools/software/synopsys/lc/latest/bin/lc_shell",
+    "-f",
+    "compile.tcl"
+  ],
+  "work": "/tmp/yhuang861/usc144_github_release_20261103/characterization/LC_SELECTED_PAIRED",
+  "started_epoch": 1793805292.655062,
+  "wrapper_sha256": "2a412700fb6eac921d28de32f31bafb5f37f62488d4d6daabe7a3300efba3768",
+  "native_rc": 0,
+  "finished_epoch": 1793805296.4764388,
+  "wall_s": 3.8213775157928467,
+  "recorded_before_outer_parser": true,
+  "log_sha256": "a828fe79d6cd201efd15173d4a39324c997d773539fd35042ef174fe4e1c0fda"
+}

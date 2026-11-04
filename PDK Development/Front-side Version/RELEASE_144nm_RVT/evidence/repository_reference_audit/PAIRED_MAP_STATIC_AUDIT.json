@@ -1,0 +1,210 @@
+{
+  "passed": true,
+  "native_jobs": 0,
+  "scope": "Static input identity and layer-name/number checks only. Native LVS is topology-only; dimensions/body/functional/electrical approval are separate.",
+  "checks": [
+    {
+      "check": "selected_native_GDS_layer",
+      "passed": true,
+      "deck": "DRC/sccad3nm_main.drc.rs",
+      "layer": "V1",
+      "expected": 21
+    },
+    {
+      "check": "selected_native_GDS_layer",
+      "passed": true,
+      "deck": "DRC/sccad3nm_main.drc.rs",
+      "layer": "M6",
+      "expected": 60
+    },
+    {
+      "check": "selected_native_GDS_layer",
+      "passed": true,
+      "deck": "DRC/sccad3nm_main.drc.rs",
+      "layer": "MBPR",
+      "expected": 15
+    },
+    {
+      "check": "selected_native_GDS_layer",
+      "passed": true,
+      "deck": "LVS/ICV_3nm.rs",
+      "layer": "V1",
+      "expected": 21
+    },
+    {
+      "check": "selected_native_GDS_layer",
+      "passed": true,
+      "deck": "LVS/ICV_3nm.rs",
+      "layer": "M6",
+      "expected": 60
+    },
+    {
+      "check": "selected_native_GDS_layer",
+      "passed": true,
+      "deck": "LVS/ICV_3nm.rs",
+      "layer": "MBPR",
+      "expected": 15
+    },
+    {
+      "check": "fin_present_layer2",
+      "passed": true,
+      "deck": "LVS/ICV_3nm.rs"
+    },
+    {
+      "check": "selected_native_GDS_layer",
+      "passed": true,
+      "deck": "LVS/ICV_3nm_FSPR_PEX.rs",
+      "layer": "V1",
+      "expected": 21
+    },
+    {
+      "check": "selected_native_GDS_layer",
+      "passed": true,
+      "deck": "LVS/ICV_3nm_FSPR_PEX.rs",
+      "layer": "M6",
+      "expected": 60
+    },
+    {
+      "check": "selected_native_GDS_layer",
+      "passed": true,
+      "deck": "LVS/ICV_3nm_FSPR_PEX.rs",
+      "layer": "MBPR",
+      "expected": 15
+    },
+    {
+      "check": "fin_present_layer2",
+      "passed": true,
+      "deck": "LVS/ICV_3nm_FSPR_PEX.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.act.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.gate.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.gcut.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.lig.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.lisd.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.m1.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.m2.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.m3.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.m4.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.m5.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.m6.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.mbpr.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.npsel.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.sdt.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.v0.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.v1.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.v2.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.v3.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.v4.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.v5.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.vbpr.drc.rs"
+    },
+    {
+      "check": "numerical_DRC_include_unchanged",
+      "passed": true,
+      "file": "sccad3nm.vg.drc.rs"
+    },
+    {
+      "check": "native_StarRC_layer_names",
+      "passed": true
+    },
+    {
+      "check": "empty_MBPR_binding_removed_explicitly",
+      "passed": true
+    },
+    {
+      "check": "frozen_grid",
+      "passed": true
+    },
+    {
+      "check": "explicit_144nm_GDS_default",
+      "passed": true
+    },
+    {
+      "check": "matched_verification_decks_selected",
+      "passed": true
+    }
+  ]
+}

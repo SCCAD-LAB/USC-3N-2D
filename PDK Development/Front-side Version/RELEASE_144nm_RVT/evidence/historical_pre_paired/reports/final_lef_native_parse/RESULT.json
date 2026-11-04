@@ -1,0 +1,15 @@
+{
+  "rc": 0,
+  "wall_s": 3.9367141723632812,
+  "native_parse_pass": true,
+  "lef_sha256": "d3e4b6f5f414b7505f2712012d8249a235e852ea9fc19504f3fe45d601c3c1e7",
+  "host": "gtcad-srv18.ece.gatech.edu",
+  "work": "/tmp/yhuang861/usc144_github_release_20261103/final_lef_native_parse",
+  "argv": [
+    "/tools/software/synopsys/icc2/latest/bin/icc2_lm_shell",
+    "-f",
+    "check.tcl"
+  ],
+  "errors": [],
+  "scope": "Final 57-cell native LEF syntax/read check; separate final GDS pin/obstruction coverage audit required; not a PNR signoff."
+}

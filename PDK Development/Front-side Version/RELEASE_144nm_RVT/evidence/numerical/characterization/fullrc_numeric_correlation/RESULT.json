@@ -1,0 +1,1271 @@
+{
+  "passed": true,
+  "unchanged_relative_gate": 0.01,
+  "total_cases": 12,
+  "model_and_RC_unchanged_for_policy_comparisons": true,
+  "width_stress_note": "WGAA15/19/20 fixedRC INV aliases test numeric sensitivity only; these are not new physically qualified layouts",
+  "internal_energy_note": "Supply cycle energy minus Cload*VDD\u00b2, retaining leakage. Diagnostic sensitivity metric, not a replacement Liberty internal_power table.",
+  "rows": [
+    {
+      "WGAA_nm": 30,
+      "slew_ps": 2.5,
+      "load_fF": 0.36,
+      "physical_width_case": true,
+      "comparisons": [
+        {
+          "reference": "hspice_strict",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 2.97447e-06,
+            "supply_charge": -4.4798e-16,
+            "tphl": 1.03862e-11,
+            "tplh": 1.10489e-11,
+            "window_high_current": -2.93759e-10,
+            "window_low_current": -2.60395e-10,
+            "supply_energy_J": 3.13586e-16,
+            "load_energy_J": 1.764e-16,
+            "approx_internal_energy_J": 1.3718600000000002e-16
+          },
+          "reference_metrics": {
+            "tphl": 1.038737177e-11,
+            "tplh": 1.104987501e-11,
+            "supply_charge": -4.480950277e-16,
+            "window_high_current": -2.931830687e-10,
+            "window_low_current": -2.599129529e-10,
+            "out_min": 4.981239205e-06,
+            "out_max": 0.699995421,
+            "static_low_current": -2.599129471e-10,
+            "static_high_current": -2.931830684e-10,
+            "supply_energy_J": 3.1366651939e-16,
+            "load_energy_J": 1.764e-16,
+            "approx_internal_energy_J": 1.3726651939000001e-16
+          },
+          "relative_difference": {
+            "tphl": 0.00011280716873773855,
+            "tplh": 8.823719717354628e-05,
+            "supply_energy_J": 0.00025670380809716953,
+            "approx_internal_energy_J": 0.0005865916201401866,
+            "static_high_current": 0.0023839425783156454,
+            "static_low_current": 0.0026895655172232136
+          },
+          "absolute_difference": {
+            "tphl": -1.1717700000004604e-15,
+            "tplh": -9.75010000000292e-16,
+            "supply_energy_J": -8.051938999999141e-20,
+            "approx_internal_energy_J": -8.051938999999141e-20,
+            "static_high_current": -6.989315999999986e-13,
+            "static_low_current": -6.990529000000137e-13
+          },
+          "passed": true
+        },
+        {
+          "reference": "spectre_intended",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 2.97447e-06,
+            "supply_charge": -4.4798e-16,
+            "tphl": 1.03862e-11,
+            "tplh": 1.10489e-11,
+            "window_high_current": -2.93759e-10,
+            "window_low_current": -2.60395e-10,
+            "supply_energy_J": 3.13586e-16,
+            "load_energy_J": 1.764e-16,
+            "approx_internal_energy_J": 1.3718600000000002e-16
+          },
+          "reference_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 4.99379e-06,
+            "supply_charge": -4.48093e-16,
+            "tphl": 1.03874e-11,
+            "tplh": 1.105e-11,
+            "window_high_current": -2.93941e-10,
+            "window_low_current": -2.60612e-10,
+            "supply_energy_J": 3.1366509999999997e-16,
+            "load_energy_J": 1.764e-16,
+            "approx_internal_energy_J": 1.3726509999999998e-16
+          },
+          "relative_difference": {
+            "tphl": 0.00011552457785402037,
+            "tplh": 9.954751131224793e-05,
+            "supply_energy_J": 0.00025217979303393534,
+            "approx_internal_energy_J": 0.0005762571840909336,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "absolute_difference": {
+            "tphl": -1.200000000001247e-15,
+            "tplh": -1.100000000000066e-15,
+            "supply_energy_J": -7.909999999995823e-20,
+            "approx_internal_energy_J": -7.909999999995823e-20,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "WGAA_nm": 30,
+      "slew_ps": 2.5,
+      "load_fF": 5.76,
+      "physical_width_case": true,
+      "comparisons": [
+        {
+          "reference": "hspice_strict",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 3.75558e-06,
+            "supply_charge": -4.24289e-15,
+            "tphl": 8.05901e-11,
+            "tplh": 8.25253e-11,
+            "window_high_current": -2.93942e-10,
+            "window_low_current": -2.60508e-10,
+            "supply_energy_J": 2.9700229999999995e-15,
+            "load_energy_J": 2.8224e-15,
+            "approx_internal_energy_J": 1.4762299999999968e-16
+          },
+          "reference_metrics": {
+            "tphl": 8.059212816e-11,
+            "tplh": 8.252660735e-11,
+            "supply_charge": -4.243013263e-15,
+            "window_high_current": -2.93183069e-10,
+            "window_low_current": -2.599130274e-10,
+            "out_min": 4.98123921e-06,
+            "out_max": 0.699995421,
+            "static_low_current": -2.599129471e-10,
+            "static_high_current": -2.931830684e-10,
+            "supply_energy_J": 2.9701092841e-15,
+            "load_energy_J": 2.8224e-15,
+            "approx_internal_energy_J": 1.4770928409999995e-16
+          },
+          "relative_difference": {
+            "tphl": 2.516573325839211e-05,
+            "tplh": 1.5841557553186725e-05,
+            "supply_energy_J": 2.9050816568343407e-05,
+            "approx_internal_energy_J": 0.0005841481158480599,
+            "static_high_current": 0.0023839425783156454,
+            "static_low_current": 0.0026895655172232136
+          },
+          "absolute_difference": {
+            "tphl": -2.0281600000023936e-15,
+            "tplh": -1.3073500000066708e-15,
+            "supply_energy_J": -8.628410000027408e-20,
+            "approx_internal_energy_J": -8.628410000027408e-20,
+            "static_high_current": -6.989315999999986e-13,
+            "static_low_current": -6.990529000000137e-13
+          },
+          "passed": true
+        },
+        {
+          "reference": "spectre_intended",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 3.75558e-06,
+            "supply_charge": -4.24289e-15,
+            "tphl": 8.05901e-11,
+            "tplh": 8.25253e-11,
+            "window_high_current": -2.93942e-10,
+            "window_low_current": -2.60508e-10,
+            "supply_energy_J": 2.9700229999999995e-15,
+            "load_energy_J": 2.8224e-15,
+            "approx_internal_energy_J": 1.4762299999999968e-16
+          },
+          "reference_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 4.99379e-06,
+            "supply_charge": -4.24301e-15,
+            "tphl": 8.05921e-11,
+            "tplh": 8.25266e-11,
+            "window_high_current": -2.93941e-10,
+            "window_low_current": -2.60612e-10,
+            "supply_energy_J": 2.9701070000000002e-15,
+            "load_energy_J": 2.8224e-15,
+            "approx_internal_energy_J": 1.4770700000000033e-16
+          },
+          "relative_difference": {
+            "tphl": 2.481632815132251e-05,
+            "tplh": 1.5752496770771174e-05,
+            "supply_energy_J": 2.8281809376085043e-05,
+            "approx_internal_energy_J": 0.0005686934268562815,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "absolute_difference": {
+            "tphl": -2.0000000000042324e-15,
+            "tplh": -1.3000000000008124e-15,
+            "supply_energy_J": -8.400000000065375e-20,
+            "approx_internal_energy_J": -8.400000000065375e-20,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "WGAA_nm": 30,
+      "slew_ps": 2.5,
+      "load_fF": 23.04,
+      "physical_width_case": true,
+      "comparisons": [
+        {
+          "reference": "hspice_strict",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699983,
+            "out_min": 3.52014e-05,
+            "supply_charge": -1.63391e-14,
+            "tphl": 3.04182e-10,
+            "tplh": 3.10144e-10,
+            "window_high_current": -2.94893e-10,
+            "window_low_current": -2.12336e-09,
+            "supply_energy_J": 1.143737e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.4777000000000043e-16
+          },
+          "reference_metrics": {
+            "tphl": 3.041845751e-10,
+            "tplh": 3.101462458e-10,
+            "supply_charge": -1.633927303e-14,
+            "window_high_current": -2.941347634e-10,
+            "window_low_current": -2.121666104e-09,
+            "out_min": 3.53810318e-05,
+            "out_max": 0.6999831074,
+            "static_low_current": -2.599129471e-10,
+            "static_high_current": -2.931830684e-10,
+            "supply_energy_J": 1.1437491121e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.4789112100000024e-16
+          },
+          "relative_difference": {
+            "tphl": 8.46558376332851e-06,
+            "tplh": 7.241100063004602e-06,
+            "supply_energy_J": 1.0589822428630491e-05,
+            "approx_internal_energy_J": 0.0008189876388847717,
+            "static_high_current": 0.0023839425783156454,
+            "static_low_current": 0.0026895655172232136
+          },
+          "absolute_difference": {
+            "tphl": -2.575100000029256e-15,
+            "tplh": -2.24579999999749e-15,
+            "supply_energy_J": -1.2112099999980801e-19,
+            "approx_internal_energy_J": -1.2112099999980801e-19,
+            "static_high_current": -6.989315999999986e-13,
+            "static_low_current": -6.990529000000137e-13
+          },
+          "passed": true
+        },
+        {
+          "reference": "spectre_intended",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699983,
+            "out_min": 3.52014e-05,
+            "supply_charge": -1.63391e-14,
+            "tphl": 3.04182e-10,
+            "tplh": 3.10144e-10,
+            "window_high_current": -2.94893e-10,
+            "window_low_current": -2.12336e-09,
+            "supply_energy_J": 1.143737e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.4777000000000043e-16
+          },
+          "reference_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699983,
+            "out_min": 3.53936e-05,
+            "supply_charge": -1.63393e-14,
+            "tphl": 3.04184e-10,
+            "tplh": 3.10146e-10,
+            "window_high_current": -2.94893e-10,
+            "window_low_current": -2.12236e-09,
+            "supply_energy_J": 1.1437509999999998e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.4790999999999889e-16
+          },
+          "relative_difference": {
+            "tphl": 6.57496778266875e-06,
+            "tplh": 6.448575831874415e-06,
+            "supply_energy_J": 1.2240426456311404e-05,
+            "approx_internal_energy_J": 0.0009465215333545052,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "absolute_difference": {
+            "tphl": -2.000000000017157e-15,
+            "tplh": -1.9999999999654583e-15,
+            "supply_energy_J": -1.3999999999846005e-19,
+            "approx_internal_energy_J": -1.3999999999846005e-19,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "WGAA_nm": 30,
+      "slew_ps": 20,
+      "load_fF": 0.36,
+      "physical_width_case": true,
+      "comparisons": [
+        {
+          "reference": "hspice_strict",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699996,
+            "out_min": 4.32412e-06,
+            "supply_charge": -4.14804e-16,
+            "tphl": 1.41863e-11,
+            "tplh": 1.43759e-11,
+            "window_high_current": -2.9388e-10,
+            "window_low_current": -2.60612e-10,
+            "supply_energy_J": 2.903628e-16,
+            "load_energy_J": 1.764e-16,
+            "approx_internal_energy_J": 1.139628e-16
+          },
+          "reference_metrics": {
+            "tphl": 1.418427306e-11,
+            "tplh": 1.43737025e-11,
+            "supply_charge": -4.147747302e-16,
+            "window_high_current": -2.93183068e-10,
+            "window_low_current": -2.599129527e-10,
+            "out_min": 4.981239194e-06,
+            "out_max": 0.699995421,
+            "static_low_current": -2.599129471e-10,
+            "static_high_current": -2.931830684e-10,
+            "supply_energy_J": 2.9034231114e-16,
+            "load_energy_J": 1.764e-16,
+            "approx_internal_energy_J": 1.1394231114e-16
+          },
+          "relative_difference": {
+            "tphl": 0.00014290052027510214,
+            "tplh": 0.0001528833646029515,
+            "supply_energy_J": 7.056794416060441e-05,
+            "approx_internal_energy_J": 0.00017981783759712933,
+            "static_high_current": 0.0023839425783156454,
+            "static_low_current": 0.0026895655172232136
+          },
+          "absolute_difference": {
+            "tphl": 2.0269399999991044e-15,
+            "tplh": 2.1975000000003044e-15,
+            "supply_energy_J": 2.0488860000006184e-20,
+            "approx_internal_energy_J": 2.0488860000006184e-20,
+            "static_high_current": -6.989315999999986e-13,
+            "static_low_current": -6.990529000000137e-13
+          },
+          "passed": true
+        },
+        {
+          "reference": "spectre_intended",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699996,
+            "out_min": 4.32412e-06,
+            "supply_charge": -4.14804e-16,
+            "tphl": 1.41863e-11,
+            "tplh": 1.43759e-11,
+            "window_high_current": -2.9388e-10,
+            "window_low_current": -2.60612e-10,
+            "supply_energy_J": 2.903628e-16,
+            "load_energy_J": 1.764e-16,
+            "approx_internal_energy_J": 1.139628e-16
+          },
+          "reference_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 4.99377e-06,
+            "supply_charge": -4.14767e-16,
+            "tphl": 1.41842e-11,
+            "tplh": 1.43736e-11,
+            "window_high_current": -2.93941e-10,
+            "window_low_current": -2.60612e-10,
+            "supply_energy_J": 2.9033689999999997e-16,
+            "load_energy_J": 1.764e-16,
+            "approx_internal_energy_J": 1.1393689999999997e-16
+          },
+          "relative_difference": {
+            "tphl": 0.00014805205792356446,
+            "tplh": 0.00016001558412637173,
+            "supply_energy_J": 8.920671123791024e-05,
+            "approx_internal_energy_J": 0.00022731880540916016,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "absolute_difference": {
+            "tphl": 2.1000000000005666e-15,
+            "tplh": 2.2999999999996974e-15,
+            "supply_energy_J": 2.5900000000020793e-20,
+            "approx_internal_energy_J": 2.5900000000020793e-20,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "WGAA_nm": 30,
+      "slew_ps": 20,
+      "load_fF": 5.76,
+      "physical_width_case": true,
+      "comparisons": [
+        {
+          "reference": "hspice_strict",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 3.46353e-06,
+            "supply_charge": -4.23654e-15,
+            "tphl": 8.48498e-11,
+            "tplh": 8.64264e-11,
+            "window_high_current": -2.93891e-10,
+            "window_low_current": -2.60541e-10,
+            "supply_energy_J": 2.965578e-15,
+            "load_energy_J": 2.8224e-15,
+            "approx_internal_energy_J": 1.4317800000000006e-16
+          },
+          "reference_metrics": {
+            "tphl": 8.485011798e-11,
+            "tplh": 8.642644185e-11,
+            "supply_charge": -4.236578231e-15,
+            "window_high_current": -2.931830681e-10,
+            "window_low_current": -2.599130272e-10,
+            "out_min": 4.981239193e-06,
+            "out_max": 0.699995421,
+            "static_low_current": -2.599129471e-10,
+            "static_high_current": -2.931830684e-10,
+            "supply_energy_J": 2.9656047617e-15,
+            "load_energy_J": 2.8224e-15,
+            "approx_internal_energy_J": 1.4320476169999995e-16
+          },
+          "relative_difference": {
+            "tphl": 3.747549297217212e-06,
+            "tplh": 4.842268073179667e-07,
+            "supply_energy_J": 9.024027862847284e-06,
+            "approx_internal_energy_J": 0.00018687716583032365,
+            "static_high_current": 0.0023839425783156454,
+            "static_low_current": 0.0026895655172232136
+          },
+          "absolute_difference": {
+            "tphl": -3.1798000000325927e-16,
+            "tplh": -4.1850000009618265e-17,
+            "supply_energy_J": -2.6761699999899178e-20,
+            "approx_internal_energy_J": -2.6761699999899178e-20,
+            "static_high_current": -6.989315999999986e-13,
+            "static_low_current": -6.990529000000137e-13
+          },
+          "passed": true
+        },
+        {
+          "reference": "spectre_intended",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 3.46353e-06,
+            "supply_charge": -4.23654e-15,
+            "tphl": 8.48498e-11,
+            "tplh": 8.64264e-11,
+            "window_high_current": -2.93891e-10,
+            "window_low_current": -2.60541e-10,
+            "supply_energy_J": 2.965578e-15,
+            "load_energy_J": 2.8224e-15,
+            "approx_internal_energy_J": 1.4317800000000006e-16
+          },
+          "reference_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 4.99365e-06,
+            "supply_charge": -4.23657e-15,
+            "tphl": 8.48493e-11,
+            "tplh": 8.64257e-11,
+            "window_high_current": -2.93941e-10,
+            "window_low_current": -2.60612e-10,
+            "supply_energy_J": 2.965599e-15,
+            "load_energy_J": 2.8224e-15,
+            "approx_internal_energy_J": 1.4319900000000022e-16
+          },
+          "relative_difference": {
+            "tphl": 5.892800529760933e-06,
+            "tplh": 8.099442642572896e-06,
+            "supply_energy_J": 7.081200121827891e-06,
+            "approx_internal_energy_J": 0.00014664906877959183,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "absolute_difference": {
+            "tphl": 4.999999999913646e-16,
+            "tplh": 6.999999999904953e-16,
+            "supply_energy_J": -2.1000000000163438e-20,
+            "approx_internal_energy_J": -2.1000000000163438e-20,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "WGAA_nm": 30,
+      "slew_ps": 20,
+      "load_fF": 23.04,
+      "physical_width_case": true,
+      "comparisons": [
+        {
+          "reference": "hspice_strict",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699982,
+            "out_min": 3.47194e-05,
+            "supply_charge": -1.63373e-14,
+            "tphl": 3.08501e-10,
+            "tplh": 3.14129e-10,
+            "window_high_current": -2.94933e-10,
+            "window_low_current": -2.29771e-09,
+            "supply_energy_J": 1.143611e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.4651000000000009e-16
+          },
+          "reference_metrics": {
+            "tphl": 3.085017619e-10,
+            "tplh": 3.141284948e-10,
+            "supply_charge": -1.633726225e-14,
+            "window_high_current": -2.941723384e-10,
+            "window_low_current": -2.297452348e-09,
+            "out_min": 3.658129548e-05,
+            "out_max": 0.6999819448,
+            "static_low_current": -2.599129471e-10,
+            "static_high_current": -2.931830684e-10,
+            "supply_energy_J": 1.1436083574999999e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.4648357499999932e-16
+          },
+          "relative_difference": {
+            "tphl": 2.469677953698124e-06,
+            "tplh": 1.6082590672539254e-06,
+            "supply_energy_J": 2.3106686679597033e-06,
+            "approx_internal_energy_J": 0.00018039565187266682,
+            "static_high_current": 0.0023839425783156454,
+            "static_low_current": 0.0026895655172232136
+          },
+          "absolute_difference": {
+            "tphl": -7.619000000294592e-16,
+            "tplh": 5.052000000460651e-16,
+            "supply_energy_J": 2.6425000000764436e-20,
+            "approx_internal_energy_J": 2.6425000000764436e-20,
+            "static_high_current": -6.989315999999986e-13,
+            "static_low_current": -6.990529000000137e-13
+          },
+          "passed": true
+        },
+        {
+          "reference": "spectre_intended",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699982,
+            "out_min": 3.47194e-05,
+            "supply_charge": -1.63373e-14,
+            "tphl": 3.08501e-10,
+            "tplh": 3.14129e-10,
+            "window_high_current": -2.94933e-10,
+            "window_low_current": -2.29771e-09,
+            "supply_energy_J": 1.143611e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.4651000000000009e-16
+          },
+          "reference_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699982,
+            "out_min": 3.65937e-05,
+            "supply_charge": -1.63372e-14,
+            "tphl": 3.08501e-10,
+            "tplh": 3.14128e-10,
+            "window_high_current": -2.9493e-10,
+            "window_low_current": -2.29815e-09,
+            "supply_energy_J": 1.1436039999999998e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.464399999999985e-16
+          },
+          "relative_difference": {
+            "tphl": 0.0,
+            "tplh": 3.183415677732171e-06,
+            "supply_energy_J": 6.1209999266953474e-06,
+            "approx_internal_energy_J": 0.00047801147228621055,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "absolute_difference": {
+            "tphl": 0.0,
+            "tplh": 1.0000000000085785e-15,
+            "supply_energy_J": 7.000000000159661e-20,
+            "approx_internal_energy_J": 7.000000000159661e-20,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "WGAA_nm": 30,
+      "slew_ps": 160,
+      "load_fF": 0.36,
+      "physical_width_case": true,
+      "comparisons": [
+        {
+          "reference": "hspice_strict",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 4.98645e-06,
+            "supply_charge": -6.7835e-16,
+            "tphl": 2.86755e-11,
+            "tplh": 2.56592e-11,
+            "window_high_current": -2.93701e-10,
+            "window_low_current": -2.60612e-10,
+            "supply_energy_J": 4.748449999999999e-16,
+            "load_energy_J": 1.764e-16,
+            "approx_internal_energy_J": 2.9844499999999996e-16
+          },
+          "reference_metrics": {
+            "tphl": 2.867555578e-11,
+            "tplh": 2.565914865e-11,
+            "supply_charge": -6.783469417e-16,
+            "window_high_current": -2.931830687e-10,
+            "window_low_current": -2.599129527e-10,
+            "out_min": 4.981239206e-06,
+            "out_max": 0.699995421,
+            "static_low_current": -2.599129471e-10,
+            "static_high_current": -2.931830684e-10,
+            "supply_energy_J": 4.7484285919e-16,
+            "load_energy_J": 1.764e-16,
+            "approx_internal_energy_J": 2.9844285919000004e-16
+          },
+          "relative_difference": {
+            "tphl": 1.94521077201415e-06,
+            "tplh": 2.0012355319565245e-06,
+            "supply_energy_J": 4.5084599220590604e-06,
+            "approx_internal_energy_J": 7.1732659503442875e-06,
+            "static_high_current": 0.0023839425783156454,
+            "static_low_current": 0.0026895655172232136
+          },
+          "absolute_difference": {
+            "tphl": -5.577999999730317e-17,
+            "tplh": 5.1349999998946413e-17,
+            "supply_energy_J": 2.1408099999214328e-21,
+            "approx_internal_energy_J": 2.1408099999214328e-21,
+            "static_high_current": -6.989315999999986e-13,
+            "static_low_current": -6.990529000000137e-13
+          },
+          "passed": true
+        },
+        {
+          "reference": "spectre_intended",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 4.98645e-06,
+            "supply_charge": -6.7835e-16,
+            "tphl": 2.86755e-11,
+            "tplh": 2.56592e-11,
+            "window_high_current": -2.93701e-10,
+            "window_low_current": -2.60612e-10,
+            "supply_energy_J": 4.748449999999999e-16,
+            "load_energy_J": 1.764e-16,
+            "approx_internal_energy_J": 2.9844499999999996e-16
+          },
+          "reference_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 4.99362e-06,
+            "supply_charge": -6.7835e-16,
+            "tphl": 2.86753e-11,
+            "tplh": 2.56589e-11,
+            "window_high_current": -2.93941e-10,
+            "window_low_current": -2.60612e-10,
+            "supply_energy_J": 4.748449999999999e-16,
+            "load_energy_J": 1.764e-16,
+            "approx_internal_energy_J": 2.9844499999999996e-16
+          },
+          "relative_difference": {
+            "tphl": 6.974643683044235e-06,
+            "tplh": 1.1691849611583649e-05,
+            "supply_energy_J": 0.0,
+            "approx_internal_energy_J": 0.0,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "absolute_difference": {
+            "tphl": 2.0000000000236194e-16,
+            "tplh": 2.9999999999869615e-16,
+            "supply_energy_J": 0.0,
+            "approx_internal_energy_J": 0.0,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "WGAA_nm": 30,
+      "slew_ps": 160,
+      "load_fF": 5.76,
+      "physical_width_case": true,
+      "comparisons": [
+        {
+          "reference": "hspice_strict",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 4.91589e-06,
+            "supply_charge": -4.30404e-15,
+            "tphl": 1.18548e-10,
+            "tplh": 1.18084e-10,
+            "window_high_current": -2.93931e-10,
+            "window_low_current": -2.60445e-10,
+            "supply_energy_J": 3.0128279999999997e-15,
+            "load_energy_J": 2.8224e-15,
+            "approx_internal_energy_J": 1.904279999999998e-16
+          },
+          "reference_metrics": {
+            "tphl": 1.185481125e-10,
+            "tplh": 1.180835922e-10,
+            "supply_charge": -4.304036076e-15,
+            "window_high_current": -2.931830687e-10,
+            "window_low_current": -2.599130275e-10,
+            "out_min": 4.981239206e-06,
+            "out_max": 0.699995421,
+            "static_low_current": -2.599129471e-10,
+            "static_high_current": -2.931830684e-10,
+            "supply_energy_J": 3.0128252532e-15,
+            "load_energy_J": 2.8224e-15,
+            "approx_internal_energy_J": 1.9042525319999995e-16
+          },
+          "relative_difference": {
+            "tphl": 9.48981790038772e-07,
+            "tplh": 3.4534857249468587e-06,
+            "supply_energy_J": 9.117023953564285e-07,
+            "approx_internal_energy_J": 1.4424557424286277e-05,
+            "static_high_current": 0.0023839425783156454,
+            "static_low_current": 0.0026895655172232136
+          },
+          "absolute_difference": {
+            "tphl": -1.1250000001001237e-16,
+            "tplh": 4.0780000000922656e-16,
+            "supply_energy_J": 2.7467999998367843e-21,
+            "approx_internal_energy_J": 2.7467999998367843e-21,
+            "static_high_current": -6.989315999999986e-13,
+            "static_low_current": -6.990529000000137e-13
+          },
+          "passed": true
+        },
+        {
+          "reference": "spectre_intended",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 4.91589e-06,
+            "supply_charge": -4.30404e-15,
+            "tphl": 1.18548e-10,
+            "tplh": 1.18084e-10,
+            "window_high_current": -2.93931e-10,
+            "window_low_current": -2.60445e-10,
+            "supply_energy_J": 3.0128279999999997e-15,
+            "load_energy_J": 2.8224e-15,
+            "approx_internal_energy_J": 1.904279999999998e-16
+          },
+          "reference_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699995,
+            "out_min": 4.99362e-06,
+            "supply_charge": -4.30404e-15,
+            "tphl": 1.18548e-10,
+            "tplh": 1.18084e-10,
+            "window_high_current": -2.93941e-10,
+            "window_low_current": -2.60612e-10,
+            "supply_energy_J": 3.0128279999999997e-15,
+            "load_energy_J": 2.8224e-15,
+            "approx_internal_energy_J": 1.904279999999998e-16
+          },
+          "relative_difference": {
+            "tphl": 0.0,
+            "tplh": 0.0,
+            "supply_energy_J": 0.0,
+            "approx_internal_energy_J": 0.0,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "absolute_difference": {
+            "tphl": 0.0,
+            "tplh": 0.0,
+            "supply_energy_J": 0.0,
+            "approx_internal_energy_J": 0.0,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "WGAA_nm": 30,
+      "slew_ps": 160,
+      "load_fF": 23.04,
+      "physical_width_case": true,
+      "comparisons": [
+        {
+          "reference": "hspice_strict",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699968,
+            "out_min": 4.76028e-05,
+            "supply_charge": -1.63608e-14,
+            "tphl": 3.4378e-10,
+            "tplh": 3.46885e-10,
+            "window_high_current": -2.95294e-10,
+            "window_low_current": -4.46392e-09,
+            "supply_energy_J": 1.145256e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.629599999999998e-16
+          },
+          "reference_metrics": {
+            "tphl": 3.437804074e-10,
+            "tplh": 3.468852644e-10,
+            "supply_charge": -1.636083012e-14,
+            "window_high_current": -2.945341082e-10,
+            "window_low_current": -4.462670021e-09,
+            "out_min": 4.813739558e-05,
+            "out_max": 0.6999676241,
+            "static_low_current": -2.599129471e-10,
+            "static_high_current": -2.931830684e-10,
+            "supply_energy_J": 1.1452581084e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.6298108400000041e-16
+          },
+          "relative_difference": {
+            "tphl": 1.1850588086392833e-06,
+            "tplh": 7.622116796612843e-07,
+            "supply_energy_J": 1.8409823816512016e-06,
+            "approx_internal_energy_J": 0.00012936470591040639,
+            "static_high_current": 0.0023839425783156454,
+            "static_low_current": 0.0026895655172232136
+          },
+          "absolute_difference": {
+            "tphl": -4.0740000002192035e-16,
+            "tplh": -2.6440000003630665e-16,
+            "supply_energy_J": -2.108400000062163e-20,
+            "approx_internal_energy_J": -2.108400000062163e-20,
+            "static_high_current": -6.989315999999986e-13,
+            "static_low_current": -6.990529000000137e-13
+          },
+          "passed": true
+        },
+        {
+          "reference": "spectre_intended",
+          "actual_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699968,
+            "out_min": 4.76028e-05,
+            "supply_charge": -1.63608e-14,
+            "tphl": 3.4378e-10,
+            "tplh": 3.46885e-10,
+            "window_high_current": -2.95294e-10,
+            "window_low_current": -4.46392e-09,
+            "supply_energy_J": 1.145256e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.629599999999998e-16
+          },
+          "reference_metrics": {
+            "static_high_current": -2.93882e-10,
+            "static_low_current": -2.60612e-10,
+            "out_max": 0.699968,
+            "out_min": 4.81498e-05,
+            "supply_charge": -1.63608e-14,
+            "tphl": 3.4378e-10,
+            "tplh": 3.46885e-10,
+            "window_high_current": -2.95292e-10,
+            "window_low_current": -4.46336e-09,
+            "supply_energy_J": 1.145256e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.629599999999998e-16
+          },
+          "relative_difference": {
+            "tphl": 0.0,
+            "tplh": 0.0,
+            "supply_energy_J": 0.0,
+            "approx_internal_energy_J": 0.0,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "absolute_difference": {
+            "tphl": 0.0,
+            "tplh": 0.0,
+            "supply_energy_J": 0.0,
+            "approx_internal_energy_J": 0.0,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "WGAA_nm": 15,
+      "slew_ps": 20,
+      "load_fF": 23.04,
+      "physical_width_case": false,
+      "comparisons": [
+        {
+          "reference": "hspice_strict",
+          "actual_metrics": {
+            "static_high_current": -1.1103e-10,
+            "static_low_current": -1.00715e-10,
+            "out_max": 0.699958,
+            "out_min": 7.31625e-05,
+            "supply_charge": -1.62381e-14,
+            "tphl": 3.57386e-10,
+            "tplh": 3.77879e-10,
+            "window_high_current": -1.1303e-10,
+            "window_low_current": -5.08107e-09,
+            "supply_energy_J": 1.136667e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 7.707000000000028e-17
+          },
+          "reference_metrics": {
+            "tphl": 3.573864891e-10,
+            "tplh": 3.778794141e-10,
+            "supply_charge": -1.623818088e-14,
+            "window_high_current": -1.122729681e-10,
+            "window_low_current": -5.080455386e-09,
+            "out_min": 7.327413078e-05,
+            "out_max": 0.6999577463,
+            "static_low_current": -1.000159011e-10,
+            "static_high_current": -1.103311336e-10,
+            "supply_energy_J": 1.1366726616000001e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 7.712661600000145e-17
+          },
+          "relative_difference": {
+            "tphl": 1.3685464194113095e-06,
+            "tplh": 1.09585223373454e-06,
+            "supply_energy_J": 4.980853495761828e-06,
+            "approx_internal_energy_J": 0.000734065656415761,
+            "static_high_current": 0.006334262843103788,
+            "static_low_current": 0.0069898775325836215
+          },
+          "absolute_difference": {
+            "tphl": -4.891000000012283e-16,
+            "tplh": -4.141000000290192e-16,
+            "supply_energy_J": -5.661600000116638e-20,
+            "approx_internal_energy_J": -5.661600000116638e-20,
+            "static_high_current": -6.988663999999998e-13,
+            "static_low_current": -6.990989000000015e-13
+          },
+          "passed": true
+        },
+        {
+          "reference": "spectre_intended",
+          "actual_metrics": {
+            "static_high_current": -1.1103e-10,
+            "static_low_current": -1.00715e-10,
+            "out_max": 0.699958,
+            "out_min": 7.31625e-05,
+            "supply_charge": -1.62381e-14,
+            "tphl": 3.57386e-10,
+            "tplh": 3.77879e-10,
+            "window_high_current": -1.1303e-10,
+            "window_low_current": -5.08107e-09,
+            "supply_energy_J": 1.136667e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 7.707000000000028e-17
+          },
+          "reference_metrics": {
+            "static_high_current": -1.1103e-10,
+            "static_low_current": -1.00715e-10,
+            "out_max": 0.699958,
+            "out_min": 7.32874e-05,
+            "supply_charge": -1.62382e-14,
+            "tphl": 3.57385e-10,
+            "tplh": 3.77879e-10,
+            "window_high_current": -1.13031e-10,
+            "window_low_current": -5.08114e-09,
+            "supply_energy_J": 1.136674e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 7.71400000000003e-17
+          },
+          "relative_difference": {
+            "tphl": 2.7981028862811286e-06,
+            "tplh": 0.0,
+            "supply_energy_J": 6.15831804018363e-06,
+            "approx_internal_energy_J": 0.0009074410163342206,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "absolute_difference": {
+            "tphl": 1.0000000000085785e-15,
+            "tplh": 0.0,
+            "supply_energy_J": -7.000000000001889e-20,
+            "approx_internal_energy_J": -7.000000000001889e-20,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "WGAA_nm": 19,
+      "slew_ps": 20,
+      "load_fF": 23.04,
+      "physical_width_case": false,
+      "comparisons": [
+        {
+          "reference": "hspice_strict",
+          "actual_metrics": {
+            "static_high_current": -1.55887e-10,
+            "static_low_current": -1.40215e-10,
+            "out_max": 0.699971,
+            "out_min": 5.451e-05,
+            "supply_charge": -1.62648e-14,
+            "tphl": 3.37673e-10,
+            "tplh": 3.51782e-10,
+            "window_high_current": -1.57459e-10,
+            "window_low_current": -3.71945e-09,
+            "supply_energy_J": 1.1385359999999999e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 9.575999999999902e-17
+          },
+          "reference_metrics": {
+            "tphl": 3.376740045e-10,
+            "tplh": 3.517820757e-10,
+            "supply_charge": -1.626477656e-14,
+            "window_high_current": -1.566989324e-10,
+            "window_low_current": -3.718000407e-09,
+            "out_min": 5.521847484e-05,
+            "out_max": 0.6999705096,
+            "static_low_current": -1.395157589e-10,
+            "static_high_current": -1.551879575e-10,
+            "supply_energy_J": 1.1385343591999999e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 9.574359199999945e-17
+          },
+          "relative_difference": {
+            "tphl": 2.974762601248848e-06,
+            "tplh": 2.151900428959408e-07,
+            "supply_energy_J": 1.4411510611544998e-06,
+            "approx_internal_energy_J": 0.00017137439338577032,
+            "static_high_current": 0.004504489338355899,
+            "static_low_current": 0.0050119148224765375
+          },
+          "absolute_difference": {
+            "tphl": -1.004500000007945e-15,
+            "tplh": -7.569999996291962e-17,
+            "supply_energy_J": 1.6407999999570238e-20,
+            "approx_internal_energy_J": 1.6407999999570238e-20,
+            "static_high_current": -6.990424999999819e-13,
+            "static_low_current": -6.992410999999867e-13
+          },
+          "passed": true
+        },
+        {
+          "reference": "spectre_intended",
+          "actual_metrics": {
+            "static_high_current": -1.55887e-10,
+            "static_low_current": -1.40215e-10,
+            "out_max": 0.699971,
+            "out_min": 5.451e-05,
+            "supply_charge": -1.62648e-14,
+            "tphl": 3.37673e-10,
+            "tplh": 3.51782e-10,
+            "window_high_current": -1.57459e-10,
+            "window_low_current": -3.71945e-09,
+            "supply_energy_J": 1.1385359999999999e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 9.575999999999902e-17
+          },
+          "reference_metrics": {
+            "static_high_current": -1.55887e-10,
+            "static_low_current": -1.40215e-10,
+            "out_max": 0.69997,
+            "out_min": 5.52314e-05,
+            "supply_charge": -1.62648e-14,
+            "tphl": 3.37673e-10,
+            "tplh": 3.51781e-10,
+            "window_high_current": -1.57457e-10,
+            "window_low_current": -3.71869e-09,
+            "supply_energy_J": 1.1385359999999999e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 9.575999999999902e-17
+          },
+          "relative_difference": {
+            "tphl": 0.0,
+            "tplh": 2.8426776887968686e-06,
+            "supply_energy_J": 0.0,
+            "approx_internal_energy_J": 0.0,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "absolute_difference": {
+            "tphl": 0.0,
+            "tplh": 1.0000000000085785e-15,
+            "supply_energy_J": 0.0,
+            "approx_internal_energy_J": 0.0,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "WGAA_nm": 20,
+      "slew_ps": 20,
+      "load_fF": 23.04,
+      "physical_width_case": false,
+      "comparisons": [
+        {
+          "reference": "hspice_strict",
+          "actual_metrics": {
+            "static_high_current": -1.67663e-10,
+            "static_low_current": -1.50543e-10,
+            "out_max": 0.699973,
+            "out_min": 5.21851e-05,
+            "supply_charge": -1.62714e-14,
+            "tphl": 3.33822e-10,
+            "tplh": 3.4673e-10,
+            "window_high_current": -1.69155e-10,
+            "window_low_current": -3.49053e-09,
+            "supply_energy_J": 1.138998e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.0038000000000026e-16
+          },
+          "reference_metrics": {
+            "tphl": 3.338228273e-10,
+            "tplh": 3.467303572e-10,
+            "supply_charge": -1.627139443e-14,
+            "window_high_current": -1.683979722e-10,
+            "window_low_current": -3.490634479e-09,
+            "out_min": 5.221412644e-05,
+            "out_max": 0.6999725084,
+            "static_low_current": -1.498441843e-10,
+            "static_high_current": -1.669633507e-10,
+            "supply_energy_J": 1.1389976100999998e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.0037610099999891e-16
+          },
+          "relative_difference": {
+            "tphl": 2.47826071897439e-06,
+            "tplh": 1.0301953450309043e-06,
+            "supply_energy_J": 3.4231854106892e-07,
+            "approx_internal_energy_J": 3.8843907688157486e-05,
+            "static_high_current": 0.0041904363865883365,
+            "static_low_current": 0.004663615763698337
+          },
+          "absolute_difference": {
+            "tphl": -8.272999999961265e-16,
+            "tplh": -3.571999999864793e-16,
+            "supply_energy_J": 3.8990000013490575e-21,
+            "approx_internal_energy_J": 3.8990000013490575e-21,
+            "static_high_current": -6.996492999999832e-13,
+            "static_low_current": -6.988156999999931e-13
+          },
+          "passed": true
+        },
+        {
+          "reference": "spectre_intended",
+          "actual_metrics": {
+            "static_high_current": -1.67663e-10,
+            "static_low_current": -1.50543e-10,
+            "out_max": 0.699973,
+            "out_min": 5.21851e-05,
+            "supply_charge": -1.62714e-14,
+            "tphl": 3.33822e-10,
+            "tplh": 3.4673e-10,
+            "window_high_current": -1.69155e-10,
+            "window_low_current": -3.49053e-09,
+            "supply_energy_J": 1.138998e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.0038000000000026e-16
+          },
+          "reference_metrics": {
+            "static_high_current": -1.67663e-10,
+            "static_low_current": -1.50543e-10,
+            "out_max": 0.699972,
+            "out_min": 5.2227e-05,
+            "supply_charge": -1.62714e-14,
+            "tphl": 3.33822e-10,
+            "tplh": 3.46729e-10,
+            "window_high_current": -1.69156e-10,
+            "window_low_current": -3.49132e-09,
+            "supply_energy_J": 1.138998e-14,
+            "load_energy_J": 1.12896e-14,
+            "approx_internal_energy_J": 1.0038000000000026e-16
+          },
+          "relative_difference": {
+            "tphl": 0.0,
+            "tplh": 2.884096801825109e-06,
+            "supply_energy_J": 0.0,
+            "approx_internal_energy_J": 0.0,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "absolute_difference": {
+            "tphl": 0.0,
+            "tplh": 1.0000000000085785e-15,
+            "supply_energy_J": 0.0,
+            "approx_internal_energy_J": 0.0,
+            "static_high_current": 0.0,
+            "static_low_current": 0.0
+          },
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "script_sha256": "253d006e87618e8ce101f51b4e2ddcaf95b100cc24f402f87215c5523b49ffb8"
+}

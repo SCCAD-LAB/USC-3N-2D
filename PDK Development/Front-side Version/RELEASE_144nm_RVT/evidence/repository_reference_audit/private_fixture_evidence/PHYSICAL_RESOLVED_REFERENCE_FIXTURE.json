@@ -1,0 +1,13 @@
+{
+  "rc": 0,
+  "work": "/tmp/yhuang861/usc144_github_release_20261103/reference_physical_resolved_1793802098",
+  "fixture_NDM": "/tmp/yhuang861/usc144_github_release_20261103/reference_physical_resolved_1793802098/fixture_physical.ndm",
+  "flow": "physical_only",
+  "keep_all_physical_cells": true,
+  "timing_DB_loaded": false,
+  "matched_release_NDM": false,
+  "simulations": 0,
+  "chip_PNR_runs": 0,
+  "passed": true,
+  "log_sha256": "05a9c0c855783d866697dda60dd450ef3b1cb70cbf01d7cf7e68b75e8339cb8a"
+}

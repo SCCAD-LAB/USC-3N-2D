@@ -1,0 +1,819 @@
+{
+  "stage": "native_build_and_fresh_reopen_passed",
+  "native_jobs": 2,
+  "source_sha256": {
+    "ndm_db": "27b29cee34b16b5cf9883f419d9a0d18628c61cb2227e485cbcd1e5776b85c3e",
+    "ndm_cell_lef": "ae772af34907bf4b6e99107a01df19a90485d06f0fd57973668ab0b8557cde53",
+    "ndm_tech": "4ab8fc8de16b98b2edeca3d5250fa17584dda2cdf8c3d628e627c1e4b6a18116",
+    "ndm_tech_lef": "ee09f2eef63130b9f924376687e86a2a51da9b67ae887c0bf85c0b110e8fe776"
+  },
+  "expected_cells": [
+    "AND2x1",
+    "AND3x1",
+    "AND4x1",
+    "AOI21x1",
+    "AOI221x1",
+    "AOI222x1",
+    "AOI22x1",
+    "AOI311x1",
+    "AOI31x1",
+    "BUFx1",
+    "BUFx10",
+    "BUFx2",
+    "BUFx3",
+    "BUFx4",
+    "BUFx5",
+    "BUFx6",
+    "BUFx7",
+    "BUFx8",
+    "DFFHQNx1",
+    "DFFHx1",
+    "DHLx1",
+    "INVx1",
+    "INVx10",
+    "INVx12",
+    "INVx14",
+    "INVx16",
+    "INVx2",
+    "INVx3",
+    "INVx4",
+    "INVx5",
+    "INVx6",
+    "INVx7",
+    "INVx8",
+    "MUX2x1",
+    "NAND2x1",
+    "NAND2x2",
+    "NAND3x1",
+    "NAND3x2",
+    "NAND4x1",
+    "NOR2x1",
+    "NOR2x2",
+    "NOR3x1",
+    "NOR3x2",
+    "NOR4x1",
+    "OAI21x1",
+    "OAI221x1",
+    "OAI222x1",
+    "OAI22x1",
+    "OAI311x1",
+    "OAI31x1",
+    "OR2x1",
+    "OR3x1",
+    "OR4x1",
+    "XNOR2x1",
+    "XNOR3x1",
+    "XOR2x1",
+    "XOR3x1"
+  ],
+  "publication_approved": false,
+  "work": "/tmp/yhuang861/usc144_github_release_20261103/matched_native_NDM_local_1793805882/native_build",
+  "BUILD.log": {
+    "rc": 0,
+    "wall_s": 5.932862043380737,
+    "sha256": "aa085ea85e4c9e0412ee1e9b2efb5f8c7e65555c6754fe22a19cea518ac6e7bf"
+  },
+  "REOPEN.log": {
+    "rc": 0,
+    "wall_s": 20.372047424316406,
+    "sha256": "7529b7f3442a2f2d174fbcd57964006e8160e4d13261c35206f33a5bff595a4f"
+  },
+  "passed": true,
+  "NDM_directory": "/tmp/yhuang861/usc144_github_release_20261103/matched_native_NDM_local_1793805882/native_build/3nm_GAA_FSPR_144nm_rvt.ndm",
+  "NDM_files": [
+    {
+      "path": "p0",
+      "sha256": "83752e6b964d4a6fb8ac0ebca66d1d32bf1121d516d104398e7bb16d941e94a4",
+      "bytes": 725443
+    },
+    {
+      "path": "pcat",
+      "sha256": "0294446fed3088bc0e40b7f63f1be5a22adfa590c1c6082ea96840bdf880c145",
+      "bytes": 295
+    },
+    {
+      "path": "reflib.ndm",
+      "sha256": "8a35282106b01c3da5c983846d970e0dcd74db420076318d247603b536b2a069",
+      "bytes": 488571
+    }
+  ],
+  "NDM_bytes": 1214309,
+  "readback_cells": [
+    "AND2x1",
+    "AND3x1",
+    "AND4x1",
+    "AOI21x1",
+    "AOI221x1",
+    "AOI222x1",
+    "AOI22x1",
+    "AOI311x1",
+    "AOI31x1",
+    "BUFx1",
+    "BUFx10",
+    "BUFx2",
+    "BUFx3",
+    "BUFx4",
+    "BUFx5",
+    "BUFx6",
+    "BUFx7",
+    "BUFx8",
+    "DFFHQNx1",
+    "DFFHx1",
+    "DHLx1",
+    "INVx1",
+    "INVx10",
+    "INVx12",
+    "INVx14",
+    "INVx16",
+    "INVx2",
+    "INVx3",
+    "INVx4",
+    "INVx5",
+    "INVx6",
+    "INVx7",
+    "INVx8",
+    "MUX2x1",
+    "NAND2x1",
+    "NAND2x2",
+    "NAND3x1",
+    "NAND3x2",
+    "NAND4x1",
+    "NOR2x1",
+    "NOR2x2",
+    "NOR3x1",
+    "NOR3x2",
+    "NOR4x1",
+    "OAI21x1",
+    "OAI221x1",
+    "OAI222x1",
+    "OAI22x1",
+    "OAI311x1",
+    "OAI31x1",
+    "OR2x1",
+    "OR3x1",
+    "OR4x1",
+    "XNOR2x1",
+    "XNOR3x1",
+    "XOR2x1",
+    "XOR3x1"
+  ],
+  "readback_site": "coreSite",
+  "readback_interfaces_sha256": "c28e283040133f911e4584a60b2165424b972f10c99909ad074f7ef8519c45ed",
+  "expected_interfaces": {
+    "AND2x1": {
+      "width_um": 0.21,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "AND3x1": {
+      "width_um": 0.252,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "AND4x1": {
+      "width_um": 0.294,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "AOI21x1": {
+      "width_um": 0.168,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "AOI221x1": {
+      "width_um": 0.252,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "AOI222x1": {
+      "width_um": 0.336,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "AOI22x1": {
+      "width_um": 0.21,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "AOI311x1": {
+      "width_um": 0.252,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "AOI31x1": {
+      "width_um": 0.21,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "BUFx1": {
+      "width_um": 0.168,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "BUFx10": {
+      "width_um": 0.882,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "BUFx2": {
+      "width_um": 0.21,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "BUFx3": {
+      "width_um": 0.252,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "BUFx4": {
+      "width_um": 0.378,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "BUFx5": {
+      "width_um": 0.42,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "BUFx6": {
+      "width_um": 0.546,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "BUFx7": {
+      "width_um": 0.588,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "BUFx8": {
+      "width_um": 0.714,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "DFFHQNx1": {
+      "width_um": 0.714,
+      "height_um": 0.144,
+      "pins": [
+        "CK",
+        "D",
+        "QN",
+        "VDD",
+        "VSS"
+      ]
+    },
+    "DFFHx1": {
+      "width_um": 1.008,
+      "height_um": 0.144,
+      "pins": [
+        "CK",
+        "D",
+        "QN",
+        "RESET",
+        "SET",
+        "VDD",
+        "VSS"
+      ]
+    },
+    "DHLx1": {
+      "width_um": 0.504,
+      "height_um": 0.144,
+      "pins": [
+        "CK",
+        "D",
+        "Q",
+        "VDD",
+        "VSS"
+      ]
+    },
+    "INVx1": {
+      "width_um": 0.084,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "INVx10": {
+      "width_um": 0.462,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "INVx12": {
+      "width_um": 0.546,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "INVx14": {
+      "width_um": 0.63,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "INVx16": {
+      "width_um": 0.714,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "INVx2": {
+      "width_um": 0.126,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "INVx3": {
+      "width_um": 0.168,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "INVx4": {
+      "width_um": 0.21,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "INVx5": {
+      "width_um": 0.252,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "INVx6": {
+      "width_um": 0.294,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "INVx7": {
+      "width_um": 0.336,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "INVx8": {
+      "width_um": 0.378,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "MUX2x1": {
+      "width_um": 0.294,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "S",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "NAND2x1": {
+      "width_um": 0.126,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "NAND2x2": {
+      "width_um": 0.21,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "NAND3x1": {
+      "width_um": 0.168,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "NAND3x2": {
+      "width_um": 0.294,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "NAND4x1": {
+      "width_um": 0.21,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "NOR2x1": {
+      "width_um": 0.126,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "NOR2x2": {
+      "width_um": 0.21,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "NOR3x1": {
+      "width_um": 0.168,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "NOR3x2": {
+      "width_um": 0.294,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "NOR4x1": {
+      "width_um": 0.21,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "OAI21x1": {
+      "width_um": 0.168,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "OAI221x1": {
+      "width_um": 0.252,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "OAI222x1": {
+      "width_um": 0.336,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "OAI22x1": {
+      "width_um": 0.21,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "OAI311x1": {
+      "width_um": 0.252,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "OAI31x1": {
+      "width_um": 0.21,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "OR2x1": {
+      "width_um": 0.21,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "OR3x1": {
+      "width_um": 0.252,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "OR4x1": {
+      "width_um": 0.294,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "XNOR2x1": {
+      "width_um": 0.378,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "XNOR3x1": {
+      "width_um": 0.63,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "XOR2x1": {
+      "width_um": 0.378,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    },
+    "XOR3x1": {
+      "width_um": 0.63,
+      "height_um": 0.144,
+      "pins": [
+        "A",
+        "B",
+        "C",
+        "VDD",
+        "VSS",
+        "Y"
+      ]
+    }
+  }
+}

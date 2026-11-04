@@ -1,0 +1,41 @@
+{
+  "DB_sha256": "27b29cee34b16b5cf9883f419d9a0d18628c61cb2227e485cbcd1e5776b85c3e",
+  "LEF_sha256": "ae772af34907bf4b6e99107a01df19a90485d06f0fd57973668ab0b8557cde53",
+  "LIB_sha256": "93e9c1e57a5fb21bcc087a929678b06bc1d6ac91fd28a0b6d5bb9c4e3cc0cb46",
+  "NDM_files": [
+    {
+      "bytes": 725443,
+      "path": "p0",
+      "sha256": "83752e6b964d4a6fb8ac0ebca66d1d32bf1121d516d104398e7bb16d941e94a4"
+    },
+    {
+      "bytes": 295,
+      "path": "pcat",
+      "sha256": "0294446fed3088bc0e40b7f63f1be5a22adfa590c1c6082ea96840bdf880c145"
+    },
+    {
+      "bytes": 488571,
+      "path": "reflib.ndm",
+      "sha256": "8a35282106b01c3da5c983846d970e0dcd74db420076318d247603b536b2a069"
+    }
+  ],
+  "NDM_result_sha256": "d835411e6ff6128587daa3634cb93830fa215a4bdbb18b9b4eb1ef58a6ee00b5",
+  "NDM_source_sha256": {
+    "ndm_cell_lef": "ae772af34907bf4b6e99107a01df19a90485d06f0fd57973668ab0b8557cde53",
+    "ndm_db": "27b29cee34b16b5cf9883f419d9a0d18628c61cb2227e485cbcd1e5776b85c3e",
+    "ndm_tech": "4ab8fc8de16b98b2edeca3d5250fa17584dda2cdf8c3d628e627c1e4b6a18116",
+    "ndm_tech_lef": "ee09f2eef63130b9f924376687e86a2a51da9b67ae887c0bf85c0b110e8fe776"
+  },
+  "approved_characterized_manifest_sha256": "d9d214bef5bad658f3877c4c33cfdcbf993b1ada85c98b273fbe39ab97c618cd",
+  "cells": 57,
+  "combined_GDS_sha256": "016fd13516b7b580610ef282860fb315251e688cfec776a353c655d32a938b7e",
+  "final_export_sha256": "6c95eefe7b8a579f1e12ac0b2aef03b53ff72b91f74addcc51b97c6fbe401e2a",
+  "final_result_sha256": "c4053258506d83059618d73ed2805ce892d3bdd8ef6f06abdfe63905e82f80f9",
+  "grid_sha256": "425ddaa74bdb6fd44752c73175404742927ab8312060b701783210731b92e805",
+  "model_sha256": "5c1ed2c2f0bc5038369e86f95f12b9239eeabbe87668f49e92e63015f8e2be7b",
+  "native_timing_content_audit_sha256": "35d462cdf170a88caac38c2317d89e2d9dd1a3d43d4287caa5f8e0ae166e3268",
+  "portable57_manifest_sha256": "24ecbbc6a450c37e0e5faebe5fb3ff4a567f543ef74d92412aadd517bfe177d9",
+  "root_approval_sha256": "c71f3bb1cace5d7f193270a21fd8e2c67e293c05aea981e1c767574099c154d2",
+  "root_review_sha256": "40f5cdfd2ef0f07565a1153fc1f079c66305abb75c21a2d8ef9c7f9fa8bed364",
+  "schema": "usc144_matched_source_binding_v1"
+}
