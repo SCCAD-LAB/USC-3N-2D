@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "policy": {
+    "allowed_modified_device_layers": [
+      11
+    ],
+    "channel_geometry": "explicit_translation",
+    "device_translations": [
+      {
+        "type": "nmos_rvt",
+        "from": {
+          "x_nm": 546,
+          "y_nm": 36
+        },
+        "to": {
+          "x_nm": 588,
+          "y_nm": 36
+        },
+        "L_nm": 12,
+        "W_nm": 19
+      }
+    ],
+    "reason": "Root explicitly authorized repair of source ACT one-CPP misplacement. Exactly one M7 relocated42nm; all32 L/W and other31 coordinates and channels must remain identical. Native topology LVS and DRC required independently.",
+    "pin_labels_unchanged": true,
+    "site_boundary_layer100_unchanged": true
+  },
+  "nonexception_device_layers_preserved": true,
+  "actual_channel_geometry_preserved": false,
+  "actual_channel_geometry_preserved_under_explicit_translation": true,
+  "actual_L_W_count_preserved": true,
+  "actual_coordinates_preserved": false,
+  "explicit_translation_verified": true,
+  "raw_device_layers_unchanged": false
+}

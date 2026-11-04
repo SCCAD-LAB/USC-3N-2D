@@ -1,0 +1,2545 @@
+{
+  "complete": true,
+  "passed": true,
+  "rows": [
+    {
+      "cell": "AND2x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/AND2x1/AND2x1.sch_out.gz",
+      "independent_archive_sha256": "78ac1c6792096758bb46052b0cafa80b8d51526703bd02f5c2b22d5d521729e6",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AND2x1.spf",
+      "prior_circuit_source_sha256": "5c1471202e20cb0c0bc374d1f759adcccd6abea4c023e84aeb69bf8ac47bdb55",
+      "candidate_sha256": "e9b09181deb10abf7e6c458803db757709e54a795b8256b78f63fa198a726b20",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        6,
+        6
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/AND2x1/gold.cdl",
+      "gold_sha256": "e9b09181deb10abf7e6c458803db757709e54a795b8256b78f63fa198a726b20"
+    },
+    {
+      "cell": "AND3x1",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AND3x1.spf",
+      "prior_circuit_source_sha256": "3284621ef59726b59ef55e6f52ed31d75bc7875a81cff75a644785b11ba30ba2",
+      "candidate_sha256": "d2dbc86de72803334972ba97f9cbb3757eb7e604b344bef86d19e408f273ad0c",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        8
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/AND3x1/gold.cdl",
+      "gold_sha256": "d2dbc86de72803334972ba97f9cbb3757eb7e604b344bef86d19e408f273ad0c"
+    },
+    {
+      "cell": "AND4x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/AND4x1/AND4x1.sch_out.gz",
+      "independent_archive_sha256": "b144b481d5869b33942bdabcd6a591c1676f1b0dd834800741bbe9b06cb7b46b",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AND4x1.spf",
+      "prior_circuit_source_sha256": "d477aa02e105e9e722b126901dfadcfcb7b758a23a0e80fb3f3d1a7a05597f32",
+      "candidate_sha256": "cc6ec938cb558669087aa48d6c1d6fc6ee78738761010096366ecfc32f379e55",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        10,
+        10
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/AND4x1/gold.cdl",
+      "gold_sha256": "cc6ec938cb558669087aa48d6c1d6fc6ee78738761010096366ecfc32f379e55"
+    },
+    {
+      "cell": "AOI21x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/AOI21x1/AOI21x1.sch_out.gz",
+      "independent_archive_sha256": "6c11ae8263eb784d622aa40bb6f41ad53a0edd37549b776ca9f54ab65f61ca21",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AOI21x1.spf",
+      "prior_circuit_source_sha256": "72548ca5f141c02e288120f28932a1c1edda16faf5795887418b5ee43c9c60bf",
+      "candidate_sha256": "3c9d224ef44ab5d10daf59763c947830a370ba9ba66e717f9e570e6a45ce7bd2",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        6,
+        6
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/AOI21x1/gold.cdl",
+      "gold_sha256": "3c9d224ef44ab5d10daf59763c947830a370ba9ba66e717f9e570e6a45ce7bd2"
+    },
+    {
+      "cell": "AOI221x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/AOI221x1/AOI221x1.sch_out.gz",
+      "independent_archive_sha256": "1f3a4b02ebc2032df31b7599e1fcd0eaf5408064c8a120c6d9b1ee8511b5ee7a",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AOI221x1.spf",
+      "prior_circuit_source_sha256": "2bab03d2465e097f87eb899ab11326f6f87d53b29f63389a32627a0bf8e70ead",
+      "candidate_sha256": "b281eb2af5acf773b4857498ca0b2b477276720658eaf79e6e838a96f47ad57d",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        10,
+        10
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/AOI221x1/gold.cdl",
+      "gold_sha256": "b281eb2af5acf773b4857498ca0b2b477276720658eaf79e6e838a96f47ad57d"
+    },
+    {
+      "cell": "AOI222x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/AOI222x1/AOI222x1.sch_out.gz",
+      "independent_archive_sha256": "80d751d0a1194fe7a34d8dd56aec473f88ff715a72beab660671bb50151ac1e5",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AOI222x1.spf",
+      "prior_circuit_source_sha256": "93d3d9f45ec2d715edf8e33b8c6a7cb201385bbf9db318ab12cbc520684fd79c",
+      "candidate_sha256": "223d94e198b20e410a3c2e598f836586b4d83ad029bd380a5c0469bfef7cfa8d",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        12,
+        12
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/AOI222x1/gold.cdl",
+      "gold_sha256": "223d94e198b20e410a3c2e598f836586b4d83ad029bd380a5c0469bfef7cfa8d"
+    },
+    {
+      "cell": "AOI22x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/AOI22x1/AOI22x1.sch_out.gz",
+      "independent_archive_sha256": "6bdb67236c688c487d8ab644874a214c943bbdda165f9fff20c14279c07e5bdd",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AOI22x1.spf",
+      "prior_circuit_source_sha256": "41dfd8ad87da63499f60ffe712b8019a880f763512a1630f1c5f389b3dc0e4a7",
+      "candidate_sha256": "9ae6543d731e47c73ca12e14013ec007b7f51189897712dbb9582e0798c1427f",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        8,
+        8
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/AOI22x1/gold.cdl",
+      "gold_sha256": "9ae6543d731e47c73ca12e14013ec007b7f51189897712dbb9582e0798c1427f"
+    },
+    {
+      "cell": "AOI311x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/AOI311x1/AOI311x1.sch_out.gz",
+      "independent_archive_sha256": "d5b0c2985bcd68c075af27e10289f1b4fc16915b89076f04e1090e3a44af9f69",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AOI311x1.spf",
+      "prior_circuit_source_sha256": "ac99c6ffb3a2765060aaeba6862e04a49f45b7226317500052f1a33329295743",
+      "candidate_sha256": "a5e29ae6bc149d8457c85385c8f9d2911fbd54bdc7683502419b91c34f766839",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        10,
+        10
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/AOI311x1/gold.cdl",
+      "gold_sha256": "a5e29ae6bc149d8457c85385c8f9d2911fbd54bdc7683502419b91c34f766839"
+    },
+    {
+      "cell": "AOI31x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/AOI31x1/AOI31x1.sch_out.gz",
+      "independent_archive_sha256": "ba4d8e1a73c0b11852d6584e1a0d9b97237e88bc1951af3e0e463e2c56c85cc3",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AOI31x1.spf",
+      "prior_circuit_source_sha256": "2314d4849b6b84048bf5d455514957ebbb31be2ea5568d9deb08ab9322bf2ed7",
+      "candidate_sha256": "421addb1d4b58fca09ffbfdf6bac4a597521fc3d9a22217c7b68ba87cc5ce378",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        8,
+        8
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/AOI31x1/gold.cdl",
+      "gold_sha256": "421addb1d4b58fca09ffbfdf6bac4a597521fc3d9a22217c7b68ba87cc5ce378"
+    },
+    {
+      "cell": "BUFx1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/BUFx1/BUFx1.sch_out.gz",
+      "independent_archive_sha256": "90f08cd214a02cbe75b78172f766d0ccb2ab2d62e17922ffb716d9d39f557e40",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx1.spf",
+      "prior_circuit_source_sha256": "0618ea14a5babdb9967747a13c7d6d58071c6ad3ae92e82acc34adee6f2f05a4",
+      "candidate_sha256": "c47a935fff1c26384aa40a365d0cfb6bf59c224e6a3acbbc60fb810a7ff17ec9",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        4,
+        4
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/BUFx1/gold.cdl",
+      "gold_sha256": "c47a935fff1c26384aa40a365d0cfb6bf59c224e6a3acbbc60fb810a7ff17ec9"
+    },
+    {
+      "cell": "BUFx10",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/BUFx10/BUFx10.sch_out.gz",
+      "independent_archive_sha256": "d18e18eb8625d574a323f163e4909d67bd06f751b57ac2b71075c30082b1003e",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx10.spf",
+      "prior_circuit_source_sha256": "3330f5c9fddeed69e8d309a4a02634757f064758ae35c3cbfc1a5c4f7cbc6c15",
+      "candidate_sha256": "c2b4cdc33de377252b18ccddc6e98619c3998cd139cce98f6379e332ae33c4a0",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        40,
+        40
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/BUFx10/gold.cdl",
+      "gold_sha256": "c2b4cdc33de377252b18ccddc6e98619c3998cd139cce98f6379e332ae33c4a0"
+    },
+    {
+      "cell": "BUFx2",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx2.spf",
+      "prior_circuit_source_sha256": "79044961d8d7b3263f20f2e846c2442a7fe972422ed40e51f0d208f32cf017e7",
+      "candidate_sha256": "3248f2519df8ba1ef0685c91e2e8d48d86b7b8089d26eacd29fdf0411c2c7899",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        8
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/BUFx2/gold.cdl",
+      "gold_sha256": "3248f2519df8ba1ef0685c91e2e8d48d86b7b8089d26eacd29fdf0411c2c7899"
+    },
+    {
+      "cell": "BUFx3",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx3.spf",
+      "prior_circuit_source_sha256": "47a0e1ae8f5565d9cb4c469f6b753cdcda1988337af1026a6a09cd5bd290c3ab",
+      "candidate_sha256": "066e3d35bc7749103025a74debbb3a1981d103650c20d322d6be8ae08739cc6f",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        10
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/BUFx3/gold.cdl",
+      "gold_sha256": "066e3d35bc7749103025a74debbb3a1981d103650c20d322d6be8ae08739cc6f"
+    },
+    {
+      "cell": "BUFx4",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx4.spf",
+      "prior_circuit_source_sha256": "58b84947a9e75aabb7fdc76caaea91dd572369a45920b4adb7a25b1ff3913efb",
+      "candidate_sha256": "194726c4855c71427081b83f5aa81a66e7104196bf5f64cd47706c065d8f3afe",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        16
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/BUFx4/gold.cdl",
+      "gold_sha256": "194726c4855c71427081b83f5aa81a66e7104196bf5f64cd47706c065d8f3afe"
+    },
+    {
+      "cell": "BUFx5",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx5.spf",
+      "prior_circuit_source_sha256": "8b44bd022d49d5e522779a65f1e0b82c1a4c120d8e25f4906585ba5a36a6886d",
+      "candidate_sha256": "3ba97df0d5e76f73b04cc50d956e316e0e6952a36c76a2beb42a84e429454c6e",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        18
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/BUFx5/gold.cdl",
+      "gold_sha256": "3ba97df0d5e76f73b04cc50d956e316e0e6952a36c76a2beb42a84e429454c6e"
+    },
+    {
+      "cell": "BUFx6",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx6.spf",
+      "prior_circuit_source_sha256": "33429229f73fd56afbc0665d6fcf3ac24b7d52c47d8eb394a1a4834803f87ed5",
+      "candidate_sha256": "fa797bba990316d92c9aca6ac9da88db5d6884fdd8e724ad79802987273eb994",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        24
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/BUFx6/gold.cdl",
+      "gold_sha256": "fa797bba990316d92c9aca6ac9da88db5d6884fdd8e724ad79802987273eb994"
+    },
+    {
+      "cell": "BUFx7",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx7.spf",
+      "prior_circuit_source_sha256": "abe3652673f502ed8ce4e5f0b91ff5e7771cf4353f39529833858845a3cdb14e",
+      "candidate_sha256": "0ed8d7eab4cd1a0b3445c2ae8be513ac3bf45606b5e9795e05de75cbbba11184",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        26
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/BUFx7/gold.cdl",
+      "gold_sha256": "0ed8d7eab4cd1a0b3445c2ae8be513ac3bf45606b5e9795e05de75cbbba11184"
+    },
+    {
+      "cell": "BUFx8",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx8.spf",
+      "prior_circuit_source_sha256": "022a57f73ad625f691e145986022d022314b2dccb69617757f4f3cc5933e1c05",
+      "candidate_sha256": "08c5da9456aba9ca0810534166eb155d2ed734f1b88bdf281d883ca83bd24070",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        32
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/BUFx8/gold.cdl",
+      "gold_sha256": "08c5da9456aba9ca0810534166eb155d2ed734f1b88bdf281d883ca83bd24070"
+    },
+    {
+      "cell": "DFFHQNx1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/DFFHQNx1/DFFHQNx1.sch_out.gz",
+      "independent_archive_sha256": "5a8613c8424e62d4e34e1db5c6314656b32d20a0383b424f858f396c4ffb9583",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/DFFHQNx1.spf",
+      "prior_circuit_source_sha256": "78274ab1a84cfe3d046b98475444b255a7cd069d6eb68b6ff7750147d6f57b82",
+      "candidate_sha256": "c8b7452eddd26bcb9f1a1ff19462091c8ea5ab142aff18e4adbad197836cce60",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        24,
+        24
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.02u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.027u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.015u"
+          ]
+        ],
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/DFFHQNx1/gold.cdl",
+      "gold_sha256": "c8b7452eddd26bcb9f1a1ff19462091c8ea5ab142aff18e4adbad197836cce60"
+    },
+    {
+      "cell": "DFFHx1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/DFFHx1/DFFHx1.sch_out.gz",
+      "independent_archive_sha256": "9d2c62ef17c92f505d4e7c90aefc0c43f1069c1e49b79a29a6d9c1aa90fc616e",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/DFFHx1.spf",
+      "prior_circuit_source_sha256": "4163d97e15432751b4ea1fec0dc8be36619dfe6bdcf948ead403cf28ae91402b",
+      "candidate_sha256": "1d515789769c6c403a1bb2e025fe9cbe01df55bac83fc1205c77613a96a322fb",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        32,
+        32
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.02u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.027u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.014u"
+          ]
+        ],
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.015u"
+          ]
+        ],
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/DFFHx1/gold.cdl",
+      "gold_sha256": "1d515789769c6c403a1bb2e025fe9cbe01df55bac83fc1205c77613a96a322fb"
+    },
+    {
+      "cell": "DHLx1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/DHLx1/DHLx1.sch_out.gz",
+      "independent_archive_sha256": "1dec1d343b87bddba065fdeb3ae1ff8104407264cc2cc84249d7f56768cd0cf3",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/DHLx1.spf",
+      "prior_circuit_source_sha256": "26239e61bf7e56876be2916e1387af7ff87b4992798bd14ea0c8be4d8ca60c2c",
+      "candidate_sha256": "49f99ff07fe64f88a66cec7506bda07f56b4a92bbdfc24d56644f7259b5f272c",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        16,
+        16
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.015u"
+          ]
+        ],
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/DHLx1/gold.cdl",
+      "gold_sha256": "49f99ff07fe64f88a66cec7506bda07f56b4a92bbdfc24d56644f7259b5f272c"
+    },
+    {
+      "cell": "INVx1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/INVx1/INVx1.sch_out.gz",
+      "independent_archive_sha256": "4071da22cd2448d6d245455a5f92601e99eb0f8eef69dc70f57c8b60a3a13028",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx1.spf",
+      "prior_circuit_source_sha256": "dd486e019eb735d92cb0f9a2eda0d8cca6745a3182053418883600714d4b5815",
+      "candidate_sha256": "23283eed4eca4a37fd40fb10c4086ebeb3c073777e86a5751adf31f74cb78fd5",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        2,
+        2
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/INVx1/gold.cdl",
+      "gold_sha256": "23283eed4eca4a37fd40fb10c4086ebeb3c073777e86a5751adf31f74cb78fd5"
+    },
+    {
+      "cell": "INVx10",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx10.spf",
+      "prior_circuit_source_sha256": "1425fff2eeae994676f6ff55eae38b83cc6c731eb3adf8bae39566039326bc4e",
+      "candidate_sha256": "8af33d90c5684d82a24409c7bb986411fe6c374bd3a767d5265083d61034eaed",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        20
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/INVx10/gold.cdl",
+      "gold_sha256": "8af33d90c5684d82a24409c7bb986411fe6c374bd3a767d5265083d61034eaed"
+    },
+    {
+      "cell": "INVx12",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx12.spf",
+      "prior_circuit_source_sha256": "afe8189b73545ad2b02e667a92137e9af4273572331f864d3badc3883828c0fe",
+      "candidate_sha256": "720e288f66fce9574ccf0c5075034ceabcc67624a4dcbd095532c3a5699ef2dd",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        24
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/INVx12/gold.cdl",
+      "gold_sha256": "720e288f66fce9574ccf0c5075034ceabcc67624a4dcbd095532c3a5699ef2dd"
+    },
+    {
+      "cell": "INVx14",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx14.spf",
+      "prior_circuit_source_sha256": "7921dd4ff2d04901451256f0f6b22b2d5c5d02be39faa25680bc42d1e4c400e4",
+      "candidate_sha256": "8af4222f079d947461d2a1925dd557e899ef9b5a9c238d651b215212c0e5380e",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        28
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/INVx14/gold.cdl",
+      "gold_sha256": "8af4222f079d947461d2a1925dd557e899ef9b5a9c238d651b215212c0e5380e"
+    },
+    {
+      "cell": "INVx16",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/INVx16/INVx16.sch_out.gz",
+      "independent_archive_sha256": "04cbee2ddec587419af22136bc68ed9c13c8c8dbdef7153b4247cf287ffe9bb7",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx16.spf",
+      "prior_circuit_source_sha256": "94c552ebe27d93b75e3e0d36ad2de0706d3d4b751f974943b3b1015cb7838bee",
+      "candidate_sha256": "893b34357dd98956cd0419c9f22e764bd348f4150a5be478ae24cde5b27afe82",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        32,
+        32
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.02u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.027u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/INVx16/gold.cdl",
+      "gold_sha256": "893b34357dd98956cd0419c9f22e764bd348f4150a5be478ae24cde5b27afe82"
+    },
+    {
+      "cell": "INVx2",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/INVx2/INVx2.sch_out.gz",
+      "independent_archive_sha256": "b334e31f02557fce209a8018cbb3dabbbc6f9eab40d96c284f3eea2f93c52fe1",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx2.spf",
+      "prior_circuit_source_sha256": "080c26d88e0275b1dd9eb2082305abf02c22b30d0e1323eb6d5140bf65c72d4f",
+      "candidate_sha256": "73da4410eeada6df1eb5522b00fc668535091dcfd83098bd4871cb5e2807943b",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        4,
+        4
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.015u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ],
+        [
+          [
+            "l",
+            "0.02u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.054u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/INVx2/gold.cdl",
+      "gold_sha256": "73da4410eeada6df1eb5522b00fc668535091dcfd83098bd4871cb5e2807943b"
+    },
+    {
+      "cell": "INVx3",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/INVx3/INVx3.sch_out.gz",
+      "independent_archive_sha256": "7cc600347af925bdeb47d6878ea7b39fec8ca7f8d8875d7c26e5b4db5e4ff480",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx3.spf",
+      "prior_circuit_source_sha256": "c04cee6a49f2415458be2e87bb9856298c79176969a4290a4b058ffbcee40469",
+      "candidate_sha256": "2b9f822dabe22c501836667da65f9bdcc8bbb8710a1c628a4ab63c6c265d05cc",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        6,
+        6
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/INVx3/gold.cdl",
+      "gold_sha256": "2b9f822dabe22c501836667da65f9bdcc8bbb8710a1c628a4ab63c6c265d05cc"
+    },
+    {
+      "cell": "INVx4",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx4.spf",
+      "prior_circuit_source_sha256": "3d4fd6d553007d5ed0027e584372c5fa473e100d256ca4b6db6f830223a6428c",
+      "candidate_sha256": "1aac09809ee2f90ec1ab221ce92648f5cda6f188003301b20a103f1b32168681",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        8
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/INVx4/gold.cdl",
+      "gold_sha256": "1aac09809ee2f90ec1ab221ce92648f5cda6f188003301b20a103f1b32168681"
+    },
+    {
+      "cell": "INVx5",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx5.spf",
+      "prior_circuit_source_sha256": "dc7c0aadc4d4db4d0fb5c1c73a797d70f9241869ad2a95c1e0022d1ca3fbd1c2",
+      "candidate_sha256": "e74605ed6b7546a8514d079962f4761e7e019561f39f32065e8729729cfef0ef",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        10
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/INVx5/gold.cdl",
+      "gold_sha256": "e74605ed6b7546a8514d079962f4761e7e019561f39f32065e8729729cfef0ef"
+    },
+    {
+      "cell": "INVx6",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx6.spf",
+      "prior_circuit_source_sha256": "d3c9aa80d985e46be0b106fc44617b5b474bd2392d086d6c24605c63f61f4298",
+      "candidate_sha256": "9bbe7b82c434529e24ca5b68e8c4a43bad93fb48b6e09ea7844c969a396da4dd",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        12
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/INVx6/gold.cdl",
+      "gold_sha256": "9bbe7b82c434529e24ca5b68e8c4a43bad93fb48b6e09ea7844c969a396da4dd"
+    },
+    {
+      "cell": "INVx7",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx7.spf",
+      "prior_circuit_source_sha256": "3ee13d517efb13fe8e7cad3464f361690e34b21797d8156e9af0f61cdd311e41",
+      "candidate_sha256": "f039777cf86cf2d623ca7c7c48b8d47de05dbb726c540044b1d44ae91ad09720",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        14
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/INVx7/gold.cdl",
+      "gold_sha256": "f039777cf86cf2d623ca7c7c48b8d47de05dbb726c540044b1d44ae91ad09720"
+    },
+    {
+      "cell": "INVx8",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx8.spf",
+      "prior_circuit_source_sha256": "f04a20a2fc868f07dcadc54586d90173bd421de276e68c1c4f72d711c7132601",
+      "candidate_sha256": "7bc6ae9551c896ec7615955487dd9f4f4ebe987716061768ec8aca88145fa39d",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        16
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/INVx8/gold.cdl",
+      "gold_sha256": "7bc6ae9551c896ec7615955487dd9f4f4ebe987716061768ec8aca88145fa39d"
+    },
+    {
+      "cell": "MUX2x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/MUX2x1/MUX2x1.sch_out.gz",
+      "independent_archive_sha256": "38065a93f7830b8adb1858ed1b02d36ce79eec87c30b5b9863c57fe99cfd52cf",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/MUX2x1.spf",
+      "prior_circuit_source_sha256": "5f50c02719d0df17eb5bf466b1fcb2c0baf43103f4b4311c952a9ccd2b5f3e16",
+      "candidate_sha256": "5d32ea6a111ed02c06bdc888141ed0a7a353740674aeebaaeb99a4ef0930afaf",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        10,
+        10
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/MUX2x1/gold.cdl",
+      "gold_sha256": "5d32ea6a111ed02c06bdc888141ed0a7a353740674aeebaaeb99a4ef0930afaf"
+    },
+    {
+      "cell": "NAND2x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/NAND2x1/NAND2x1.sch_out.gz",
+      "independent_archive_sha256": "c6a2d6aa08a1ddfc6e26c8329a24cbd0b83c206d6cefd06773ba59ca97e8ed74",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NAND2x1.spf",
+      "prior_circuit_source_sha256": "87c74b500582d3ab0a8bf2e23b06942eeed23477927f2df28fc28acadc6512b0",
+      "candidate_sha256": "1e12f7e85abff78efbc660dcd1e44d04bbbdc3ae4e8102a786b4c2ffcc613004",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        4,
+        4
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/NAND2x1/gold.cdl",
+      "gold_sha256": "1e12f7e85abff78efbc660dcd1e44d04bbbdc3ae4e8102a786b4c2ffcc613004"
+    },
+    {
+      "cell": "NAND2x2",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/NAND2x2/NAND2x2.sch_out.gz",
+      "independent_archive_sha256": "3d6ebea9672ecd4b0a97cf40f55472566e5a302045e7a2c3ad3d42279bfaa11d",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NAND2x2.spf",
+      "prior_circuit_source_sha256": "a9f5b0917a9b87305030d2b65ff32c286282d024c9dd15a0293f36900dd9e9c4",
+      "candidate_sha256": "2575f3105f7fddc96f2992a43025a4b1d2e61459500e9b08da995dd9968f681f",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        8,
+        8
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/NAND2x2/gold.cdl",
+      "gold_sha256": "2575f3105f7fddc96f2992a43025a4b1d2e61459500e9b08da995dd9968f681f"
+    },
+    {
+      "cell": "NAND3x1",
+      "independent_archive": null,
+      "independent_archive_sha256": null,
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NAND3x1.spf",
+      "prior_circuit_source_sha256": "d763e3f6e81a4ba467491af133921f8f39648f074eb8e54f2435f5388f687072",
+      "candidate_sha256": "51861c14a832eaacc0d94e9346c2a4ca91c8a0bc115b2325bc90bf4d743e7c03",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        null,
+        6
+      ],
+      "topology_isomorphic": null,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/NAND3x1/gold.cdl",
+      "gold_sha256": "51861c14a832eaacc0d94e9346c2a4ca91c8a0bc115b2325bc90bf4d743e7c03"
+    },
+    {
+      "cell": "NAND3x2",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/NAND3x2/NAND3x2.sch_out.gz",
+      "independent_archive_sha256": "06910daaf34d74a6cea1dcd1b8bf40d3ea81d5db625f107e01c00f45c2432644",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NAND3x2.spf",
+      "prior_circuit_source_sha256": "366fdd680de1e3988ca080c341f5629dfca760dc54ec0df51d873357f3a06381",
+      "candidate_sha256": "cbf33a9a0e6b38e408ef3594a8ea90ac181f3b896180db1df614a680c93aa84f",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        12,
+        12
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/NAND3x2/gold.cdl",
+      "gold_sha256": "cbf33a9a0e6b38e408ef3594a8ea90ac181f3b896180db1df614a680c93aa84f"
+    },
+    {
+      "cell": "NAND4x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/NAND4x1/NAND4x1.sch_out.gz",
+      "independent_archive_sha256": "2879c23b5e1c881e5deace3d2a5b6b6e8a78699065cc371ede8c75599c442c9f",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NAND4x1.spf",
+      "prior_circuit_source_sha256": "ec3563cbe911768e1ccd52c780c21e64a0761e27a1422c732af1e5640409fcfc",
+      "candidate_sha256": "06cb72141213d904f4e8858c1f416834c736e800718cb81211f894bf7ab153fd",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        8,
+        8
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/NAND4x1/gold.cdl",
+      "gold_sha256": "06cb72141213d904f4e8858c1f416834c736e800718cb81211f894bf7ab153fd"
+    },
+    {
+      "cell": "NOR2x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/NOR2x1/NOR2x1.sch_out.gz",
+      "independent_archive_sha256": "4ae05d13d1316655c6aa15e2b2f5781e97deb4a55019b67d1f286aff0cd1f2be",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NOR2x1.spf",
+      "prior_circuit_source_sha256": "b47e53f557aeebdc77d5cce13b7e719ebb9963e53dbc590657c6c68611347bcc",
+      "candidate_sha256": "dc430762b1de9c7616642d5502855f58282ecc5f1cfb039bb817ef579c855c40",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        4,
+        4
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/NOR2x1/gold.cdl",
+      "gold_sha256": "dc430762b1de9c7616642d5502855f58282ecc5f1cfb039bb817ef579c855c40"
+    },
+    {
+      "cell": "NOR2x2",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/NOR2x2/NOR2x2.sch_out.gz",
+      "independent_archive_sha256": "f2faaed35f4020e9ad339e94380b075e12df8a0d9e270bef6dd4be85ee9fa89c",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NOR2x2.spf",
+      "prior_circuit_source_sha256": "a1f8186d37dfe3cbb55f589d1b49a4eacdc3ca0c130943dafc825b341f4cda5d",
+      "candidate_sha256": "8492dd17e1e1c3c2a5a8dd199b62c21fbfd73ecd3e85e529c8286ebe8a55ca8f",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        8,
+        8
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/NOR2x2/gold.cdl",
+      "gold_sha256": "8492dd17e1e1c3c2a5a8dd199b62c21fbfd73ecd3e85e529c8286ebe8a55ca8f"
+    },
+    {
+      "cell": "NOR3x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/NOR3x1/NOR3x1.sch_out.gz",
+      "independent_archive_sha256": "390a570c4b359488a8c0e753866e72ae96e402c1212297162a0565853264a94f",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NOR3x1.spf",
+      "prior_circuit_source_sha256": "b6d2020b60ee79dfa40dabc85bf4198418a3852ecc4dba3780e11982ffcdbd2a",
+      "candidate_sha256": "e236c8c13a15f1d3e5da975c2e8ff696c1f336309d81af66af67486314d35aeb",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        6,
+        6
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/NOR3x1/gold.cdl",
+      "gold_sha256": "e236c8c13a15f1d3e5da975c2e8ff696c1f336309d81af66af67486314d35aeb"
+    },
+    {
+      "cell": "NOR3x2",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/NOR3x2/NOR3x2.sch_out.gz",
+      "independent_archive_sha256": "f3f1cd80cd0a57f413b7c5f9cabf8c926108b8f928e49095265793fd298111de",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NOR3x2.spf",
+      "prior_circuit_source_sha256": "85eb9524cceef1ec4b334c6cabbaa12f348f4d1973640ecd2beb10854598a651",
+      "candidate_sha256": "2635e37a15aa0b5f8ec8f958167d7c32997864e858df49b9af4d78a83c07a9af",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        12,
+        12
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/NOR3x2/gold.cdl",
+      "gold_sha256": "2635e37a15aa0b5f8ec8f958167d7c32997864e858df49b9af4d78a83c07a9af"
+    },
+    {
+      "cell": "NOR4x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/NOR4x1/NOR4x1.sch_out.gz",
+      "independent_archive_sha256": "b5942095ce31afa152f016b7ee15318a3653ec72579f8c7a02b2316c8ddbbdb0",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NOR4x1.spf",
+      "prior_circuit_source_sha256": "f1a245f280a09d62f9b288c4170d9739e1292f59abacdab10789c41da1c44cea",
+      "candidate_sha256": "a9980142c338c00e1359e3dbad63b44f34b0ceee40a524803062d56037d47769",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        8,
+        8
+      ],
+      "topology_isomorphic": false,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "resolution": "IndependentpriorNOR4 passesall16publishedLibertytruthcases; archiveschematicNMOSBdrainnet25isdangling. Keeppriorindependentcorrectlogicreference, notcurrentDUT.",
+      "logic_receipt": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/reports/INDEPENDENT_REFERENCE_LOGIC.json",
+      "logic_receipt_sha256": "a3f3604efbc2958e630e3cbcbf58441e8e2718d90ebee53129f34baf925c0c43",
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/NOR4x1/gold.cdl",
+      "gold_sha256": "a9980142c338c00e1359e3dbad63b44f34b0ceee40a524803062d56037d47769"
+    },
+    {
+      "cell": "OAI21x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/OAI21x1/OAI21x1.sch_out.gz",
+      "independent_archive_sha256": "b5ee77b1e78048295c309781999c08a832aac7a4574bd544bf813dfa995d6dab",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OAI21x1.spf",
+      "prior_circuit_source_sha256": "3a35ad7e383fa3394a3ba7b768dd70520ce50c8dc723bee2b3b55f49cb697df5",
+      "candidate_sha256": "37bcdf6192c6d0ecfcc140702f30060e7b259a39bcd72bf23b621b42736c2bff",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        6,
+        6
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/OAI21x1/gold.cdl",
+      "gold_sha256": "37bcdf6192c6d0ecfcc140702f30060e7b259a39bcd72bf23b621b42736c2bff"
+    },
+    {
+      "cell": "OAI221x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/OAI221x1/OAI221x1.sch_out.gz",
+      "independent_archive_sha256": "b9e433d694c42fbf13423322b8e049f5e12788a14065aad0b2e57f05f1400737",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OAI221x1.spf",
+      "prior_circuit_source_sha256": "a220cfffc8dafc1014284bf2985abca2916ad170091ee52723822d11beb47614",
+      "candidate_sha256": "9b82821da00f052667818b2d0b7aebc32768624c33479ca51e6780fd13a08c09",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        10,
+        10
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/OAI221x1/gold.cdl",
+      "gold_sha256": "9b82821da00f052667818b2d0b7aebc32768624c33479ca51e6780fd13a08c09"
+    },
+    {
+      "cell": "OAI222x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/OAI222x1/OAI222x1.sch_out.gz",
+      "independent_archive_sha256": "c4a385a907b597a40c38a46f6f27285a9d8e3a534d0a954dceeb7a928606910f",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OAI222x1.spf",
+      "prior_circuit_source_sha256": "056943c49a362429aa31119f160cfbd5cdc53615ac8c11269d5207e4b8350d30",
+      "candidate_sha256": "d2d5ed5e08400dbcc044e8ece9e72d072ebbfd7e5b6494b92514f982c6f23de7",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        12,
+        12
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/OAI222x1/gold.cdl",
+      "gold_sha256": "d2d5ed5e08400dbcc044e8ece9e72d072ebbfd7e5b6494b92514f982c6f23de7"
+    },
+    {
+      "cell": "OAI22x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/OAI22x1/OAI22x1.sch_out.gz",
+      "independent_archive_sha256": "bcfde25024c963c0d4017209c69085d2d67692295af003fd8896f606982dad33",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OAI22x1.spf",
+      "prior_circuit_source_sha256": "a80a28bac00811b5a60a7c74a5ca772da525c226a1fd2ab1e743e9700f6d7cf3",
+      "candidate_sha256": "9141365ac13f01759fa201921cd4a4dd19ca9d5da1f1f0589f490e0c677ffc72",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        8,
+        8
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/OAI22x1/gold.cdl",
+      "gold_sha256": "9141365ac13f01759fa201921cd4a4dd19ca9d5da1f1f0589f490e0c677ffc72"
+    },
+    {
+      "cell": "OAI311x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/OAI311x1/OAI311x1.sch_out.gz",
+      "independent_archive_sha256": "c871bf4936be98efa91229f07641ef000501fc840016674acb7f2f13ddb47f4c",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OAI311x1.spf",
+      "prior_circuit_source_sha256": "0242b9f7f6ac781f2aaf4ac22a4c777b031b0e69a74efbff78b3d9bd8e825144",
+      "candidate_sha256": "8afc3ea88d5f60cafe3e79b93fb855ea38b18ea9f3e48a779a8c6726c397c7e7",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        10,
+        10
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/OAI311x1/gold.cdl",
+      "gold_sha256": "8afc3ea88d5f60cafe3e79b93fb855ea38b18ea9f3e48a779a8c6726c397c7e7"
+    },
+    {
+      "cell": "OAI31x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/OAI31x1/OAI31x1.sch_out.gz",
+      "independent_archive_sha256": "45332debf6c15120ff3c4bd10894acbbf88f28c3a299d6f22c6f6806c84b52a7",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OAI31x1.spf",
+      "prior_circuit_source_sha256": "9df1b285ac4c15a8a11e511f86f999da57929f7f3f4a5d0ee2722690e172415f",
+      "candidate_sha256": "1db9687dbf5e97773ef1c0d85ee4f0de47b5cfb01f6f84ee780e717d893a1a5c",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        8,
+        8
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/OAI31x1/gold.cdl",
+      "gold_sha256": "1db9687dbf5e97773ef1c0d85ee4f0de47b5cfb01f6f84ee780e717d893a1a5c"
+    },
+    {
+      "cell": "OR2x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/OR2x1/OR2x1.sch_out.gz",
+      "independent_archive_sha256": "a4d0bb57faa35f8cba8bcd751cdc763b14f480f8e99606af970f6bb7a2c90abf",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OR2x1.spf",
+      "prior_circuit_source_sha256": "7ca17d3ea3a1565ffd732c09425e5d72a5d43c7c7dc75dfd7d23d2b2675f17b2",
+      "candidate_sha256": "9ba56653a7b7e9234a7b28671c05b2f9ef867dba726ec4ab0994173ef4c8a411",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        6,
+        6
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/OR2x1/gold.cdl",
+      "gold_sha256": "9ba56653a7b7e9234a7b28671c05b2f9ef867dba726ec4ab0994173ef4c8a411"
+    },
+    {
+      "cell": "OR3x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/OR3x1/OR3x1.sch_out.gz",
+      "independent_archive_sha256": "b7830f04f3652c8daf2b2e39c4c6ac2c4cd2479b6a9fa4df1d2b5e594e030551",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OR3x1.spf",
+      "prior_circuit_source_sha256": "9989f59cf1360f2a240634ef1d9db7ce0f876d82106c0f829c472b25415cad94",
+      "candidate_sha256": "6764011afad38edec1b4b4ed3905e00627767755e4ca01a98ad77f6d1d273c2e",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        8,
+        8
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/OR3x1/gold.cdl",
+      "gold_sha256": "6764011afad38edec1b4b4ed3905e00627767755e4ca01a98ad77f6d1d273c2e"
+    },
+    {
+      "cell": "OR4x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/OR4x1/OR4x1.sch_out.gz",
+      "independent_archive_sha256": "896188d4b0e0029caf2217b3b3ba3bc6723f9a9b5509797ec098e45224c7d68a",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OR4x1.spf",
+      "prior_circuit_source_sha256": "51e618ebc8e8cfbc22882f143d2c32c5ba5d544a1f6ec18aad1cfc823ad37b87",
+      "candidate_sha256": "44371696443c451a21868735aa02b0c09b97bf35f59df3596bcc66466decca70",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        10,
+        10
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/OR4x1/gold.cdl",
+      "gold_sha256": "44371696443c451a21868735aa02b0c09b97bf35f59df3596bcc66466decca70"
+    },
+    {
+      "cell": "XNOR2x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/XNOR2x1/XNOR2x1.sch_out.gz",
+      "independent_archive_sha256": "87aa88ca28649fd78fbc28e0a623fb596acc1561a6e3edb4b0f1e831d69da566",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/XNOR2x1.spf",
+      "prior_circuit_source_sha256": "d7bd805093c6b94f2591bcebf5ee29e209d79920f44e218fb29d5c02ee38b880",
+      "candidate_sha256": "097c34c4927b20fa98d655e8ee33031b0414bc585e469bc15ebd21e442885cea",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        12,
+        12
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/XNOR2x1/gold.cdl",
+      "gold_sha256": "097c34c4927b20fa98d655e8ee33031b0414bc585e469bc15ebd21e442885cea"
+    },
+    {
+      "cell": "XNOR3x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/XNOR3x1/XNOR3x1.sch_out.gz",
+      "independent_archive_sha256": "e63243e480fbb5732f1ba0faeae3dd37ed633ec1a7b6df7075e7dc7432a487b6",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/XNOR3x1.spf",
+      "prior_circuit_source_sha256": "e81f99b68ff058dabfebfbe641b12eb87817b41e7abeb29b674bb00d346184fc",
+      "candidate_sha256": "77996bfc90a49ef69d6af418db08958f48b8127895c80a94275f763c2b3bb469",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        24,
+        24
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/XNOR3x1/gold.cdl",
+      "gold_sha256": "77996bfc90a49ef69d6af418db08958f48b8127895c80a94275f763c2b3bb469"
+    },
+    {
+      "cell": "XOR2x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/XOR2x1/XOR2x1.sch_out.gz",
+      "independent_archive_sha256": "114b1fc0751fb16344930b97ce0f3fa15c7954fde84e505f212fc3b557a7aab4",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/XOR2x1.spf",
+      "prior_circuit_source_sha256": "14c571a00eb750d3fcd516cbc63c4432947baa0bcbee1e7e3347c5aeef052196",
+      "candidate_sha256": "89e648d958168d210f9fe43312b65e3194c982a3f502f8d6c78356ec57f5a924",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        12,
+        12
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/XOR2x1/gold.cdl",
+      "gold_sha256": "89e648d958168d210f9fe43312b65e3194c982a3f502f8d6c78356ec57f5a924"
+    },
+    {
+      "cell": "XOR3x1",
+      "independent_archive": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/oa/6T_final/XOR3x1/XOR3x1.sch_out.gz",
+      "independent_archive_sha256": "712454952038ee654b7edc492f21c905165a8317228e2f0ce9506b8cd6effba2",
+      "prior_circuit_source": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/XOR3x1.spf",
+      "prior_circuit_source_sha256": "e47d3b33bb63bdcd81b8e2642fce0920163bc341dcc76f62fe111e48a761df85",
+      "candidate_sha256": "dd4145b8369e9d5b8af01d394e782ae542d3ecf57bd324e2c9f60e9aaa041ab0",
+      "port_sets_equal": true,
+      "MOS_counts": [
+        24,
+        24
+      ],
+      "topology_isomorphic": true,
+      "comparison": "Gate-preserving, source/drain-permutable MOS graph where independent archive exists; remaining independent prior2024circuits retained without a second-archive equivalenceclaim; dimensions audited separately",
+      "archived_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "m",
+            "1"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "prior_12nm_properties": [
+        [
+          [
+            "l",
+            "0.012u"
+          ],
+          [
+            "w",
+            "0.03u"
+          ]
+        ]
+      ],
+      "topology_reference_admitted": true,
+      "native_property_checks_enabled": false,
+      "parametric_gold": false,
+      "gold_cdl": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/references/XOR3x1/gold.cdl",
+      "gold_sha256": "dd4145b8369e9d5b8af01d394e782ae542d3ecf57bd324e2c9f60e9aaa041ab0"
+    }
+  ],
+  "method": "Independent prior2024extractedcircuit checked against archivedschematic topology where available; not current144nmDUTextraction; topology-onlyreference explicitlyauthorizedbyroot; source144nmdevicegeometry frozen and separatelyaudited"
+}

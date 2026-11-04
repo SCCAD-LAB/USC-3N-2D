@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "previous_pin": "089c754632c0c1c0343031e557a34c3f4c067fe8",
+  "cases": [
+    {
+      "design": "ECG",
+      "old_guard_rejected_by_regression": true,
+      "rc": 1,
+      "failure_reason": "old helper silently accepted A-to-B drift"
+    },
+    {
+      "design": "OpenPiton",
+      "old_guard_rejected_by_regression": true,
+      "rc": 1,
+      "failure_reason": "old helper silently accepted A-to-B drift"
+    }
+  ],
+  "epoch": 1793803319.6597388,
+  "native_tools_invoked": 0,
+  "synthetic_only": true
+}

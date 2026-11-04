@@ -1,0 +1,1056 @@
+--- a/PDK Development/Front-side Version/selected_collateral.tcl
++++ b/PDK Development/Front-side Version/selected_collateral.tcl
+@@ -0,0 +1,46 @@
++# Exact front-side 144 nm collateral. PDK_ROOT is the repository root.
++if {![info exists ::env(PDK_ROOT)]} {error "Set PDK_ROOT to the USC-3N-2D repository root"}
++set fspr_repo_root [file normalize $::env(PDK_ROOT)]
++set fspr_dev [file join $fspr_repo_root {PDK Development/Front-side Version}]
++set fspr_gds [file join $fspr_dev GDS 3nm_GAA_FSPR_144nm.gds]
++set fspr_model [file join $fspr_dev MODEL 3nm_GAA_FSPR_RVT.sp]
++foreach vendor {Cadence OpenROAD Synopsys} {
++    set fspr_vendor_root($vendor) [file join $fspr_repo_root "PnR-$vendor/Front-side Version"]
++    set fspr_tech_lef($vendor) [file join $fspr_vendor_root($vendor) TECH-LEF 3nm_GAA_FSPR.tech.lef]
++    set fspr_std_lef($vendor) [file join $fspr_vendor_root($vendor) LEF 3nm_GAA_FSPR.lef]
++    set lib_folder LIB
++    if {$vendor eq "Synopsys"} {set lib_folder LIB_DB}
++    set fspr_lib($vendor) [file join $fspr_vendor_root($vendor) $lib_folder 3nm_GAA_FSPR_rvt_nldm.lib]
++}
++set fspr_db [file join $fspr_vendor_root(Synopsys) LIB_DB 3nm_GAA_FSPR_rvt_nldm.db]
++set fspr_ndm [file join $fspr_vendor_root(Synopsys) NDM 3nm_GAA_FSPR_144nm_rvt.ndm]
++set fspr_tf [file join $fspr_vendor_root(Synopsys) TF 3nm_GAA_FSPR.tf]
++set fspr_tluplus [file join $fspr_vendor_root(Synopsys) ITF 3nm_GAA_FSPR.tluplus]
++set fspr_qrc_tch [file join $fspr_vendor_root(Cadence) QRC 3nm_GAA_FSPR.tch]
++set fspr_qrc_map [file join $fspr_vendor_root(Cadence) QRC 3nm_GAA_FSPR.layermap]
++set fspr_release [file join $fspr_dev RELEASE_144nm_RVT]
++set fspr_drc_deck [file join $fspr_release physical rules matched_144nm DRC sccad3nm_main.drc.rs]
++set fspr_lvs_deck [file join $fspr_release physical rules matched_144nm LVS ICV_3nm.rs]
++set fspr_pex_deck [file join $fspr_release physical rules matched_144nm LVS ICV_3nm_FSPR_PEX.rs]
++set fspr_starrc_map [file join $fspr_release physical rules matched_144nm StarRC starrcxt.mapping]
++set fspr_extraction_grid [file join $fspr_vendor_root(Synopsys) ITF 3nm_GAA_FSPR.nxtgrd]
++# These are fin-present144nm mapping adapters; rules/github is historical.
++# Native LVS checks topology; independent dimension/body audits remain separate.
++set fspr_site coreSite
++set fspr_release_binding pending
++set fspr_final_timing_ready 0
++set fspr_matched_release_ready 0
++source [file join $fspr_dev matched_release_readiness.tcl]
++proc fspr_require_final_timing {} {
++    global fspr_final_timing_ready
++    if {!$fspr_final_timing_ready} {error "Matched 57-cell native LIB/DB is pending. This private physical snapshot cannot run PNR."}
++}
++proc fspr_require_matched_release {{with_ndm 0}} {
++    global fspr_matched_release_ready fspr_release_binding fspr_gds fspr_model fspr_std_lef fspr_lib fspr_db fspr_ndm
++    if {!$fspr_matched_release_ready} {error "Matched 144nm release is pending final timing/NDM validation; old timing or historical NDM is not a fallback."}
++    if {![regexp {^[0-9a-f]{64}$} $fspr_release_binding]} {error "Missing final matched-source binding"}
++    set required [list $fspr_gds $fspr_model $fspr_db]
++    foreach vendor {Cadence OpenROAD Synopsys} {lappend required $fspr_std_lef($vendor) $fspr_lib($vendor)}
++    if {$with_ndm} {lappend required $fspr_ndm}
++    foreach path $required {if {![file exists $path]} {error "Missing matched collateral: $path"}}
++}
+--- a/PDK Development/Front-side Version/matched_release_readiness.tcl
++++ b/PDK Development/Front-side Version/matched_release_readiness.tcl
+@@ -0,0 +1,5 @@
++# Private physical/functionally verified snapshot; full electrical release pending.
++# Set these only after the selected57 native LIB/DB, matched NDM readback and root review pass.
++set fspr_final_timing_ready 0
++set fspr_matched_release_ready 0
++set fspr_release_binding pending
+--- a/PnR-Cadence/Front-side Version/Runfiles/ECG_innovus.tcl
++++ b/PnR-Cadence/Front-side Version/Runfiles/ECG_innovus.tcl
+@@ -29,18 +29,20 @@
+ # USER CONFIGURATION
+ #=====================================================================
+ # Set PDK_ROOT before invoking this script:
+-#   export PDK_ROOT=/path/to/sccad_fspr
++#   export PDK_ROOT=/path/to/USC-3N-2D
+ # All other paths derive from PDK_ROOT.
+ 
+ if {![info exists ::env(PDK_ROOT)]} {
+-    puts "ERROR: please set PDK_ROOT to the released PDK root before sourcing this script"
++    puts "ERROR: please set PDK_ROOT to the USC-3N-2D repository root before sourcing this script"
+     exit 1
+ }
+-set techDir $::env(PDK_ROOT)
+-set ::env(TECHLEF_DIR)  "$techDir/2d_tech_lef"
+-set ::env(MACROLEF_DIR) "$techDir/2d_lef"
+-set ::env(MACROLIB_DIR) "$techDir/2d_db"
+-set ::env(TCH_DIR)      "$techDir/2d_tch"
++set techDir [file normalize $::env(PDK_ROOT)]
++source [file join $techDir {PDK Development/Front-side Version/selected_collateral.tcl}]
++fspr_require_matched_release
++set ::env(TECHLEF_DIR) [file dirname $::fspr_tech_lef(Cadence)]
++set ::env(MACROLEF_DIR) [file dirname $::fspr_std_lef(Cadence)]
++set ::env(MACROLIB_DIR) [file dirname $::fspr_lib(Cadence)]
++set ::env(TCH_DIR) [file dirname $::fspr_qrc_tch]
+ # CAPTBL_DIR is optional (some PDKs ship captbl files; FSPR uses QRC techfiles).
+ # Uncomment if your PDK has a 2d_captbl dir:
+ #   set ::env(CAPTBL_DIR) "$techDir/2d_captbl"
+@@ -69,7 +71,7 @@
+ set vars(Route,HorizontalMetals) "M2 M4 M6 M8"
+ set vars(Route,VerticalMetals)   "M1 M3 M5 M7"
+ set vars(Route,DRIter)           20
+-set vars(Place,SiteDef)          "core"
++set vars(Place,SiteDef)          $::fspr_site
+ set vars(Route,RedundantVias)    0
+ 
+ set vars(FloorPlan,AspectRatio)     1
+@@ -164,21 +166,21 @@
+         suppressMessage TECHLIB-459
+         suppressMessage TECHLIB-436
+ 
+-        set LEFfiles ""
++        set LEFfiles {}
+ 
+         # TECHLEF setup
+         set techLEF "$::env(TECHLEF_DIR)"
+         if { $techLEF != "" } {
+-            foreach fileName [glob -d $techLEF *lef] {
+-                append LEFfiles " $fileName "
++            foreach fileName [list $::fspr_tech_lef(Cadence)] {
++                lappend LEFfiles $fileName
+             }
+         }
+ 
+         # MACROLEF setup
+         set macroLEF "$::env(MACROLEF_DIR)"
+         if { $macroLEF != "" } {
+-            foreach fileName [glob -d $macroLEF *lef] {
+-                append LEFfiles " $fileName "
++            foreach fileName [list $::fspr_std_lef(Cadence)] {
++                lappend LEFfiles $fileName
+             }
+         }
+ 
+@@ -187,7 +189,7 @@
+             set hardmacroLEF "$::env(HARDMACROLEF_DIR)"
+             if { $hardmacroLEF != "" } {
+                 foreach fileName [glob -d $hardmacroLEF *lef] {
+-                    append LEFfiles " $fileName "
++                    lappend LEFfiles $fileName
+                 }
+             }
+         }
+@@ -204,7 +206,7 @@
+         setLibraryUnit -time $vars(LibUnit,Time) -cap $vars(LibUnit,Cap)
+ 
+         set rda_Input(ui_settop) 0
+-        set rda_Input(ui_leffile) "$LEFfiles"
++        set rda_Input(ui_leffile) $LEFfiles
+ 
+         global init
+         set init_design_uniquify 0
+@@ -214,7 +216,7 @@
+         set init_design_settop {0}
+         set init_top_cell {}
+         set init_io_file ""
+-        set init_lef_file "$LEFfiles"
++        set init_lef_file $LEFfiles
+         set delaycal_use_default_delay_limit {1000}
+         set delaycal_default_net_delay {1000.0ps}
+         set delaycal_default_net_load {0.5pf}
+@@ -231,13 +233,13 @@
+ # Single-corner MMMC: curRC / curLib / curCon / curDel / curAnal
+ proc prc_Enc_mmmcConfig { } {
+     uplevel \#0 {
+-        set LIBfiles ""
++        set LIBfiles {}
+ 
+         # MACROLIB setup
+         set macroLIB "$::env(MACROLIB_DIR)"
+         if { $macroLIB != "" } {
+-            foreach fileName [glob -d $macroLIB *lib] {
+-                append LIBfiles " $fileName "
++            foreach fileName [list $::fspr_lib(Cadence)] {
++                lappend LIBfiles $fileName
+             }
+         }
+ 
+@@ -246,44 +248,44 @@
+             set hardmacroLIB "$::env(HARDMACROLIB_DIR)"
+             if { $hardmacroLIB != "" } {
+                 foreach fileName [glob -d $hardmacroLIB *lib] {
+-                    append LIBfiles " $fileName "
++                    lappend LIBfiles $fileName
+                 }
+             }
+         }
+ 
+-        set CAPfiles ""
++        set CAPfiles {}
+         if { [info exists ::env(CAPTBL_DIR)] } {
+             set CAP "$::env(CAPTBL_DIR)"
+             if { $CAP != "" } {
+                 foreach fileName [glob -d $CAP *capTbl] {
+-                    append CAPfiles "$fileName"
++                    lappend CAPfiles $fileName
+                 }
+             }
+         }
+ 
+-        set TCHfiles ""
+-        set MAPfiles ""
++        if {[llength $CAPfiles] > 1} {error "Expected one explicit cap-table file"}
++        set CAPfile [lindex $CAPfiles 0]
++        set TCHfile ""
++        set MAPfile ""
+         if { [info exists ::env(TCH_DIR)] } {
+             set TCH "$::env(TCH_DIR)"
+             if { $TCH != "" } {
+-                foreach fileName [glob -d $TCH *tch] {
+-                    append TCHfiles "$fileName"
+-                }
+-                set MAPfiles [lindex [glob -nocomplain -d $TCH *.layermap] 0]
++                set TCHfile $::fspr_qrc_tch
++                set MAPfile $::fspr_qrc_map
+             }
+         }
+ 
+         # Single-corner MMMC
+         if { [info exists ::env(CAPTBL_DIR)] && ![info exists ::env(TCH_DIR)] } {
+-            create_rc_corner -name curRC -cap_table "$CAPfiles"
++            create_rc_corner -name curRC -cap_table $CAPfile
+         } elseif { ![info exists ::env(CAPTBL_DIR)] && [info exists ::env(TCH_DIR)] } {
+-            create_rc_corner -name curRC -qx_tech_file "$TCHfiles"
++            create_rc_corner -name curRC -qx_tech_file $TCHfile
+         } elseif { [info exists ::env(CAPTBL_DIR)] && [info exists ::env(TCH_DIR)] } {
+-            create_rc_corner -name curRC -cap_table "$CAPfiles"
+-            update_rc_corner -name curRC -qx_tech_file "$TCHfiles"
++            create_rc_corner -name curRC -cap_table $CAPfile
++            update_rc_corner -name curRC -qx_tech_file $TCHfile
+         }
+-        if { $MAPfiles ne "" } {
+-            setExtractRCMode -engine postRoute -lefTechFileMap "$MAPfiles"
++        if { $MAPfile ne "" } {
++            setExtractRCMode -engine postRoute -lefTechFileMap $MAPfile
+         }
+ 
+         if { [info exists vars(ExtractionEngine,ScalingRes)] } {
+@@ -308,7 +310,7 @@
+         update_rc_corner -name curRC -preRoute_clkres   {0}
+         update_rc_corner -name curRC -preRoute_res      $scaling_res2
+         update_rc_corner -name curRC -T                 {25}
+-        create_library_set    -name curLib  -timing "$LIBfiles"
++        create_library_set    -name curLib  -timing $LIBfiles
+         create_constraint_mode -name curCon -sdc_files "$SDCfile"
+         create_delay_corner   -name curDel  -library_set curLib -rc_corner curRC
+         create_analysis_view  -name curAnal -constraint_mode curCon -delay_corner curDel
+--- a/PnR-Synopsys/Front-side Version/Runfiles/ECG_icc2.tcl
++++ b/PnR-Synopsys/Front-side Version/Runfiles/ECG_icc2.tcl
+@@ -33,18 +33,21 @@
+ # USER CONFIGURATION
+ #=====================================================================
+ # Set PDK_ROOT before invoking this script:
+-#   export PDK_ROOT=/path/to/sccad_fspr
++#   export PDK_ROOT=/path/to/USC-3N-2D
+ # All other paths derive from PDK_ROOT.
+ 
+ if { ![info exists ::env(PDK_ROOT)] } {
+-    puts "ERROR: please set PDK_ROOT to the released PDK root before sourcing this script"
++    puts "ERROR: please set PDK_ROOT to the USC-3N-2D repository root before sourcing this script"
+     exit 1
+ }
+-set techDir $::env(PDK_ROOT)
+-set ::env(NDM_DIR)     "$techDir/2d_ndm"
+-set ::env(TF_DIR)      "$techDir/2d_tf"
+-set ::env(TLU_DIR)     "$techDir/2d_tluplus"
+-set ::env(MACRODB_DIR) "$techDir/2d_db"
++set techDir [file normalize $::env(PDK_ROOT)]
++source [file join $techDir {PDK Development/Front-side Version/selected_collateral.tcl}]
++fspr_require_matched_release 1
++source [file join $::fspr_dev icc2_matched_references.tcl]
++set ::env(NDM_DIR) [file dirname $::fspr_ndm]
++set ::env(TF_DIR) [file dirname $::fspr_tf]
++set ::env(TLU_DIR) [file join $::fspr_vendor_root(Synopsys) ITF]
++set ::env(MACRODB_DIR) [file dirname $::fspr_db]
+ 
+ # Design name controls input filenames (.netlist.v, .sdc, etc.)
+ set ::env(build_name) "point_scalar_mult"
+@@ -71,7 +74,7 @@
+ set vars(Route,HorizontalMetals) "M2 M4 M6 M8"
+ set vars(Route,VerticalMetals)   "M1 M3 M5 M7"
+ set vars(Route,DRIter)           20
+-set vars(Place,SiteDef)          "core"
++set vars(Place,SiteDef)          $::fspr_site
+ set vars(Route,RedundantVias)    0
+ 
+ set vars(FloorPlan,AspectRatio)     1
+@@ -292,8 +295,11 @@
+ # Setup site/layer routing direction (single-die normal2D path)
+ proc prc_ICC_setupConfig { } {
+     uplevel \#0 {
+-        set_attribute [get_site_defs ${vars(Place,SiteDef)}] symmetry Y
+-        set_attribute [get_site_defs ${vars(Place,SiteDef)}] is_default true
++        set selected_sites [fspr_require_selected_site $vars(Place,SiteDef)]
++        set_attribute $selected_sites symmetry Y
++        set previous_defaults [get_site_defs -quiet -filter {is_default == true}]
++        if {[sizeof_collection $previous_defaults] > 0} {set_attribute $previous_defaults is_default false}
++        set_attribute $selected_sites is_default true
+         set_attribute [get_layers ${vars(Route,VerticalMetals)}]   -name routing_direction -value vertical
+         set_attribute [get_layers ${vars(Route,HorizontalMetals)}] -name routing_direction -value horizontal
+     }
+@@ -302,22 +308,16 @@
+ # Create the design lib for normal2D
+ proc prc_ICC_createLibs { } {
+     uplevel \#0 {
+-        set cellNdm ""
+-        set techFile ""
+-        set techFile "[glob -d $::env(TF_DIR) *.tf]"
+-        foreach fileName [glob -d "$::env(NDM_DIR)" *.ndm] { lappend cellNdm "$fileName" }
++        set cellNdm {}
++        foreach fileName [list $::fspr_ndm] { lappend cellNdm $fileName }
+ 
+         if { [info exists ::env(HARDNDM)] } {
+             set hardNdm "$::env(HARDNDM)"
+-            foreach fileName [glob -d $hardNdm *.ndm] { append cellNdm " $fileName " }
++            foreach fileName [lsort [glob -d $hardNdm *.ndm]] { lappend cellNdm $fileName }
+         }
+ 
+         echo $cellNdm
+-        if { [file exists ./impl_normal2D] } {
+-            open_lib ./impl_normal2D
+-        } else {
+-            create_lib -technology $techFile -ref_libs $cellNdm ./impl_normal2D
+-        }
++        fspr_icc2_open_or_create ./impl_normal2D $cellNdm
+     }
+     echo "SCCAD: prc_ICC_createLibs done"
+ }
+@@ -329,12 +329,12 @@
+         set tlu "$::env(TLU_DIR)"
+ 
+         if { $tlu != "" } {
+-            catch { set tluFile ""; set tluFile "[glob -d $tlu *.tluplus]" }
+-            catch { set nxtGrd ""; set nxtGrd "[glob -d $tlu *.nxtgrd]" }
++            set tluFile $::fspr_tluplus
++            set nxtGrd $::fspr_extraction_grid
+             if { $tluFile != "" } {
+-                read_parasitic_tech -tlup "$tluFile" -name nomTLU
++                read_parasitic_tech -tlup $tluFile -name nomTLU
+             } elseif { $nxtGrd != "" } {
+-                read_parasitic_tech -tlup "$nxtGrd" -name nomTLU
++                read_parasitic_tech -tlup $nxtGrd -name nomTLU
+             }
+         }
+ 
+--- a/PnR-Cadence/Front-side Version/Runfiles/OpenPiton_innovus.tcl
++++ b/PnR-Cadence/Front-side Version/Runfiles/OpenPiton_innovus.tcl
+@@ -31,18 +31,20 @@
+ # USER CONFIGURATION
+ #=====================================================================
+ # Set PDK_ROOT before invoking this script:
+-#   export PDK_ROOT=/path/to/sccad_fspr
++#   export PDK_ROOT=/path/to/USC-3N-2D
+ # All other paths derive from PDK_ROOT.
+ 
+ if {![info exists ::env(PDK_ROOT)]} {
+-    puts "ERROR: please set PDK_ROOT to the released PDK root before sourcing this script"
++    puts "ERROR: please set PDK_ROOT to the USC-3N-2D repository root before sourcing this script"
+     exit 1
+ }
+-set techDir $::env(PDK_ROOT)
+-set ::env(TECHLEF_DIR)  "$techDir/2d_tech_lef"
+-set ::env(MACROLEF_DIR) "$techDir/2d_lef"
+-set ::env(MACROLIB_DIR) "$techDir/2d_db"
+-set ::env(TCH_DIR)      "$techDir/2d_tch"
++set techDir [file normalize $::env(PDK_ROOT)]
++source [file join $techDir {PDK Development/Front-side Version/selected_collateral.tcl}]
++fspr_require_matched_release
++set ::env(TECHLEF_DIR) [file dirname $::fspr_tech_lef(Cadence)]
++set ::env(MACROLEF_DIR) [file dirname $::fspr_std_lef(Cadence)]
++set ::env(MACROLIB_DIR) [file dirname $::fspr_lib(Cadence)]
++set ::env(TCH_DIR) [file dirname $::fspr_qrc_tch]
+ # CAPTBL_DIR is optional (some PDKs ship captbl files; FSPR uses QRC techfiles).
+ # Uncomment if your PDK has a 2d_captbl dir:
+ #   set ::env(CAPTBL_DIR) "$techDir/2d_captbl"
+@@ -87,7 +89,7 @@
+ set vars(Route,HorizontalMetals) "M2 M4 M6 M8"
+ set vars(Route,VerticalMetals)   "M1 M3 M5 M7"
+ set vars(Route,DRIter)           20
+-set vars(Place,SiteDef)          "core"
++set vars(Place,SiteDef)          $::fspr_site
+ set vars(Route,RedundantVias)    0
+ 
+ set vars(FloorPlan,AspectRatio)     0.829349
+@@ -182,21 +184,21 @@
+         suppressMessage TECHLIB-459
+         suppressMessage TECHLIB-436
+ 
+-        set LEFfiles ""
++        set LEFfiles {}
+ 
+         # TECHLEF setup
+         set techLEF "$::env(TECHLEF_DIR)"
+         if { $techLEF != "" } {
+-            foreach fileName [glob -d $techLEF *lef] {
+-                append LEFfiles " $fileName "
++            foreach fileName [list $::fspr_tech_lef(Cadence)] {
++                lappend LEFfiles $fileName
+             }
+         }
+ 
+         # MACROLEF setup
+         set macroLEF "$::env(MACROLEF_DIR)"
+         if { $macroLEF != "" } {
+-            foreach fileName [glob -d $macroLEF *lef] {
+-                append LEFfiles " $fileName "
++            foreach fileName [list $::fspr_std_lef(Cadence)] {
++                lappend LEFfiles $fileName
+             }
+         }
+ 
+@@ -205,7 +207,7 @@
+             set hardmacroLEF "$::env(HARDMACROLEF_DIR)"
+             if { $hardmacroLEF != "" } {
+                 foreach fileName [glob -d $hardmacroLEF *lef] {
+-                    append LEFfiles " $fileName "
++                    lappend LEFfiles $fileName
+                 }
+             }
+         }
+@@ -222,7 +224,7 @@
+         setLibraryUnit -time $vars(LibUnit,Time) -cap $vars(LibUnit,Cap)
+ 
+         set rda_Input(ui_settop) 0
+-        set rda_Input(ui_leffile) "$LEFfiles"
++        set rda_Input(ui_leffile) $LEFfiles
+ 
+         global init
+         set init_design_uniquify 0
+@@ -232,7 +234,7 @@
+         set init_design_settop {0}
+         set init_top_cell {}
+         set init_io_file ""
+-        set init_lef_file "$LEFfiles"
++        set init_lef_file $LEFfiles
+         set delaycal_use_default_delay_limit {1000}
+         set delaycal_default_net_delay {1000.0ps}
+         set delaycal_default_net_load {0.5pf}
+@@ -249,13 +251,13 @@
+ # Single-corner MMMC: curRC / curLib / curCon / curDel / curAnal
+ proc prc_Enc_mmmcConfig { } {
+     uplevel \#0 {
+-        set LIBfiles ""
++        set LIBfiles {}
+ 
+         # MACROLIB setup
+         set macroLIB "$::env(MACROLIB_DIR)"
+         if { $macroLIB != "" } {
+-            foreach fileName [glob -d $macroLIB *lib] {
+-                append LIBfiles " $fileName "
++            foreach fileName [list $::fspr_lib(Cadence)] {
++                lappend LIBfiles $fileName
+             }
+         }
+ 
+@@ -264,44 +266,44 @@
+             set hardmacroLIB "$::env(HARDMACROLIB_DIR)"
+             if { $hardmacroLIB != "" } {
+                 foreach fileName [glob -d $hardmacroLIB *lib] {
+-                    append LIBfiles " $fileName "
++                    lappend LIBfiles $fileName
+                 }
+             }
+         }
+ 
+-        set CAPfiles ""
++        set CAPfiles {}
+         if { [info exists ::env(CAPTBL_DIR)] } {
+             set CAP "$::env(CAPTBL_DIR)"
+             if { $CAP != "" } {
+                 foreach fileName [glob -d $CAP *capTbl] {
+-                    append CAPfiles "$fileName"
++                    lappend CAPfiles $fileName
+                 }
+             }
+         }
+ 
+-        set TCHfiles ""
+-        set MAPfiles ""
++        if {[llength $CAPfiles] > 1} {error "Expected one explicit cap-table file"}
++        set CAPfile [lindex $CAPfiles 0]
++        set TCHfile ""
++        set MAPfile ""
+         if { [info exists ::env(TCH_DIR)] } {
+             set TCH "$::env(TCH_DIR)"
+             if { $TCH != "" } {
+-                foreach fileName [glob -d $TCH *tch] {
+-                    append TCHfiles "$fileName"
+-                }
+-                set MAPfiles [lindex [glob -nocomplain -d $TCH *.layermap] 0]
++                set TCHfile $::fspr_qrc_tch
++                set MAPfile $::fspr_qrc_map
+             }
+         }
+ 
+         # Single-corner MMMC
+         if { [info exists ::env(CAPTBL_DIR)] && ![info exists ::env(TCH_DIR)] } {
+-            create_rc_corner -name curRC -cap_table "$CAPfiles"
++            create_rc_corner -name curRC -cap_table $CAPfile
+         } elseif { ![info exists ::env(CAPTBL_DIR)] && [info exists ::env(TCH_DIR)] } {
+-            create_rc_corner -name curRC -qx_tech_file "$TCHfiles"
++            create_rc_corner -name curRC -qx_tech_file $TCHfile
+         } elseif { [info exists ::env(CAPTBL_DIR)] && [info exists ::env(TCH_DIR)] } {
+-            create_rc_corner -name curRC -cap_table "$CAPfiles"
+-            update_rc_corner -name curRC -qx_tech_file "$TCHfiles"
+-        }
+-        if { $MAPfiles ne "" } {
+-            setExtractRCMode -engine postRoute -lefTechFileMap "$MAPfiles"
++            create_rc_corner -name curRC -cap_table $CAPfile
++            update_rc_corner -name curRC -qx_tech_file $TCHfile
++        }
++        if { $MAPfile ne "" } {
++            setExtractRCMode -engine postRoute -lefTechFileMap $MAPfile
+         }
+ 
+         if { [info exists vars(ExtractionEngine,ScalingRes)] } {
+@@ -326,7 +328,7 @@
+         update_rc_corner -name curRC -preRoute_clkres   {0}
+         update_rc_corner -name curRC -preRoute_res      $scaling_res2
+         update_rc_corner -name curRC -T                 {25}
+-        create_library_set    -name curLib  -timing "$LIBfiles"
++        create_library_set    -name curLib  -timing $LIBfiles
+         create_constraint_mode -name curCon -sdc_files "$SDCfile"
+         create_delay_corner   -name curDel  -library_set curLib -rc_corner curRC
+         create_analysis_view  -name curAnal -constraint_mode curCon -delay_corner curDel
+--- a/PnR-Synopsys/Front-side Version/Runfiles/OpenPiton_icc2.tcl
++++ b/PnR-Synopsys/Front-side Version/Runfiles/OpenPiton_icc2.tcl
+@@ -35,18 +35,21 @@
+ # USER CONFIGURATION
+ #=====================================================================
+ # Set PDK_ROOT before invoking this script:
+-#   export PDK_ROOT=/path/to/sccad_fspr
++#   export PDK_ROOT=/path/to/USC-3N-2D
+ # All other paths derive from PDK_ROOT.
+ 
+ if { ![info exists ::env(PDK_ROOT)] } {
+-    puts "ERROR: please set PDK_ROOT to the released PDK root before sourcing this script"
++    puts "ERROR: please set PDK_ROOT to the USC-3N-2D repository root before sourcing this script"
+     exit 1
+ }
+-set techDir $::env(PDK_ROOT)
+-set ::env(NDM_DIR)     "$techDir/2d_ndm"
+-set ::env(TF_DIR)      "$techDir/2d_tf"
+-set ::env(TLU_DIR)     "$techDir/2d_tluplus"
+-set ::env(MACRODB_DIR) "$techDir/2d_db"
++set techDir [file normalize $::env(PDK_ROOT)]
++source [file join $techDir {PDK Development/Front-side Version/selected_collateral.tcl}]
++fspr_require_matched_release 1
++source [file join $::fspr_dev icc2_matched_references.tcl]
++set ::env(NDM_DIR) [file dirname $::fspr_ndm]
++set ::env(TF_DIR) [file dirname $::fspr_tf]
++set ::env(TLU_DIR) [file join $::fspr_vendor_root(Synopsys) ITF]
++set ::env(MACRODB_DIR) [file dirname $::fspr_db]
+ 
+ # Design name controls input filenames (.netlist.v, .sdc, etc.)
+ set ::env(build_name) "tile"
+@@ -80,7 +83,7 @@
+ set vars(Route,HorizontalMetals) "M2 M4 M6 M8"
+ set vars(Route,VerticalMetals)   "M1 M3 M5 M7"
+ set vars(Route,DRIter)           20
+-set vars(Place,SiteDef)          "core"
++set vars(Place,SiteDef)          $::fspr_site
+ set vars(Route,RedundantVias)    0
+ 
+ set vars(FloorPlan,AspectRatio)     1
+@@ -301,8 +304,11 @@
+ # Setup site/layer routing direction (single-die normal2D path)
+ proc prc_ICC_setupConfig { } {
+     uplevel \#0 {
+-        set_attribute [get_site_defs ${vars(Place,SiteDef)}] symmetry Y
+-        set_attribute [get_site_defs ${vars(Place,SiteDef)}] is_default true
++        set selected_sites [fspr_require_selected_site $vars(Place,SiteDef)]
++        set_attribute $selected_sites symmetry Y
++        set previous_defaults [get_site_defs -quiet -filter {is_default == true}]
++        if {[sizeof_collection $previous_defaults] > 0} {set_attribute $previous_defaults is_default false}
++        set_attribute $selected_sites is_default true
+         set_attribute [get_layers ${vars(Route,VerticalMetals)}]   -name routing_direction -value vertical
+         set_attribute [get_layers ${vars(Route,HorizontalMetals)}] -name routing_direction -value horizontal
+     }
+@@ -311,22 +317,16 @@
+ # Create the design lib for normal2D
+ proc prc_ICC_createLibs { } {
+     uplevel \#0 {
+-        set cellNdm ""
+-        set techFile ""
+-        set techFile "[glob -d $::env(TF_DIR) *.tf]"
+-        foreach fileName [glob -d "$::env(NDM_DIR)" *.ndm] { lappend cellNdm "$fileName" }
++        set cellNdm {}
++        foreach fileName [list $::fspr_ndm] { lappend cellNdm $fileName }
+ 
+         if { [info exists ::env(HARDNDM)] } {
+             set hardNdm "$::env(HARDNDM)"
+-            foreach fileName [glob -d $hardNdm *.ndm] { append cellNdm " $fileName " }
++            foreach fileName [lsort [glob -d $hardNdm *.ndm]] { lappend cellNdm $fileName }
+         }
+ 
+         echo $cellNdm
+-        if { [file exists ./impl_normal2D] } {
+-            open_lib ./impl_normal2D
+-        } else {
+-            create_lib -technology $techFile -ref_libs $cellNdm ./impl_normal2D
+-        }
++        fspr_icc2_open_or_create ./impl_normal2D $cellNdm
+     }
+     echo "SCCAD: prc_ICC_createLibs done"
+ }
+@@ -338,12 +338,12 @@
+         set tlu "$::env(TLU_DIR)"
+ 
+         if { $tlu != "" } {
+-            catch { set tluFile ""; set tluFile "[glob -d $tlu *.tluplus]" }
+-            catch { set nxtGrd ""; set nxtGrd "[glob -d $tlu *.nxtgrd]" }
++            set tluFile $::fspr_tluplus
++            set nxtGrd $::fspr_extraction_grid
+             if { $tluFile != "" } {
+-                read_parasitic_tech -tlup "$tluFile" -name nomTLU
++                read_parasitic_tech -tlup $tluFile -name nomTLU
+             } elseif { $nxtGrd != "" } {
+-                read_parasitic_tech -tlup "$nxtGrd" -name nomTLU
++                read_parasitic_tech -tlup $nxtGrd -name nomTLU
+             }
+         }
+ 
+--- a/PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/3nm/3nm.vars
++++ b/PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/3nm/3nm.vars
+@@ -8,17 +8,19 @@
+   exit 1
+ }
+ set pdk_root [file normalize $::env(PDK_ROOT)]
++source [file join $pdk_root {PDK Development/Front-side Version/selected_collateral.tcl}]
++fspr_require_matched_release
+ 
+ set openroad_pnr_dir [file join $pdk_root "PnR-OpenROAD/Front-side Version"]
+ 
+-set tech_lef [file join $openroad_pnr_dir "TECH-LEF/3nm_GAA_FSPR.tech.lef"]
+-set std_cell_lef [file join $openroad_pnr_dir "LEF/3nm_GAA_FSPR.lef"]
++set tech_lef $::fspr_tech_lef(OpenROAD)
++set std_cell_lef $::fspr_std_lef(OpenROAD)
+ set extra_lef {}
+ 
+-set liberty_file [file join $openroad_pnr_dir "LIB/3nm_GAA_FSPR_rvt_nldm.lib"]
++set liberty_file $::fspr_lib(OpenROAD)
+ set extra_liberty {}
+ 
+-set site "coreSite"
++set site $::fspr_site
+ 
+ set pdn_cfg "3nm/3nm.pdn.tcl"
+ set tracks_file "3nm/3nm.tracks"
+--- a/PnR-Cadence/Front-side Version/Runfiles/ECG_innovus.run.sh
++++ b/PnR-Cadence/Front-side Version/Runfiles/ECG_innovus.run.sh
+@@ -2,7 +2,7 @@
+ # Cadence Innovus launcher for ECG point_scalar_mult (SCCAD Lab release)
+ #
+ # Usage:
+-#   export PDK_ROOT=/path/to/sccad_fspr
++#   export PDK_ROOT=/path/to/USC-3N-2D
+ #   bash ECG_innovus.run.sh
+ #
+ # Required inputs in current working directory:
+@@ -12,7 +12,7 @@
+ set -e
+ 
+ if [ -z "${PDK_ROOT:-}" ]; then
+-    echo "ERROR: set PDK_ROOT before running (e.g. export PDK_ROOT=/path/to/sccad_fspr)"
++    echo "ERROR: set PDK_ROOT before running (e.g. export PDK_ROOT=/path/to/USC-3N-2D)"
+     exit 1
+ fi
+ 
+--- a/PnR-Cadence/Front-side Version/Runfiles/OpenPiton_innovus.run.sh
++++ b/PnR-Cadence/Front-side Version/Runfiles/OpenPiton_innovus.run.sh
+@@ -2,7 +2,7 @@
+ # Cadence Innovus launcher for OpenPiton tile (SCCAD Lab release)
+ #
+ # Usage:
+-#   export PDK_ROOT=/path/to/sccad_fspr
++#   export PDK_ROOT=/path/to/USC-3N-2D
+ #   bash OpenPiton_innovus.run.sh
+ #
+ # Required inputs in current working directory:
+@@ -14,7 +14,7 @@
+ set -e
+ 
+ if [ -z "${PDK_ROOT:-}" ]; then
+-    echo "ERROR: set PDK_ROOT before running (e.g. export PDK_ROOT=/path/to/sccad_fspr)"
++    echo "ERROR: set PDK_ROOT before running (e.g. export PDK_ROOT=/path/to/USC-3N-2D)"
+     exit 1
+ fi
+ 
+--- a/PnR-Synopsys/Front-side Version/Runfiles/ECG_icc2.run.sh
++++ b/PnR-Synopsys/Front-side Version/Runfiles/ECG_icc2.run.sh
+@@ -2,7 +2,7 @@
+ # Synopsys IC Compiler II launcher for ECG point_scalar_mult (SCCAD Lab release)
+ #
+ # Usage:
+-#   export PDK_ROOT=/path/to/sccad_fspr
++#   export PDK_ROOT=/path/to/USC-3N-2D
+ #   bash ECG_icc2.run.sh
+ #
+ # Required inputs in current working directory:
+@@ -12,7 +12,7 @@
+ set -e
+ 
+ if [ -z "${PDK_ROOT:-}" ]; then
+-    echo "ERROR: set PDK_ROOT before running (e.g. export PDK_ROOT=/path/to/sccad_fspr)"
++    echo "ERROR: set PDK_ROOT before running (e.g. export PDK_ROOT=/path/to/USC-3N-2D)"
+     exit 1
+ fi
+ 
+--- a/PnR-Synopsys/Front-side Version/Runfiles/OpenPiton_icc2.run.sh
++++ b/PnR-Synopsys/Front-side Version/Runfiles/OpenPiton_icc2.run.sh
+@@ -2,7 +2,7 @@
+ # Synopsys IC Compiler II launcher for OpenPiton tile (SCCAD Lab release)
+ #
+ # Usage:
+-#   export PDK_ROOT=/path/to/sccad_fspr
++#   export PDK_ROOT=/path/to/USC-3N-2D
+ #   bash OpenPiton_icc2.run.sh
+ #
+ # Required inputs in current working directory:
+@@ -14,7 +14,7 @@
+ set -e
+ 
+ if [ -z "${PDK_ROOT:-}" ]; then
+-    echo "ERROR: set PDK_ROOT before running (e.g. export PDK_ROOT=/path/to/sccad_fspr)"
++    echo "ERROR: set PDK_ROOT before running (e.g. export PDK_ROOT=/path/to/USC-3N-2D)"
+     exit 1
+ fi
+ 
+--- a/PnR-Cadence/Front-side Version/Runfiles/README.md
++++ b/PnR-Cadence/Front-side Version/Runfiles/README.md
+@@ -2,7 +2,7 @@
+ 
+ Reference place-and-route scripts for the SCCAD-Lab 3 nm GAA FSPR PDK, ready to run on two open / openable academic test designs (ECG `point_scalar_mult`, OpenPiton `tile`) under either Cadence Innovus or Synopsys IC Compiler II.
+ 
+-The scripts are end-to-end (synthesis netlist → routed `.def`) and have been sanity-run before this release; see `VERIFICATION_REPORT.md` for the quality-of-results checks. They are intended as starting points: clone, point `PDK_ROOT` at your PDK install, drop in your netlist + SDC, and run.
++The scripts cover synthesis-netlist to routed-DEF implementation. Previous chip sanity runs are historical. The current matched 144 nm selector edits have static and command-argument checks; no new chip PNR was run. Set `PDK_ROOT` to this repository root and follow the readiness gate described below.
+ 
+ ---
+ 
+@@ -39,24 +39,29 @@
+ 
+ ### PDK
+ 
+-- **SCCAD 3 nm GAA FSPR PDK** (Front-Side Power Rail variant). FSPR_RVT is the configuration sanity-verified in this release; FSPR_LVT should work with the same script if the PDK ships the LVT 2d_db.
+-
+-Expected PDK layout under `$PDK_ROOT/`:
+-
+-```
+-$PDK_ROOT/
+-├── 2d_tech_lef/                  # Innovus tech LEF, ICC2 .tf
+-├── 2d_lef/                       # Standard-cell LEF
+-├── 2d_db/                        # Liberty .lib / .db
+-├── 2d_tch/                       # Innovus QRC techfiles
+-├── 2d_ndm/                       # ICC2 NDM (tech + lib)
+-├── 2d_tluplus/                   # ICC2 TLU+ parasitics
+-└── openpiton_mem_L3_256k/        # OpenPiton SRAM hard macros (only needed for OpenPiton)
+-    ├── 2d_hard_lef/              # SRAM LEF
+-    └── 2d_hard_lib/              # SRAM Liberty / NDM
+-```
+-
+-Innovus consumes `2d_tech_lef`, `2d_lef`, `2d_db`, `2d_tch`. ICC2 consumes `2d_ndm`, `2d_tluplus`, `2d_db`. The scripts derive these paths from `PDK_ROOT`; see §4 if your PDK uses a different directory layout.
++Set `PDK_ROOT` to the USC-3N-2D repository root. The active front-side scripts source
++`PDK Development/Front-side Version/selected_collateral.tcl` and select exact RVT
++files from the repository. Standard-cell paths have no external flat-directory
++or historical-NDM fallback.
++
++| Input | Selected path relative to the repository |
++|---|---|
++| GDS | `PDK Development/Front-side Version/GDS/3nm_GAA_FSPR_144nm.gds` |
++| Model | `PDK Development/Front-side Version/MODEL/3nm_GAA_FSPR_RVT.sp` |
++| LEF/LIB | Exact files in each `PnR-*/Front-side Version/LEF` and `LIB` (Synopsys: `LIB_DB`) |
++| ICC2 NDM | `PnR-Synopsys/Front-side Version/NDM/3nm_GAA_FSPR_144nm_rvt.ndm` |
++| Verification | Exported fin-present 144 nm matched DRC/LVS/FSPR-PEX maps in `RELEASE_144nm_RVT/physical/rules/matched_144nm` |
++
++This private snapshot has completed physical and 64-case functional checks, while
++full new DFFH electrical characterization/57-cell compilation and matched native
++NDM readback are pending. `matched_release_readiness.tcl` therefore blocks active
++PNR. Existing chip sanity-run statements describe historical runs; no new chip
++PNR was run for this update. The old vendor LIB/DB is retained until native57
++finishes. See the detailed scope and portable checks in
++`PDK Development/Front-side Version/RELEASE_144nm_RVT/README.md`.
++
++Optional OpenPiton SRAMs remain separate user-supplied hard macros; their explicit
++override variables do not change the selected standard-cell files.
+ 
+ ### Sample design inputs
+ 
+@@ -76,7 +81,7 @@
+ ### Step 1 — set environment
+ 
+ ```bash
+-export PDK_ROOT=/path/to/sccad_fspr
++export PDK_ROOT=/path/to/USC-3N-2D
+ # Optionally source your Cadence / Synopsys setup so innovus / icc2_shell are on PATH:
+ # source /tools/software/cadence/setup.sh
+ # source /tools/software/synopsys/setup.sh
+@@ -149,25 +154,25 @@
+ 
+ | Name | Required | Description |
+ |---|---|---|
+-| `PDK_ROOT` | yes | Root directory of the SCCAD-Lab PDK (e.g. `/path/to/sccad_fspr`). All other PDK paths derive from this. |
++| `PDK_ROOT` | yes | Root directory of the SCCAD-Lab PDK (e.g. `/path/to/USC-3N-2D`). All other PDK paths derive from this. |
+ 
+ ### Internally-derived variables (set by the script)
+ 
+-All four scripts auto-set the tool-specific path variables from `PDK_ROOT`. You do **not** need to set these unless your PDK uses a non-default directory layout.
++The scripts derive these standard-cell paths from the shared exact collateral map. Optional hardmacro variables remain explicit user inputs. There is no fallback to the historical flat-directory defaults.
+ 
+ | Variable | Tool | Default value |
+ |---|---|---|
+-| `TECHLEF_DIR` | Innovus | `$PDK_ROOT/2d_tech_lef` |
+-| `MACROLEF_DIR` | Innovus | `$PDK_ROOT/2d_lef` |
+-| `MACROLIB_DIR` | Innovus | `$PDK_ROOT/2d_db` |
+-| `TCH_DIR` | Innovus | `$PDK_ROOT/2d_tch` |
++| `TECHLEF_DIR` | Innovus | `$PDK_ROOT/PnR-Cadence/Front-side Version/TECH-LEF` |
++| `MACROLEF_DIR` | Innovus | `$PDK_ROOT/PnR-Cadence/Front-side Version/LEF` |
++| `MACROLIB_DIR` | Innovus | `$PDK_ROOT/PnR-Cadence/Front-side Version/LIB` |
++| `TCH_DIR` | Innovus | `$PDK_ROOT/PnR-Cadence/Front-side Version/QRC` |
+ | `CAPTBL_DIR` | Innovus | optional; only needed if your PDK ships captbl files |
+ | `HARDMACROLEF_DIR` | Innovus | `$PDK_ROOT/openpiton_mem_L3_256k/2d_hard_lef` (OpenPiton only) |
+ | `HARDMACROLIB_DIR` | Innovus | `$PDK_ROOT/openpiton_mem_L3_256k/2d_hard_lib` (OpenPiton only) |
+-| `NDM_DIR` | ICC2 | `$PDK_ROOT/2d_ndm` |
+-| `TF_DIR` | ICC2 | `$PDK_ROOT/2d_tech_lef` |
+-| `TLU_DIR` | ICC2 | `$PDK_ROOT/2d_tluplus` |
+-| `MACRODB_DIR` | ICC2 | `$PDK_ROOT/2d_db` |
++| `NDM_DIR` | ICC2 | `$PDK_ROOT/PnR-Synopsys/Front-side Version/NDM` (only explicit new 144 nm NDM selected) |
++| `TF_DIR` | ICC2 | `$PDK_ROOT/PnR-Synopsys/Front-side Version/TF` |
++| `TLU_DIR` | ICC2 | `$PDK_ROOT/PnR-Synopsys/Front-side Version/ITF` |
++| `MACRODB_DIR` | ICC2 | `$PDK_ROOT/PnR-Synopsys/Front-side Version/LIB_DB` |
+ | `HARDNDM` | ICC2 | `$PDK_ROOT/openpiton_mem_L3_256k/2d_hard_lib` (OpenPiton only) |
+ | `build_name` | both | `point_scalar_mult` (ECG) / `tile` (OpenPiton). Controls input filenames. |
+ 
+@@ -176,7 +181,7 @@
+ ### Example: override SRAM library path for OpenPiton
+ 
+ ```bash
+-export PDK_ROOT=/path/to/sccad_fspr
++export PDK_ROOT=/path/to/USC-3N-2D
+ export HARDMACROLEF_DIR=/path/to/my_sram_lef
+ export HARDMACROLIB_DIR=/path/to/my_sram_lib
+ bash OpenPiton_innovus.run.sh
+--- a/PnR-Synopsys/Front-side Version/Runfiles/README.md
++++ b/PnR-Synopsys/Front-side Version/Runfiles/README.md
+@@ -1,8 +1,17 @@
++
++### Matched 144 nm ICC2 references and placement site
++
++Fresh ICC2 design libraries inherit the technology from the exact selected NDM. The frozen source TF is used when building that NDM. The selected placement site is `coreSite`, matching the selected LEF. Setup checks that the site exists, clears the previous default site, and selects `coreSite` before placement.
++
++An existing `impl_normal2D` library is reopened only when its adjacent `.usc144_provenance` record matches the final release binding, readiness file, exact standard-cell and declared SRAM reference paths, and all reference payload hashes. ICC2 then checks the actual native `ref_libs` attribute. A missing or mismatched record/reference is an error. The flow never rebinds a routed historical library. Continue with its original matched collateral, or use a fresh work directory.
++
++The private release preparation currently blocks PNR until final native timing and the matched NDM pass. Native fixture tests exercise empty-library creation and read-only reopening; they are separate from final timing and chip PNR validation.
++
+ # SCCAD 3 nm PDK — Sample PnR Scripts
+ 
+ Reference place-and-route scripts for the SCCAD-Lab 3 nm GAA FSPR PDK, ready to run on two open / openable academic test designs (ECG `point_scalar_mult`, OpenPiton `tile`) under either Cadence Innovus or Synopsys IC Compiler II.
+ 
+-The scripts are end-to-end (synthesis netlist → routed `.def`) and have been sanity-run before this release; see `VERIFICATION_REPORT.md` for the quality-of-results checks. They are intended as starting points: clone, point `PDK_ROOT` at your PDK install, drop in your netlist + SDC, and run.
++The scripts cover synthesis-netlist to routed-DEF implementation. Previous chip sanity runs are historical. The current matched 144 nm selector edits have static and command-argument checks; no new chip PNR was run. Set `PDK_ROOT` to this repository root and follow the readiness gate described below.
+ 
+ ---
+ 
+@@ -37,24 +46,29 @@
+ 
+ ### PDK
+ 
+-- **SCCAD 3 nm GAA FSPR PDK** (Front-Side Power Rail variant). FSPR_RVT is the configuration sanity-verified in this release; FSPR_LVT should work with the same script if the PDK ships the LVT 2d_db.
+-
+-Expected PDK layout under `$PDK_ROOT/`:
+-
+-```
+-$PDK_ROOT/
+-├── 2d_tech_lef/                  # Innovus tech LEF, ICC2 .tf
+-├── 2d_lef/                       # Standard-cell LEF
+-├── 2d_db/                        # Liberty .lib / .db
+-├── 2d_tch/                       # Innovus QRC techfiles
+-├── 2d_ndm/                       # ICC2 NDM (tech + lib)
+-├── 2d_tluplus/                   # ICC2 TLU+ parasitics
+-└── openpiton_mem_L3_256k/        # OpenPiton SRAM hard macros (only needed for OpenPiton)
+-    ├── 2d_hard_lef/              # SRAM LEF
+-    └── 2d_hard_lib/              # SRAM Liberty / NDM
+-```
+-
+-Innovus consumes `2d_tech_lef`, `2d_lef`, `2d_db`, `2d_tch`. ICC2 consumes `2d_ndm`, `2d_tluplus`, `2d_db`. The scripts derive these paths from `PDK_ROOT`; see §4 if your PDK uses a different directory layout.
++Set `PDK_ROOT` to the USC-3N-2D repository root. The active front-side scripts source
++`PDK Development/Front-side Version/selected_collateral.tcl` and select exact RVT
++files from the repository. Standard-cell paths have no external flat-directory
++or historical-NDM fallback.
++
++| Input | Selected path relative to the repository |
++|---|---|
++| GDS | `PDK Development/Front-side Version/GDS/3nm_GAA_FSPR_144nm.gds` |
++| Model | `PDK Development/Front-side Version/MODEL/3nm_GAA_FSPR_RVT.sp` |
++| LEF/LIB | Exact files in each `PnR-*/Front-side Version/LEF` and `LIB` (Synopsys: `LIB_DB`) |
++| ICC2 NDM | `PnR-Synopsys/Front-side Version/NDM/3nm_GAA_FSPR_144nm_rvt.ndm` |
++| Verification | Exported fin-present 144 nm matched DRC/LVS/FSPR-PEX maps in `RELEASE_144nm_RVT/physical/rules/matched_144nm` |
++
++This private snapshot has completed physical and 64-case functional checks, while
++full new DFFH electrical characterization/57-cell compilation and matched native
++NDM readback are pending. `matched_release_readiness.tcl` therefore blocks active
++PNR. Existing chip sanity-run statements describe historical runs; no new chip
++PNR was run for this update. The old vendor LIB/DB is retained until native57
++finishes. See the detailed scope and portable checks in
++`PDK Development/Front-side Version/RELEASE_144nm_RVT/README.md`.
++
++Optional OpenPiton SRAMs remain separate user-supplied hard macros; their explicit
++override variables do not change the selected standard-cell files.
+ 
+ ### Sample design inputs
+ 
+@@ -74,7 +88,7 @@
+ ### Step 1 — set environment
+ 
+ ```bash
+-export PDK_ROOT=/path/to/sccad_fspr_v_rvt
++export PDK_ROOT=/path/to/USC-3N-2D
+ # Optionally source your Cadence / Synopsys setup so innovus / icc2_shell are on PATH:
+ # source /tools/software/cadence/setup.sh
+ # source /tools/software/synopsys/setup.sh
+@@ -140,25 +154,25 @@
+ 
+ | Name | Required | Description |
+ |---|---|---|
+-| `PDK_ROOT` | yes | Root directory of the SCCAD-Lab PDK (e.g. `/path/to/sccad_fspr_v_rvt`). All other PDK paths derive from this. |
++| `PDK_ROOT` | yes | Root directory of the SCCAD-Lab PDK (e.g. `/path/to/USC-3N-2D`). All other PDK paths derive from this. |
+ 
+ ### Internally-derived variables (set by the script)
+ 
+-All four scripts auto-set the tool-specific path variables from `PDK_ROOT`. You do **not** need to set these unless your PDK uses a non-default directory layout.
++The scripts derive these standard-cell paths from the shared exact collateral map. Optional hardmacro variables remain explicit user inputs. There is no fallback to the historical flat-directory defaults.
+ 
+ | Variable | Tool | Default value |
+ |---|---|---|
+-| `TECHLEF_DIR` | Innovus | `$PDK_ROOT/2d_tech_lef` |
+-| `MACROLEF_DIR` | Innovus | `$PDK_ROOT/2d_lef` |
+-| `MACROLIB_DIR` | Innovus | `$PDK_ROOT/2d_db` |
+-| `TCH_DIR` | Innovus | `$PDK_ROOT/2d_tch` |
++| `TECHLEF_DIR` | Innovus | `$PDK_ROOT/PnR-Cadence/Front-side Version/TECH-LEF` |
++| `MACROLEF_DIR` | Innovus | `$PDK_ROOT/PnR-Cadence/Front-side Version/LEF` |
++| `MACROLIB_DIR` | Innovus | `$PDK_ROOT/PnR-Cadence/Front-side Version/LIB` |
++| `TCH_DIR` | Innovus | `$PDK_ROOT/PnR-Cadence/Front-side Version/QRC` |
+ | `CAPTBL_DIR` | Innovus | optional; only needed if your PDK ships captbl files |
+ | `HARDMACROLEF_DIR` | Innovus | `$PDK_ROOT/openpiton_mem_L3_256k/2d_hard_lef` (OpenPiton only) |
+ | `HARDMACROLIB_DIR` | Innovus | `$PDK_ROOT/openpiton_mem_L3_256k/2d_hard_lib` (OpenPiton only) |
+-| `NDM_DIR` | ICC2 | `$PDK_ROOT/2d_ndm` |
+-| `TF_DIR` | ICC2 | `$PDK_ROOT/2d_tech_lef` |
+-| `TLU_DIR` | ICC2 | `$PDK_ROOT/2d_tluplus` |
+-| `MACRODB_DIR` | ICC2 | `$PDK_ROOT/2d_db` |
++| `NDM_DIR` | ICC2 | `$PDK_ROOT/PnR-Synopsys/Front-side Version/NDM` (only explicit new 144 nm NDM selected) |
++| `TF_DIR` | ICC2 | `$PDK_ROOT/PnR-Synopsys/Front-side Version/TF` |
++| `TLU_DIR` | ICC2 | `$PDK_ROOT/PnR-Synopsys/Front-side Version/ITF` |
++| `MACRODB_DIR` | ICC2 | `$PDK_ROOT/PnR-Synopsys/Front-side Version/LIB_DB` |
+ | `HARDNDM` | ICC2 | `$PDK_ROOT/openpiton_mem_L3_256k/2d_hard_lib` (OpenPiton only) |
+ | `build_name` | both | `point_scalar_mult` (ECG) / `tile` (OpenPiton). Controls input filenames. |
+ 
+@@ -167,7 +181,7 @@
+ ### Example: override SRAM library path for OpenPiton
+ 
+ ```bash
+-export PDK_ROOT=/path/to/sccad_fspr_v_rvt
++export PDK_ROOT=/path/to/USC-3N-2D
+ export HARDMACROLEF_DIR=/path/to/my_sram_lef
+ export HARDMACROLIB_DIR=/path/to/my_sram_lib
+ bash OpenPiton_innovus.run.sh
+--- a/PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/README.md
++++ b/PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/README.md
+@@ -2,6 +2,11 @@
+ 
+ This folder contains generic OpenROAD run scripts for the 3nm front-side examples.
+ The selected design is controlled by a Tcl config file under `design_configs/`.
++
++The front-side platform sources the repository-wide exact 144 nm collateral map.
++In this private physical/functional snapshot, final electrical/NDM readiness is
++pending and PNR/input checks intentionally stop at the readiness gate. Old LIB/DB
++is not silently paired with the new LEF. See the verification package README.
+ 
+ ## Main Run
+ 
+--- a/README.md
++++ b/README.md
+@@ -1,4 +1,13 @@
+ # USC-3N-2D (3nm PDK for 2D ICs)
++
++The front-side 144 nm update is staged with physical57 and paired-DFFH 64-case
++functional validation. Full new DFFH characterization, accepted 57-cell timing
++assembly and matched NDM readback are still pending. Active front-side scripts
++use the exact repository-relative collateral map and remain blocked by its
++readiness gate. Original OpenAccess/NDM and prior chip results are historical.
++See [the verification package](<PDK Development/Front-side Version/RELEASE_144nm_RVT/README.md>)
++for scope, source hashes and executable checks.
++
+ USC-3N-2D is an open-source 3nm Process Design Kit (PDK) for 2D ICs developed by the <a href="https://sites.usc.edu/sccad"> Southern California Computer-Aided Design (SCCAD) Lab</a> at the University of Southern California (USC). This PDK is intended for academic research and educational use, and enables exploration of advanced-node physical design, device–interconnect interactions, and design-technology co-optimization (DTCO). Our key features include:
+ - Customizable PDK – Enables researchers to <a href="https://github.com/SCCAD-LAB/USC-3N-2D/tree/main/PDK%20Development">modify PDK contents</a> including device, interconnect, cells, and place/route flow and explore new design methodologies.
+ 
+--- a/PDK Development/Front-side Version/icc2_matched_references.tcl
++++ b/PDK Development/Front-side Version/icc2_matched_references.tcl
+@@ -0,0 +1,69 @@
++# Native reference query: get_attribute [current_lib] ref_libs.
++# Existing routed libraries are inspected, never rebound.
++proc fspr_normalized_refs {paths} {
++    set result {}
++    foreach path $paths {lappend result [file normalize $path]}
++    return $result
++}
++proc fspr_ref_payloads {directory {relative ""} {depth 0}} {
++    if {$depth > 16} {error "NDM payload directory nesting exceeds16"}
++    set result {}
++    foreach path [lsort [glob -nocomplain -directory [file join $directory $relative] *]] {
++        set name [file join $relative [file tail $path]]
++        if {[file isdirectory $path]} {
++            if {[file type $path] eq "link"} {error "Use explicit canonical NDM payload directories"}
++            set result [concat $result [fspr_ref_payloads $directory $name [expr {$depth+1}]]]
++        } elseif {[file isfile $path]} {
++            set checksum [lindex [split [exec sha256sum -- $path]] 0]
++            lappend result [list $name $checksum]
++        }
++    }
++    return $result
++}
++proc fspr_reference_provenance {paths} {
++    global fspr_release_binding fspr_dev
++    if {![regexp {^[0-9a-f]{64}$} $fspr_release_binding]} {error "Missing final matched-release binding"}
++    set readiness [file join $fspr_dev matched_release_readiness.tcl]
++    set readiness_sha [lindex [split [exec sha256sum -- $readiness]] 0]
++    set normalized [fspr_normalized_refs $paths]
++    set payloads {}
++    foreach path $normalized {
++        if {![file isdirectory $path]} {error "Expected an explicit NDM directory: $path"}
++        set fingerprints [fspr_ref_payloads $path]
++        if {![llength $fingerprints]} {error "NDM reference payload is empty: $path"}
++        lappend payloads [list $path $fingerprints]
++    }
++    return [dict create schema usc144_matched_refs_v1 release_binding $fspr_release_binding readiness_sha256 $readiness_sha ref_libs $normalized payload_sha256 $payloads]
++}
++proc fspr_assert_current_references {expected} {
++    set actual [fspr_normalized_refs [get_attribute [current_lib] ref_libs]]
++    if {$actual ne [fspr_normalized_refs $expected]} {
++        error "Existing library reference mismatch; no rebind performed. Use its original matched release or a fresh work directory."
++    }
++}
++proc fspr_icc2_open_or_create {design_library expected_refs} {
++    set expected_refs [fspr_normalized_refs $expected_refs]
++    set provenance [fspr_reference_provenance $expected_refs]
++    set record "[file normalize $design_library].usc144_provenance"
++    if {[file exists $design_library]} {
++        if {![file isfile $record]} {error "Existing library has no matched144nm provenance; no rebind performed"}
++        set stream [open $record r];set saved [string trim [read $stream]];close $stream
++        if {[catch {dict size $saved}] || $saved ne $provenance} {error "Existing library readiness/source provenance differs; no rebind performed"}
++        open_lib $design_library
++        fspr_assert_current_references $expected_refs
++        if {[fspr_reference_provenance $expected_refs] ne $provenance} {error "Reference/readiness/source changed during library open; no rebind performed"}
++    } else {
++        create_lib -use_technology_lib [lindex $expected_refs 0] -ref_libs $expected_refs $design_library
++        fspr_assert_current_references $expected_refs
++        set after_create [fspr_reference_provenance $expected_refs]
++        if {$after_create ne $provenance} {error "Reference/readiness/source changed during library creation; no provenance saved and no rebind performed. Use a fresh work directory."}
++        set temporary "${record}.[pid].tmp"
++        set stream [open $temporary w];puts $stream $provenance;close $stream
++        file rename -force $temporary $record
++    }
++}
++proc fspr_require_selected_site {name} {
++    set sites [get_site_defs -quiet -exact $name]
++    if {[sizeof_collection $sites] < 1} {error "Selected placement site is absent: $name"}
++    return $sites
++}

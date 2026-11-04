@@ -1,0 +1,304 @@
+{
+  "complete": true,
+  "total": 57,
+  "metadata_only": true,
+  "all_native_measurements_unchanged": true,
+  "original_manifest": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/CHARACTERIZED_MANIFEST.json",
+  "original_manifest_sha256": "d1a4f6dd1c894e57a08bf10c5574cfe300ceb406da83f967146c42937dca38a6",
+  "approval": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/ACTUAL_PRODUCTION_NUMERICAL_APPROVAL.json",
+  "approval_sha256": "9bf3d043934d8cca2f25d0df9d7138c1b67f56df5a70c5b678f05cad0da7cd18",
+  "actual_policy": {
+    "method": "traponly",
+    "reltol": 0.001,
+    "vabstol_V": 1e-09,
+    "iabstol_A": 1e-15,
+    "maxstep_s": 2e-13
+  },
+  "rows": [
+    {
+      "cell": "AND2x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/AND2x1/7f9acd5cf67f4f34_APPROVED.json",
+      "overlay_sha256": "cffad635b933b29b9f162ab418ad5cfc8bda2bf90b8291b161d8119fd1fb2634"
+    },
+    {
+      "cell": "AND3x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/AND3x1/c39f133d0092dbe6_APPROVED.json",
+      "overlay_sha256": "bc142b24572600ff93fdda15f80d5a79465044c9f22243ccb1cd62cadc838fe9"
+    },
+    {
+      "cell": "AND4x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/AND4x1/112529cc112c6059_APPROVED.json",
+      "overlay_sha256": "6f6f156eade689e18bcf079663543b2ab3f1b9616ac8a3c47fb6faf6d109f3ac"
+    },
+    {
+      "cell": "AOI21x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/AOI21x1/5abe57e8317eadfa_APPROVED.json",
+      "overlay_sha256": "8d03da16d5b907610cac388855e3a7158569bb6c275fd70bcb1ca9dac1ad06bb"
+    },
+    {
+      "cell": "AOI221x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/AOI221x1/3de43b870021e229_APPROVED.json",
+      "overlay_sha256": "8f359ee00bd6dd01b0f1a6b6ff42cd152d6109e1e80cb7d921536135fff1338d"
+    },
+    {
+      "cell": "AOI222x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/AOI222x1/9cfd088ef9e75fc5_APPROVED.json",
+      "overlay_sha256": "bc0ffd9454a1dd73fb7ef832ea9fece57eaa80106e4e15bc0b722dc423089a86"
+    },
+    {
+      "cell": "AOI22x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/AOI22x1/2ce46b90e4b2bc71_APPROVED.json",
+      "overlay_sha256": "92dd2ec5d0ad44f6b872d82f715f23626307f0f4db37b537a419234051246b93"
+    },
+    {
+      "cell": "AOI311x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/AOI311x1/8295f917f47412b4_APPROVED.json",
+      "overlay_sha256": "214eadd77fbdafdcbf7469b318f1e69bfa0fbedabe2772e33bffff398cf9ce26"
+    },
+    {
+      "cell": "AOI31x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/AOI31x1/fa34693e15b87d70_APPROVED.json",
+      "overlay_sha256": "62d678fdfa5c9219dfca99844fdd17d07cb0d4f2df354e61be40a495ddda7b88"
+    },
+    {
+      "cell": "BUFx1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/BUFx1/2f4014cf7e9091d3_APPROVED.json",
+      "overlay_sha256": "eae48f73ab748788836c9e1a07c98b171bc6a1baec7fdad93c4305a9bf299fe2"
+    },
+    {
+      "cell": "BUFx10",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/BUFx10/e74f6c4e9c338355_APPROVED.json",
+      "overlay_sha256": "eb8b923c45c431449e66e86ed3e019b41b26cee93c9dfcbbf00f6ae66b901736"
+    },
+    {
+      "cell": "BUFx2",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/BUFx2/b13ffb066752cbcf_APPROVED.json",
+      "overlay_sha256": "11418c5f156ed4a48fd046780bffa5f53854c1a88425de3faf6a0c24b9afe981"
+    },
+    {
+      "cell": "BUFx3",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/BUFx3/e09f17473f78ad79_APPROVED.json",
+      "overlay_sha256": "2eccedd2d601dbe2f2b40933fd1f21b47f89e9fb0806a64ede816a476de9ef1a"
+    },
+    {
+      "cell": "BUFx4",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/BUFx4/7e1e34728136b2a6_APPROVED.json",
+      "overlay_sha256": "15e9a9a7a9efe361c4f6424c1b8eadcdcdad66719e5f0c40c5ccf2ec28da3d76"
+    },
+    {
+      "cell": "BUFx5",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/BUFx5/b2a4fad30fb8dd93_APPROVED.json",
+      "overlay_sha256": "19ca1a22975e46295d72145b4f8cedef1a6dfae69dc0bd6e18bc7197a636b8a0"
+    },
+    {
+      "cell": "BUFx6",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/BUFx6/8c21dd7e489f0469_APPROVED.json",
+      "overlay_sha256": "f95dc81790ed775007542dcf84dee5ccae378a4299882ddcbcfa3879d460d7f6"
+    },
+    {
+      "cell": "BUFx7",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/BUFx7/d82cc9c61feaa069_APPROVED.json",
+      "overlay_sha256": "ef902362c9fafbb5b68e83f281cd7b05cb8055e2523a8146454ef6b254218b91"
+    },
+    {
+      "cell": "BUFx8",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/BUFx8/96875bd8e5c25d14_APPROVED.json",
+      "overlay_sha256": "2c88a9459a05f479fbef93fff73e70c83bf55fd3e3f86b428a999b82ca809cc1"
+    },
+    {
+      "cell": "DFFHQNx1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/DFFHQNx1/e2c87e96b326febd_APPROVED.json",
+      "overlay_sha256": "cf39ba0c3aa57bee90749d98110a4a9a1e2f597fa7a3d60882344764854b6b95"
+    },
+    {
+      "cell": "DFFHx1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/DFFHx1/90c98fc45d67ad79_APPROVED.json",
+      "overlay_sha256": "d9b9eb41e2a5aa11f8658c3f69908f13f01885b0aa0407b42eeb454aa9a68600"
+    },
+    {
+      "cell": "DHLx1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/DHLx1/b90971f153118c21_APPROVED.json",
+      "overlay_sha256": "1b6aab09e27bd6240b1c008f9b215739fa038d9c78741dc18d18824ce8ea9195"
+    },
+    {
+      "cell": "INVx1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/INVx1/4ca0ab0a0d03375e_APPROVED.json",
+      "overlay_sha256": "a535465fa8a9fda3f4fefd1dc43f8a9afb9260580ca619b951e817875a6eda6f"
+    },
+    {
+      "cell": "INVx10",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/INVx10/6845166cab810b75_APPROVED.json",
+      "overlay_sha256": "b5cade056657ef3b50647a031b8f6f46902d21286a1894c47eb05a6799ec036b"
+    },
+    {
+      "cell": "INVx12",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/INVx12/182e7f2cda1835de_APPROVED.json",
+      "overlay_sha256": "45632b1765c83e38654a7b01d647471c1794238371af72216a1880b1afc85d88"
+    },
+    {
+      "cell": "INVx14",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/INVx14/3c7de32e5d3cc52b_APPROVED.json",
+      "overlay_sha256": "149df34a79434af475f203b062e4ff7eb48bcbf62ecd6346f2ed40e360f68c63"
+    },
+    {
+      "cell": "INVx16",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/INVx16/3572cea453cd5c78_APPROVED.json",
+      "overlay_sha256": "1d4b69dcb72c558cc12980306dae1ca36d7755c9c20847b4bdb41836158ed927"
+    },
+    {
+      "cell": "INVx2",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/INVx2/6fccbdd66e736477_APPROVED.json",
+      "overlay_sha256": "2e3586387cb4baa6acb6d576ca4d6ffa8080de280f452a7326a390ffc0efc8e5"
+    },
+    {
+      "cell": "INVx3",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/INVx3/f97dfc039e7ac583_APPROVED.json",
+      "overlay_sha256": "10ef50381b9e2384e7a8e7e51b3dc1d14fd608e40346440a89d5f04d2ca67843"
+    },
+    {
+      "cell": "INVx4",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/INVx4/d39f6e4b32c48cbe_APPROVED.json",
+      "overlay_sha256": "7b1c41d03ad3013b1f4da8b20d3db653a15bf45367dc08e45cdf2d601637a724"
+    },
+    {
+      "cell": "INVx5",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/INVx5/5adfd27f07f696ca_APPROVED.json",
+      "overlay_sha256": "1214f795302e9e33c4fc335cd70b9e723be17409aef404dab17c2193f3540180"
+    },
+    {
+      "cell": "INVx6",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/INVx6/8cf7b0d4b606b28a_APPROVED.json",
+      "overlay_sha256": "f13d6af4fa97dd5035d47f98352da6b012cf8eae475625e01c736ef32ea820ff"
+    },
+    {
+      "cell": "INVx7",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/INVx7/3932ed5e25e85df9_APPROVED.json",
+      "overlay_sha256": "bfb12d74b252a5e00eb022df033b608f2b7fb1a63354d8e1e7d4123a5b87b3cd"
+    },
+    {
+      "cell": "INVx8",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/INVx8/68a53d551c8bff4b_APPROVED.json",
+      "overlay_sha256": "0ae2caf614fb631eec1a89a07091229045e5f4ac321ec924aa7ed61e4cdc2ded"
+    },
+    {
+      "cell": "MUX2x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/MUX2x1/af9875e8837d17b0_APPROVED.json",
+      "overlay_sha256": "33e7f1eba9be34a9b18b2e1f3f01c78a84ccf1de89c76086222647cb9ec89df8"
+    },
+    {
+      "cell": "NAND2x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/NAND2x1/4a78ae61ab475b60_APPROVED.json",
+      "overlay_sha256": "50262b581edd82b9352f102d719f37a1e3ca29993014ba38bab977fd7cfca408"
+    },
+    {
+      "cell": "NAND2x2",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/NAND2x2/b9af2810543dfa97_APPROVED.json",
+      "overlay_sha256": "b13d3ecc2e52d195c70220d3119ed3ce4699d2d0f31a0c405594aace31fe8e94"
+    },
+    {
+      "cell": "NAND3x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/NAND3x1/d1e96be050b84a65_APPROVED.json",
+      "overlay_sha256": "7412fd9371e52fd33ea3aad6fc258c19b25b802452ba8ea13c89ec5c6ed66330"
+    },
+    {
+      "cell": "NAND3x2",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/NAND3x2/d6d3b26d0fc36e0e_APPROVED.json",
+      "overlay_sha256": "cbec0262f57564a52de46b38c016e2a408ba213cb1f4fb7e3a31367bd9e3b90d"
+    },
+    {
+      "cell": "NAND4x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/NAND4x1/b8a5ddb50842c6e7_APPROVED.json",
+      "overlay_sha256": "203bb0455e04df453625682a7046f2028da1a84a351ce0bd51712defbc9cddc9"
+    },
+    {
+      "cell": "NOR2x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/NOR2x1/4bff168dcde0928c_APPROVED.json",
+      "overlay_sha256": "86fd976cfd02272abc58a3d995e1e29a78c0f228a5cea5b5b9bcafcfc5b43e7a"
+    },
+    {
+      "cell": "NOR2x2",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/NOR2x2/95553e7076693dde_APPROVED.json",
+      "overlay_sha256": "13d9c3fffc2c34dc3cd9ba8faadbf023159fc12758d4df4dab3965affd7ab082"
+    },
+    {
+      "cell": "NOR3x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/NOR3x1/ce98ef607ea4dad0_APPROVED.json",
+      "overlay_sha256": "43844e9945797e6f3b8376797f9f6ece6dab40bed82b92b3134473d059c735c9"
+    },
+    {
+      "cell": "NOR3x2",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/NOR3x2/ebedf83b54aade95_APPROVED.json",
+      "overlay_sha256": "4fe8f67b177623e8ad985b14fea189c919517dc1828b7800d5c0b2845f48a6f1"
+    },
+    {
+      "cell": "NOR4x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/NOR4x1/aa63a4cb7518d2d4_APPROVED.json",
+      "overlay_sha256": "252af17d49b38a7c00bfbd1bb07b53659a0152d31a659ef9055db63a4733c4f8"
+    },
+    {
+      "cell": "OAI21x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/OAI21x1/73fb264a44e55097_APPROVED.json",
+      "overlay_sha256": "71942a099b984b6a583b98d5bcd08f6021912a3765e753b6155579946621aa3a"
+    },
+    {
+      "cell": "OAI221x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/OAI221x1/86b51a50c3b17221_APPROVED.json",
+      "overlay_sha256": "0749202771c7a77850d7049f7fa643df36b557e930275b6fc2d89d430707d231"
+    },
+    {
+      "cell": "OAI222x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/OAI222x1/251276da550d4598_APPROVED.json",
+      "overlay_sha256": "f00c8fa4ee32b8ebd0ffc98163851757e1726d1387ba9b28a2f100ea6c101b31"
+    },
+    {
+      "cell": "OAI22x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/OAI22x1/368686eeef21f609_APPROVED.json",
+      "overlay_sha256": "a23955af712e397c3e29b877101de699cc63fe76eb0eb459bbef9972ba90ab68"
+    },
+    {
+      "cell": "OAI311x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/OAI311x1/fdf8b2c26a0ea671_APPROVED.json",
+      "overlay_sha256": "7c4582f0b8a375fdd49c3b844194cd3b68aef8fef4ee661f83090a751352e783"
+    },
+    {
+      "cell": "OAI31x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/OAI31x1/a9bafe1ee1d4b6e6_APPROVED.json",
+      "overlay_sha256": "35a26981b2a5deb0eb830139d0a62a080e05aedc1eae27e1c9d6270e5ffc6e9a"
+    },
+    {
+      "cell": "OR2x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/OR2x1/1da3be1b05c20084_APPROVED.json",
+      "overlay_sha256": "73e8da2c96485e8c75791ca720798841c50977a505c421874233f51b15414969"
+    },
+    {
+      "cell": "OR3x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/OR3x1/c5e504f65ba45ba1_APPROVED.json",
+      "overlay_sha256": "5f648fab353a7a3c2b1fae21c1e8821cec60c148528c2f04bf337ebd61e58503"
+    },
+    {
+      "cell": "OR4x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/OR4x1/d29bc0662e75f56a_APPROVED.json",
+      "overlay_sha256": "980ee1f16e691c19110aa709ede384157723c57eeae1ddfb52a8d1cb6f3124d4"
+    },
+    {
+      "cell": "XNOR2x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/XNOR2x1/5e00a99af3f5aefc_APPROVED.json",
+      "overlay_sha256": "114f5a1b64cdba7ea6384c93c037102a25548017302f40eee55c785f8934f61e"
+    },
+    {
+      "cell": "XNOR3x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/XNOR3x1/696cf7f867fb66f1_APPROVED.json",
+      "overlay_sha256": "6be619f80a131351f12de9c916489f605a900447a09b5dac5925052724ab9d92"
+    },
+    {
+      "cell": "XOR2x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/XOR2x1/3452429e3d7beaa2_APPROVED.json",
+      "overlay_sha256": "61734417ee322a19270542d5ee5a6c5bd4b7666bd6423ab1529b498a3df9af13"
+    },
+    {
+      "cell": "XOR3x1",
+      "overlay": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/NUMERICAL_POLICY_OVERLAYS/XOR3x1/0083672aa440c1f4_APPROVED.json",
+      "overlay_sha256": "cb17141307888c30cdd0cfa110539b08af39f7459bf814abf82fad6ba89e06d1"
+    }
+  ]
+}

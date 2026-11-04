@@ -1,0 +1,408 @@
+{
+  "units": {
+    "area": "um\u00b2",
+    "cell_leakage_power": "pW"
+  },
+  "scope": "Combined model binding/backend/layout/RC change; no interpolation or numerical Liberty edits. INV nominal-width RC diagnostic is separate from the all-cell comparison.",
+  "rows": [
+    {
+      "cell": "AND2x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 414.394,
+      "after_area": 0.03024,
+      "after_cell_leakage_power": 414.539
+    },
+    {
+      "cell": "AND3x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 386.109,
+      "after_area": 0.036288,
+      "after_cell_leakage_power": 386.678
+    },
+    {
+      "cell": "AND4x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 348.908,
+      "after_area": 0.042336,
+      "after_cell_leakage_power": 349.795
+    },
+    {
+      "cell": "AOI21x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 266.428,
+      "after_area": 0.024192,
+      "after_cell_leakage_power": 266.437
+    },
+    {
+      "cell": "AOI221x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 295.82,
+      "after_area": 0.036288,
+      "after_cell_leakage_power": 296.839
+    },
+    {
+      "cell": "AOI222x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 383.607,
+      "after_area": 0.048384,
+      "after_cell_leakage_power": 384.57
+    },
+    {
+      "cell": "AOI22x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 330.184,
+      "after_area": 0.03024,
+      "after_cell_leakage_power": 330.574
+    },
+    {
+      "cell": "AOI311x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 243.669,
+      "after_area": 0.036288,
+      "after_cell_leakage_power": 243.976
+    },
+    {
+      "cell": "AOI31x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 268.802,
+      "after_area": 0.03024,
+      "after_cell_leakage_power": 268.843
+    },
+    {
+      "cell": "BUFx1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 388.539,
+      "after_area": 0.024192,
+      "after_cell_leakage_power": 388.181
+    },
+    {
+      "cell": "BUFx10",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 3885.38,
+      "after_area": 0.127008,
+      "after_cell_leakage_power": 3881.79
+    },
+    {
+      "cell": "BUFx2",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 777.078,
+      "after_area": 0.03024,
+      "after_cell_leakage_power": 776.362
+    },
+    {
+      "cell": "BUFx3",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 971.35,
+      "after_area": 0.036288,
+      "after_cell_leakage_power": 970.47
+    },
+    {
+      "cell": "BUFx4",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 1554.16,
+      "after_area": 0.054432,
+      "after_cell_leakage_power": 1552.72
+    },
+    {
+      "cell": "BUFx5",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 1748.43,
+      "after_area": 0.06048,
+      "after_cell_leakage_power": 1746.83
+    },
+    {
+      "cell": "BUFx6",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 2331.23,
+      "after_area": 0.078624,
+      "after_cell_leakage_power": 2329.08
+    },
+    {
+      "cell": "BUFx7",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 2525.5,
+      "after_area": 0.084672,
+      "after_cell_leakage_power": 2523.19
+    },
+    {
+      "cell": "BUFx8",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 3108.31,
+      "after_area": 0.102816,
+      "after_cell_leakage_power": 3105.44
+    },
+    {
+      "cell": "DFFHQNx1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 1509.31,
+      "after_area": 0.102816,
+      "after_cell_leakage_power": 1147.04
+    },
+    {
+      "cell": "DFFHx1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 1634.05,
+      "after_area": 0.145152,
+      "after_cell_leakage_power": 1253.07
+    },
+    {
+      "cell": "DHLx1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 1089.07,
+      "after_area": 0.072576,
+      "after_cell_leakage_power": 875.378
+    },
+    {
+      "cell": "INVx1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 194.267,
+      "after_area": 0.012096,
+      "after_cell_leakage_power": 194.073
+    },
+    {
+      "cell": "INVx10",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 1942.67,
+      "after_area": 0.066528,
+      "after_cell_leakage_power": 1940.72
+    },
+    {
+      "cell": "INVx12",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 2331.2,
+      "after_area": 0.078624,
+      "after_cell_leakage_power": 2328.87
+    },
+    {
+      "cell": "INVx14",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 2719.72,
+      "after_area": 0.09072,
+      "after_cell_leakage_power": 2717.01
+    },
+    {
+      "cell": "INVx16",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 3108.25,
+      "after_area": 0.102816,
+      "after_cell_leakage_power": 3105.15
+    },
+    {
+      "cell": "INVx2",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 388.534,
+      "after_area": 0.018144,
+      "after_cell_leakage_power": 388.146
+    },
+    {
+      "cell": "INVx3",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 582.801,
+      "after_area": 0.024192,
+      "after_cell_leakage_power": 582.219
+    },
+    {
+      "cell": "INVx4",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 777.068,
+      "after_area": 0.03024,
+      "after_cell_leakage_power": 776.292
+    },
+    {
+      "cell": "INVx5",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 971.335,
+      "after_area": 0.036288,
+      "after_cell_leakage_power": 970.364
+    },
+    {
+      "cell": "INVx6",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 1165.6,
+      "after_area": 0.042336,
+      "after_cell_leakage_power": 1164.44
+    },
+    {
+      "cell": "INVx7",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 1359.87,
+      "after_area": 0.048384,
+      "after_cell_leakage_power": 1358.51
+    },
+    {
+      "cell": "INVx8",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 1554.13,
+      "after_area": 0.054432,
+      "after_cell_leakage_power": 1552.58
+    },
+    {
+      "cell": "MUX2x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 548.79,
+      "after_area": 0.042336,
+      "after_cell_leakage_power": 549.024
+    },
+    {
+      "cell": "NAND2x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 214.582,
+      "after_area": 0.018144,
+      "after_cell_leakage_power": 214.591
+    },
+    {
+      "cell": "NAND2x2",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 429.164,
+      "after_area": 0.03024,
+      "after_cell_leakage_power": 429.181
+    },
+    {
+      "cell": "NAND3x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 183.528,
+      "after_area": 0.024192,
+      "after_cell_leakage_power": 183.817
+    },
+    {
+      "cell": "NAND3x2",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 367.055,
+      "after_area": 0.042336,
+      "after_cell_leakage_power": 367.633
+    },
+    {
+      "cell": "NAND4x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 144.943,
+      "after_area": 0.03024,
+      "after_cell_leakage_power": 145.486
+    },
+    {
+      "cell": "NOR2x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 214.696,
+      "after_area": 0.018144,
+      "after_cell_leakage_power": 214.838
+    },
+    {
+      "cell": "NOR2x2",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 429.391,
+      "after_area": 0.03024,
+      "after_cell_leakage_power": 429.675
+    },
+    {
+      "cell": "NOR3x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 183.515,
+      "after_area": 0.024192,
+      "after_cell_leakage_power": 184.054
+    },
+    {
+      "cell": "NOR3x2",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 367.029,
+      "after_area": 0.042336,
+      "after_cell_leakage_power": 368.107
+    },
+    {
+      "cell": "NOR4x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 144.575,
+      "after_area": 0.03024,
+      "after_cell_leakage_power": 145.437
+    },
+    {
+      "cell": "OAI21x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 266.422,
+      "after_area": 0.024192,
+      "after_cell_leakage_power": 266.412
+    },
+    {
+      "cell": "OAI221x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 295.407,
+      "after_area": 0.036288,
+      "after_cell_leakage_power": 296.366
+    },
+    {
+      "cell": "OAI222x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 384.257,
+      "after_area": 0.048384,
+      "after_cell_leakage_power": 385.307
+    },
+    {
+      "cell": "OAI22x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 330.59,
+      "after_area": 0.03024,
+      "after_cell_leakage_power": 331.126
+    },
+    {
+      "cell": "OAI311x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 243.397,
+      "after_area": 0.036288,
+      "after_cell_leakage_power": 243.588
+    },
+    {
+      "cell": "OAI31x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 268.671,
+      "after_area": 0.03024,
+      "after_cell_leakage_power": 268.794
+    },
+    {
+      "cell": "OR2x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 403.432,
+      "after_area": 0.03024,
+      "after_cell_leakage_power": 403.142
+    },
+    {
+      "cell": "OR3x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 369.482,
+      "after_area": 0.036288,
+      "after_cell_leakage_power": 369.449
+    },
+    {
+      "cell": "OR4x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 329.156,
+      "after_area": 0.042336,
+      "after_cell_leakage_power": 329.368
+    },
+    {
+      "cell": "XNOR2x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 772.909,
+      "after_area": 0.054432,
+      "after_cell_leakage_power": 773.065
+    },
+    {
+      "cell": "XNOR3x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 1545.84,
+      "after_area": 0.09072,
+      "after_cell_leakage_power": 1546.33
+    },
+    {
+      "cell": "XOR2x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 772.909,
+      "after_area": 0.054432,
+      "after_cell_leakage_power": 773.065
+    },
+    {
+      "cell": "XOR3x1",
+      "before_area": 0.0,
+      "before_cell_leakage_power": 1545.84,
+      "after_area": 0.09072,
+      "after_cell_leakage_power": 1546.33
+    }
+  ]
+}

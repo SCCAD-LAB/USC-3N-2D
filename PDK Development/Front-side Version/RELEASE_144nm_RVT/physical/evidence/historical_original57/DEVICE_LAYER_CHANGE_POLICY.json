@@ -1,0 +1,55 @@
+{
+  "BUFx3": {
+    "allowed_modified_device_layers": [
+      10
+    ],
+    "channel_geometry": "unchanged",
+    "reason": "GCutbottom originallyends6nmexactlytouchinggroundLIGtop6nm. Extendonlyrailcutto10nmclearance; NMOSchannelstarts21nm, soallGAAchannels/L/W/count/coordsunchanged. Existinguserrecursivephysicalrepairauthorization; noelectricalpointchange.",
+    "site_boundary_layer100_unchanged": true,
+    "pin_labels_unchanged": true,
+    "old_GCut_bbox_um": [
+      [
+        -0.009000000000000001,
+        -0.006
+      ],
+      [
+        0.261,
+        0.006
+      ]
+    ],
+    "new_GCut_bbox_um": [
+      [
+        -0.009000000000000001,
+        -0.01
+      ],
+      [
+        0.261,
+        0.01
+      ]
+    ]
+  },
+  "DFFHx1": {
+    "allowed_modified_device_layers": [
+      11
+    ],
+    "channel_geometry": "explicit_translation",
+    "device_translations": [
+      {
+        "type": "nmos_rvt",
+        "from": {
+          "x_nm": 546,
+          "y_nm": 36
+        },
+        "to": {
+          "x_nm": 588,
+          "y_nm": 36
+        },
+        "L_nm": 12,
+        "W_nm": 19
+      }
+    ],
+    "reason": "Root explicitly authorized repair of source ACT one-CPP misplacement. Exactly one M7 relocated42nm; all32 L/W and other31 coordinates and channels must remain identical. Native topology LVS and DRC required independently.",
+    "pin_labels_unchanged": true,
+    "site_boundary_layer100_unchanged": true
+  }
+}

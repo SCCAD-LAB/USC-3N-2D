@@ -1,0 +1,27 @@
+{
+  "static_layer_map_checks": 38,
+  "quoted_space_path_and_pending_gate": true,
+  "Tcl_complete_files": 7,
+  "bash_syntax_files": 4,
+  "NDM_old_timing_refused_no_workdir_or_native_job": true,
+  "selected_DFFH_repo_only_replay": {
+    "passed": true,
+    "cell": "DFFHx1",
+    "source_physical_binding_sha256": "4aa0db2d41b09d85813af82c67a53cf21ec20fb4bde583d58dc88398ea9b01f4",
+    "portable_rebase": "Only proof path fields rebased in a temporary wrapper; original proof and input bytes unchanged",
+    "GDS_LVS_PEX_channel_bijection": true,
+    "actual_solver_policy": {
+      "method": "traponly",
+      "reltol": 0.001,
+      "vabstol_V": 1e-09,
+      "iabstol_A": 1e-15,
+      "maxstep_s": 2e-13
+    },
+    "execution_status": "active_native_inputs_verified",
+    "cells_sp_sha256": "cb9d94dcc947dfae48c062640b65b6ad8d60f5eaacbbcd0148247e1bfe74e466",
+    "model_native_sha256": "1878ed3b42a64a0481393a2e9bcd8024c803a4c6ff0bff0c32b9da4fd6447a53",
+    "passive_RC_unchanged": true
+  },
+  "native_jobs": 0,
+  "passed": true
+}

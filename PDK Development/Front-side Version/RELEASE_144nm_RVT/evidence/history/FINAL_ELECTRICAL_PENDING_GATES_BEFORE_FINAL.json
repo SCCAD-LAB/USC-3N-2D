@@ -1,0 +1,43 @@
+{
+  "epoch": 1793794028.4373474,
+  "stage": "prepared_checklist_only_electrical_pending",
+  "publication_allowed": false,
+  "canonical_characterized_cells": 56,
+  "selected_candidate_binding": "6ef95b32b6d0e87f275159f42a177e50bfa5485ea07e5f2af600f2098069d905",
+  "selected_candidate_GDS_sha256": "46473c808103537d8082da21232d1ca1a6fe79a603e01c1491d3b6aed1664184",
+  "selected_physical_combined57_GDS_sha256": "016fd13516b7b580610ef282860fb315251e688cfec776a353c655d32a938b7e",
+  "actual64_functional_audit_sha256": "fd2eb5b23634cc17d77108a82a6961f68f54f43f2cf2cad6e5840975da880b7f",
+  "gates_before_electrical_staging": [
+    "Root final paired repair acceptance names exact GDS/CDL/body/PEX/geometry/input/native-library hashes and approves controlled57 selection.",
+    "Full new DFFH all-arc7x7 native result passes failingcell/error/placeholder/finite/table/source/grid/actualsolver audits; no old DFFH arcs reused. Focused diagnostic alone cannot qualify the cell.",
+    "Original supervisor crashed on metadata OSError116; preserve attach-only recovery and honest native OS rc unknown if unobservable. Do not fabricate rc0. Root must explicitly accept final termination/data evidence.",
+    "Selected approved57 row manifest and per-cell actual-solver metadata overlays bind unchanged56 native rows plus exactly selected newDFFH result.",
+    "Selected57 portable reproduction inputs refresh from actual executed inputs; DFFH actual64 Tcl, netlist/model hash and all percell/aggregate GDS provenance reconcile. Historical initial snapshots retained.",
+    "Native57 Liberty assembly/header audit preserves every accepted native cell block; only authorized global default_max_transition160ps metadata fix applies.",
+    "New native LC LIB/DB compilation and sequential-state-intent audit pass. No incomplete or placeholder Liberty/DB copied.",
+    "Full matched raw0D/1D/2D tables/scalars plus unmatched rows/units/provenance exported. DFFH delta explicitly includes two clock-net changes.",
+    "Final root --require-characterized review covers selected57 physical interfaces/model/grid/native57/electrical/LC/raw/body/logic and explicit two-gate independent-reference scope.",
+    "Restage vendor LIB/DB in isolated checkout, rerun artifact/index/source/public token audits and read-only upstream main/source identity check. Any upstream science change requires report before rebase.",
+    "Root explicit final publication approval precedes commit/push/forkPR; never merge main."
+  ],
+  "native_output_guard": "Do not copy incomplete native LIB or replace old vendor LIB/DB before all gates. Preserve raw private logs and hashes; only credential-value-derived public logs may change bytes, with provenance and zero-token scan.",
+  "matched_NDM_and_active_selectors": {
+    "status": "prepared_pending_finalDB",
+    "shared_map": "PDK Development/Front-side Version/selected_collateral.tcl",
+    "default_GDS": "3nm_GAA_FSPR_144nm.gds",
+    "default_NDM": "PnR-Synopsys/Front-side Version/NDM/3nm_GAA_FSPR_144nm_rvt.ndm",
+    "required_build": "Native LM from final57 DB+selectedLEF+frozenTF/techLEF; fresh ICC2 reopen exact57 names/source hashes.",
+    "LFS_policy": "Determine directory payload sizes first; add only scoped newNDM LFS attributes if needed and verify remote object availability before publicPR.",
+    "readiness": "Both readiness flags remain0 until final source/build/readback/root review gates pass. No old timing/legacyNDM fallback.",
+    "verification_map": "Matched fin-present144 DRC/LVS/FSPR_PEX deck, native-generated StarRC layer map and frozen grid. Legacy GitHub decks historical."
+  },
+  "final_public_summary_rewrite": "After final timing/NDM validation, describe completed matched inputs and validation concisely; move debug chronology to referenced evidence. Preserve explicit unknown-native-OSrc resolution and source-RC calibration limits. Keep exact argument-consumer tests/list-vs-scalar contracts.",
+  "ICC2_reference_readiness": {
+    "final_binding": "Freeze a non-self-referential final matched-source manifest SHA as fspr_release_binding after accepted57 timing/NDM.",
+    "site": "coreSite must survive native fresh readback.",
+    "interfaces": "Native all57 widths/heights and all signal/PG PIN names must match selected LEF.",
+    "resumability": "Exact reference paths, readiness/source binding and NDM payload hashes must match adjacent provenance. No legacy routed-library rebind.",
+    "NDM_directory_name": "Preserve the committed NDM directory basename when copying; native private probes reject renamed directory-format libraries.",
+    "prepared_only": true
+  }
+}

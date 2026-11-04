@@ -1,0 +1,38 @@
+{
+  "normalized_cells": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/simulation_inputs/cells.sp",
+  "normalized_cells_sha256": "cb9d94dcc947dfae48c062640b65b6ad8d60f5eaacbbcd0148247e1bfe74e466",
+  "normalized_flat_cells": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/simulation_inputs/flat_cells.sp",
+  "normalized_flat_cells_sha256": "10ee63f27131fa87270a3d92b2959e0e9f47331a314b020b0c43ae22dd9f7144",
+  "model_native": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/simulation_inputs/model_native.scs",
+  "model_native_sha256": "1878ed3b42a64a0481393a2e9bcd8024c803a4c6ff0bff0c32b9da4fd6447a53",
+  "PEX_receipt": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/pex/PEX_RECEIPT_v2.json",
+  "PEX_receipt_sha256": "34cd16cd5e85dab496803b90dc3c09951326fbf3e6af26e1b514309b89cf9f72",
+  "geometry_binding": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/pex/FINAL_GEOMETRY_MODEL_BINDING.json",
+  "geometry_binding_sha256": "77c005f1f78298af8601017cabd0a5875ac05237e30cf8711eaad5fb73bd3ae4",
+  "paired_topology_audit": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/PAIRED_TOPOLOGY_GATE_ADAPTER.json",
+  "paired_topology_audit_sha256": "c253266853137ac12e8a85d7bd328dc4ae14a0a81da7e6861898e3cfbc565dc1",
+  "body_proof": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/BODY_RAIL_PROVENANCE.json",
+  "body_proof_sha256": "ea20fc00466081da43555d4f22b567be3939e9e5338ce58f880442195d38bc60",
+  "targeted_gates": [
+    {
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/async_RESET_D0_ck160_L0.36/TARGETED_GATE.json",
+      "sha256": "2c8fedb80a63563b3fc0ed02a8fdb13698f6446825170e2ec0bed8134d5e05f5"
+    },
+    {
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/fall_full_D1_ck160_L0.36_off+0/TARGETED_GATE.json",
+      "sha256": "5ce9f50d01da70b4002845183925af1f80acbda2cf350d2998249065488d29a9"
+    },
+    {
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/fall_full_D1_ck2.5_L0.36_off+0/TARGETED_GATE.json",
+      "sha256": "6177b891d7c13cd10cdd71b691f5b0dcf2f4fb02c650dd8e2a203af32a126e5e"
+    }
+  ],
+  "production_correlation": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/PRODUCTION_SOLVER_CORRELATION.json",
+  "production_correlation_sha256": "6b234d0c5f401ecd55fe523449a579d95ffcff03233f2eb288626bf056869fd3",
+  "all3_strict_actual_preflights_passed": true,
+  "production_correlation_passed": true,
+  "actual_MOS_dimensions_preserved": true,
+  "all32_original03ae_L_W_coordinates_preserved": true,
+  "root_further_screen_or_full_char_authorization_required": true,
+  "canonical_adoption": false
+}

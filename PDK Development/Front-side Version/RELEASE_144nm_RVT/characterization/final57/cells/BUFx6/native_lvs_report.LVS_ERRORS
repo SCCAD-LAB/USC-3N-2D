@@ -1,0 +1,223 @@
++------------------------------------------------------------------------+
+|                    ICV_Compare LVS Comparison Report                   |
++------------------------------------------------------------------------+
+
+ICV_Compare (R) Hierarchical Layout Vs. Schematic
+	RHEL64 X-2025.06-SP3.13071766 2026/01/27
+Copyright (C) Synopsys, Inc. All rights reserved.
+
+
+--------------------------------------------------------------------------
+LVS error file     = BUFx6.LVS_ERRORS
+Layout error file  = BUFx6.LAYOUT_ERRORS
+Schematic netlist  = /tmp/yhuang861/usc144_github_release_20261103/full57/BUFx6/iter001/pex_lvs_FSPR_attempt000/BUFx6.sch_out.gz
+Layout netlist     = /tmp/yhuang861/usc144_github_release_20261103/full57/BUFx6/iter001/pex_lvs_FSPR_attempt000/BUFx6.net.gz
+Runset file        = /tmp/yhuang861/usc144_github_release_20261103/full57/BUFx6/iter001/pex_lvs_FSPR_attempt000/source_FSPR_PEX.rs
+Working directory  = /tmp/yhuang861/usc144_github_release_20261103/full57/BUFx6/iter001/pex_lvs_FSPR_attempt000
+Compare directory  = run_details/compare
+Compare start time = 2026-11-03 20:52:10
+
+
+
+--------------------------------------------------------------------------
+Final comparison result:PASS
+
+			#####   ##   ##### #####
+			#   #  #  #  #     #    
+			##### ###### ##### #####
+			#     #    #     #     #
+			#     #    # ##### #####
+
+
+TOP equivalence point:
+		[BUFx6, BUFx6]
+
+Comparison summary
+
+    1 Successful equivalence points
+    0 Failed equivalence points
+
+TOP-level Post-compare summary (* = unmatched devices, nets or ports):
+
+        Matched      Unmatched    Unmatched        Instance types
+                     schematic    layout           [schematic, layout]
+        ---------    ---------    ---------        --------------------
+               12            0            0        NMOS[nmos_rvt, nmos_rvt]
+               12            0            0        PMOS[pmos_rvt, pmos_rvt]
+        ---------    ---------    ---------        --------------------
+               24            0            0        Total instances
+
+                5            0            0        Total nets
+
+                4            0            0        Total ports
+
+
+
+Schematic and layout agree at all user-intended equivalent points involved
+in compare.
+
+
+
++------------------------------------------------------------------------+
+|                             Setting Overview                           |
+|                 * = different from IC Validator default                |
++------------------------------------------------------------------------+
+
+    == Global Settings ==                     
+    schematic global_nets                     = {}
+    power nets                                
+*       schematic                             = {VDD}
+*       layout                                = {VDD}
+    ground nets                               
+*       schematic                             = {VSS}
+*       layout                                = {VSS}
+    join nets                                 
+        schematic                             = {}
+        layout                                = {}
+    ignore_metacharacters                     = NONE
+                                              
+    == Merge & Filter ==                      
+    filter                                    = 0 device_name
+    merge_parallel                            = 0 device_name
+        exclude_functions                     = 0 device_name
+        property_functions                    = 0 device_name
+        xref_parallel_map                     = 0 device_name
+    merge_series                              = 0 device_name
+        exclude_functions                     = 0 device_name
+        property_functions                    = 0 device_name
+        multiple_paths                        = 0 device_name
+        merge_connected_gates                 = 0 device_name
+    short_equivalent_nodes                    = 0 device_name
+        series_parallel_stack                 = 0 device_name
+    short_equivalent_stack_nodes              = 0 device_name
+        exclude_tolerances                    = 0 device_name
+    recognize_gate                            = 0 device_name
+        exclude_tolerances                    = 0 device_name
+                                              
+    == Property ==                            
+    check_property                            = 0 device_name
+        check_function                        = 0 device_name
+    check_property_for_failed_equiv           = false
+    lvs_property_epsilon                      = E6
+    multiply_width                            = true
+    recalculate_property                      = 0 device_name
+                                              
+    == Hierarchy ==                           
+    memory_array_compare                      = true
+    push_down_devices                         = false
+    push_down_pins                            = true
+    remove_dangling_net                       = LAYOUT_UNTEXTED
+    define_global_nets_as_top_ports           = true
+                                              
+    == Netlist Definition ==                  
+    delete cells                              
+        schematic                             = {}
+        layout                                = {}
+    pin configuration                         
+*       swappable_pins                        = 2 device_names
+        ignore pins                           = 0 device_name
+    top_cell_ports_static                     = NAME_MATCHED
+    define_empty_cell_as_device               = NONE
+                                              
+    == Report ==                              
+    print_messages                            
+        equated_nets_list                     = true
+        equivalent_cell_list                  = true
+        invalid_user_equivs                   = true
+        matched_devices_unmatched_nets        = true
+        merged_nets_referenced                = true
+        netlist_stats                         = true
+        nets_promoted_to_pwr_gnd              = true
+        non_equivalent_cell_list              = true
+        port_xref_table                       = true
+        post_compare_stats                    = true
+        referenced_merged_devices             = true
+        swapped_pin_analysis                  = true
+        symmetrical_nodes_found               = true
+        uncompared_cell_list                  = true
+        all_merged_device_list                = false
+        instance_xref_table                   = false
+        filtered_device_list                  = false
+        series_device_list                    = false
+        net_xref_table                        = false
+        parallel_device_list                  = false
+        pre_merge_stats                       = false
+        black_box_signoff                     = true
+        complete_device_setting_table         = false
+    wrap_print_message_text                   = true
+    print_devices_per_net_max                 = 10
+    error_limit_per_check                     = 1000
+    write_equiv_netlists                      = FAILED_REDUCED
+    print_detail                              
+        property                              = COORDINATES_AND_DEVICE_TYPES
+        xref_pin                              = NONE
+        device_pin                            = ALL
+    black_box_file                            = NONE
+    ignore_equiv_file                         = NONE
+    open_net_names_checking                   = USE_ICV_RENAMED
+                                              
+    == Equiv Control ==                       
+    generate_user_equivs                      = NONE
+    generate_system_equivs                    = false
+    spice_flow                                = false
+    user_unit_meter                           = false
+    ignore_equivs_with_devices_leveled_out    = false
+    user_equiv_substring                      = NONE
+    equivs management                         
+        action_on_error                       = NO_EXPLODE
+        no_explode_condition                  = NONE
+        resolve_duplicate_equivs              = false
+        explode_imbalanced_equivs             = true
+        flatten_hierarchy_sensitive_equivs    = false
+    matching                                  
+        detect_permutable_ports               = false
+        match_by_net_name                     = false
+        texted_zero_connection_ports          = IGNORE
+        black_box_static_ports                = NONE
+        pin_connected_and_dangling_suppress_layers= {}
+    match_condition                           
+        black_box_duplicates_equiv            = WARNING
+        property_mismatch                     = ERROR
+        missing_required_property             = ERROR
+        illegal_multiplier                    = ERROR
+        equate_by_net_name_fails              = WARNING
+        equate_nets_fails                     = WARNING
+        filtered_schematic_devices            = WARNING
+        generate_global_nets                  = WARNING
+        matches_must_be_assumed               = WARNING
+        merging_without_pwr_gnd               = WARNING
+        missing_black_box_cell                = WARNING
+        missing_black_box_port                = WARNING
+        missing_pin_connection                = WARNING
+        new_cell_created                      = WARNING
+        no_global_nets_found                  = WARNING
+        undefined_property_for_merged_device  = WARNING
+        zero_value_property                   = WARNING
+        empty_cell_not_defined_as_device      = NONE
+        layout_ports_without_name             = NONE
+        top_layout_ports_without_name         = NONE
+        nets_matched_with_different_name      = NONE
+        ports_matched_with_different_name     = NONE
+        properties_contradict_connections     = NONE
+        port_net_match_non_port_net           = NONE
+        top_schematic_port_net_match_non_port_net= NONE
+        top_layout_port_net_match_non_port_net= NONE
+        top_ports_matched_with_different_name = NONE
+        top_schematic_ports_matched_with_different_or_missing_name= NONE
+        one_connection_non_port_net           = NONE
+        zero_connection_net                   = NONE
+        child_equiv_unmatched_ports           = NONE
+        pin_connected_and_dangling            = NONE
+        layout_net_without_matching_name      = NONE
+    report_black_box_errors                   
+        extra_layout_ports                    = ERROR_NO_ABORT
+        untexted_layout_ports                 = NONE
+        extra_schematic_ports                 = ERROR_NO_ABORT
+                                              
+    == Case Sensitivity ==                    
+    netlist case sensitivity                  
+        schematic uppercase                   = false
+        layout uppercase                      = false
+    LVS case_sensitive                        = {PROPERTY NET_PORT DEVICE_NAME}
+
+End of LVS comparison report

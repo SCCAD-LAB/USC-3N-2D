@@ -1,0 +1,123 @@
+{
+  "passed": true,
+  "numeric_DRC_includes": [
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.act.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.act.drc.rs",
+      "sha256": "d6929a921e90411f39808cce785c2e516d1e38c2d625816c47cc872bcc3b92e3"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.gate.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.gate.drc.rs",
+      "sha256": "236f58193a1c0c7f21909edd3e2e172fee7cb0eafd50495db226829eb30935e8"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.gcut.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.gcut.drc.rs",
+      "sha256": "e72b8f8e61db87e4ef44442c3093e7b60e6e7f50281951992d7d0171a2a2389f"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.lig.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.lig.drc.rs",
+      "sha256": "5fe30260ff4b8ab73c0149d1b6ce2678d955e0e39be1bd72ad9c0b4ded38ea7b"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.lisd.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.lisd.drc.rs",
+      "sha256": "976861a31d7f06ef7ab5200ad306a88c35fe5639427ba11e244b9b68abffec48"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.m1.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.m1.drc.rs",
+      "sha256": "45412ae6f24cf642c3fe5bd60672dcc9257376792ade7609d5f4771adc3b17f9"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.m2.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.m2.drc.rs",
+      "sha256": "c2e8801079a75ac9b51cc38cef3c826af543c6f0672db84b51768de34342ffe6"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.m3.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.m3.drc.rs",
+      "sha256": "e732d28e62bd3d51d9e6c90cd99a0cc40a9ffa38e36ee7971024532e9cdfd0ee"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.m4.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.m4.drc.rs",
+      "sha256": "a9ac7f844fbe190d7ea9bee32173e39d05b23a6139751ce374a5bd5979dc731c"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.m5.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.m5.drc.rs",
+      "sha256": "b76ff0bced859c76b9f451748764db09d076f358cb87e24db247889c988c9e29"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.m6.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.m6.drc.rs",
+      "sha256": "e0fb7ced786a3d035511dbd4aa9263da31de7eaf5b3cc4edb1c4114a15f70f8d"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.mbpr.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.mbpr.drc.rs",
+      "sha256": "354972ecf496013a477083959245716ed92cd330f374ced2a5baa085286d7d15"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.npsel.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.npsel.drc.rs",
+      "sha256": "7184b9f008be7455166f88a6959d9c090a8279e499c78b1ce683173bc268c4cd"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.sdt.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.sdt.drc.rs",
+      "sha256": "92e3b1929be4dcd2404a666748deb936d3f11dd77635b817d73f0e00f5186627"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.v0.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.v0.drc.rs",
+      "sha256": "5673317696da4c32b3afd9826fe9840937eb66f9f2a6501627ec29980b8f3558"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.v1.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.v1.drc.rs",
+      "sha256": "06d71a82ad0936cf080531d11a522dbd28034c6ef341b6125696529fc1f8cd5a"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.v2.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.v2.drc.rs",
+      "sha256": "4b43b27a03d7a1a88744fdc145dc205d0c693d941bb2fc38a1d3e26248c13e32"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.v3.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.v3.drc.rs",
+      "sha256": "268a6baa84b84372f6f43266a9219c66f4e640790989d387b0e09115d2712350"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.v4.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.v4.drc.rs",
+      "sha256": "5e6573d972e6c16b4dec7491067216332adb82b7b0f7f01d9ddbf3f2ef6dc38a"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.v5.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.v5.drc.rs",
+      "sha256": "2e6689f249c4ea75c78b6c5c13173976dd7c3c65127990f2e57fa280299b7230"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.vbpr.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.vbpr.drc.rs",
+      "sha256": "708330d1c39025f72257492cf159f644eb87572fbf9271301900de14777a384b"
+    },
+    {
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/rules/matched_144nm/DRC/Include/sccad3nm.vg.drc.rs",
+      "native_copy": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/native/drc/runset/Include/sccad3nm.vg.drc.rs",
+      "sha256": "6eb1b026808d04a263b6f86306c97047d9b0ce5afc2eaf814fd8823a4998dd0d"
+    }
+  ],
+  "native_DRC_main_sha256": "598f07a851f8698ff939533987f0316d57a29ff5bd75c054d0430ee95c5b02c5",
+  "provided_LVS_deck_sha256": "436807dc4a02c04df641f19de5d612534669010584ae023377c4fa31e657f1b9",
+  "provided_FSPR_PEX_deck_sha256": "60ef6e0dac9b27b07d107fde47d86e7468469786a2665f60ffba338b79955ae2",
+  "frozen_grid_sha256": "425ddaa74bdb6fd44752c73175404742927ab8312060b701783210731b92e805",
+  "empty_layer_adapter_proof": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/FSPR_EMPTY_LAYER_AUDIT.json",
+  "empty_layer_adapter_proof_sha256": "c81cd062c4f9001d6c424987a2b55b7623a1321f4d9611831e7c477924f143ab",
+  "no_rule_waivers": true,
+  "no_numeric_model_grid_changes": true
+}

@@ -1,0 +1,18 @@
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AOI222x1.spf
+.SUBCKT AOI222x1 A B C D E F VDD VSS Y
+MMM4 Y F MM4:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM8 MM10:SRC C MM6:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM7 MM6:DRN B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 MM6:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 MM4:SRC E VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 MM2:SRC D VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y C MM2:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y B MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM11 Y F MM10:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM10 Y E MM10:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM9 MM10:SRC D MM6:DRN VDD pmos_rvt l=0.012u w=0.03u
+.ends AOI222x1

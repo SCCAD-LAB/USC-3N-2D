@@ -1,0 +1,1139 @@
+*Prepared57physicalview:56independentpriorreferences+oneROOTderivedtwo-gateDFFHintent. Historicaldimensionsnotactualsizinggold. Electricalqualificationpending.
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AND2x1.spf
+.SUBCKT AND2x1 A B VDD VSS Y
+MMM4 Y MM1:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM1:DRN B MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 Y MM1:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 MM1:DRN B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 MM1:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends AND2x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AND3x1.spf
+.SUBCKT AND3x1 A B C VDD VSS Y
+MMM7 Y MM2:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 MM2:DRN C MM1:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM1:DRN B MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM6 Y MM2:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 MM2:DRN C VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM4 MM2:DRN B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 MM2:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends AND3x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AND4x1.spf
+.SUBCKT AND4x1 A B C D VDD VSS Y
+MMM9 Y MM3:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 MM3:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 MM3:DRN D MM2:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM2 MM2:DRN C MM1:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM1:DRN B MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM8 Y MM3:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM7 MM3:DRN D VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 MM3:DRN C VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 MM3:DRN B VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends AND4x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AOI21x1.spf
+.SUBCKT AOI21x1 A B C VDD VSS Y
+MMM8 Y C VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM10 Y B MM10:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM11 MM10:SRC A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y C MM3:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM4 MM3:DRN B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 MM3:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends AOI21x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AOI221x1.spf
+.SUBCKT AOI221x1 A B C D E VDD VSS Y
+MMM3 Y D MM3:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM5 MM5:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM4 MM3:SRC C VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y E VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y B MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM9 Y D MM7:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y C MM7:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM7 MM7:DRN E MM5:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM6 MM5:DRN B VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends AOI221x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AOI222x1.spf
+.SUBCKT AOI222x1 A B C D E F VDD VSS Y
+MMM4 Y F MM4:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM8 MM10:SRC C MM6:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM7 MM6:DRN B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 MM6:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 MM4:SRC E VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 MM2:SRC D VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y C MM2:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y B MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM11 Y F MM10:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM10 Y E MM10:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM9 MM10:SRC D MM6:DRN VDD pmos_rvt l=0.012u w=0.03u
+.ends AOI222x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AOI22x1.spf
+.SUBCKT AOI22x1 A B C D VDD VSS Y
+MMM3 MM2:SRC D VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y C MM2:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y B MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y D MM4:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y C MM4:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM5 MM4:DRN B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM4 MM4:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends AOI22x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AOI311x1.spf
+.SUBCKT AOI311x1 A B C D E VDD VSS Y
+MMM4 Y E VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 MM5:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 Y D VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y C MM1:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM1:DRN B MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM9 Y E MM8:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM8 MM8:DRN D MM5:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM7 MM5:DRN C VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 MM5:DRN B VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends AOI311x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/AOI31x1.spf
+.SUBCKT AOI31x1 A B C D VDD VSS Y
+MMM3 Y D VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y C MM1:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM1:DRN B MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y D MM4:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM5 MM4:DRN C VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 MM4:DRN B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM4 MM4:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends AOI31x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx1.spf
+.SUBCKT BUFx1 A VDD VSS Y
+MMM3 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends BUFx1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx10.spf
+.SUBCKT BUFx10 A VDD VSS Y
+MMM21 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM39 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM37 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM34 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM32 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM31 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM28 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM27 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM24 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM23 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM19 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM20 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM18 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM16 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM14 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM13 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM11 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM17 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM38 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM36 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM35 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM33 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM30 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM29 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM26 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM25 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM22 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM15 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM12 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM10 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM9 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+.ends BUFx10
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx2.spf
+.SUBCKT BUFx2 A VDD VSS Y
+MMM4 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM6 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM7 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends BUFx2
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx3.spf
+.SUBCKT BUFx3 A VDD VSS Y
+MMM7 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM4 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM8 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM6 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM9 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends BUFx3
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx4.spf
+.SUBCKT BUFx4 A VDD VSS Y
+MMM9 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM6 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM14 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM13 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM10 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM7 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM15 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM12 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM11 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM8 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends BUFx4
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx5.spf
+.SUBCKT BUFx5 A VDD VSS Y
+MMM10 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM11 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM16 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM15 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM12 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM9 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM17 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM14 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM13 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+.ends BUFx5
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx6.spf
+.SUBCKT BUFx6 A VDD VSS Y
+MMM12 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM16 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM15 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM13 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM11 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM22 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM10 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM21 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM18 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM17 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM14 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM9 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM23 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM20 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM19 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+.ends BUFx6
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx7.spf
+.SUBCKT BUFx7 A VDD VSS Y
+MMM15 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM20 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM19 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM16 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM14 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM13 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM11 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM12 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM25 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM22 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM21 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM18 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM17 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM10 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM9 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM24 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM23 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+.ends BUFx7
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/BUFx8.spf
+.SUBCKT BUFx8 A VDD VSS Y
+MMM17 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM28 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM27 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM24 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM23 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM20 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM19 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM16 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM14 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM13 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM15 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM11 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM30 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM29 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM26 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM25 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM22 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM12 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM21 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM18 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM10 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM9 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM31 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+.ends BUFx8
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/DFFHQNx1.spf
+.SUBCKT DFFHQNx1 CK D QN VDD VSS
+MMM17 QN MM10:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 MM6:SRC D VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM10:GATE MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN CK VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM16 QN MM10:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM18 MM18:DRN MM10:DRN VDD VDD pmos_rvt l=0.012u w=0.015u
+MMM20 MM20:DRN MM18:DRN VDD VDD pmos_rvt l=0.012u w=0.015u
+MMM21 MM10:DRN MM10:GATE MM20:DRN VDD pmos_rvt l=0.012u w=0.015u
+MMM9 MM10:DRN MM0:DRN MM10:SRC VDD pmos_rvt l=0.012u w=0.015u
+MMM8 MM10:SRC MM11:GATE VDD VDD pmos_rvt l=0.012u w=0.015u
+MMM12 MM12:DRN MM10:SRC VDD VDD pmos_rvt l=0.012u w=0.015u
+MMM19 MM18:DRN MM10:DRN VSS VSS nmos_rvt l=0.012u w=0.015u
+MMM13 MM11:GATE MM0:DRN MM12:DRN VDD pmos_rvt l=0.012u w=0.015u
+MMM5 MM11:GATE MM10:GATE MM4:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM4 MM4:DRN D VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 MM10:GATE MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 MM0:DRN CK VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM23 MM22:SRC MM18:DRN VSS VSS nmos_rvt l=0.012u w=0.015u
+MMM22 MM10:DRN MM0:DRN MM22:SRC VSS nmos_rvt l=0.012u w=0.015u
+MMM10 MM10:DRN MM10:GATE MM10:SRC VSS nmos_rvt l=0.012u w=0.015u
+MMM11 MM10:SRC MM11:GATE VSS VSS nmos_rvt l=0.012u w=0.015u
+MMM15 MM14:SRC MM10:SRC VSS VSS nmos_rvt l=0.012u w=0.015u
+MMM14 MM11:GATE MM10:GATE MM14:SRC VSS nmos_rvt l=0.012u w=0.015u
+MMM6 MM11:GATE MM0:DRN MM6:SRC VSS nmos_rvt l=0.012u w=0.03u
+.ends DFFHQNx1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/DFFHx1.spf
+.SUBCKT DFFHx1 CK D QN RESET SET VDD VSS
+MMM40 QN MM27:SRC VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM29 MM24:SRC RESET VSS VSS nmos_rvt l=0.012u w=0.015u
+MMM25 MM24:SRC MM19:DRN VSS VSS nmos_rvt l=0.012u w=0.015u
+MMM24 MH:10 CK MM24:SRC VSS nmos_rvt l=0.012u w=0.015u
+MMM15 MH:10 MM11:DRN MM15:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM18 MM15:SRC D VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM13 MM13:DRN MM11:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM12 MM11:DRN CK VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM39 QN MM27:SRC VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM37 MM27:SRC MM13:DRN MM36:DRN VDD pmos_rvt l=0.012u w=0.015u
+MMM36 MM36:DRN MM30:DRN MM36:SRC VDD pmos_rvt l=0.012u w=0.015u
+MMM35 MM27:SRC MM11:DRN MM33:DRN VSS nmos_rvt l=0.012u w=0.015u
+MMM38 MM36:SRC SET VDD VDD pmos_rvt l=0.012u w=0.015u
+MMM28 MM28:DRN RESET VDD VDD pmos_rvt l=0.012u w=0.015u
+MMM5 MM30:DRN MM27:SRC MM28:DRN VDD pmos_rvt l=0.012u w=0.015u
+MMM27 MM19:DRN MM11:DRN MM27:SRC VDD pmos_rvt l=0.012u w=0.015u
+MMM19 MM19:DRN MH:10 MM19:SRC VDD pmos_rvt l=0.012u w=0.015u
+MMM1 MM19:SRC SET VDD VDD pmos_rvt l=0.012u w=0.015u
+MMM22 MM21:SRC RESET VDD VDD pmos_rvt l=0.012u w=0.015u
+MMM21 MM21:DRN MM19:DRN MM21:SRC VDD pmos_rvt l=0.012u w=0.015u
+MMM23 MH:10 MM11:DRN MM21:DRN VDD pmos_rvt l=0.012u w=0.015u
+MMM16 MH:10 CK MM16:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM33 MM33:DRN MM30:DRN VSS VSS nmos_rvt l=0.012u w=0.015u
+MMM17 MM16:SRC D VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM14 MM13:DRN MM11:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM11 MM11:DRN CK VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM34 MM33:DRN SET VSS VSS nmos_rvt l=0.012u w=0.015u
+MMM31 MM30:DRN RESET VSS VSS nmos_rvt l=0.012u w=0.015u
+MMM30 MM30:DRN MM27:SRC VSS VSS nmos_rvt l=0.012u w=0.015u
+MMM26 MM19:DRN MM13:DRN MM27:SRC VSS nmos_rvt l=0.012u w=0.014u
+MMM20 MM19:DRN MH:10 VSS VSS nmos_rvt l=0.012u w=0.015u
+MMM32 MM19:DRN SET VSS VSS nmos_rvt l=0.012u w=0.015u
+.ends DFFHx1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/DHLx1.spf
+.SUBCKT DHLx1 CK D Q VDD VSS
+MMM17 Q MM11:GATE VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM8 MM11:DRN MM11:GATE VDD VDD pmos_rvt l=0.012u w=0.015u
+MMM12 MM12:DRN MM11:DRN VDD VDD pmos_rvt l=0.012u w=0.015u
+MMM13 MM11:GATE MM13:GATE MM12:DRN VDD pmos_rvt l=0.012u w=0.015u
+MMM5 MM11:GATE MM0:DRN MM4:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM4 MM4:DRN D VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 MM13:GATE MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 MM0:DRN CK VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM11 MM11:DRN MM11:GATE VSS VSS nmos_rvt l=0.012u w=0.015u
+MMM15 MM14:SRC MM11:DRN VSS VSS nmos_rvt l=0.012u w=0.015u
+MMM14 MM11:GATE MM0:DRN MM14:SRC VSS nmos_rvt l=0.012u w=0.015u
+MMM6 MM11:GATE MM13:GATE MM6:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM7 MM6:SRC D VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM13:GATE MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN CK VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM16 Q MM11:GATE VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends DHLx1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx1.spf
+.SUBCKT INVx1 A VDD VSS Y
+MMM0 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends INVx1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx10.spf
+.SUBCKT INVx10 A VDD VSS Y
+MMM18 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM19 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM16 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM15 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM14 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM13 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM12 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM11 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM10 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM9 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM17 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM8 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM7 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM6 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+.ends INVx10
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx12.spf
+.SUBCKT INVx12 A VDD VSS Y
+MMM22 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM23 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM20 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM19 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM16 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM15 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM14 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM13 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM21 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM12 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM11 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM10 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM9 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM18 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM17 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM6 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+.ends INVx12
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx14.spf
+.SUBCKT INVx14 A VDD VSS Y
+MMM27 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM26 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM25 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM23 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM20 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM19 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM24 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM16 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM15 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM14 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM13 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM12 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM11 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM10 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM9 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM22 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM21 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM18 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM17 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM6 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+.ends INVx14
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx16.spf
+.SUBCKT INVx16 A VDD VSS Y
+MMM31 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM6 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM30 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM29 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM26 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM28 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM25 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM23 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM20 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM19 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM16 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM15 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM14 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM13 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM12 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM11 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM27 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM10 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM9 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM24 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM22 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM21 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM18 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM17 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+.ends INVx16
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx2.spf
+.SUBCKT INVx2 A VDD VSS Y
+MMM1 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends INVx2
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx3.spf
+.SUBCKT INVx3 A VDD VSS Y
+MMM2 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM4 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends INVx3
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx4.spf
+.SUBCKT INVx4 A VDD VSS Y
+MMM7 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM6 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM1 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM0 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends INVx4
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx5.spf
+.SUBCKT INVx5 A VDD VSS Y
+MMM4 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM9 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM7 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends INVx5
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx6.spf
+.SUBCKT INVx6 A VDD VSS Y
+MMM11 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM4 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM10 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM9 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends INVx6
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx7.spf
+.SUBCKT INVx7 A VDD VSS Y
+MMM12 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM9 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM7 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM11 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM13 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM10 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends INVx7
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/INVx8.spf
+.SUBCKT INVx8 A VDD VSS Y
+MMM7 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM14 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM13 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM12 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM11 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM10 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM9 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM15 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends INVx8
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/MUX2x1.spf
+.SUBCKT MUX2x1 A B S VDD VSS Y
+MMM9 Y B MM6:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y A MM2:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y MM0:DRN MM6:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN S VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 MM6:DRN S VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM6 MM6:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 MM4:DRN B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 Y MM0:DRN MM4:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN S VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 MM2:DRN S VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends MUX2x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NAND2x1.spf
+.SUBCKT NAND2x1 A B VDD VSS Y
+MMM1 Y B MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends NAND2x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NAND2x2.spf
+.SUBCKT NAND2x2 A B VDD VSS Y
+MMM6 Y B MM6:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y B MM4:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM5 MM4:SRC A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 MM6:SRC A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 Y B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM0 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM1 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends NAND2x2
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NAND3x1.spf
+.SUBCKT NAND3x1 A B C VDD VSS Y
+MMM2 Y C MM1:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM1:DRN B MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 Y C VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM4 Y B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends NAND3x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NAND3x2.spf
+.SUBCKT NAND3x2 A B C VDD VSS Y
+MMM4 MM3:SRC C MM4:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM8 Y B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM7 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 Y B MM3:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y C MM1:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM1:DRN B MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 MM4:SRC A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM11 Y C VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM9 Y B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM10 Y C VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends NAND3x2
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NAND4x1.spf
+.SUBCKT NAND4x1 A B C D VDD VSS Y
+MMM3 Y D MM2:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM2 MM2:DRN C MM1:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM1:DRN B MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y D VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y C VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 Y B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM4 Y A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends NAND4x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NOR2x1.spf
+.SUBCKT NOR2x1 A B VDD VSS Y
+MMM1 Y B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y B MM2:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM2 MM2:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends NOR2x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NOR2x2.spf
+.SUBCKT NOR2x2 A B VDD VSS Y
+MMM7 Y B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM6 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y B MM4:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM3 Y B MM2:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM2 MM2:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM5 MM4:SRC A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends NOR2x2
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NOR3x1.spf
+.SUBCKT NOR3x1 A B C VDD VSS Y
+MMM5 Y C VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y C MM1:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM1 MM1:DRN B MM0:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends NOR3x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NOR3x2.spf
+.SUBCKT NOR3x2 A B C VDD VSS Y
+MMM5 Y C VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM1:DRN B MM0:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 MM7:SRC A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM4 Y B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM11 Y C VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM10 Y B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM9 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 MM6:SRC C MM7:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y B MM6:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM2 Y C MM1:DRN VDD pmos_rvt l=0.012u w=0.03u
+.ends NOR3x2
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/NOR4x1.spf
+.SUBCKT NOR4x1 A B C D VDD VSS Y
+MMM3 Y D VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y C VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 Y A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y D MM4:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM5 MM4:SRC C MM5:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM6 MM5:SRC B MM6:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM7 MM6:SRC A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends NOR4x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OAI21x1.spf
+.SUBCKT OAI21x1 A B C VDD VSS Y
+MMM5 Y C MM3:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM4 MM3:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 MM3:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y C VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM1 Y B MM0:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends OAI21x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OAI221x1.spf
+.SUBCKT OAI221x1 A B C D E VDD VSS Y
+MMM9 Y D MM7:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 Y C MM7:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM7 MM7:DRN E MM5:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM6 MM5:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 MM5:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y D MM3:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM3 MM3:DRN C VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 Y E VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM1 Y B MM0:DRN VDD pmos_rvt l=0.012u w=0.03u
+.ends OAI221x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OAI222x1.spf
+.SUBCKT OAI222x1 A B C D E F VDD VSS Y
+MMM5 Y F MM2:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM9 Y C MM8:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM7 Y B MM6:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM6 MM6:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM4 Y E MM2:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM3 MM2:DRN D MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM2 MM2:DRN C MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM11 Y F MM10:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM10 MM10:DRN E VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 MM8:DRN D VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends OAI222x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OAI22x1.spf
+.SUBCKT OAI22x1 A B C D VDD VSS Y
+MMM3 Y D MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y C MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM6 MM6:DRN D VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM7 Y C MM6:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM5 Y B MM4:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM4 MM4:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends OAI22x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OAI311x1.spf
+.SUBCKT OAI311x1 A B C D E VDD VSS Y
+MMM9 Y E MM8:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM8 MM8:DRN D MM5:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM7 MM5:DRN C VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM6 MM5:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 MM5:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y E VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 Y D VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 Y C MM1:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM1 MM1:DRN B MM0:DRN VDD pmos_rvt l=0.012u w=0.03u
+.ends OAI311x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OAI31x1.spf
+.SUBCKT OAI31x1 A B C D VDD VSS Y
+MMM3 Y D MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM2 MM0:DRN C VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y D VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y C MM5:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM5 MM5:DRN B MM4:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM4 MM4:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends OAI31x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OR2x1.spf
+.SUBCKT OR2x1 A B VDD VSS Y
+MMM5 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 MM0:DRN B MM2:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM2 MM2:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends OR2x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OR3x1.spf
+.SUBCKT OR3x1 A B C VDD VSS Y
+MMM6 Y MM2:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM5 MM2:DRN C VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 MM2:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 MM2:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 Y MM2:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 MM2:DRN C MM1:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM1 MM1:DRN B MM0:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends OR3x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OR4x1.spf
+.SUBCKT OR4x1 A B C D VDD VSS Y
+MMM9 Y MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM7 MM6:SRC A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 MM0:DRN D VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 MM0:DRN C VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM0:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM8 Y MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM4 MM0:DRN D MM4:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM5 MM4:SRC C MM5:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM6 MM5:SRC B MM6:SRC VDD pmos_rvt l=0.012u w=0.03u
+.ends OR4x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/XNOR2x1.spf
+.SUBCKT XNOR2x1 A B VDD VSS Y
+MMM11 MM11:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y B MM4:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM5 MM4:SRC A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM9 MM10:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 MM2:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y MM10:DRN MM2:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y MM11:DRN MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM10 MM10:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM8 MM11:DRN B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM7 MM6:SRC MM11:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y MM10:DRN MM6:SRC VDD pmos_rvt l=0.012u w=0.03u
+.ends XNOR2x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/XNOR3x1.spf
+.SUBCKT XNOR3x1 A B C VDD VSS Y
+MMM21 MM1:GATE C VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM9 Y MM14:GATE MM8:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM8 MM8:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM16 MM10:GATE A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM20 MM1:GATE C VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 MM6:DRN MM1:GATE VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM7 MM11:GATE MM18:DRN MM6:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM4 MM11:GATE C MM4:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM5 MM4:SRC B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM19 MM18:DRN B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM22 MM14:GATE MM11:GATE VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 MM2:SRC C VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM14 MM14:DRN MM14:GATE VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM15 Y MM10:GATE MM14:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM12 Y MM11:GATE MM12:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM13 MM12:SRC A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM17 MM10:GATE A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 MM11:GATE MM18:DRN MM2:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM11:GATE MM1:GATE MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM18 MM18:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM23 MM14:GATE MM11:GATE VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM11 MM10:SRC MM11:GATE VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM10 Y MM10:GATE MM10:SRC VSS nmos_rvt l=0.012u w=0.03u
+.ends XNOR3x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/XOR2x1.spf
+.SUBCKT XOR2x1 A B VDD VSS Y
+MMM11 MM11:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM4 Y MM11:DRN MM4:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM5 MM4:SRC A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM9 MM10:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 MM2:DRN MM11:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 Y MM10:DRN MM2:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM1 Y B MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM10 MM10:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM8 MM11:DRN B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM7 MM6:SRC B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 Y MM10:DRN MM6:SRC VDD pmos_rvt l=0.012u w=0.03u
+.ends XOR2x1
+
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/XOR3x1.spf
+.SUBCKT XOR3x1 A B C VDD VSS Y
+MMM21 MM20:DRN C VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM9 Y MM14:GATE MM8:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM8 MM8:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM16 MM10:GATE A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM20 MM20:DRN C VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM6 MM6:DRN C VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM7 MM14:GATE MM18:DRN MM6:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM4 MM14:GATE MM20:DRN MM4:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM5 MM4:SRC B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM19 MM18:DRN B VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM22 MM11:GATE MM14:GATE VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 MM2:SRC MM20:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM14 MM14:DRN MM14:GATE VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM15 Y MM10:GATE MM14:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM12 Y MM11:GATE MM12:SRC VDD pmos_rvt l=0.012u w=0.03u
+MMM13 MM12:SRC A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM17 MM10:GATE A VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 MM14:GATE MM18:DRN MM2:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM14:GATE C MM0:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM18 MM18:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM23 MM11:GATE MM14:GATE VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM11 MM10:SRC MM11:GATE VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM10 Y MM10:GATE MM10:SRC VSS nmos_rvt l=0.012u w=0.03u
+.ends XOR3x1

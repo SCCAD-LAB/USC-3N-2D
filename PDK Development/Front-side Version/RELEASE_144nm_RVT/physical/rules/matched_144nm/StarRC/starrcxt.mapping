@@ -1,0 +1,58 @@
+conducting_layers
+
+m9 M9 
+m8 M8 
+m7 M7 
+m6 M6 
+m5 M5 
+m4 M4 
+m3 M3 
+m2 M2 
+m1 M1 
+fpoly Gate 
+ngate Gate 
+pgate Gate 
+lisd LISD 
+lig LIG 
+sdt SDT 
+nsd Active 
+psd Active 
+pselect Active 
+well Active 
+sub Active 
+nselect Active 
+
+via_layers
+
+v8 V8 
+v7 V7 
+v6 V6 
+v5 V5 
+v4 V4 
+v3 V3 
+v2 V2 
+v1 V1 
+v0lig V0LIG 
+v0lisd V0LISD 
+
+marker_layers
+
+well_pin 
+M1_pin 
+M2_pin 
+M3_pin 
+M4_pin 
+M5_pin 
+M6_pin 
+M7_pin 
+M8_pin 
+M9_pin 
+
+remove_layers
+
+EMPTY_FSPR_MBPR 
+EMPTY_FSPR_P_SUB 
+EMPTY_FSPR_VBPR 
+EMPTY_FSPR_P_SUB_pin 
+EMPTY_FSPR_MBPR_pin 
+

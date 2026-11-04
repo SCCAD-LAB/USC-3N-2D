@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "cell": "NAND3x1",
+  "epoch": 1793760879.665964,
+  "gds_sha256": "77b95baeb7f8d6087454835f19fbad9994cf3b13f38e0c4ea812c173913631ad",
+  "native_QA_netlist": {
+    "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NAND3x1/iter001/lvs/native.tar.gz",
+    "sha256": "ff23a6406c8891d02389c91dc9c3fd4e5d5b489af4b35487c878f4b3732692c2",
+    "member": "lvs/NAND3x1.net.gz",
+    "member_sha256": "103c3556f8d2a2785ec6f10b1eea03bef128134d1e97f8d98d37560454bf29a2"
+  },
+  "raw_DSPF": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NAND3x1/iter001/pex_FSPR/attempt000/cell.raw.dspf",
+  "raw_DSPF_sha256": "b4c5f72c7ebe2dc3ca2643c06349c3f7626c27f9c723a6742c81d8cf036ada8a",
+  "physical_MOS_count": 6,
+  "external_port_count": 6,
+  "resistors_collapsed": 133,
+  "capacitors_ignored": true,
+  "body_rails_excluded": "Raw three-terminal DSPF; explicit independent body-rail provenance is audited separately.",
+  "native_partition_count": 8,
+  "PEX_partition_count": 8,
+  "native_partitions": [
+    [
+      "MOS:M1:DRN",
+      "MOS:M4:DRN",
+      "MOS:M5:SRC",
+      "MOS:M6:DRN",
+      "PORT:Y"
+    ],
+    [
+      "MOS:M1:GATE",
+      "MOS:M4:GATE",
+      "PORT:C"
+    ],
+    [
+      "MOS:M1:SRC",
+      "MOS:M2:DRN"
+    ],
+    [
+      "MOS:M2:GATE",
+      "MOS:M5:GATE",
+      "PORT:B"
+    ],
+    [
+      "MOS:M2:SRC",
+      "MOS:M3:DRN"
+    ],
+    [
+      "MOS:M3:GATE",
+      "MOS:M6:GATE",
+      "PORT:A"
+    ],
+    [
+      "MOS:M3:SRC",
+      "PORT:VSS"
+    ],
+    [
+      "MOS:M4:SRC",
+      "MOS:M5:DRN",
+      "MOS:M6:SRC",
+      "PORT:VDD"
+    ]
+  ],
+  "PEX_partitions": [
+    [
+      "MOS:M1:DRN",
+      "MOS:M4:DRN",
+      "MOS:M5:SRC",
+      "MOS:M6:DRN",
+      "PORT:Y"
+    ],
+    [
+      "MOS:M1:GATE",
+      "MOS:M4:GATE",
+      "PORT:C"
+    ],
+    [
+      "MOS:M1:SRC",
+      "MOS:M2:DRN"
+    ],
+    [
+      "MOS:M2:GATE",
+      "MOS:M5:GATE",
+      "PORT:B"
+    ],
+    [
+      "MOS:M2:SRC",
+      "MOS:M3:DRN"
+    ],
+    [
+      "MOS:M3:GATE",
+      "MOS:M6:GATE",
+      "PORT:A"
+    ],
+    [
+      "MOS:M3:SRC",
+      "PORT:VSS"
+    ],
+    [
+      "MOS:M4:SRC",
+      "MOS:M5:DRN",
+      "MOS:M6:SRC",
+      "PORT:VDD"
+    ]
+  ],
+  "native_only": [],
+  "PEX_only": [],
+  "renaming_policy": "Compare exact canonical sets of external port IDs and physical MOS GATE/SRC/DRN terminal IDs; arbitrary internal net names are irrelevant. No D/S swapping is assumed."
+}

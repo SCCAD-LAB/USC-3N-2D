@@ -1,0 +1,26 @@
+{
+  "approved": true,
+  "scope": "Stage final57 electrical evidence and build/read back the final matched timing NDM in the isolated private checkout. No commit/push/PR publication approval yet.",
+  "root_review": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/reports/ROOT_RELEASE_REVIEW.json",
+  "root_review_sha256": "40f5cdfd2ef0f07565a1153fc1f079c66305abb75c21a2d8ef9c7f9fa8bed364",
+  "final_result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/RESULT.json",
+  "final_result_sha256": "c4053258506d83059618d73ed2805ce892d3bdd8ef6f06abdfe63905e82f80f9",
+  "final_export_manifest": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/FINAL_CHARACTERIZATION_EXPORT_MANIFEST.json",
+  "final_export_manifest_sha256": "6c95eefe7b8a579f1e12ac0b2aef03b53ff72b91f74addcc51b97c6fbe401e2a",
+  "native_library": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/release/3nm_GAA_FSPR_rvt_nldm.lib",
+  "native_library_sha256": "93e9c1e57a5fb21bcc087a929678b06bc1d6ac91fd28a0b6d5bb9c4e3cc0cb46",
+  "native_database": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/release/3nm_GAA_FSPR_rvt_nldm.db",
+  "native_database_sha256": "27b29cee34b16b5cf9883f419d9a0d18628c61cb2227e485cbcd1e5776b85c3e",
+  "selected_LEF": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/reports/FINAL_144nm_complete_abstract.lef",
+  "selected_LEF_sha256": "ae772af34907bf4b6e99107a01df19a90485d06f0fd57973668ab0b8557cde53",
+  "selected_combined_GDS_sha256": "016fd13516b7b580610ef282860fb315251e688cfec776a353c655d32a938b7e",
+  "required_NDM_checks": [
+    "Native build from fixed approved finalDB/selectedLEF/frozenTF/techLEF",
+    "Input copies and final sources match initially approved hashes",
+    "Fresh native reopen all57 names/site/dimensions/signal and PG PIN names",
+    "Actual directory payload sizes and any scoped LFS remote availability",
+    "Final staged/index/source hash audit, actual compressed/LFS content credential scan, upstream identity recheck"
+  ],
+  "publication_approved": false,
+  "updated_utc": "2026-11-04T15:17:48.493211+00:00"
+}

@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "cell": "OR4x1",
+  "epoch": 1793760881.1288195,
+  "gds_sha256": "608f17420deeb4cc49fd740614e4c7fb82f7d00550e4ebfb0bcec2b1cbd476be",
+  "native_QA_netlist": {
+    "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OR4x1/iter001/lvs/native.tar.gz",
+    "sha256": "ebb7696f049002be8da5c0081cefc098eb5a8e901c5fb611ac43fc86f9882584",
+    "member": "lvs/OR4x1.net.gz",
+    "member_sha256": "75496ab94f8735094e452b15bf0848176e708873452b1a163f709bac572e418c"
+  },
+  "raw_DSPF": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OR4x1/iter001/pex_FSPR/attempt000/cell.raw.dspf",
+  "raw_DSPF_sha256": "902f5cf8dba16b2ca49df97bab1e467961838de71b047b42bd7732a5fc67c71a",
+  "physical_MOS_count": 10,
+  "external_port_count": 7,
+  "resistors_collapsed": 221,
+  "capacitors_ignored": true,
+  "body_rails_excluded": "Raw three-terminal DSPF; explicit independent body-rail provenance is audited separately.",
+  "native_partition_count": 11,
+  "PEX_partition_count": 11,
+  "native_partitions": [
+    [
+      "MOS:M10:DRN",
+      "MOS:M9:SRC"
+    ],
+    [
+      "MOS:M10:GATE",
+      "MOS:M5:GATE",
+      "PORT:A"
+    ],
+    [
+      "MOS:M10:SRC",
+      "MOS:M6:SRC",
+      "PORT:VDD"
+    ],
+    [
+      "MOS:M1:DRN",
+      "MOS:M6:DRN",
+      "PORT:Y"
+    ],
+    [
+      "MOS:M1:GATE",
+      "MOS:M2:SRC",
+      "MOS:M3:DRN",
+      "MOS:M4:SRC",
+      "MOS:M5:DRN",
+      "MOS:M6:GATE",
+      "MOS:M7:DRN"
+    ],
+    [
+      "MOS:M1:SRC",
+      "MOS:M2:DRN",
+      "MOS:M3:SRC",
+      "MOS:M4:DRN",
+      "MOS:M5:SRC",
+      "PORT:VSS"
+    ],
+    [
+      "MOS:M2:GATE",
+      "MOS:M7:GATE",
+      "PORT:D"
+    ],
+    [
+      "MOS:M3:GATE",
+      "MOS:M8:GATE",
+      "PORT:C"
+    ],
+    [
+      "MOS:M4:GATE",
+      "MOS:M9:GATE",
+      "PORT:B"
+    ],
+    [
+      "MOS:M7:SRC",
+      "MOS:M8:DRN"
+    ],
+    [
+      "MOS:M8:SRC",
+      "MOS:M9:DRN"
+    ]
+  ],
+  "PEX_partitions": [
+    [
+      "MOS:M10:DRN",
+      "MOS:M9:SRC"
+    ],
+    [
+      "MOS:M10:GATE",
+      "MOS:M5:GATE",
+      "PORT:A"
+    ],
+    [
+      "MOS:M10:SRC",
+      "MOS:M6:SRC",
+      "PORT:VDD"
+    ],
+    [
+      "MOS:M1:DRN",
+      "MOS:M6:DRN",
+      "PORT:Y"
+    ],
+    [
+      "MOS:M1:GATE",
+      "MOS:M2:SRC",
+      "MOS:M3:DRN",
+      "MOS:M4:SRC",
+      "MOS:M5:DRN",
+      "MOS:M6:GATE",
+      "MOS:M7:DRN"
+    ],
+    [
+      "MOS:M1:SRC",
+      "MOS:M2:DRN",
+      "MOS:M3:SRC",
+      "MOS:M4:DRN",
+      "MOS:M5:SRC",
+      "PORT:VSS"
+    ],
+    [
+      "MOS:M2:GATE",
+      "MOS:M7:GATE",
+      "PORT:D"
+    ],
+    [
+      "MOS:M3:GATE",
+      "MOS:M8:GATE",
+      "PORT:C"
+    ],
+    [
+      "MOS:M4:GATE",
+      "MOS:M9:GATE",
+      "PORT:B"
+    ],
+    [
+      "MOS:M7:SRC",
+      "MOS:M8:DRN"
+    ],
+    [
+      "MOS:M8:SRC",
+      "MOS:M9:DRN"
+    ]
+  ],
+  "native_only": [],
+  "PEX_only": [],
+  "renaming_policy": "Compare exact canonical sets of external port IDs and physical MOS GATE/SRC/DRN terminal IDs; arbitrary internal net names are irrelevant. No D/S swapping is assumed."
+}

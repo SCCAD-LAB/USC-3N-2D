@@ -1,0 +1,116 @@
+{
+  "rows": [
+    {
+      "case": "worker2_case1",
+      "mode": "actual",
+      "notices": [
+        {
+          "header": "Notice from spectre at time = 3.149485e-09 s during transient analysis `timeSweep'.",
+          "node": "Found trapezoidal ringing on node M6:GATE."
+        },
+        {
+          "header": "Notice from spectre at time = 3.149885e-09 s during transient analysis `timeSweep'.",
+          "node": "Found trapezoidal ringing on node M6:GATE."
+        },
+        {
+          "header": "Notice from spectre at time = 4.750285e-09 s during transient analysis `timeSweep'.",
+          "node": "Found trapezoidal ringing on node M6:GATE."
+        },
+        {
+          "header": "Notice from spectre at time = 4.750685e-09 s during transient analysis `timeSweep'.",
+          "node": "Found trapezoidal ringing on node M6:SRC."
+        },
+        {
+          "header": "Notice from spectre at time = 4.751085e-09 s during transient analysis `timeSweep'.",
+          "node": "Found trapezoidal ringing on node M6:SRC."
+        }
+      ],
+      "window_amplitudes": [
+        {
+          "node": "v(m6:gate)",
+          "time_s": 3.149485e-09,
+          "min_V": -1.26993e-08,
+          "max_V": -1.032393e-08,
+          "peak_to_peak_V": 2.3753700000000002e-09
+        },
+        {
+          "node": "v(m6:src)",
+          "time_s": 4.750685e-09,
+          "min_V": 6.100754e-07,
+          "max_V": 6.120148e-07,
+          "peak_to_peak_V": 1.9394000000000233e-09
+        }
+      ]
+    },
+    {
+      "case": "worker2_case1",
+      "mode": "gear",
+      "notices": [],
+      "window_amplitudes": [
+        {
+          "node": "v(m6:gate)",
+          "time_s": 3.149485e-09,
+          "min_V": -1.041928e-08,
+          "max_V": -1.041495e-08,
+          "peak_to_peak_V": 4.330000000000542e-12
+        },
+        {
+          "node": "v(m6:src)",
+          "time_s": 4.750685e-09,
+          "min_V": 6.108884e-07,
+          "max_V": 6.112021e-07,
+          "peak_to_peak_V": 3.13699999999956e-10
+        }
+      ]
+    },
+    {
+      "case": "worker3_case15",
+      "mode": "actual",
+      "notices": [
+        {
+          "header": "Notice from spectre at time = 4.756358e-09 s during transient analysis `timeSweep'.",
+          "node": "Found trapezoidal ringing on node E:4."
+        },
+        {
+          "header": "Notice from spectre at time = 4.756558e-09 s during transient analysis `timeSweep'.",
+          "node": "Found trapezoidal ringing on node E:4."
+        },
+        {
+          "header": "Notice from spectre at time = 4.756758e-09 s during transient analysis `timeSweep'.",
+          "node": "Found trapezoidal ringing on node E:4."
+        },
+        {
+          "header": "Notice from spectre at time = 4.756958e-09 s during transient analysis `timeSweep'.",
+          "node": "Found trapezoidal ringing on node E:4."
+        },
+        {
+          "header": "Notice from spectre at time = 4.757158e-09 s during transient analysis `timeSweep'.",
+          "node": "Found trapezoidal ringing on node E:4."
+        }
+      ],
+      "window_amplitudes": [
+        {
+          "node": "v(e:4)",
+          "time_s": 4.756358e-09,
+          "min_V": -2.814828e-08,
+          "max_V": -2.783008e-08,
+          "peak_to_peak_V": 3.182000000000008e-10
+        }
+      ]
+    },
+    {
+      "case": "worker3_case15",
+      "mode": "gear",
+      "notices": [],
+      "window_amplitudes": [
+        {
+          "node": "v(e:4)",
+          "time_s": 4.756358e-09,
+          "min_V": -2.804267e-08,
+          "max_V": -2.80186e-08,
+          "peak_to_peak_V": 2.4069999999999897e-11
+        }
+      ]
+    }
+  ]
+}

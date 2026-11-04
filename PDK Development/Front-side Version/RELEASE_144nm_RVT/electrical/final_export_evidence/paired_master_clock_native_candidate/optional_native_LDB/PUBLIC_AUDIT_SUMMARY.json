@@ -1,0 +1,32 @@
+{
+  "status": "optional_completed_LDB_audited",
+  "native_read_passed": true,
+  "native_read_OSrc": 0,
+  "local_exit_receipt_sha256": "ea24e1bb86a4f4865904d85fbce200ec78e1c0e3496930900db7b8ba6eb8ca3a",
+  "source_LDB_sha256": "f50f5f83bd124e52b7ae5437153a5c8181654f55eb9d023355c692b91ee4e595",
+  "source_LDB_bytes": 1470107,
+  "source_unchanged": true,
+  "cell_names": [
+    "DFFHx1"
+  ],
+  "timing_group_count": 46,
+  "native_unique_arc_count": 109,
+  "table_count": 132,
+  "table2D_count": 79,
+  "table1D_count": 44,
+  "scalar_count": 9,
+  "true_error_flag_count": 0,
+  "invalid_table_count": 0,
+  "all_tables_finite_and_appropriate_shape": true,
+  "all_gridded_tables_fixed7": true,
+  "optional_checkpoint_quality_passed": true,
+  "verbose_template_sha256": "02bdccc3d1ed7c634158f9645c584d3449c3f5bb457ca87de8879be72ea7f501",
+  "no_char_library_or_simulation": true,
+  "no_table_edits": true,
+  "optional_only": true,
+  "raw_checkpoint_private_not_automatically_staged": true,
+  "original_full_run_OSrc": null,
+  "original_full_run_RC_uncertainty_not_removed": true,
+  "does_not_replace_original_completion_finite_state_input_LC_proofs": true,
+  "release_approved": false
+}

@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "policy": {
+    "allowed_modified_device_layers": [
+      10
+    ],
+    "channel_geometry": "unchanged",
+    "reason": "GCutbottom originallyends6nmexactlytouchinggroundLIGtop6nm. Extendonlyrailcutto10nmclearance; NMOSchannelstarts21nm, soallGAAchannels/L/W/count/coordsunchanged. Existinguserrecursivephysicalrepairauthorization; noelectricalpointchange.",
+    "site_boundary_layer100_unchanged": true,
+    "pin_labels_unchanged": true,
+    "old_GCut_bbox_um": [
+      [
+        -0.009000000000000001,
+        -0.006
+      ],
+      [
+        0.261,
+        0.006
+      ]
+    ],
+    "new_GCut_bbox_um": [
+      [
+        -0.009000000000000001,
+        -0.01
+      ],
+      [
+        0.261,
+        0.01
+      ]
+    ]
+  },
+  "nonexception_device_layers_preserved": true,
+  "actual_channel_geometry_preserved": true,
+  "actual_L_W_count_coordinate_identity_preserved": true,
+  "raw_device_layers_unchanged": false
+}

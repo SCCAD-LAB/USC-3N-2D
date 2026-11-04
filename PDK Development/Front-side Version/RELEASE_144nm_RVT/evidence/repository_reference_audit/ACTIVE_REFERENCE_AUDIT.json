@@ -1,0 +1,1073 @@
+{
+  "passed": true,
+  "epoch": 1793803416.4636884,
+  "base_commit": "405e5d40c45fbf8bd25637c84f25f682900b21b3",
+  "tracked_files_examined": 1830,
+  "executable_or_config_sources_examined": [
+    "PDK Development/Dual-side Version/SCRIPTS/auto_itf_scaling.py",
+    "PDK Development/Front-side Version/SCRIPTS/auto_itf_scaling.py",
+    "PnR-Cadence/Front-side Version/Runfiles/ECG_innovus.run.sh",
+    "PnR-Cadence/Front-side Version/Runfiles/ECG_innovus.tcl",
+    "PnR-Cadence/Front-side Version/Runfiles/OpenPiton_innovus.pin.tcl",
+    "PnR-Cadence/Front-side Version/Runfiles/OpenPiton_innovus.run.sh",
+    "PnR-Cadence/Front-side Version/Runfiles/OpenPiton_innovus.tcl",
+    "PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/3nm.pdn.tcl",
+    "PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/3nm/3nm.pdn.tcl",
+    "PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/3nm/3nm.vars",
+    "PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/3nm_run.tcl",
+    "PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/check_openroad_inputs.tcl",
+    "PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/design_configs/ecg.tcl",
+    "PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/design_configs/openpiton.tcl",
+    "PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/flow.tcl",
+    "PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/flow_helpers.tcl",
+    "PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/helpers.tcl",
+    "PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/run_openroad.sh",
+    "PnR-OpenROAD/Front-side Version/RC/setRC.tcl",
+    "PnR-Synopsys/Front-side Version/Runfiles/ECG_icc2.run.sh",
+    "PnR-Synopsys/Front-side Version/Runfiles/ECG_icc2.tcl",
+    "PnR-Synopsys/Front-side Version/Runfiles/OpenPiton_icc2.pin.tcl",
+    "PnR-Synopsys/Front-side Version/Runfiles/OpenPiton_icc2.run.sh",
+    "PnR-Synopsys/Front-side Version/Runfiles/OpenPiton_icc2.tcl"
+  ],
+  "changed_paths": [
+    {
+      "repository_path": "PDK Development/Front-side Version/selected_collateral.tcl",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/active_selector_sources/PDK Development/Front-side Version/selected_collateral.tcl",
+      "before_sha256": null,
+      "after_sha256": "548e727e97212cfa962855a0e1fb6e308d762d10e465da7e3dcc568312edf13c",
+      "selected_file_lines": [
+        {
+          "line": 3,
+          "text": "set fspr_repo_root [file normalize $::env(PDK_ROOT)]"
+        },
+        {
+          "line": 4,
+          "text": "set fspr_dev [file join $fspr_repo_root {PDK Development/Front-side Version}]"
+        },
+        {
+          "line": 5,
+          "text": "set fspr_gds [file join $fspr_dev GDS 3nm_GAA_FSPR_144nm.gds]"
+        },
+        {
+          "line": 6,
+          "text": "set fspr_model [file join $fspr_dev MODEL 3nm_GAA_FSPR_RVT.sp]"
+        },
+        {
+          "line": 8,
+          "text": "    set fspr_vendor_root($vendor) [file join $fspr_repo_root \"PnR-$vendor/Front-side Version\"]"
+        },
+        {
+          "line": 9,
+          "text": "    set fspr_tech_lef($vendor) [file join $fspr_vendor_root($vendor) TECH-LEF 3nm_GAA_FSPR.tech.lef]"
+        },
+        {
+          "line": 10,
+          "text": "    set fspr_std_lef($vendor) [file join $fspr_vendor_root($vendor) LEF 3nm_GAA_FSPR.lef]"
+        },
+        {
+          "line": 13,
+          "text": "    set fspr_lib($vendor) [file join $fspr_vendor_root($vendor) $lib_folder 3nm_GAA_FSPR_rvt_nldm.lib]"
+        },
+        {
+          "line": 15,
+          "text": "set fspr_db [file join $fspr_vendor_root(Synopsys) LIB_DB 3nm_GAA_FSPR_rvt_nldm.db]"
+        },
+        {
+          "line": 16,
+          "text": "set fspr_ndm [file join $fspr_vendor_root(Synopsys) NDM 3nm_GAA_FSPR_144nm_rvt.ndm]"
+        },
+        {
+          "line": 17,
+          "text": "set fspr_tf [file join $fspr_vendor_root(Synopsys) TF 3nm_GAA_FSPR.tf]"
+        },
+        {
+          "line": 18,
+          "text": "set fspr_tluplus [file join $fspr_vendor_root(Synopsys) ITF 3nm_GAA_FSPR.tluplus]"
+        },
+        {
+          "line": 19,
+          "text": "set fspr_qrc_tch [file join $fspr_vendor_root(Cadence) QRC 3nm_GAA_FSPR.tch]"
+        },
+        {
+          "line": 20,
+          "text": "set fspr_qrc_map [file join $fspr_vendor_root(Cadence) QRC 3nm_GAA_FSPR.layermap]"
+        },
+        {
+          "line": 21,
+          "text": "set fspr_release [file join $fspr_dev RELEASE_144nm_RVT]"
+        },
+        {
+          "line": 22,
+          "text": "set fspr_drc_deck [file join $fspr_release physical rules matched_144nm DRC sccad3nm_main.drc.rs]"
+        },
+        {
+          "line": 23,
+          "text": "set fspr_lvs_deck [file join $fspr_release physical rules matched_144nm LVS ICV_3nm.rs]"
+        },
+        {
+          "line": 24,
+          "text": "set fspr_pex_deck [file join $fspr_release physical rules matched_144nm LVS ICV_3nm_FSPR_PEX.rs]"
+        },
+        {
+          "line": 25,
+          "text": "set fspr_starrc_map [file join $fspr_release physical rules matched_144nm StarRC starrcxt.mapping]"
+        },
+        {
+          "line": 26,
+          "text": "set fspr_extraction_grid [file join $fspr_vendor_root(Synopsys) ITF 3nm_GAA_FSPR.nxtgrd]"
+        },
+        {
+          "line": 29,
+          "text": "set fspr_final_timing_ready 0"
+        },
+        {
+          "line": 30,
+          "text": "set fspr_matched_release_ready 0"
+        },
+        {
+          "line": 31,
+          "text": "source [file join $fspr_dev matched_release_readiness.tcl]"
+        },
+        {
+          "line": 32,
+          "text": "proc fspr_require_final_timing {} {"
+        },
+        {
+          "line": 33,
+          "text": "    global fspr_final_timing_ready"
+        },
+        {
+          "line": 34,
+          "text": "    if {!$fspr_final_timing_ready} {error \"Matched 57-cell native LIB/DB is pending. This private physical snapshot cannot run PNR.\"}"
+        },
+        {
+          "line": 36,
+          "text": "proc fspr_require_matched_release {{with_ndm 0}} {"
+        },
+        {
+          "line": 37,
+          "text": "    global fspr_matched_release_ready fspr_gds fspr_model fspr_std_lef fspr_lib fspr_db fspr_ndm"
+        },
+        {
+          "line": 38,
+          "text": "    if {!$fspr_matched_release_ready} {error \"Matched 144nm release is pending final timing/NDM validation; old timing or historical NDM is not a fallback.\"}"
+        },
+        {
+          "line": 39,
+          "text": "    set required [list $fspr_gds $fspr_model $fspr_db]"
+        },
+        {
+          "line": 40,
+          "text": "    foreach vendor {Cadence OpenROAD Synopsys} {lappend required $fspr_std_lef($vendor) $fspr_lib($vendor)}"
+        },
+        {
+          "line": 41,
+          "text": "    if {$with_ndm} {lappend required $fspr_ndm}"
+        }
+      ]
+    },
+    {
+      "repository_path": "PDK Development/Front-side Version/matched_release_readiness.tcl",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/active_selector_sources/PDK Development/Front-side Version/matched_release_readiness.tcl",
+      "before_sha256": null,
+      "after_sha256": "60c9a05088744107608ca5ec1e917aae36b61466618506092c2dab5a93d94bb7",
+      "selected_file_lines": [
+        {
+          "line": 3,
+          "text": "set fspr_final_timing_ready 0"
+        },
+        {
+          "line": 4,
+          "text": "set fspr_matched_release_ready 0"
+        }
+      ]
+    },
+    {
+      "repository_path": "PnR-Cadence/Front-side Version/Runfiles/ECG_innovus.tcl",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/active_selector_sources/PnR-Cadence/Front-side Version/Runfiles/ECG_innovus.tcl",
+      "before_sha256": "e0aef764d27ff9fd32c9b819b6fd4f68e9a711f596b697da5c0987413e931858",
+      "after_sha256": "23e365a095f6ea0ed2cf5f3a87907b66a951437489729b4e038ab3f31837a93d",
+      "selected_file_lines": [
+        {
+          "line": 32,
+          "text": "#   export PDK_ROOT=/path/to/USC-3N-2D"
+        },
+        {
+          "line": 41,
+          "text": "fspr_require_matched_release"
+        },
+        {
+          "line": 42,
+          "text": "set ::env(TECHLEF_DIR) [file dirname $::fspr_tech_lef(Cadence)]"
+        },
+        {
+          "line": 43,
+          "text": "set ::env(MACROLEF_DIR) [file dirname $::fspr_std_lef(Cadence)]"
+        },
+        {
+          "line": 44,
+          "text": "set ::env(MACROLIB_DIR) [file dirname $::fspr_lib(Cadence)]"
+        },
+        {
+          "line": 45,
+          "text": "set ::env(TCH_DIR) [file dirname $::fspr_qrc_tch]"
+        },
+        {
+          "line": 169,
+          "text": "        set LEFfiles {}"
+        },
+        {
+          "line": 172,
+          "text": "        set techLEF \"$::env(TECHLEF_DIR)\""
+        },
+        {
+          "line": 174,
+          "text": "            foreach fileName [list $::fspr_tech_lef(Cadence)] {"
+        },
+        {
+          "line": 175,
+          "text": "                lappend LEFfiles $fileName"
+        },
+        {
+          "line": 180,
+          "text": "        set macroLEF \"$::env(MACROLEF_DIR)\""
+        },
+        {
+          "line": 182,
+          "text": "            foreach fileName [list $::fspr_std_lef(Cadence)] {"
+        },
+        {
+          "line": 183,
+          "text": "                lappend LEFfiles $fileName"
+        },
+        {
+          "line": 192,
+          "text": "                    lappend LEFfiles $fileName"
+        },
+        {
+          "line": 209,
+          "text": "        set rda_Input(ui_leffile) $LEFfiles"
+        },
+        {
+          "line": 219,
+          "text": "        set init_lef_file $LEFfiles"
+        },
+        {
+          "line": 236,
+          "text": "        set LIBfiles {}"
+        },
+        {
+          "line": 239,
+          "text": "        set macroLIB \"$::env(MACROLIB_DIR)\""
+        },
+        {
+          "line": 241,
+          "text": "            foreach fileName [list $::fspr_lib(Cadence)] {"
+        },
+        {
+          "line": 242,
+          "text": "                lappend LIBfiles $fileName"
+        },
+        {
+          "line": 251,
+          "text": "                    lappend LIBfiles $fileName"
+        },
+        {
+          "line": 256,
+          "text": "        set CAPfiles {}"
+        },
+        {
+          "line": 261,
+          "text": "                    lappend CAPfiles $fileName"
+        },
+        {
+          "line": 266,
+          "text": "        if {[llength $CAPfiles] > 1} {error \"Expected one explicit cap-table file\"}"
+        },
+        {
+          "line": 267,
+          "text": "        set CAPfile [lindex $CAPfiles 0]"
+        },
+        {
+          "line": 268,
+          "text": "        set TCHfile \"\""
+        },
+        {
+          "line": 269,
+          "text": "        set MAPfile \"\""
+        },
+        {
+          "line": 270,
+          "text": "        if { [info exists ::env(TCH_DIR)] } {"
+        },
+        {
+          "line": 271,
+          "text": "            set TCH \"$::env(TCH_DIR)\""
+        },
+        {
+          "line": 273,
+          "text": "                set TCHfile $::fspr_qrc_tch"
+        },
+        {
+          "line": 274,
+          "text": "                set MAPfile $::fspr_qrc_map"
+        },
+        {
+          "line": 279,
+          "text": "        if { [info exists ::env(CAPTBL_DIR)] && ![info exists ::env(TCH_DIR)] } {"
+        },
+        {
+          "line": 280,
+          "text": "            create_rc_corner -name curRC -cap_table $CAPfile"
+        },
+        {
+          "line": 281,
+          "text": "        } elseif { ![info exists ::env(CAPTBL_DIR)] && [info exists ::env(TCH_DIR)] } {"
+        },
+        {
+          "line": 282,
+          "text": "            create_rc_corner -name curRC -qx_tech_file $TCHfile"
+        },
+        {
+          "line": 283,
+          "text": "        } elseif { [info exists ::env(CAPTBL_DIR)] && [info exists ::env(TCH_DIR)] } {"
+        },
+        {
+          "line": 284,
+          "text": "            create_rc_corner -name curRC -cap_table $CAPfile"
+        },
+        {
+          "line": 285,
+          "text": "            update_rc_corner -name curRC -qx_tech_file $TCHfile"
+        },
+        {
+          "line": 287,
+          "text": "        if { $MAPfile ne \"\" } {"
+        },
+        {
+          "line": 288,
+          "text": "            setExtractRCMode -engine postRoute -lefTechFileMap $MAPfile"
+        },
+        {
+          "line": 313,
+          "text": "        create_library_set    -name curLib  -timing $LIBfiles"
+        }
+      ]
+    },
+    {
+      "repository_path": "PnR-Synopsys/Front-side Version/Runfiles/ECG_icc2.tcl",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/active_selector_sources/PnR-Synopsys/Front-side Version/Runfiles/ECG_icc2.tcl",
+      "before_sha256": "66352dff6e65856cfe7ca34573b39559764c5e52b881afa375e8a6e852bba908",
+      "after_sha256": "504337bece631bd9942b5c9c2d5b9b7310a391b02e0597ab8d799bcde7c48ee7",
+      "selected_file_lines": [
+        {
+          "line": 36,
+          "text": "#   export PDK_ROOT=/path/to/USC-3N-2D"
+        },
+        {
+          "line": 45,
+          "text": "fspr_require_matched_release 1"
+        },
+        {
+          "line": 46,
+          "text": "set ::env(NDM_DIR) [file dirname $::fspr_ndm]"
+        },
+        {
+          "line": 47,
+          "text": "set ::env(TF_DIR) [file dirname $::fspr_tf]"
+        },
+        {
+          "line": 48,
+          "text": "set ::env(TLU_DIR) [file join $::fspr_vendor_root(Synopsys) ITF]"
+        },
+        {
+          "line": 49,
+          "text": "set ::env(MACRODB_DIR) [file dirname $::fspr_db]"
+        },
+        {
+          "line": 307,
+          "text": "        set cellNdm {}"
+        },
+        {
+          "line": 309,
+          "text": "        set techFile \"$::fspr_tf\""
+        },
+        {
+          "line": 310,
+          "text": "        foreach fileName [list $::fspr_ndm] { lappend cellNdm $fileName }"
+        },
+        {
+          "line": 314,
+          "text": "            foreach fileName [glob -d $hardNdm *.ndm] { lappend cellNdm $fileName }"
+        },
+        {
+          "line": 317,
+          "text": "        echo $cellNdm"
+        },
+        {
+          "line": 321,
+          "text": "            create_lib -technology $techFile -ref_libs $cellNdm ./impl_normal2D"
+        },
+        {
+          "line": 331,
+          "text": "        set tlu \"$::env(TLU_DIR)\""
+        },
+        {
+          "line": 334,
+          "text": "            set tluFile $::fspr_tluplus"
+        },
+        {
+          "line": 335,
+          "text": "            set nxtGrd $::fspr_extraction_grid"
+        },
+        {
+          "line": 336,
+          "text": "            if { $tluFile != \"\" } {"
+        },
+        {
+          "line": 337,
+          "text": "                read_parasitic_tech -tlup $tluFile -name nomTLU"
+        }
+      ]
+    },
+    {
+      "repository_path": "PnR-Cadence/Front-side Version/Runfiles/OpenPiton_innovus.tcl",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/active_selector_sources/PnR-Cadence/Front-side Version/Runfiles/OpenPiton_innovus.tcl",
+      "before_sha256": "9fbba54b7052e420e14743333e2d176d80488171649563e78c03c2df0f2d8d6a",
+      "after_sha256": "f98e422dce077c76a60448c86078885ab8ca4878d794966d27981e57536e6516",
+      "selected_file_lines": [
+        {
+          "line": 34,
+          "text": "#   export PDK_ROOT=/path/to/USC-3N-2D"
+        },
+        {
+          "line": 43,
+          "text": "fspr_require_matched_release"
+        },
+        {
+          "line": 44,
+          "text": "set ::env(TECHLEF_DIR) [file dirname $::fspr_tech_lef(Cadence)]"
+        },
+        {
+          "line": 45,
+          "text": "set ::env(MACROLEF_DIR) [file dirname $::fspr_std_lef(Cadence)]"
+        },
+        {
+          "line": 46,
+          "text": "set ::env(MACROLIB_DIR) [file dirname $::fspr_lib(Cadence)]"
+        },
+        {
+          "line": 47,
+          "text": "set ::env(TCH_DIR) [file dirname $::fspr_qrc_tch]"
+        },
+        {
+          "line": 187,
+          "text": "        set LEFfiles {}"
+        },
+        {
+          "line": 190,
+          "text": "        set techLEF \"$::env(TECHLEF_DIR)\""
+        },
+        {
+          "line": 192,
+          "text": "            foreach fileName [list $::fspr_tech_lef(Cadence)] {"
+        },
+        {
+          "line": 193,
+          "text": "                lappend LEFfiles $fileName"
+        },
+        {
+          "line": 198,
+          "text": "        set macroLEF \"$::env(MACROLEF_DIR)\""
+        },
+        {
+          "line": 200,
+          "text": "            foreach fileName [list $::fspr_std_lef(Cadence)] {"
+        },
+        {
+          "line": 201,
+          "text": "                lappend LEFfiles $fileName"
+        },
+        {
+          "line": 210,
+          "text": "                    lappend LEFfiles $fileName"
+        },
+        {
+          "line": 227,
+          "text": "        set rda_Input(ui_leffile) $LEFfiles"
+        },
+        {
+          "line": 237,
+          "text": "        set init_lef_file $LEFfiles"
+        },
+        {
+          "line": 254,
+          "text": "        set LIBfiles {}"
+        },
+        {
+          "line": 257,
+          "text": "        set macroLIB \"$::env(MACROLIB_DIR)\""
+        },
+        {
+          "line": 259,
+          "text": "            foreach fileName [list $::fspr_lib(Cadence)] {"
+        },
+        {
+          "line": 260,
+          "text": "                lappend LIBfiles $fileName"
+        },
+        {
+          "line": 269,
+          "text": "                    lappend LIBfiles $fileName"
+        },
+        {
+          "line": 274,
+          "text": "        set CAPfiles {}"
+        },
+        {
+          "line": 279,
+          "text": "                    lappend CAPfiles $fileName"
+        },
+        {
+          "line": 284,
+          "text": "        if {[llength $CAPfiles] > 1} {error \"Expected one explicit cap-table file\"}"
+        },
+        {
+          "line": 285,
+          "text": "        set CAPfile [lindex $CAPfiles 0]"
+        },
+        {
+          "line": 286,
+          "text": "        set TCHfile \"\""
+        },
+        {
+          "line": 287,
+          "text": "        set MAPfile \"\""
+        },
+        {
+          "line": 288,
+          "text": "        if { [info exists ::env(TCH_DIR)] } {"
+        },
+        {
+          "line": 289,
+          "text": "            set TCH \"$::env(TCH_DIR)\""
+        },
+        {
+          "line": 291,
+          "text": "                set TCHfile $::fspr_qrc_tch"
+        },
+        {
+          "line": 292,
+          "text": "                set MAPfile $::fspr_qrc_map"
+        },
+        {
+          "line": 297,
+          "text": "        if { [info exists ::env(CAPTBL_DIR)] && ![info exists ::env(TCH_DIR)] } {"
+        },
+        {
+          "line": 298,
+          "text": "            create_rc_corner -name curRC -cap_table $CAPfile"
+        },
+        {
+          "line": 299,
+          "text": "        } elseif { ![info exists ::env(CAPTBL_DIR)] && [info exists ::env(TCH_DIR)] } {"
+        },
+        {
+          "line": 300,
+          "text": "            create_rc_corner -name curRC -qx_tech_file $TCHfile"
+        },
+        {
+          "line": 301,
+          "text": "        } elseif { [info exists ::env(CAPTBL_DIR)] && [info exists ::env(TCH_DIR)] } {"
+        },
+        {
+          "line": 302,
+          "text": "            create_rc_corner -name curRC -cap_table $CAPfile"
+        },
+        {
+          "line": 303,
+          "text": "            update_rc_corner -name curRC -qx_tech_file $TCHfile"
+        },
+        {
+          "line": 305,
+          "text": "        if { $MAPfile ne \"\" } {"
+        },
+        {
+          "line": 306,
+          "text": "            setExtractRCMode -engine postRoute -lefTechFileMap $MAPfile"
+        },
+        {
+          "line": 331,
+          "text": "        create_library_set    -name curLib  -timing $LIBfiles"
+        }
+      ]
+    },
+    {
+      "repository_path": "PnR-Synopsys/Front-side Version/Runfiles/OpenPiton_icc2.tcl",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/active_selector_sources/PnR-Synopsys/Front-side Version/Runfiles/OpenPiton_icc2.tcl",
+      "before_sha256": "9b5ce9cd796df89bfdacde0dacc7c22b07ee08be0acb1f1ab93bf974a5764592",
+      "after_sha256": "cdfb8096f0c64b2565791162357f5c73fb6c797d05c77f5b0adcb00ae111a846",
+      "selected_file_lines": [
+        {
+          "line": 38,
+          "text": "#   export PDK_ROOT=/path/to/USC-3N-2D"
+        },
+        {
+          "line": 47,
+          "text": "fspr_require_matched_release 1"
+        },
+        {
+          "line": 48,
+          "text": "set ::env(NDM_DIR) [file dirname $::fspr_ndm]"
+        },
+        {
+          "line": 49,
+          "text": "set ::env(TF_DIR) [file dirname $::fspr_tf]"
+        },
+        {
+          "line": 50,
+          "text": "set ::env(TLU_DIR) [file join $::fspr_vendor_root(Synopsys) ITF]"
+        },
+        {
+          "line": 51,
+          "text": "set ::env(MACRODB_DIR) [file dirname $::fspr_db]"
+        },
+        {
+          "line": 316,
+          "text": "        set cellNdm {}"
+        },
+        {
+          "line": 318,
+          "text": "        set techFile \"$::fspr_tf\""
+        },
+        {
+          "line": 319,
+          "text": "        foreach fileName [list $::fspr_ndm] { lappend cellNdm $fileName }"
+        },
+        {
+          "line": 323,
+          "text": "            foreach fileName [glob -d $hardNdm *.ndm] { lappend cellNdm $fileName }"
+        },
+        {
+          "line": 326,
+          "text": "        echo $cellNdm"
+        },
+        {
+          "line": 330,
+          "text": "            create_lib -technology $techFile -ref_libs $cellNdm ./impl_normal2D"
+        },
+        {
+          "line": 340,
+          "text": "        set tlu \"$::env(TLU_DIR)\""
+        },
+        {
+          "line": 343,
+          "text": "            set tluFile $::fspr_tluplus"
+        },
+        {
+          "line": 344,
+          "text": "            set nxtGrd $::fspr_extraction_grid"
+        },
+        {
+          "line": 345,
+          "text": "            if { $tluFile != \"\" } {"
+        },
+        {
+          "line": 346,
+          "text": "                read_parasitic_tech -tlup $tluFile -name nomTLU"
+        }
+      ]
+    },
+    {
+      "repository_path": "PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/3nm/3nm.vars",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/active_selector_sources/PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/3nm/3nm.vars",
+      "before_sha256": "166ead389b77ee553a7680cb3a71095c58608d2aa90a530b39224da54442b8f2",
+      "after_sha256": "2b3ac95bfc3917c82fb7528dcbd27d539b3e3cf5fad1bc176c09cc3f0b827380",
+      "selected_file_lines": [
+        {
+          "line": 12,
+          "text": "fspr_require_matched_release"
+        },
+        {
+          "line": 16,
+          "text": "set tech_lef $::fspr_tech_lef(OpenROAD)"
+        },
+        {
+          "line": 17,
+          "text": "set std_cell_lef $::fspr_std_lef(OpenROAD)"
+        },
+        {
+          "line": 20,
+          "text": "set liberty_file $::fspr_lib(OpenROAD)"
+        }
+      ]
+    },
+    {
+      "repository_path": "PnR-Cadence/Front-side Version/Runfiles/ECG_innovus.run.sh",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/active_selector_sources/PnR-Cadence/Front-side Version/Runfiles/ECG_innovus.run.sh",
+      "before_sha256": "8c3a04f0e99a5a6ddcd68d9cc01184cc290f7d3410c5e2ea196e1ddc6cd9e9f6",
+      "after_sha256": "2685a1604edab6d5b34e0fb31233e5db3ef913791dba7de6cc94c5c2a2d94038",
+      "selected_file_lines": [
+        {
+          "line": 5,
+          "text": "#   export PDK_ROOT=/path/to/USC-3N-2D"
+        },
+        {
+          "line": 15,
+          "text": "    echo \"ERROR: set PDK_ROOT before running (e.g. export PDK_ROOT=/path/to/USC-3N-2D)\""
+        }
+      ]
+    },
+    {
+      "repository_path": "PnR-Cadence/Front-side Version/Runfiles/OpenPiton_innovus.run.sh",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/active_selector_sources/PnR-Cadence/Front-side Version/Runfiles/OpenPiton_innovus.run.sh",
+      "before_sha256": "8083e5cb0e43f22a0414bfe8e871d2c8110cb9784b1ba22e52a7002d9a22578c",
+      "after_sha256": "aa6cd1ba445686ffbbeba00dfa3eb04bcd7fa35f11cadf482b16f0298aa070bb",
+      "selected_file_lines": [
+        {
+          "line": 5,
+          "text": "#   export PDK_ROOT=/path/to/USC-3N-2D"
+        },
+        {
+          "line": 17,
+          "text": "    echo \"ERROR: set PDK_ROOT before running (e.g. export PDK_ROOT=/path/to/USC-3N-2D)\""
+        }
+      ]
+    },
+    {
+      "repository_path": "PnR-Synopsys/Front-side Version/Runfiles/ECG_icc2.run.sh",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/active_selector_sources/PnR-Synopsys/Front-side Version/Runfiles/ECG_icc2.run.sh",
+      "before_sha256": "48d4164b693735f0d20dfd14e187d67d29a3e02463fe8d40ae173be7b110fcb1",
+      "after_sha256": "91fcb8ea261f1c52b8b870c60330ce2bd6a7a441ea2e87039312f4cef65d5094",
+      "selected_file_lines": [
+        {
+          "line": 5,
+          "text": "#   export PDK_ROOT=/path/to/USC-3N-2D"
+        },
+        {
+          "line": 15,
+          "text": "    echo \"ERROR: set PDK_ROOT before running (e.g. export PDK_ROOT=/path/to/USC-3N-2D)\""
+        }
+      ]
+    },
+    {
+      "repository_path": "PnR-Synopsys/Front-side Version/Runfiles/OpenPiton_icc2.run.sh",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/active_selector_sources/PnR-Synopsys/Front-side Version/Runfiles/OpenPiton_icc2.run.sh",
+      "before_sha256": "7e1ecb05977265ac381eecdfc87bd07e4c42da015909df3589e55812d46f0d35",
+      "after_sha256": "62c6bf8f586bdf3a9cf713825c317830b62ee3dbe6ba63eb128a57c22cd66055",
+      "selected_file_lines": [
+        {
+          "line": 5,
+          "text": "#   export PDK_ROOT=/path/to/USC-3N-2D"
+        },
+        {
+          "line": 17,
+          "text": "    echo \"ERROR: set PDK_ROOT before running (e.g. export PDK_ROOT=/path/to/USC-3N-2D)\""
+        }
+      ]
+    },
+    {
+      "repository_path": "PnR-Cadence/Front-side Version/Runfiles/README.md",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/active_selector_sources/PnR-Cadence/Front-side Version/Runfiles/README.md",
+      "before_sha256": "8b65d20010da36fda5e9da8a08708528e1c2db993b7f2f6941fe81087751f1e0",
+      "after_sha256": "aee7b5919b58cb6c213dd0642412180b15d3093e78fe15612004f31878e6bef6",
+      "selected_file_lines": [
+        {
+          "line": 84,
+          "text": "export PDK_ROOT=/path/to/USC-3N-2D"
+        },
+        {
+          "line": 184,
+          "text": "export PDK_ROOT=/path/to/USC-3N-2D"
+        }
+      ]
+    },
+    {
+      "repository_path": "PnR-Synopsys/Front-side Version/Runfiles/README.md",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/active_selector_sources/PnR-Synopsys/Front-side Version/Runfiles/README.md",
+      "before_sha256": "8b223d8e75181777dcfa500dc733c8dd54b0a35988e52028bcb84d4ac15bac81",
+      "after_sha256": "760bd3bc1f3516cbf904bccecf96784493a80de89429c360b5411335a52f6738",
+      "selected_file_lines": [
+        {
+          "line": 82,
+          "text": "export PDK_ROOT=/path/to/USC-3N-2D"
+        },
+        {
+          "line": 175,
+          "text": "export PDK_ROOT=/path/to/USC-3N-2D"
+        }
+      ]
+    },
+    {
+      "repository_path": "PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/README.md",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/active_selector_sources/PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/README.md",
+      "before_sha256": "9315d58658d54e30ea5db02d64317651cf810cc2723fb6cef81b4249e30bc0b8",
+      "after_sha256": "3f9831ae0d3f9f07d1343521275da152ffd6983767e8e6ab561f4e59f110c2ba",
+      "selected_file_lines": [
+        {
+          "line": 49,
+          "text": "export PDK_ROOT=/path/to/USC-3N-2D"
+        },
+        {
+          "line": 58,
+          "text": "export PDK_ROOT=/path/to/USC-3N-2D"
+        }
+      ]
+    },
+    {
+      "repository_path": "README.md",
+      "source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/github/active_selector_sources/README.md",
+      "before_sha256": "807a0222389eadae9b32550f99990ad190f58eccf24ecce53360a454350086cc",
+      "after_sha256": "ca87e29a5420d7dd8aaa2af3e778b0b9f186a23f113adb8506ea055dc1c7a69d",
+      "selected_file_lines": []
+    }
+  ],
+  "original_tracked_GDS_files": [],
+  "upstream_executable_GDS_stream_selector": "None; new common map explicitly selects144nm GDS. No GDS wildcard exists.",
+  "standard_LEF_LIB_NDM_wildcards_remaining": [],
+  "retained_generic_or_optional_globs": [
+    "Explicit user-supplied SRAM hardmacro LEF/LIB/NDM directories",
+    "OpenROAD optional equivalence-test Verilog source-directory glob; not standard-cell timing/GDS selection"
+  ],
+  "historical_assets_preserved": [
+    "Original STD-CELLS OpenAccess snapshots",
+    "Old3nm_GAA_FSPR.ndm directory",
+    "Dual-side collateral",
+    "Original GitHub decks under selected physical/rules/github provenance"
+  ],
+  "verification_defaults": {
+    "DRC": "physical/rules/matched_144nm/DRC/sccad3nm_main.drc.rs",
+    "LVS": "physical/rules/matched_144nm/LVS/ICV_3nm.rs",
+    "StarRC_extraction": "physical/rules/matched_144nm/LVS/ICV_3nm_FSPR_PEX.rs",
+    "StarRC_native_map": "physical/rules/matched_144nm/StarRC/starrcxt.mapping",
+    "grid_sha256": "425ddaa74bdb6fd44752c73175404742927ab8312060b701783210731b92e805",
+    "GDS_layers": {
+      "V1": 21,
+      "M6": 60,
+      "MBPR": 15,
+      "fin": 2
+    },
+    "numerical_DRC_includes_unchanged": true,
+    "native_LVS_property_checks": false,
+    "body_dimensions_audits": "Separate independent source/native extraction/GDS proofs"
+  },
+  "matched_release_ready": false,
+  "NDM_built": false,
+  "native_chip_PNR_runs": 0,
+  "official_NDM_syntax_help_validated": true,
+  "publication_allowed": false,
+  "actual_file_consumer_argument_contract_tests": "ACTUAL_SELECTOR_ARGUMENT_QA.json:10/10PASS; actual procedures, list-vs-scalar typed path assertions with spaces.",
+  "prior_bug_regression": "SELECTOR_LIST_REGRESSION_PROOF.json: original4/4Cadence consumers fail list length; prior review tree d8e61e49b35a8e92380c59c0420586a555da1e28 preserved.",
+  "README_derived_variable_tables_synchronized": true,
+  "P1_P2_fixed": true,
+  "changed_active_paths": [
+    {
+      "path": "PDK Development/Front-side Version/selected_collateral.tcl",
+      "source_sha256": "b17216e4f69e3f0537c0727a24d185a2853f30bd6cecbedb9bc686a38c365f4f",
+      "selected_or_guard_lines": [
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        13,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "path": "PDK Development/Front-side Version/matched_release_readiness.tcl",
+      "source_sha256": "a56753ac4e67e9b573868cd240f0852f9d697100134360549263788added23c3",
+      "selected_or_guard_lines": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "path": "PnR-Cadence/Front-side Version/Runfiles/ECG_innovus.tcl",
+      "source_sha256": "79f7ce0071eef89ef8726d919251eb3b27dd93a35b94cb3ca93f8206564cb06d",
+      "selected_or_guard_lines": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        74,
+        174,
+        182,
+        241,
+        273,
+        274
+      ]
+    },
+    {
+      "path": "PnR-Synopsys/Front-side Version/Runfiles/ECG_icc2.tcl",
+      "source_sha256": "327989e71b34cfa5b089e5783df7bac84e5745b2da2aeaabd3077d912a963f32",
+      "selected_or_guard_lines": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        77,
+        298,
+        312,
+        320,
+        332,
+        333
+      ]
+    },
+    {
+      "path": "PnR-Cadence/Front-side Version/Runfiles/OpenPiton_innovus.tcl",
+      "source_sha256": "e1e7eba785c30b8e916fe7c35e7aa2258fd8bf2534ebac259aa1022298157ee3",
+      "selected_or_guard_lines": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        92,
+        192,
+        200,
+        259,
+        291,
+        292
+      ]
+    },
+    {
+      "path": "PnR-Synopsys/Front-side Version/Runfiles/OpenPiton_icc2.tcl",
+      "source_sha256": "1e0cf123177c4bacdab7a8c06f7f44ea121fab96f98a00bc63694e679c1a862f",
+      "selected_or_guard_lines": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        86,
+        307,
+        321,
+        329,
+        341,
+        342
+      ]
+    },
+    {
+      "path": "PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/3nm/3nm.vars",
+      "source_sha256": "a188432e0ec94b33259261aa6a0b7448c0e168be0858807768898e3fb6fd6973",
+      "selected_or_guard_lines": [
+        12,
+        16,
+        17,
+        20,
+        23
+      ]
+    },
+    {
+      "path": "PnR-Cadence/Front-side Version/Runfiles/ECG_innovus.run.sh",
+      "source_sha256": "2685a1604edab6d5b34e0fb31233e5db3ef913791dba7de6cc94c5c2a2d94038",
+      "selected_or_guard_lines": []
+    },
+    {
+      "path": "PnR-Cadence/Front-side Version/Runfiles/OpenPiton_innovus.run.sh",
+      "source_sha256": "aa6cd1ba445686ffbbeba00dfa3eb04bcd7fa35f11cadf482b16f0298aa070bb",
+      "selected_or_guard_lines": []
+    },
+    {
+      "path": "PnR-Synopsys/Front-side Version/Runfiles/ECG_icc2.run.sh",
+      "source_sha256": "91fcb8ea261f1c52b8b870c60330ce2bd6a7a441ea2e87039312f4cef65d5094",
+      "selected_or_guard_lines": []
+    },
+    {
+      "path": "PnR-Synopsys/Front-side Version/Runfiles/OpenPiton_icc2.run.sh",
+      "source_sha256": "62c6bf8f586bdf3a9cf713825c317830b62ee3dbe6ba63eb128a57c22cd66055",
+      "selected_or_guard_lines": []
+    },
+    {
+      "path": "PnR-Cadence/Front-side Version/Runfiles/README.md",
+      "source_sha256": "aee7b5919b58cb6c213dd0642412180b15d3093e78fe15612004f31878e6bef6",
+      "selected_or_guard_lines": []
+    },
+    {
+      "path": "PnR-Synopsys/Front-side Version/Runfiles/README.md",
+      "source_sha256": "c4541d42debe42c9e2ee7d486c340a454f2274134ff3f657d2138d2ed82b221f",
+      "selected_or_guard_lines": [
+        4,
+        6
+      ]
+    },
+    {
+      "path": "PnR-OpenROAD/Front-side Version/OpenROAD_Runfiles/README.md",
+      "source_sha256": "3f9831ae0d3f9f07d1343521275da152ffd6983767e8e6ab561f4e59f110c2ba",
+      "selected_or_guard_lines": []
+    },
+    {
+      "path": "README.md",
+      "source_sha256": "ca87e29a5420d7dd8aaa2af3e778b0b9f186a23f113adb8506ea055dc1c7a69d",
+      "selected_or_guard_lines": []
+    },
+    {
+      "path": "PDK Development/Front-side Version/icc2_matched_references.tcl",
+      "source_sha256": "b891064e4c3e62f03eb58a23eed831571696ec4e2c0757db8b76775a26e928dc",
+      "selected_or_guard_lines": [
+        3,
+        8,
+        15,
+        23,
+        24,
+        25,
+        26,
+        28,
+        32,
+        36,
+        38,
+        39,
+        40,
+        44,
+        45,
+        46,
+        47,
+        53,
+        54,
+        57,
+        58,
+        59,
+        65
+      ]
+    }
+  ],
+  "selected_site": "coreSite",
+  "existing_library_policy": "Native exact ref_libs plus persisted source/readiness/payload provenance; no legacy rebind",
+  "fresh_technology": "Inherit from exact selected matched NDM",
+  "native_fixture_scope": "No timing DB; no routed design; separate from final matched NDM",
+  "source_drift_policy": "Compare initial fingerprint after native create/open; never replace initial approval with current source. Builder copies and post-build checks retain initial package-approved source hashes."
+}

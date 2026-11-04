@@ -1,0 +1,64 @@
+{
+  "staged_target": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/selected_paired_DFFH/6ef95b32b6d0e87f",
+  "source_native_library": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/candidate.lib",
+  "native_audit": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/selected_paired_DFFH/6ef95b32b6d0e87f/NATIVE_AUDIT.json",
+  "state_audit": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/selected_paired_DFFH/6ef95b32b6d0e87f/SEQUENTIAL_STATE_AUDIT.json",
+  "staged_before_root_approval": true,
+  "native_quality_passed": true,
+  "qualified_for_release": false,
+  "canonical_adoption": false,
+  "requires_root_recovered_native_acceptance": true,
+  "native_os_rc": null,
+  "native_wait_status": null,
+  "os_rc_unknown_reason": "Original waiting parent died; recovered guard cannot wait a nonchild process",
+  "original_supervisor_failure_preserved": true,
+  "native_restarted": false,
+  "owner": {
+    "host": "gtcad-srv17.ece.gatech.edu",
+    "pid": 1292553,
+    "start_ticks": "258580130",
+    "controller_pid": 1292531,
+    "controller_start_ticks": "258579951",
+    "work": "/tmp/yhuang861/usc144_github_release_20261103/paired_master_clock_native_candidate/full_w64_r1",
+    "started_epoch": 1793792807.3716743,
+    "threads": 64,
+    "binding": "6ef95b32b6d0e87f275159f42a177e50bfa5485ea07e5f2af600f2098069d905",
+    "executed_runner_sha256": "b9bc76fd9a0e3c32ecfbac713d165107ac8947fdd98cba7347858da688810f2c",
+    "actual_input_sha256": {
+      "cells.sp": "cb9d94dcc947dfae48c062640b65b6ad8d60f5eaacbbcd0148247e1bfe74e466",
+      "model_native.scs": "1878ed3b42a64a0481393a2e9bcd8024c803a4c6ff0bff0c32b9da4fd6447a53",
+      "run.tcl": "4ba70827e0c267cadcc4cc876d7b3bb693478a3d01c8bcf0b36b263bcdcbe3cc"
+    }
+  },
+  "library": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/selected_paired_DFFH/6ef95b32b6d0e87f/candidate.lib",
+  "library_sha256": "3d76761ee38645426b998936cb8ed90518054e146f6ccd44813d4bb0f785bacd",
+  "gds_sha256": "46473c808103537d8082da21232d1ca1a6fe79a603e01c1491d3b6aed1664184",
+  "dspf_sha256": "8023a990312d40652e4705f709d971af27a33098624e108c99b47d2c5395c25d",
+  "actual_geometry_preserved": true,
+  "area_um2": 0.145152,
+  "area_proof": {
+    "gds_dimensions_nm": [
+      1008.0,
+      144.0
+    ],
+    "lef_dimensions_nm": [
+      1008.0,
+      144.0
+    ],
+    "lef": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/reports/CANDIDATE_paired_clock_144nm_complete_abstract.lef",
+    "lef_sha256": "ae772af34907bf4b6e99107a01df19a90485d06f0fd57973668ab0b8557cde53",
+    "area_um2": 0.145152,
+    "method": "Actual final cell boundary, matching final LEF; nativeLiberateset_attributearea"
+  },
+  "native_audit_sha256": "ff8344519e6d0f4c3370a665862f84213f927b6ab3a5caba2b07de15fcf63eb6",
+  "state_audit_sha256": "559cbc06be63a3041d69081934d65d2074fe861523fe948a51b3928732b11e6f",
+  "native_completion_marker": true,
+  "native_failing_cells": 0,
+  "finite_fixed_grid_audit_passed": true,
+  "actual_solver_profile_sha256": "b585b56f9cc709394bfa076ce8ef867b12836c36a1107736e05f2223b0f50f48",
+  "recovery_terminal_sha256": "9694be67a9ba6454678341be8e0ae92f48c9075fb1273656305cbdf0cf155db3",
+  "post_completion_worktree_process_audit_sha256": "b476a1c8999a7eddc033cbf88dbd9d2916306d0afc0c56636322b62d8b31c11e",
+  "functional_final_audit_path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/failure_review_DFFH_removal/clock_retap_functional_screen/actual_paired_master_freshPEX_r1/FINAL_SCREEN_AUDIT.json",
+  "functional_final_audit_sha256": "fd2eb5b23634cc17d77108a82a6961f68f54f43f2cf2cad6e5840975da880b7f",
+  "updated_epoch": 1793804111.515789
+}

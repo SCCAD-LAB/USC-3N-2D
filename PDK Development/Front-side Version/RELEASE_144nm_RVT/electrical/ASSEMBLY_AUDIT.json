@@ -1,0 +1,1388 @@
+{
+  "passed": true,
+  "logic": {
+    "passed": true,
+    "checked": [
+      {
+        "cell": "AND2x1",
+        "pin": "Y",
+        "reference": "(A * B)",
+        "inferred": "(A * B)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "AND3x1",
+        "pin": "Y",
+        "reference": "(A * B * C)",
+        "inferred": "(A * B * C)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "AND4x1",
+        "pin": "Y",
+        "reference": "(A * B * C * D)",
+        "inferred": "(A * B * C * D)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "AOI21x1",
+        "pin": "Y",
+        "reference": "(!A * !C) + (!B * !C)",
+        "inferred": "(!A * !C) + (!B * !C)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "AOI221x1",
+        "pin": "Y",
+        "reference": "(!A * !C * !E) + (!A * !D * !E) + (!B * !C * !E) + (!B * !D * !E)",
+        "inferred": "(!A * !C * !E) + (!A * !D * !E) + (!B * !C * !E) + (!B * !D * !E)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "AOI222x1",
+        "pin": "Y",
+        "reference": "(!A * !C * !E) + (!A * !C * !F) + (!A * !D * !E) + (!A * !D * !F) + (!B * !C * !E) + (!B * !C * !F) + (!B * !D * !E) + (!B * !D * !F)",
+        "inferred": "(!A * !C * !E) + (!A * !C * !F) + (!A * !D * !E) + (!A * !D * !F) + (!B * !C * !E) + (!B * !C * !F) + (!B * !D * !E) + (!B * !D * !F)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "AOI22x1",
+        "pin": "Y",
+        "reference": "(!A * !C) + (!A * !D) + (!B * !C) + (!B * !D)",
+        "inferred": "(!A * !C) + (!A * !D) + (!B * !C) + (!B * !D)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "AOI311x1",
+        "pin": "Y",
+        "reference": "(!A * !D * !E) + (!B * !D * !E) + (!C * !D * !E)",
+        "inferred": "(!A * !D * !E) + (!B * !D * !E) + (!C * !D * !E)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "AOI31x1",
+        "pin": "Y",
+        "reference": "(!A * !D) + (!B * !D) + (!C * !D)",
+        "inferred": "(!A * !D) + (!B * !D) + (!C * !D)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "BUFx1",
+        "pin": "Y",
+        "reference": "A",
+        "inferred": "A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "BUFx10",
+        "pin": "Y",
+        "reference": "A",
+        "inferred": "A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "BUFx2",
+        "pin": "Y",
+        "reference": "A",
+        "inferred": "A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "BUFx3",
+        "pin": "Y",
+        "reference": "A",
+        "inferred": "A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "BUFx4",
+        "pin": "Y",
+        "reference": "A",
+        "inferred": "A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "BUFx5",
+        "pin": "Y",
+        "reference": "A",
+        "inferred": "A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "BUFx6",
+        "pin": "Y",
+        "reference": "A",
+        "inferred": "A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "BUFx7",
+        "pin": "Y",
+        "reference": "A",
+        "inferred": "A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "BUFx8",
+        "pin": "Y",
+        "reference": "A",
+        "inferred": "A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "DFFHQNx1",
+        "pin": "QN",
+        "reference": "IQN",
+        "inferred": "IQN",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "DFFHQNx1",
+        "property": "clocked_on",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "DFFHQNx1",
+        "property": "next_state",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "DFFHx1",
+        "pin": "QN",
+        "reference": "IQN",
+        "inferred": "IQN",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "DFFHx1",
+        "property": "clocked_on",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "DFFHx1",
+        "property": "next_state",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "DFFHx1",
+        "property": "clear",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "DFFHx1",
+        "property": "preset",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "DHLx1",
+        "pin": "Q",
+        "reference": "IQ",
+        "inferred": "IQ",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "INVx1",
+        "pin": "Y",
+        "reference": "!A",
+        "inferred": "!A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "INVx10",
+        "pin": "Y",
+        "reference": "!A",
+        "inferred": "!A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "INVx12",
+        "pin": "Y",
+        "reference": "!A",
+        "inferred": "!A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "INVx14",
+        "pin": "Y",
+        "reference": "!A",
+        "inferred": "!A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "INVx16",
+        "pin": "Y",
+        "reference": "!A",
+        "inferred": "!A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "INVx2",
+        "pin": "Y",
+        "reference": "!A",
+        "inferred": "!A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "INVx3",
+        "pin": "Y",
+        "reference": "!A",
+        "inferred": "!A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "INVx4",
+        "pin": "Y",
+        "reference": "!A",
+        "inferred": "!A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "INVx5",
+        "pin": "Y",
+        "reference": "!A",
+        "inferred": "!A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "INVx6",
+        "pin": "Y",
+        "reference": "!A",
+        "inferred": "!A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "INVx7",
+        "pin": "Y",
+        "reference": "!A",
+        "inferred": "!A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "INVx8",
+        "pin": "Y",
+        "reference": "!A",
+        "inferred": "!A",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "MUX2x1",
+        "pin": "Y",
+        "reference": "(!A * !S) + (!B * S)",
+        "inferred": "(!A * !S) + (!B * S)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "NAND2x1",
+        "pin": "Y",
+        "reference": "(!A) + (!B)",
+        "inferred": "(!A) + (!B)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "NAND2x2",
+        "pin": "Y",
+        "reference": "(!A) + (!B)",
+        "inferred": "(!A) + (!B)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "NAND3x1",
+        "pin": "Y",
+        "reference": "(!A) + (!B) + (!C)",
+        "inferred": "(!A) + (!B) + (!C)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "NAND3x2",
+        "pin": "Y",
+        "reference": "(!A) + (!B) + (!C)",
+        "inferred": "(!A) + (!B) + (!C)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "NAND4x1",
+        "pin": "Y",
+        "reference": "(!A) + (!B) + (!C) + (!D)",
+        "inferred": "(!A) + (!B) + (!C) + (!D)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "NOR2x1",
+        "pin": "Y",
+        "reference": "(!A * !B)",
+        "inferred": "(!A * !B)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "NOR2x2",
+        "pin": "Y",
+        "reference": "(!A * !B)",
+        "inferred": "(!A * !B)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "NOR3x1",
+        "pin": "Y",
+        "reference": "(!A * !B * !C)",
+        "inferred": "(!A * !B * !C)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "NOR3x2",
+        "pin": "Y",
+        "reference": "(!A * !B * !C)",
+        "inferred": "(!A * !B * !C)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "NOR4x1",
+        "pin": "Y",
+        "reference": "(!A * !B * !C * !D)",
+        "inferred": "(!A * !B * !C * !D)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "OAI21x1",
+        "pin": "Y",
+        "reference": "(!A * !B) + (!C)",
+        "inferred": "(!A * !B) + (!C)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "OAI221x1",
+        "pin": "Y",
+        "reference": "(!A * !B) + (!C * !D) + (!E)",
+        "inferred": "(!A * !B) + (!C * !D) + (!E)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "OAI222x1",
+        "pin": "Y",
+        "reference": "(!A * !B) + (!C * !D) + (!E * !F)",
+        "inferred": "(!A * !B) + (!C * !D) + (!E * !F)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "OAI22x1",
+        "pin": "Y",
+        "reference": "(!A * !B) + (!C * !D)",
+        "inferred": "(!A * !B) + (!C * !D)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "OAI311x1",
+        "pin": "Y",
+        "reference": "(!A * !B * !C) + (!D) + (!E)",
+        "inferred": "(!A * !B * !C) + (!D) + (!E)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "OAI31x1",
+        "pin": "Y",
+        "reference": "(!A * !B * !C) + (!D)",
+        "inferred": "(!A * !B * !C) + (!D)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "OR2x1",
+        "pin": "Y",
+        "reference": "(A) + (B)",
+        "inferred": "(A) + (B)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "OR3x1",
+        "pin": "Y",
+        "reference": "(A) + (B) + (C)",
+        "inferred": "(A) + (B) + (C)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "OR4x1",
+        "pin": "Y",
+        "reference": "(A) + (B) + (C) + (D)",
+        "inferred": "(A) + (B) + (C) + (D)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "XNOR2x1",
+        "pin": "Y",
+        "reference": "(A * B) + (!A * !B)",
+        "inferred": "(A * B) + (!A * !B)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "XNOR3x1",
+        "pin": "Y",
+        "reference": "(A * B * C) + (A * !B * !C) + (!A * B * !C) + (!A * !B * C)",
+        "inferred": "(A * B * C) + (A * !B * !C) + (!A * B * !C) + (!A * !B * C)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "XOR2x1",
+        "pin": "Y",
+        "reference": "(A * !B) + (!A * B)",
+        "inferred": "(A * !B) + (!A * B)",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "XOR3x1",
+        "pin": "Y",
+        "reference": "(A * B * C) + (A * !B * !C) + (!A * B * !C) + (!A * !B * C)",
+        "inferred": "(A * B * C) + (A * !B * !C) + (!A * B * !C) + (!A * !B * C)",
+        "truth_table_equal": true
+      }
+    ]
+  },
+  "async_edges": {
+    "passed": true,
+    "expected_constraint_groups": [
+      {
+        "identity": [
+          "DFFHx1",
+          "RESET",
+          "CK",
+          "recovery_rising"
+        ],
+        "kind": "fall_constraint"
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "RESET",
+          "CK",
+          "removal_rising"
+        ],
+        "kind": "fall_constraint"
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "SET",
+          "CK",
+          "recovery_rising"
+        ],
+        "kind": "fall_constraint"
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "SET",
+          "CK",
+          "removal_rising"
+        ],
+        "kind": "fall_constraint"
+      }
+    ],
+    "unexpected_constraint_directions": [],
+    "missing_release_edge_groups": [],
+    "unsupported_complex_controls": [],
+    "scope": "Recovery/removal checks use deassertion of each literal async ff control relative to its active clock edge. Native emitted values are unchanged. Reference Liberty is also audited; inconsistent legacy rows cannot authorize a wrong native edge."
+  },
+  "mpw": {
+    "rows": [
+      {
+        "identity": [
+          "DFFHQNx1",
+          "CK",
+          "CK",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "D",
+        "sdf_cond": "D",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            44.899,
+            44.899,
+            44.899,
+            46.9971,
+            50.0488,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHQNx1",
+          "CK",
+          "CK",
+          "min_pulse_width",
+          "fall_constraint"
+        ],
+        "when": "D",
+        "sdf_cond": "D",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            43.9453,
+            43.9453,
+            43.9453,
+            43.9453,
+            50.0488,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHQNx1",
+          "CK",
+          "CK",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "!D",
+        "sdf_cond": "~D",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            40.8936,
+            40.8936,
+            40.8936,
+            40.8936,
+            50.0488,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHQNx1",
+          "CK",
+          "CK",
+          "min_pulse_width",
+          "fall_constraint"
+        ],
+        "when": "!D",
+        "sdf_cond": "~D",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            59.433,
+            59.433,
+            59.433,
+            59.433,
+            59.433,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "CK",
+          "CK",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "(D * !RESET * !SET)",
+        "sdf_cond": "adacond7",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            81.3293,
+            81.3293,
+            81.3293,
+            81.3293,
+            81.3293,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "CK",
+          "CK",
+          "min_pulse_width",
+          "fall_constraint"
+        ],
+        "when": "(D * !RESET * !SET)",
+        "sdf_cond": "adacond7",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            80.6045,
+            80.6045,
+            80.6045,
+            80.6045,
+            78.2013,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "CK",
+          "CK",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "(!D * !RESET * !SET)",
+        "sdf_cond": "adacond8",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            79.2074,
+            79.2074,
+            79.2074,
+            81.3293,
+            81.3293,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "CK",
+          "CK",
+          "min_pulse_width",
+          "fall_constraint"
+        ],
+        "when": "(!D * !RESET * !SET)",
+        "sdf_cond": "adacond8",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            34.79,
+            34.79,
+            34.79,
+            34.79,
+            50.0488,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "RESET",
+          "RESET",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "(CK * !SET)",
+        "sdf_cond": "adacond2",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            70.8389,
+            70.8389,
+            75.0732,
+            75.0732,
+            75.0732,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "RESET",
+          "RESET",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "(!CK * !SET)",
+        "sdf_cond": "adacond3",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            63.1857,
+            63.1857,
+            63.1857,
+            63.1857,
+            65.6891,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "SET",
+          "SET",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "(CK * !RESET)",
+        "sdf_cond": "adacond5",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            75.8353,
+            75.8353,
+            75.8353,
+            77.8484,
+            81.3293,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "SET",
+          "SET",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "(!CK * !RESET)",
+        "sdf_cond": "adacond6",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            88.6798,
+            88.6798,
+            88.6798,
+            88.6798,
+            90.7135,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DHLx1",
+          "CK",
+          "CK",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "D",
+        "sdf_cond": "D",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            46.9971,
+            46.9971,
+            46.9971,
+            46.9971,
+            50.0488,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DHLx1",
+          "CK",
+          "CK",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "!D",
+        "sdf_cond": "~D",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            49.7341,
+            49.7341,
+            49.7341,
+            49.7341,
+            53.1769,
+            100.098,
+            198.975
+          ]
+        ]
+      }
+    ],
+    "invalid": [],
+    "time_unit": "\"1ps\""
+  },
+  "timing_tables": 1574,
+  "power_tables": 1538,
+  "actual_slew_ps": [
+    2.5,
+    5,
+    10,
+    20,
+    40,
+    80,
+    160
+  ],
+  "actual_load_fF": [
+    0.36,
+    0.72,
+    1.44,
+    2.88,
+    5.76,
+    11.52,
+    23.04
+  ],
+  "source_cells": [
+    {
+      "cell": "AND2x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/AND2x1/a29e0c22f91eb6c0/candidate.lib",
+      "native_library_sha256": "9de88d96a3f59eb3b907279eb6745274bb9761b3f0872025dfa41f912fc4d95c",
+      "cell_body_sha256": "7344d26c7e451c4a39107a421efe115d485ac932528c59a36c6c64ac956636b3",
+      "area_um2": 0.03024
+    },
+    {
+      "cell": "AND3x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/AND3x1/a574b75c611e03a9/candidate.lib",
+      "native_library_sha256": "5f30922345760d04c26a39cac20fca7dee0cfec572cb0d13fb462b6af4d9cddb",
+      "cell_body_sha256": "3a92ef7c138dbe21044234b17bb3d9c1882c49083acf397eeb6e5a27dffd4a89",
+      "area_um2": 0.036288
+    },
+    {
+      "cell": "AND4x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/AND4x1/db9f3c03524aef9e/candidate.lib",
+      "native_library_sha256": "bd7aa145ce982333085215e7910c1fd8dc39ec3b3642e2771275a6abd23ff7ce",
+      "cell_body_sha256": "7c04e2741628a1b8664cc9493a3c8f2890910aa5511f12ab50e1d12f9d5c7a6f",
+      "area_um2": 0.042336
+    },
+    {
+      "cell": "AOI21x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/AOI21x1/dc16ef423a47b269/candidate.lib",
+      "native_library_sha256": "66ba9e14eebff949e88396eecae8e26e93793abce39bdefd68163d4d6e87c866",
+      "cell_body_sha256": "6e06c9d59d72ce92b5fb5100767014c7db7ac199fa0cd0d3d3a6d29a7d38386b",
+      "area_um2": 0.024192
+    },
+    {
+      "cell": "AOI221x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/AOI221x1/fcccd454985a70cc/candidate.lib",
+      "native_library_sha256": "9a710593ecc46b9b6e28ea4ff66b4667d03d459946d5a8df8f9b90b96f6d9adf",
+      "cell_body_sha256": "9609468d036c8cc45ab65cf118567a715c96d5408987b9e84282337b06a2bd43",
+      "area_um2": 0.036288
+    },
+    {
+      "cell": "AOI222x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/AOI222x1/5e4f1989a3f2c56a/candidate.lib",
+      "native_library_sha256": "19cf8537d2f45c8fbc52802a5fefaceb80c198ac649ef46ca6011225943f0138",
+      "cell_body_sha256": "703f24d96419a5e7119addf468d93b0faebf3267717feabca3a3a81034418957",
+      "area_um2": 0.048384
+    },
+    {
+      "cell": "AOI22x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/AOI22x1/ea13c1480bedd7cb/candidate.lib",
+      "native_library_sha256": "b8f6510b1eec41ff27121f56e1af4d66020e822f4084fc640e1cec8dce9887da",
+      "cell_body_sha256": "185f7438ef97b2e914be0a0781f035182354e09b69a3190bc8a162cf2afb953a",
+      "area_um2": 0.03024
+    },
+    {
+      "cell": "AOI311x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/AOI311x1/59f45907c1a8f18c/candidate.lib",
+      "native_library_sha256": "bfeb0866e5638b5ae43484424f98f8ecf7d5d8ba60db17eda61f3ff713e74e49",
+      "cell_body_sha256": "81b37ae59b7f91c865af08bd4b8e98c13dac4a9c5b9c37b16e790103d8eff5d0",
+      "area_um2": 0.036288
+    },
+    {
+      "cell": "AOI31x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/AOI31x1/c3334994fcb0bef4/candidate.lib",
+      "native_library_sha256": "cfd00257b6155c148f908f55969f21fcdc9e96ee984dd77f5f7e34965e1826a3",
+      "cell_body_sha256": "4619ebfbd04b717b6192850ef62a734f23a53ba7b2c456fba3ab75bcb64e46b3",
+      "area_um2": 0.03024
+    },
+    {
+      "cell": "BUFx1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/BUFx1/2130153c3ff7dddd/candidate.lib",
+      "native_library_sha256": "03dfb41d33f205e9f5b5c022214ab583bcad578f7c60d80e0420a92fc266334f",
+      "cell_body_sha256": "5e2d853081d27de83f9ef5ee69534c02b124589a8744803620797df53c365d2d",
+      "area_um2": 0.024192
+    },
+    {
+      "cell": "BUFx10",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/BUFx10/9e30ade2b684f2c7/candidate.lib",
+      "native_library_sha256": "ebc8640e3fac67d0aa37bf20a20dabd8d0e29af1407ecd4a07c27761834f6a45",
+      "cell_body_sha256": "571790b87279179ac11a14c132c571243cea916beb486e32f0c0a4f6810b24d6",
+      "area_um2": 0.127008
+    },
+    {
+      "cell": "BUFx2",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/BUFx2/393612d93f8406c5/candidate.lib",
+      "native_library_sha256": "965dbb7a7ca392239ffc763de9bec340ae673f8a88586ca4061b2cbd44cc984d",
+      "cell_body_sha256": "607876c6842c3e9c50efe4c91765489fd1a46c27ece625df7a27d6223e1abb32",
+      "area_um2": 0.03024
+    },
+    {
+      "cell": "BUFx3",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/BUFx3/0143efa6ec38a208/candidate.lib",
+      "native_library_sha256": "dc5ac5e47e74847d9e9fe850e30612adc92e887eb6ba78b702b90a3a7cc8c0aa",
+      "cell_body_sha256": "8075fd76f4fbde2c9e475e0d5a146ced6bf2c8366e477b743645c2a328b56ed1",
+      "area_um2": 0.036288
+    },
+    {
+      "cell": "BUFx4",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/BUFx4/cd94a4d31fa6da85/candidate.lib",
+      "native_library_sha256": "fb3ae65b4b434836ef1ef3b1ddeecd9e1bb8b27209530297123b719c2e2762b6",
+      "cell_body_sha256": "0ccbf4517431f6a70e33702e96fdaeb992e26e32dc613cc2940d4d09f5d1ac38",
+      "area_um2": 0.054432
+    },
+    {
+      "cell": "BUFx5",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/BUFx5/cbeb8b3a85dfecaa/candidate.lib",
+      "native_library_sha256": "ee13cdd43c75aff00790d553bf1a4e0ae7a5b9b6c0603fad88c15404ba4a4a1d",
+      "cell_body_sha256": "224c6e3946715356df736419305a4aa36fc4480b4c033b8f778ae57b7194bdda",
+      "area_um2": 0.06048
+    },
+    {
+      "cell": "BUFx6",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/BUFx6/05fcca4b57978a23/candidate.lib",
+      "native_library_sha256": "dd18a9327a9605d7ea791e4eadef16e199eabce8b999ff9f7b1f615b88b05672",
+      "cell_body_sha256": "0aae90ac389da7fffa9eff66cf323c24c04fae4522bbc1c39f00a27142cbc69b",
+      "area_um2": 0.078624
+    },
+    {
+      "cell": "BUFx7",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/BUFx7/5277f03ccfe0e521/candidate.lib",
+      "native_library_sha256": "55d724fee4b709af4686bd67b0732ab27375d9014308f59352d09d63bb8c556c",
+      "cell_body_sha256": "2cef2d19dafea60b3d7db268f5f8d05db75ec155184c56e0e02aa0ecbee9057d",
+      "area_um2": 0.084672
+    },
+    {
+      "cell": "BUFx8",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/BUFx8/e335b3edbf3f5454/candidate.lib",
+      "native_library_sha256": "acf523f795446ef856db38217104c2ab698656fc4e93a363bd6e1db11f0f8339",
+      "cell_body_sha256": "daf7ce745129c04ab07cab8fa42a1b27659a69ccb39aa9ee30becf5699082dbf",
+      "area_um2": 0.102816
+    },
+    {
+      "cell": "DFFHQNx1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/DFFHQNx1/9c2a41b28bdc319b/candidate.lib",
+      "native_library_sha256": "ff2d0c2ac193ac8bcf1be0641c92114642ec0ce1b5de2d8910e47cd0b0a48243",
+      "cell_body_sha256": "9eea456315ee2abbd3d100138391a448df83100124b9780d566482aefb609cf8",
+      "area_um2": 0.102816
+    },
+    {
+      "cell": "DFFHx1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/selected_paired_DFFH/6ef95b32b6d0e87f/candidate.lib",
+      "native_library_sha256": "3d76761ee38645426b998936cb8ed90518054e146f6ccd44813d4bb0f785bacd",
+      "cell_body_sha256": "d79ac0810304d87fdd0fbb93ae7130969433eee1a8a550f84cf659c3d4145648",
+      "area_um2": 0.145152
+    },
+    {
+      "cell": "DHLx1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/DHLx1/719437ed131568e9/candidate.lib",
+      "native_library_sha256": "c1bd7ac17a1fefaa3fb1a75027a7392ba2a2e5eaec3baa3936ad0003018e0f2d",
+      "cell_body_sha256": "705e3b28cf04d86fd31127ff8888566ac6a6ed184c5e8964e801038ccf05b9c1",
+      "area_um2": 0.072576
+    },
+    {
+      "cell": "INVx1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/first_native_INV/cells/INVx1/523531e7c27eaf91/candidate.lib",
+      "native_library_sha256": "954073f33ce6658a274508b037fa825c8151632f51f05a6fe8189d757db90065",
+      "cell_body_sha256": "b1289eeef416d0e152dfed1bdf405529033476f0ce5c97ba774eecd56accb3ed",
+      "area_um2": 0.012096
+    },
+    {
+      "cell": "INVx10",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/INVx10/6415193fcf3ed6c3/candidate.lib",
+      "native_library_sha256": "0ed259c4093bf8a8ec23a053c30f57080ab2e14965e1f4d07abeea1c9cf8f2f7",
+      "cell_body_sha256": "f42a99366aea086dfa5f1d20e945f2e32047a58c849558091305e18d0d3d34e6",
+      "area_um2": 0.066528
+    },
+    {
+      "cell": "INVx12",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/INVx12/24d85a4a04ef60aa/candidate.lib",
+      "native_library_sha256": "8dec02fbd89f5e114ee89bfc826517e239e67cb4b73143ec1715fe748997bbb8",
+      "cell_body_sha256": "693869171ed1967c4742427e81365862c9ab5b2e399a4187a7da3c6084623779",
+      "area_um2": 0.078624
+    },
+    {
+      "cell": "INVx14",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/INVx14/26a475c86740ed69/candidate.lib",
+      "native_library_sha256": "f9cf9382da9528b44783f4793c9be26d048366f0f13a85108dbdcc747b4582b0",
+      "cell_body_sha256": "ecf009db043daa2d7ad5f5db24f0797a3bcfe3713fd1a614201c22697b6c2432",
+      "area_um2": 0.09072
+    },
+    {
+      "cell": "INVx16",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/INVx16/575f14d7ddec844a/candidate.lib",
+      "native_library_sha256": "f5b2a889f937c0f14e48aefce755d77534261605020eb1b3f4a0f0e8565490b4",
+      "cell_body_sha256": "e3acafb7823f35c00059ef45a2ee4238623447be6eeb17aa7ce4f5f52a2c912e",
+      "area_um2": 0.102816
+    },
+    {
+      "cell": "INVx2",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/INVx2/69fb06682babe9d3/candidate.lib",
+      "native_library_sha256": "11172e606d226fbe157c19e35f26e2ef316832c766e858ff80a6f7a45d50a82f",
+      "cell_body_sha256": "40117b298699b1624aa59c37db3f57a5c19e3469e60820752234d92b7cc3b43d",
+      "area_um2": 0.018144
+    },
+    {
+      "cell": "INVx3",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/INVx3/2821e1112c903cc3/candidate.lib",
+      "native_library_sha256": "dca23036dcf53c52bc03748817c6c203a816e47ec7f9815cf18e936d365eff02",
+      "cell_body_sha256": "fa0d3e2a1f1b07d473be0380a777fc7d88cf856db6080edb6c7ff97ffabadb4f",
+      "area_um2": 0.024192
+    },
+    {
+      "cell": "INVx4",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/INVx4/521b1f754e287b8a/candidate.lib",
+      "native_library_sha256": "6d5378562c9e4285740fe1ce29de9c1e6a6636dabec953e09be32610e9eabd44",
+      "cell_body_sha256": "517854280b1b0bdda620427fa148e8080255efff5379670ca4adbbf4ac71d352",
+      "area_um2": 0.03024
+    },
+    {
+      "cell": "INVx5",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/INVx5/d983649f725cb72f/candidate.lib",
+      "native_library_sha256": "b1f34c4775491205314406d1478d53b50a286c8501e380642cc977b0775082bb",
+      "cell_body_sha256": "3de32c8e09bd92b851e4f872678058b6cb1d389b5a5b34f202c67e48574e6348",
+      "area_um2": 0.036288
+    },
+    {
+      "cell": "INVx6",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/INVx6/c2c7f1f1e5d1db1c/candidate.lib",
+      "native_library_sha256": "d6a606d75b11102428da4c1ccf5cb8366491c26cdfb916847bc94d86d4beabb2",
+      "cell_body_sha256": "358c93ddf8df11f1bfb1e848d0ebbf8cfdae750383a8a2160567bb6310c4784f",
+      "area_um2": 0.042336
+    },
+    {
+      "cell": "INVx7",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/INVx7/f4344f563b0b42d6/candidate.lib",
+      "native_library_sha256": "fb21da343d72bbbe490562f26f3c5e8823735e44e86f65c5ab3cc3f3eb9b9cb4",
+      "cell_body_sha256": "c11994510386a213d3c70563282e139fc9cf9a08897a72dd1076cc8a21b4bd50",
+      "area_um2": 0.048384
+    },
+    {
+      "cell": "INVx8",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/INVx8/1008782fc94e8180/candidate.lib",
+      "native_library_sha256": "b1782ee3178e3a1101cf7ef79fb073f439c3cdbb78ada569faa19789cacf47d2",
+      "cell_body_sha256": "110ad7d48eff71987958bf9e20b1a06238ed81a2cf9495c7771d49d27fa30208",
+      "area_um2": 0.054432
+    },
+    {
+      "cell": "MUX2x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/MUX2x1/35364d7ea164fc90/candidate.lib",
+      "native_library_sha256": "8f26d331709fd815b7134373e87ace038d123c7e97eca1a5f19dfb4ee0aabaca",
+      "cell_body_sha256": "8de05778d25e05f2da4eae16b5691cc7a8b1bf8b8c670502b551e1e45945348a",
+      "area_um2": 0.042336
+    },
+    {
+      "cell": "NAND2x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/NAND2x1/74b53c5546d51d40/candidate.lib",
+      "native_library_sha256": "e01eb8c20c45ce0c3c688c14bb7c8454b599dd1a532828f4e80cd16c5ef4857a",
+      "cell_body_sha256": "7af057ca00ccb4a5993e1ef70ac0e80099d770b71c12f37a20f9cc493a3783b7",
+      "area_um2": 0.018144
+    },
+    {
+      "cell": "NAND2x2",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/NAND2x2/c9fa8c3f7b4e0b4f/candidate.lib",
+      "native_library_sha256": "ed47448700cf361f2bdfa7a8df3fae709015428db67ec29ee9b647ecde3b8836",
+      "cell_body_sha256": "da87814320a34ff92e893c5e3dbb53fc153d6548f09b989769a01fe5651ae76f",
+      "area_um2": 0.03024
+    },
+    {
+      "cell": "NAND3x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/NAND3x1/ae7f5b0e84a0273c/candidate.lib",
+      "native_library_sha256": "27e7c0637d0490cebdc42d059e49f336dc05d95653589c5e45337cacc0d0815b",
+      "cell_body_sha256": "091e8e8b948ab80edef09f08deb8ef8c174e72a68e8a24b247a328e9111a3616",
+      "area_um2": 0.024192
+    },
+    {
+      "cell": "NAND3x2",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/NAND3x2/8f69be1969d0e851/candidate.lib",
+      "native_library_sha256": "dd01866de0ad95b0ab8a70239b3415f4c025f9e1e2d37965f183b473e70fa9fb",
+      "cell_body_sha256": "7c5975f25a8889470583a32c3bea8647eaf353acc7a03fd0e14fa2edce3a4292",
+      "area_um2": 0.042336
+    },
+    {
+      "cell": "NAND4x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/NAND4x1/73ae28c738c9baa8/candidate.lib",
+      "native_library_sha256": "ae83224efc8321b63fce0fcc441a8b379d9ba43c0e1e33e8495cfbe3fb99f895",
+      "cell_body_sha256": "4e535c7eeb02a196a4561e4e0448085d2f34ba819910ee9d8e659a57e4f6c63f",
+      "area_um2": 0.03024
+    },
+    {
+      "cell": "NOR2x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/NOR2x1/24a4265ad6f23480/candidate.lib",
+      "native_library_sha256": "a395e52c9fcf227a7c0e1e436233679a74720f5b0e73d5423b9b77c45dced0c8",
+      "cell_body_sha256": "878aa6d4abddfba08206e9d07fa001712798798e4ef6e3c30280778eed728415",
+      "area_um2": 0.018144
+    },
+    {
+      "cell": "NOR2x2",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/NOR2x2/f8dd7dea5cd127ec/candidate.lib",
+      "native_library_sha256": "061b92d78870ef4765108f753c52adbdec481399e7d42220d6a52d5c66dba47c",
+      "cell_body_sha256": "844dab883a9006e8c7127359ec48262aa8b8bb48dbcbf8a4e3fc376f72ad74a4",
+      "area_um2": 0.03024
+    },
+    {
+      "cell": "NOR3x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/NOR3x1/31c136feaa3e16b2/candidate.lib",
+      "native_library_sha256": "19fa069cb4231b74066940d852017c5ee133d2ddcf7d19a226c2ffe09866f8ee",
+      "cell_body_sha256": "ba6d560cb930df3ea7338ae1e2fda76c7851dd64baa4d0138e9a97412de72db2",
+      "area_um2": 0.024192
+    },
+    {
+      "cell": "NOR3x2",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/NOR3x2/844ea893508123b2/candidate.lib",
+      "native_library_sha256": "bbf215b8036be20b2ce3bd508bd656d07ca0007780dc870e24f4f97477dff3f6",
+      "cell_body_sha256": "890398288178dd8c54e72a0286748cf8d022616dea6a52af60bb106a045aaf6e",
+      "area_um2": 0.042336
+    },
+    {
+      "cell": "NOR4x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/NOR4x1/08b4b98d8c5c4015/candidate.lib",
+      "native_library_sha256": "e6e7f79adc0be147e1541148ea746a5a16a9b1620e72f656685f0adfc30970d3",
+      "cell_body_sha256": "010455e4a9cf494357c6f63a76f2eea7d33d2ed9effdde9bc9acfe2e43442b30",
+      "area_um2": 0.03024
+    },
+    {
+      "cell": "OAI21x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/OAI21x1/db94781ca56ab0d7/candidate.lib",
+      "native_library_sha256": "02761953e43fbdc5952321e02ee782e01603c5abd630bd1cb33d4aa874e35264",
+      "cell_body_sha256": "bd9fc38385f7b1e9ab3417b1d9466189e07686eb22541a9bc2ab09a48626294b",
+      "area_um2": 0.024192
+    },
+    {
+      "cell": "OAI221x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/OAI221x1/fcf05860644fcd72/candidate.lib",
+      "native_library_sha256": "54c29c5ad2dafdf7b2a58848181a98067363a8466fea73408d34c5e21ff3b193",
+      "cell_body_sha256": "69bffe33dc32774c34e1f55c45701e76b39492dd17822bd2ebd0a348422804c7",
+      "area_um2": 0.036288
+    },
+    {
+      "cell": "OAI222x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/OAI222x1/03d4e82f6dc9e700/candidate.lib",
+      "native_library_sha256": "cb641518aa08b85fafa507a22ed8bc6a0c4b49c9350ee77223e0303ceec5bce1",
+      "cell_body_sha256": "74f54e34f696ff1b586842e682e756179a2120cf2b3c60b8c103e9b20a257164",
+      "area_um2": 0.048384
+    },
+    {
+      "cell": "OAI22x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/OAI22x1/69235cfcc60333f4/candidate.lib",
+      "native_library_sha256": "37ce120bf3ba4865fee89104e9d3c215315b0134eaceb5d1b168f70a17aa4050",
+      "cell_body_sha256": "cd6c67f33861f0e150c3d9aa396c2b8b8feb71e5c9100e06be6ad45f0806e523",
+      "area_um2": 0.03024
+    },
+    {
+      "cell": "OAI311x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/OAI311x1/70526a55132eaeb7/candidate.lib",
+      "native_library_sha256": "950ac63fa884ca8dcc45b6cc610342799893ac03e8d5c9ef3e954cdf02e1f3b9",
+      "cell_body_sha256": "d38dda0dfcfb1e959bd2d3d71a980ac400de746a0cccf4007adfa843d103fe60",
+      "area_um2": 0.036288
+    },
+    {
+      "cell": "OAI31x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/OAI31x1/368d5b552327ece2/candidate.lib",
+      "native_library_sha256": "7e56f800097cfe2524cb0c81c939c968f474a76f6d9b7a1cd359d7e1dff9aa82",
+      "cell_body_sha256": "98d8ade6c0f070aff701878b696b813f7187a31be9fc03f573471e06479b5de2",
+      "area_um2": 0.03024
+    },
+    {
+      "cell": "OR2x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/OR2x1/793f618d485b7096/candidate.lib",
+      "native_library_sha256": "b710b97607c6d13a075e48b3b74fb453e870ad865cd4237e00a74527110d06a2",
+      "cell_body_sha256": "aeb6ba7607e109a326124505e8299e91201af9497ab36b60269e2eb1d26017df",
+      "area_um2": 0.03024
+    },
+    {
+      "cell": "OR3x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/OR3x1/c4c45d8331940981/candidate.lib",
+      "native_library_sha256": "87c60fb7e598d9758152aae08587d63be4f4745bc4ea7e3405c1aeeb56914a86",
+      "cell_body_sha256": "b952e7a717a2cbde5cffba080a8edfdc99c25f7b05078493754df49712561bcf",
+      "area_um2": 0.036288
+    },
+    {
+      "cell": "OR4x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/OR4x1/9623df178f1e6cde/candidate.lib",
+      "native_library_sha256": "4e557c0b22ac15901099b462bec2eb335ea794c6caa92e9c5bec91aa72cd500e",
+      "cell_body_sha256": "587959cecf812d75d0180f075f5e50ec636f18605a0a585650660cfdbfc4b2b6",
+      "area_um2": 0.042336
+    },
+    {
+      "cell": "XNOR2x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/XNOR2x1/2908016c2750f376/candidate.lib",
+      "native_library_sha256": "9c951f9e8d1b2ea60dae1cf419c32ed931a46f21fc56c1e5e111c1268843cb1a",
+      "cell_body_sha256": "227fe19350b977c9e11d065b1ae3bdb42edc87029d8d60069751b9efe56cad76",
+      "area_um2": 0.054432
+    },
+    {
+      "cell": "XNOR3x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/XNOR3x1/4b1b647c7508690f/candidate.lib",
+      "native_library_sha256": "8de6148ba2e01f52f7efaeb680a10bf7f0f263583b8ddfe375903ffdea2e2295",
+      "cell_body_sha256": "b2962056e75f73b42ec60a7fb6b9c6240745aff5d2bd46db41c582a1ea7af016",
+      "area_um2": 0.09072
+    },
+    {
+      "cell": "XOR2x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/XOR2x1/8682700eeb175e4f/candidate.lib",
+      "native_library_sha256": "7cd20e04f17b54d2499c6206bc37df1d4becee75469b2bd8088a32ce8e31c880",
+      "cell_body_sha256": "fc8b9668ccf3e8a9e839c6c14ec46a5dae67253dbf15984f57c3ed3d0d0c9772",
+      "area_um2": 0.054432
+    },
+    {
+      "cell": "XOR3x1",
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/cells/XOR3x1/2b7f6777f34d0250/candidate.lib",
+      "native_library_sha256": "f5a9cf0f3872186f600fd795b420a3feec1cb61ea90d794d40265ddb9f8ea0cb",
+      "cell_body_sha256": "4752152c12799228ee6f06751bc6388f167cf2d8bb19aafffe7c73f8e619f13a",
+      "area_um2": 0.09072
+    }
+  ],
+  "native_cell_blocks_unchanged": true,
+  "library_sha256": "93e9c1e57a5fb21bcc087a929678b06bc1d6ac91fd28a0b6d5bb9c4e3cc0cb46",
+  "header_metadata_audit": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/release/HEADER_METADATA_AUDIT.json"
+}

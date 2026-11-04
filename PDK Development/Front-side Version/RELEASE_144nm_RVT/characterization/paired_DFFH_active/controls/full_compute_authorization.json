@@ -1,0 +1,29 @@
+{
+  "template_only": false,
+  "passed": true,
+  "approved_by": "root",
+  "authorized_utc": "2026-11-04T11:44:53.859056+00:00",
+  "new_binding": "6ef95b32b6d0e87f275159f42a177e50bfa5485ea07e5f2af600f2098069d905",
+  "source_handoff_sha256": "4c887d1a7a3113653aa57b85d825eacdcf0f8c3467957e0696a74ac87db8942b",
+  "root_physical_review": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/control/ROOT_PAIRED_CLOCK_PHYSICAL_REVIEW.json",
+  "root_physical_review_sha256": "f854a877207b3f3cea6f77f897d691fc0fce15d662cd8e4e489d4f3f86863d18",
+  "scope": "provisional_after_first4",
+  "first4_results_sha256": "d3f6f57cbb51bd26c80bf57ce7fc35e4ab33dddaee8b8b147e6971ef259dc586",
+  "maximum_combined_sim_workers": 96,
+  "release_approved": false,
+  "canonical_adoption": false,
+  "required_final_gates": [
+    "All64 actual functional cases PASS, with full corrected postreleasecapture coverage",
+    "Fresh fullDFFH allarc7x7 native finite/logic/source/actualpolicy quality",
+    "Controlled57view+overlays/assembly/nativeLC/raw/finalrootreview beforePR"
+  ],
+  "owned_stop_policy": "Any genuine functional failure immediately stops ONLY exact-owned provisional full/focused process trees after PID/start verification; preserve all partial data and explicit reason. No blind retries or source/model/criterion changes.",
+  "source_preservation": "Original native stdout and native internal logs kept separately, with hashes; no overwrite. Original56/57 historical inputs/results remain immutable.",
+  "fresh_resource_admission": true,
+  "disk_guard_GiB": 4,
+  "sim_workers": 64,
+  "native_bound_seconds": 28800,
+  "diagnostic_only": false,
+  "no_old_DFFH_arc_reuse": true,
+  "minimum_initial_free_disk_GiB": 32
+}

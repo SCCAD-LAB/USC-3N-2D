@@ -1,0 +1,383 @@
+{
+  "passed": true,
+  "logic": {
+    "passed": true,
+    "checked": [
+      {
+        "cell": "DFFHx1",
+        "pin": "QN",
+        "reference": "IQN",
+        "inferred": "IQN",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "DFFHx1",
+        "property": "clocked_on",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "DFFHx1",
+        "property": "next_state",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "DFFHx1",
+        "property": "clear",
+        "truth_table_equal": true
+      },
+      {
+        "cell": "DFFHx1",
+        "property": "preset",
+        "truth_table_equal": true
+      }
+    ]
+  },
+  "async_edges": {
+    "passed": true,
+    "expected_constraint_groups": [
+      {
+        "identity": [
+          "DFFHx1",
+          "RESET",
+          "CK",
+          "recovery_rising"
+        ],
+        "kind": "fall_constraint"
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "RESET",
+          "CK",
+          "removal_rising"
+        ],
+        "kind": "fall_constraint"
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "SET",
+          "CK",
+          "recovery_rising"
+        ],
+        "kind": "fall_constraint"
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "SET",
+          "CK",
+          "removal_rising"
+        ],
+        "kind": "fall_constraint"
+      }
+    ],
+    "unexpected_constraint_directions": [],
+    "missing_release_edge_groups": [],
+    "unsupported_complex_controls": [],
+    "scope": "Recovery/removal checks use deassertion of each literal async ff control relative to its active clock edge. Native emitted values are unchanged. Reference Liberty is also audited; inconsistent legacy rows cannot authorize a wrong native edge."
+  },
+  "mpw": {
+    "rows": [
+      {
+        "identity": [
+          "DFFHx1",
+          "CK",
+          "CK",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "(D * !RESET * !SET)",
+        "sdf_cond": "adacond7",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            81.3293,
+            81.3293,
+            81.3293,
+            81.3293,
+            81.3293,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "CK",
+          "CK",
+          "min_pulse_width",
+          "fall_constraint"
+        ],
+        "when": "(D * !RESET * !SET)",
+        "sdf_cond": "adacond7",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            80.6045,
+            80.6045,
+            80.6045,
+            80.6045,
+            78.2013,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "CK",
+          "CK",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "(!D * !RESET * !SET)",
+        "sdf_cond": "adacond8",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            79.2074,
+            79.2074,
+            79.2074,
+            81.3293,
+            81.3293,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "CK",
+          "CK",
+          "min_pulse_width",
+          "fall_constraint"
+        ],
+        "when": "(!D * !RESET * !SET)",
+        "sdf_cond": "adacond8",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            34.79,
+            34.79,
+            34.79,
+            34.79,
+            50.0488,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "RESET",
+          "RESET",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "(CK * !SET)",
+        "sdf_cond": "adacond2",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            70.8389,
+            70.8389,
+            75.0732,
+            75.0732,
+            75.0732,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "RESET",
+          "RESET",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "(!CK * !SET)",
+        "sdf_cond": "adacond3",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            63.1857,
+            63.1857,
+            63.1857,
+            63.1857,
+            65.6891,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "SET",
+          "SET",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "(CK * !RESET)",
+        "sdf_cond": "adacond5",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            75.8353,
+            75.8353,
+            75.8353,
+            77.8484,
+            81.3293,
+            100.098,
+            198.975
+          ]
+        ]
+      },
+      {
+        "identity": [
+          "DFFHx1",
+          "SET",
+          "SET",
+          "min_pulse_width",
+          "rise_constraint"
+        ],
+        "when": "(!CK * !RESET)",
+        "sdf_cond": "adacond6",
+        "form": "1D",
+        "template": "mpw_c7",
+        "axis1": [
+          2.5,
+          5.0,
+          10.0,
+          20.0,
+          40.0,
+          80.0,
+          160.0
+        ],
+        "axis2": [],
+        "values": [
+          [
+            88.6798,
+            88.6798,
+            88.6798,
+            88.6798,
+            90.7135,
+            100.098,
+            198.975
+          ]
+        ]
+      }
+    ],
+    "invalid": [],
+    "time_unit": "\"1ps\""
+  },
+  "timing_tables": 62,
+  "power_tables": 34,
+  "actual_slew_ps": [
+    2.5,
+    5,
+    10,
+    20,
+    40,
+    80,
+    160
+  ],
+  "actual_load_fF": [
+    0.36,
+    0.72,
+    1.44,
+    2.88,
+    5.76,
+    11.52,
+    23.04
+  ],
+  "library": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/selected_paired_DFFH/6ef95b32b6d0e87f/candidate.lib",
+  "library_sha256": "3d76761ee38645426b998936cb8ed90518054e146f6ccd44813d4bb0f785bacd",
+  "source_native_library": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/candidate.lib",
+  "source_native_library_sha256": "3d76761ee38645426b998936cb8ed90518054e146f6ccd44813d4bb0f785bacd",
+  "native_measurements_unchanged": true
+}

@@ -1,0 +1,132 @@
+{
+  "rows": [
+    {
+      "device": "M1",
+      "type": "nmos_rvt",
+      "x_nm": 336.0,
+      "y_nm": 36.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    },
+    {
+      "device": "M2",
+      "type": "nmos_rvt",
+      "x_nm": 294.0,
+      "y_nm": 36.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    },
+    {
+      "device": "M3",
+      "type": "nmos_rvt",
+      "x_nm": 252.0,
+      "y_nm": 36.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    },
+    {
+      "device": "M4",
+      "type": "nmos_rvt",
+      "x_nm": 210.0,
+      "y_nm": 36.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    },
+    {
+      "device": "M5",
+      "type": "nmos_rvt",
+      "x_nm": 168.0,
+      "y_nm": 36.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    },
+    {
+      "device": "M6",
+      "type": "nmos_rvt",
+      "x_nm": 126.0,
+      "y_nm": 36.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    },
+    {
+      "device": "M7",
+      "type": "nmos_rvt",
+      "x_nm": 84.0,
+      "y_nm": 36.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    },
+    {
+      "device": "M8",
+      "type": "nmos_rvt",
+      "x_nm": 42.0,
+      "y_nm": 36.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    },
+    {
+      "device": "M9",
+      "type": "pmos_rvt",
+      "x_nm": 336.0,
+      "y_nm": 108.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    },
+    {
+      "device": "M10",
+      "type": "pmos_rvt",
+      "x_nm": 294.0,
+      "y_nm": 108.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    },
+    {
+      "device": "M11",
+      "type": "pmos_rvt",
+      "x_nm": 252.0,
+      "y_nm": 108.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    },
+    {
+      "device": "M12",
+      "type": "pmos_rvt",
+      "x_nm": 210.0,
+      "y_nm": 108.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    },
+    {
+      "device": "M13",
+      "type": "pmos_rvt",
+      "x_nm": 168.0,
+      "y_nm": 108.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    },
+    {
+      "device": "M14",
+      "type": "pmos_rvt",
+      "x_nm": 126.0,
+      "y_nm": 108.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    },
+    {
+      "device": "M15",
+      "type": "pmos_rvt",
+      "x_nm": 84.0,
+      "y_nm": 108.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    },
+    {
+      "device": "M16",
+      "type": "pmos_rvt",
+      "x_nm": 42.0,
+      "y_nm": 108.0,
+      "L_nm": 12.0,
+      "W_nm": 30.0
+    }
+  ]
+}

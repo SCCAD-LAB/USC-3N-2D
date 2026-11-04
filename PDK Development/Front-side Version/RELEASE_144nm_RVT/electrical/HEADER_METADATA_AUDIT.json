@@ -1,0 +1,17 @@
+{
+  "approved_by": "root",
+  "approval": "2026-11-04 root instruction: restore old GitHub 160ps constraint; header-only edit explicitly approved",
+  "attribute": "default_max_transition",
+  "native_value_ps": 3000,
+  "release_value_ps": 160,
+  "reason": "Retain existing PNR constraint and actual characterized input slew upper bound; avoid admitting uncharacterized extrapolation",
+  "only_text_change": {
+    "before": "default_max_transition : 3000;",
+    "after": "default_max_transition : 160;"
+  },
+  "all_native_cell_blocks_unchanged": true,
+  "native_text_sha256": "94a8483946da2e33faf0239f23878b2b1e4cc8100bc67b74896ea16cfe3457f3",
+  "release_text_sha256": "93e9c1e57a5fb21bcc087a929678b06bc1d6ac91fd28a0b6d5bb9c4e3cc0cb46",
+  "preserved_native_library": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/release/RAW_NATIVE_ASSEMBLED.lib",
+  "release_library": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/release/3nm_GAA_FSPR_rvt_nldm.lib"
+}

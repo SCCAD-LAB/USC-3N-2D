@@ -1,0 +1,17 @@
+{
+  "host": "gtcad-srv17.ece.gatech.edu",
+  "pid": 1292553,
+  "start_ticks": "258580130",
+  "controller_pid": 1292531,
+  "controller_start_ticks": "258579951",
+  "work": "/tmp/yhuang861/usc144_github_release_20261103/paired_master_clock_native_candidate/full_w64_r1",
+  "started_epoch": 1793792807.3716743,
+  "threads": 64,
+  "binding": "6ef95b32b6d0e87f275159f42a177e50bfa5485ea07e5f2af600f2098069d905",
+  "executed_runner_sha256": "b9bc76fd9a0e3c32ecfbac713d165107ac8947fdd98cba7347858da688810f2c",
+  "actual_input_sha256": {
+    "cells.sp": "cb9d94dcc947dfae48c062640b65b6ad8d60f5eaacbbcd0148247e1bfe74e466",
+    "model_native.scs": "1878ed3b42a64a0481393a2e9bcd8024c803a4c6ff0bff0c32b9da4fd6447a53",
+    "run.tcl": "4ba70827e0c267cadcc4cc876d7b3bb693478a3d01c8bcf0b36b263bcdcbe3cc"
+  }
+}

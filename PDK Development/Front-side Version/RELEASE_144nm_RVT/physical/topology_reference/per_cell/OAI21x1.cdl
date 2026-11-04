@@ -1,0 +1,12 @@
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/OAI21x1.spf
+.SUBCKT OAI21x1 A B C VDD VSS Y
+MMM5 Y C MM3:DRN VSS nmos_rvt l=0.012u w=0.03u
+MMM4 MM3:DRN B VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM3 MM3:DRN A VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM2 Y C VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM1 Y B MM0:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN A VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends OAI21x1

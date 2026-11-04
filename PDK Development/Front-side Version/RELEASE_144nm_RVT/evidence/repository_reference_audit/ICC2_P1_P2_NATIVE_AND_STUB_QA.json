@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "epoch": 1793803416.4751737,
+  "proofs": {
+    "NATIVE_GUARDED_FRESH_QUERY_R4_RECEIPT.json": {
+      "sha256": "238a4cfa68458287812406813ef29beb410b019541bfd363ff8c5b475fbd99e1",
+      "passed": true,
+      "log_sha256": "ca9d90db3c8d6bb6788a671a631e6f8f5cee7863817ce0e24306f2c97bc72503"
+    },
+    "NATIVE_EXISTING_REFERENCE_SITE_QA.json": {
+      "sha256": "a3dc867df04011d20f12376ab807badc27b5490a5590ea764f219b4442b7f076",
+      "passed": true,
+      "log_sha256": "fc8f90ad21b481e20d666acdaf7d81dbf9e18ee06a649fbc9590abc8b1a29146"
+    },
+    "NATIVE_57_INTERFACE_FIXTURE_QA.json": {
+      "sha256": "12c21e0ec10dcce472dbfb15f8b94cf590a5d7ba0d5f3b0542f10fd6b18c33fc",
+      "passed": true,
+      "log_sha256": "dfddbcb6968526f12b2db966fbf72b06711d8a254ca418d2ad48cdf79860f34a"
+    },
+    "ICC2_RESUME_SITE_STUB_QA.json": {
+      "sha256": "0ec6f17e3c84b8e22f91a63511835708e7c32c284537a22671e9b3862d2291d5",
+      "passed": true
+    },
+    "ACTUAL_SELECTOR_ARGUMENT_QA.json": {
+      "sha256": "5c96c497fe493c32fc3563752e1ec1c28d942415099f36599ffbf683ad1944c3",
+      "passed": true
+    },
+    "NDM_SOURCE_DRIFT_REGRESSION_QA.json": {
+      "sha256": "e71ce3aa98003ffa2b784c178d1c148594fec705586c8403a49f49b9bbe080a9",
+      "passed": true
+    },
+    "ICC2_SOURCE_DRIFT_OLD_REGRESSION_QA.json": {
+      "sha256": "9be1a1d63037321cff4691d633c34028dd9540684be06962bc6d60ae50eaa1e8",
+      "passed": true
+    }
+  },
+  "P1": "Actual native fresh create/inherited technology and read-only existing ref_libs/provenance; wrong native reference list rejected. Stub regressions cover historical refs, changed release/readiness/payload and missing provenance for both flows.",
+  "P2": "Actual site assignment/coreSite collection/configuration tested; previous default cleared before coreSite default. All57 private native widths/heights/all signal+PG PINs match selected LEF.",
+  "native_fixture_only": true,
+  "final_matched_NDM_built": false,
+  "native_simulations": 0,
+  "routed_design_runs": 0,
+  "pre_fix_tree": "080f37d78a2600edad415975234c06a5d765bb53",
+  "native_warning_scope": "All raw native fixture logs preserved privately; only designated passing fixture logs staged, warnings retained. No final timing/PNR validation inferred.",
+  "normal_path_native_fixture_revision": "089c754632c0c1c0343031e557a34c3f4c067fe8",
+  "current_source_drift_fix_native_jobs": 0,
+  "source_drift_fix_verified_by_synthetic_mutation": true,
+  "source_drift_checks": [
+    "compare after fresh create before saving provenance",
+    "compare after matching library open",
+    "immutable package-approved copy hashes",
+    "post-stage source and local-copy hashes"
+  ]
+}

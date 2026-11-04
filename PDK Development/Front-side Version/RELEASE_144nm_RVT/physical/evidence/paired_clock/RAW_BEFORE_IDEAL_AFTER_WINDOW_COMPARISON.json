@@ -1,0 +1,231 @@
+{
+  "rows": [
+    {
+      "case": "async_RESET_D0_ck160_L0.36",
+      "windows": [
+        {
+          "window": "held_control_both_clock_edges",
+          "expected_QN": 0,
+          "start_ns": 0.5,
+          "end_ns": 10.8,
+          "V1_retap_actual_max_V": 0.1304786016,
+          "V1_retap_actual_min_V": -0.02046062947,
+          "additional_ideal_pM29_tap_max_V": 0.01090560524,
+          "additional_ideal_pM29_tap_min_V": -0.0186212636,
+          "paired_actual_newGDS_fullRC_max_V": 0.0103744877,
+          "paired_actual_newGDS_fullRC_min_V": -0.01876040459,
+          "paired_actual_wrong_excursion_V": 0.0103744877,
+          "paired_actual_end_rail_error_V": 5.1044374670375e-06,
+          "passed": true
+        },
+        {
+          "window": "safe_preclock_release",
+          "expected_QN": 0,
+          "start_ns": 10.8,
+          "end_ns": 13.5,
+          "V1_retap_actual_max_V": 0.000734157856,
+          "V1_retap_actual_min_V": -0.00037018478,
+          "additional_ideal_pM29_tap_max_V": 0.0007039055258,
+          "additional_ideal_pM29_tap_min_V": -0.0003705852853,
+          "paired_actual_newGDS_fullRC_max_V": 0.0007038426233,
+          "paired_actual_newGDS_fullRC_min_V": -0.0003703647734,
+          "paired_actual_wrong_excursion_V": 0.0007038426233,
+          "paired_actual_end_rail_error_V": 5.11943952367565e-06,
+          "passed": true
+        },
+        {
+          "window": "normal_capture_after_early_release",
+          "expected_QN": 1,
+          "start_ns": 18,
+          "end_ns": 19.2,
+          "V1_retap_actual_max_V": 0.7022752614,
+          "V1_retap_actual_min_V": 0.6936311568,
+          "additional_ideal_pM29_tap_max_V": 0.7021645001,
+          "additional_ideal_pM29_tap_min_V": 0.6931806606,
+          "paired_actual_newGDS_fullRC_max_V": 0.7021607061,
+          "paired_actual_newGDS_fullRC_min_V": 0.6930854692,
+          "paired_actual_wrong_excursion_V": 0.0069145307999999295,
+          "paired_actual_end_rail_error_V": 0.00017361890871492314,
+          "passed": true
+        },
+        {
+          "window": "low_clock_assert_then_late_release_hold",
+          "expected_QN": 0,
+          "start_ns": 23.7,
+          "end_ns": 33.5,
+          "V1_retap_actual_max_V": 0.1367012681,
+          "V1_retap_actual_min_V": -0.02047512541,
+          "additional_ideal_pM29_tap_max_V": 0.01265126671,
+          "additional_ideal_pM29_tap_min_V": -0.01910234751,
+          "paired_actual_newGDS_fullRC_max_V": 0.01201969048,
+          "paired_actual_newGDS_fullRC_min_V": -0.01925736742,
+          "paired_actual_wrong_excursion_V": 0.01201969048,
+          "paired_actual_end_rail_error_V": 5.1370831987288e-06,
+          "passed": true
+        },
+        {
+          "window": "normal_capture_after_late_release",
+          "expected_QN": 1,
+          "start_ns": 38,
+          "end_ns": 38.8,
+          "V1_retap_actual_max_V": 0.6999952983,
+          "V1_retap_actual_min_V": 0.6999952879,
+          "additional_ideal_pM29_tap_max_V": 0.6999952983,
+          "additional_ideal_pM29_tap_min_V": 0.699995288,
+          "paired_actual_newGDS_fullRC_max_V": 0.6999952983,
+          "paired_actual_newGDS_fullRC_min_V": 0.699995288,
+          "paired_actual_wrong_excursion_V": 4.711999999962302e-06,
+          "paired_actual_end_rail_error_V": 4.7016999999982545e-06,
+          "passed": true
+        },
+        {
+          "window": "high_clock_assert_settles_before_next_edge",
+          "expected_QN": 0,
+          "start_ns": 43.2,
+          "end_ns": 65,
+          "V1_retap_actual_max_V": 0.04198156861,
+          "V1_retap_actual_min_V": -0.01883833577,
+          "additional_ideal_pM29_tap_max_V": 0.004340314023,
+          "additional_ideal_pM29_tap_min_V": -0.01378448629,
+          "paired_actual_newGDS_fullRC_max_V": 0.004331407656,
+          "paired_actual_newGDS_fullRC_min_V": -0.01383394349,
+          "paired_actual_wrong_excursion_V": 0.004331407656,
+          "paired_actual_end_rail_error_V": 5.13090904e-06,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case": "fall_full_D1_ck160_L0.36_off+0",
+      "windows": [
+        {
+          "window": "safe_initial_release",
+          "expected_QN": 1,
+          "start_ns": 1.3,
+          "end_ns": 3.5,
+          "V1_retap_actual_max_V": 0.69999766981155,
+          "V1_retap_actual_min_V": 0.6999952844,
+          "additional_ideal_pM29_tap_max_V": 0.6999977507324935,
+          "additional_ideal_pM29_tap_min_V": 0.6999952845,
+          "paired_actual_newGDS_fullRC_max_V": 0.6999977510321845,
+          "paired_actual_newGDS_fullRC_min_V": 0.6999952845,
+          "paired_actual_wrong_excursion_V": 4.715499999918826e-06,
+          "paired_actual_end_rail_error_V": 4.693800000010739e-06,
+          "passed": true
+        },
+        {
+          "window": "fast_D_falling_edge_retention",
+          "expected_QN": 0,
+          "start_ns": 8,
+          "end_ns": 13,
+          "V1_retap_actual_max_V": 0.002851335268,
+          "V1_retap_actual_min_V": -0.009490974889,
+          "additional_ideal_pM29_tap_max_V": 0.00471346624,
+          "additional_ideal_pM29_tap_min_V": -0.01237420296,
+          "paired_actual_newGDS_fullRC_max_V": 0.004725654397,
+          "paired_actual_newGDS_fullRC_min_V": -0.01256009184,
+          "paired_actual_wrong_excursion_V": 0.004725654397,
+          "paired_actual_end_rail_error_V": 5.18780483198565e-06,
+          "passed": true
+        },
+        {
+          "window": "slow_D_falling_edge_retention",
+          "expected_QN": 1,
+          "start_ns": 18,
+          "end_ns": 23,
+          "V1_retap_actual_max_V": 0.7025782719,
+          "V1_retap_actual_min_V": 0.69252586,
+          "additional_ideal_pM29_tap_max_V": 0.7023115207,
+          "additional_ideal_pM29_tap_min_V": 0.6925764067,
+          "paired_actual_newGDS_fullRC_max_V": 0.7023147115,
+          "paired_actual_newGDS_fullRC_min_V": 0.6924991682,
+          "paired_actual_wrong_excursion_V": 0.007500831799999941,
+          "paired_actual_end_rail_error_V": 4.755299999992246e-06,
+          "passed": true
+        },
+        {
+          "window": "normal_recapture_and_same_D_hold",
+          "expected_QN": 0,
+          "start_ns": 28,
+          "end_ns": 40,
+          "V1_retap_actual_max_V": 0.007966840479,
+          "V1_retap_actual_min_V": -0.009872980029,
+          "additional_ideal_pM29_tap_max_V": 0.008614547716,
+          "additional_ideal_pM29_tap_min_V": -0.01082965642,
+          "paired_actual_newGDS_fullRC_max_V": 0.00875048997,
+          "paired_actual_newGDS_fullRC_min_V": -0.0109669763,
+          "paired_actual_wrong_excursion_V": 0.00875048997,
+          "paired_actual_end_rail_error_V": 5.164594919e-06,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "case": "fall_full_D1_ck2.5_L0.36_off+0",
+      "windows": [
+        {
+          "window": "safe_initial_release",
+          "expected_QN": 1,
+          "start_ns": 1.3,
+          "end_ns": 3.5,
+          "V1_retap_actual_max_V": 0.699996842101895,
+          "V1_retap_actual_min_V": 0.6999952822,
+          "additional_ideal_pM29_tap_max_V": 0.6999969129866,
+          "additional_ideal_pM29_tap_min_V": 0.6999952824,
+          "paired_actual_newGDS_fullRC_max_V": 0.6999969128881139,
+          "paired_actual_newGDS_fullRC_min_V": 0.6999952824,
+          "paired_actual_wrong_excursion_V": 4.717599999981559e-06,
+          "paired_actual_end_rail_error_V": 4.693899999907991e-06,
+          "passed": true
+        },
+        {
+          "window": "fast_D_falling_edge_retention",
+          "expected_QN": 0,
+          "start_ns": 8,
+          "end_ns": 13,
+          "V1_retap_actual_max_V": 0.01091944573,
+          "V1_retap_actual_min_V": -0.01088844278,
+          "additional_ideal_pM29_tap_max_V": 0.01219385575,
+          "additional_ideal_pM29_tap_min_V": -0.01226251687,
+          "paired_actual_newGDS_fullRC_max_V": 0.01206360038,
+          "paired_actual_newGDS_fullRC_min_V": -0.01243688434,
+          "paired_actual_wrong_excursion_V": 0.01206360038,
+          "paired_actual_end_rail_error_V": 5.1855712749124e-06,
+          "passed": true
+        },
+        {
+          "window": "slow_D_falling_edge_retention",
+          "expected_QN": 1,
+          "start_ns": 18,
+          "end_ns": 23,
+          "V1_retap_actual_max_V": 0.7094282338,
+          "V1_retap_actual_min_V": 0.6915911433,
+          "additional_ideal_pM29_tap_max_V": 0.7092328993,
+          "additional_ideal_pM29_tap_min_V": 0.6913029432,
+          "paired_actual_newGDS_fullRC_max_V": 0.709082755,
+          "paired_actual_newGDS_fullRC_min_V": 0.6918793613,
+          "paired_actual_wrong_excursion_V": 0.008120638699999905,
+          "paired_actual_end_rail_error_V": 4.754799999950876e-06,
+          "passed": true
+        },
+        {
+          "window": "normal_recapture_and_same_D_hold",
+          "expected_QN": 0,
+          "start_ns": 28,
+          "end_ns": 40,
+          "V1_retap_actual_max_V": 0.01049423387,
+          "V1_retap_actual_min_V": -0.01035390058,
+          "additional_ideal_pM29_tap_max_V": 0.009722931035,
+          "additional_ideal_pM29_tap_min_V": -0.01104816631,
+          "paired_actual_newGDS_fullRC_max_V": 0.009579984749,
+          "paired_actual_newGDS_fullRC_min_V": -0.01120467042,
+          "paired_actual_wrong_excursion_V": 0.009579984749,
+          "paired_actual_end_rail_error_V": 5.161784791e-06,
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "limits_unchanged": true,
+  "scope": "Same predeclared fixtures across V1retap, idealadditionalpM29tap and actualpairedroute/freshPEX. NativeRC changed only by real layout/extraction."
+}

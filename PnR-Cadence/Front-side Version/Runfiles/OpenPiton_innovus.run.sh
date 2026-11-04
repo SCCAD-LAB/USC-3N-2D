@@ -2,7 +2,7 @@
 # Cadence Innovus launcher for OpenPiton tile (SCCAD Lab release)
 #
 # Usage:
-#   export PDK_ROOT=/path/to/sccad_fspr
+#   export PDK_ROOT=/path/to/USC-3N-2D
 #   bash OpenPiton_innovus.run.sh
 #
 # Required inputs in current working directory:
@@ -14,7 +14,7 @@
 set -e
 
 if [ -z "${PDK_ROOT:-}" ]; then
-    echo "ERROR: set PDK_ROOT before running (e.g. export PDK_ROOT=/path/to/sccad_fspr)"
+    echo "ERROR: set PDK_ROOT before running (e.g. export PDK_ROOT=/path/to/USC-3N-2D)"
     exit 1
 fi
 

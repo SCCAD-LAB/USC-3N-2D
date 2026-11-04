@@ -1,0 +1,42 @@
+{
+  "stage": "syntax_preparation_only_no_native_NDM_built",
+  "official_native_tool": "Synopsys ICC2 Library Manager X-2025.06-SP3",
+  "help_receipt": "HELP_VERBOSE_RECEIPT.json",
+  "native_help_sha256": "7b70bba5c8caa7664a6cca69030fcbfa5d88cef0b14114b04c3b19d028118d07",
+  "checked_commands": [
+    "create_workspace -technology",
+    "read_db",
+    "read_lef -include tech",
+    "read_lef -preserve_lef_cell_site",
+    "check_workspace -noresolve",
+    "commit_workspace -output",
+    "open_lib",
+    "get_lib_cells",
+    "get_attribute"
+  ],
+  "final_sources_required": [
+    "Accepted new57 native DB",
+    "Selected paired57 LEF",
+    "Frozen FSPR TF/techLEF"
+  ],
+  "native_output_expected": "Explicit new 3nm_GAA_FSPR_144nm_rvt.ndm directory; old NDM untouched",
+  "final_gate": "Fresh native build then independent ICC2 reopen with exact57 names and unchanged source hashes. Determine scoped LFS rule from actual directory payload sizes and verify remote objects before PR.",
+  "old_timing_build_forbidden": true,
+  "native_jobs_performed": 0,
+  "fresh_ICC2_readback_help_sha256": "9f1c2cbdbeec580732ce5590734029aa3d41869b07df20a6b59a4a103a1d03f1",
+  "fresh_ICC2_help_rc": 0,
+  "native_reference_query": "get_attribute [current_lib] ref_libs returns the native Tcl list of exact reference paths",
+  "fresh_library_technology": "create_lib -use_technology_lib <selected exact NDM> -ref_libs <exact list>",
+  "placement_site": "coreSite; require nonempty native collection; clear previous default before selecting",
+  "workspace_check": "check_workspace creates native physical frames; -noresolve alone is not a build",
+  "fresh_readback": [
+    "57 exact cell names",
+    "coreSite exists",
+    "width and height match selected LEF within 0.000001 um",
+    "all signal and power/ground PIN names match selected LEF",
+    "frozen source SHA256 identities"
+  ],
+  "physical_fixture_is_final_timing_validation": false,
+  "prepared_final_NDM_built": false,
+  "epoch": 1793802503.6795852
+}

@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "other_gates_D_S_ports_preserved": true,
+  "gate_changes": [
+    {
+      "reference_device": "MMM24",
+      "physical_device": "M12",
+      "before": "MM13:DRN",
+      "after": "CK"
+    },
+    {
+      "reference_device": "MMM16",
+      "physical_device": "M29",
+      "before": "MM13:DRN",
+      "after": "CK"
+    }
+  ],
+  "all32_original03ae_L_W_coordinates_preserved": true,
+  "raw_device_layers_preserved_from03ae": true,
+  "native_audit": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/PAIRED_TWO_GATE_TOPOLOGY_AUDIT.json",
+  "native_audit_sha256": "7477e5f1b69b8aa44d1f9cb57b8867250d64f939b82444133681233516bd2a29",
+  "derived_independent_reference": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/iter001/inputs/derived_topology_4t.cdl",
+  "derived_independent_reference_sha256": "11aa90e98bfee5ababefad3deeee446651fa667fb3259b892a0889a05f4a3ef5"
+}

@@ -1,0 +1,11 @@
+{
+  "epoch": 1793793941.761356,
+  "host": "gtcad-srv18.ece.gatech.edu",
+  "checkout": "/tmp/yhuang861/usc144_github_release_20261103/USC-3N-2D",
+  "index_tree": "18d3143b845f17f06df96129d82913f3cae45223",
+  "local_preservation_ref": "refs/usc144-stage-history/pre-paired-1793793941",
+  "base_commit": "405e5d40c45fbf8bd25637c84f25f682900b21b3",
+  "package_manifest_sha256": "b8afd82ebcdc201fcc9c303cc5c57797fa7278177a4dab41098ac17006031e68",
+  "publication_approved": false,
+  "purpose": "Immutable local tree and manifest snapshot before root-authorized private paired57 physical-stage refresh. No commit/push/PR."
+}

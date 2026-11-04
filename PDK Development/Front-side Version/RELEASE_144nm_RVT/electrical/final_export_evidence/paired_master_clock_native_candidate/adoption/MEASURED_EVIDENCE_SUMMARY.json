@@ -1,0 +1,157 @@
+{
+  "status": "Measured evidence complete; root repair/OSrc exception and actual reader barrier still required",
+  "native_library": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/selected_paired_DFFH/6ef95b32b6d0e87f/candidate.lib",
+  "native_library_sha256": "3d76761ee38645426b998936cb8ed90518054e146f6ccd44813d4bb0f785bacd",
+  "native_original_OSrc": null,
+  "native_completion_marker": true,
+  "native_failing_cells": 0,
+  "native_errors": [],
+  "emitted_liberty_timing_arc_groups": 46,
+  "timing_arc_types": {
+    "rising_edge": 1,
+    "clear": 8,
+    "preset": 7,
+    "min_pulse_width": 6,
+    "hold_rising": 2,
+    "setup_rising": 2,
+    "recovery_rising": 4,
+    "removal_rising": 4,
+    "non_seq_hold_falling": 6,
+    "non_seq_setup_falling": 6
+  },
+  "emitted_table_counts": {
+    "timing": {
+      "0D": 0,
+      "1D": 8,
+      "2D": 62
+    },
+    "power": {
+      "0D": 18,
+      "1D": 72,
+      "2D": 34
+    }
+  },
+  "all_emitted_tables_finite_and_native_fixed_axes": true,
+  "actual_slew_ps": [
+    2.5,
+    5,
+    10,
+    20,
+    40,
+    80,
+    160
+  ],
+  "actual_load_fF": [
+    0.36,
+    0.72,
+    1.44,
+    2.88,
+    5.76,
+    11.52,
+    23.04
+  ],
+  "mpw_table_count": 8,
+  "nativeLC": {
+    "passed": true,
+    "native_rc": 0,
+    "local_exit_receipt_sha256": "fcd4205294032a10e0611e3e24625982ad4c369462cb27d8a241c0c2ae898b4f",
+    "source_library": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/selected_paired_DFFH/6ef95b32b6d0e87f/candidate.lib",
+    "source_library_sha256": "3d76761ee38645426b998936cb8ed90518054e146f6ccd44813d4bb0f785bacd",
+    "compiled_db_sha256": "2cfccad9d466e13eb413488391f0a44a4334da3a793eaf20726fcf3b51d00fce",
+    "raw_native_library_unchanged": true,
+    "input_was_exact_raw_native": true,
+    "whole57_assembly_or_release": false,
+    "full_characterization_OSrc": null,
+    "full_characterization_RC_uncertainty_not_removed": true,
+    "root_recovered_native_acceptance_still_required": true
+  },
+  "optional_LDB": {
+    "status": "optional_completed_LDB_audited",
+    "native_read_passed": true,
+    "native_read_OSrc": 0,
+    "local_exit_receipt_sha256": "ea24e1bb86a4f4865904d85fbce200ec78e1c0e3496930900db7b8ba6eb8ca3a",
+    "source_LDB_sha256": "f50f5f83bd124e52b7ae5437153a5c8181654f55eb9d023355c692b91ee4e595",
+    "source_LDB_bytes": 1470107,
+    "source_unchanged": true,
+    "cell_names": [
+      "DFFHx1"
+    ],
+    "timing_group_count": 46,
+    "native_unique_arc_count": 109,
+    "table_count": 132,
+    "table2D_count": 79,
+    "table1D_count": 44,
+    "scalar_count": 9,
+    "true_error_flag_count": 0,
+    "invalid_table_count": 0,
+    "all_tables_finite_and_appropriate_shape": true,
+    "all_gridded_tables_fixed7": true,
+    "optional_checkpoint_quality_passed": true,
+    "verbose_template_sha256": "02bdccc3d1ed7c634158f9645c584d3449c3f5bb457ca87de8879be72ea7f501",
+    "no_char_library_or_simulation": true,
+    "no_table_edits": true,
+    "optional_only": true,
+    "raw_checkpoint_private_not_automatically_staged": true,
+    "original_full_run_OSrc": null,
+    "original_full_run_RC_uncertainty_not_removed": true,
+    "does_not_replace_original_completion_finite_state_input_LC_proofs": true,
+    "release_approved": false
+  },
+  "native_warning_counts": {
+    "LIB-1514": 2,
+    "LIB-40100": 1,
+    "LIB-5097": 1,
+    "LIB-915": 32
+  },
+  "native_warning_notes": {
+    "LIB-915": "Internal read_spice cannot parse external native model definitions; declared leaf MOS types and exact native Spectre card/alias binding were independently verified. Native simulations used extsim_exclusive.",
+    "LIB-1514": "VDD already set; same 0.7V assignment repeated.",
+    "LIB-40100": "Native option liberate_leaki=yes appended to leakage simulator options.",
+    "LIB-5097": "Native tool recommends lxi_skipdc_fix=1 when ski_meas_mode=0; actual unchanged recipe retained. No measurement or setup change after launch."
+  },
+  "proofs": {
+    "RECOVERED_NATIVE_OUTPUT_AUDIT.json": {
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/RECOVERED_NATIVE_OUTPUT_AUDIT.json",
+      "sha256": "60078e1d85860a8c2873140102b17da523d7d5c891ff7d5f08e2eb58ea931d8e"
+    },
+    "NATIVE_AUDIT.json": {
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/NATIVE_AUDIT.json",
+      "sha256": "ff8344519e6d0f4c3370a665862f84213f927b6ab3a5caba2b07de15fcf63eb6"
+    },
+    "SEQUENTIAL_STATE_AUDIT.json": {
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/SEQUENTIAL_STATE_AUDIT.json",
+      "sha256": "559cbc06be63a3041d69081934d65d2074fe861523fe948a51b3928732b11e6f"
+    },
+    "ACTUAL_EXECUTED_INPUT_AUDIT.json": {
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/ACTUAL_EXECUTED_INPUT_AUDIT.json",
+      "sha256": "8a1145d9fddc4cd36a08e24ef4af67dfa03650ec3e745b71319133d4d9412434"
+    },
+    "ACTUAL_SOLVER_PROFILES.json": {
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/ACTUAL_SOLVER_PROFILES.json",
+      "sha256": "b585b56f9cc709394bfa076ce8ef867b12836c36a1107736e05f2223b0f50f48"
+    },
+    "POST_COMPLETION_WORKTREE_PROCESS_AUDIT.json": {
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/POST_COMPLETION_WORKTREE_PROCESS_AUDIT.json",
+      "sha256": "b476a1c8999a7eddc033cbf88dbd9d2916306d0afc0c56636322b62d8b31c11e"
+    },
+    "candidate_nativeLC/RESULT.json": {
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/candidate_nativeLC/RESULT.json",
+      "sha256": "a0751af57e39d2efeff326520eced34043193c27524ff735281d1a5ce5af3196"
+    },
+    "optional_native_LDB/PUBLIC_AUDIT_SUMMARY.json": {
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/optional_native_LDB/PUBLIC_AUDIT_SUMMARY.json",
+      "sha256": "a84d8f212a2283e75db14441f6f47a9bb13531fcc98e64608f933a580c8bd19c"
+    },
+    "adoption/ROOT_SIGNING_PACKET.json": {
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/adoption/ROOT_SIGNING_PACKET.json",
+      "sha256": "7795cd777c2ca9da74de12044212e896e714da340fb4a4654a774bdc0ff734c7"
+    },
+    "STATE_CHECKER_EXPECTATION_FAILURE.json": {
+      "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/characterization/paired_master_clock_native_candidate/STATE_CHECKER_EXPECTATION_FAILURE.json",
+      "sha256": "3d2a9f456144ccafafca88a657412833b8efdde50448cca61187d5f3e98faafd"
+    }
+  },
+  "all_staged_measurements_frozen": true,
+  "canonical_adoption": false,
+  "created_epoch": 1793804211.7004757
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "root": "experiments/usc144_github_release_20261103/characterization/fullrc_numeric_correlation",
+    "files_with_notices": 12,
+    "nodes": {
+      "VIN:p": 53,
+      "VDD:p": 4,
+      "XINV.A:4": 1,
+      "XINV.M1:SRC": 2
+    }
+  },
+  {
+    "root": "experiments/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples",
+    "files_with_notices": 70,
+    "nodes": {
+      "VCK:p": 350
+    }
+  }
+]

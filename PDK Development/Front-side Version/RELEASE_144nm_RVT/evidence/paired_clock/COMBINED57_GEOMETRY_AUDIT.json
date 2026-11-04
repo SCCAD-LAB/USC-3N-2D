@@ -1,0 +1,292 @@
+{
+  "passed": true,
+  "cells": 57,
+  "combined_GDS_sha256": "016fd13516b7b580610ef282860fb315251e688cfec776a353c655d32a938b7e",
+  "rows": [
+    {
+      "cell": "AND2x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "AND3x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "AND4x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "AOI21x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "AOI221x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "AOI222x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "AOI22x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "AOI311x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "AOI31x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "BUFx1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "BUFx10",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "BUFx2",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "BUFx3",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "BUFx4",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "BUFx5",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "BUFx6",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "BUFx7",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "BUFx8",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "DFFHQNx1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "DFFHx1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "DHLx1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "INVx1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "INVx10",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "INVx12",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "INVx14",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "INVx16",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "INVx2",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "INVx3",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "INVx4",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "INVx5",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "INVx6",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "INVx7",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "INVx8",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "MUX2x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "NAND2x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "NAND2x2",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "NAND3x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "NAND3x2",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "NAND4x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "NOR2x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "NOR2x2",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "NOR3x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "NOR3x2",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "NOR4x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "OAI21x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "OAI221x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "OAI222x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "OAI22x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "OAI311x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "OAI31x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "OR2x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "OR3x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "OR4x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "XNOR2x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "XNOR3x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "XOR2x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    },
+    {
+      "cell": "XOR3x1",
+      "per_layer_XOR_zero": true,
+      "labels_exact": true
+    }
+  ]
+}

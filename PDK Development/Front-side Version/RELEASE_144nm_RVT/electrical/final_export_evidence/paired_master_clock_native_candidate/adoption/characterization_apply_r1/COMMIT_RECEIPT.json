@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "stage": "selected57_views_synchronized_readers_still_quiesced",
+  "approval": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/control/ROOT_DFFH_FINAL_REPAIR_APPROVAL.json",
+  "approval_sha256": "3140f5e734e5562b7ec25f557b24d450e6793a4d61b588eee6870ec0e75b71f0",
+  "selected_view": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/DFFH_paired_master_clock_candidate/prepared_release57",
+  "selected_physical_manifest_sha256": "242ddf2e491e7192464d7d3188e5a3d6d44dd1b30da65378c4d6e40fffe08f0d",
+  "other56_native_hashes_unchanged": true,
+  "other56_original_portable_payload_hashes_unchanged": true,
+  "portable_additions_audit_sha256": "8d7925e2126cb69cb82f1efb02144ad22d91e17fec80b70285c9f52dde15744d",
+  "old_DFFH_portable_backup_verified_before_replacement": true,
+  "original_DFFH_failures_preserved": true,
+  "native_original_OSrc": null,
+  "no_measurement_bytes_changed": true,
+  "final_state_audit_sha256": "af2156470f7dc387534e25b663605f48b61abf3dbc0815323b341b67c9f00726",
+  "final_reproduction_input_audit_sha256": "db6a5457445e144d79bde7b7de136a3bfae6a7b17db14f12670a4039a58a3423",
+  "new_hashes": {
+    "CHARACTERIZED_MANIFEST.json": "d1a4f6dd1c894e57a08bf10c5574cfe300ceb406da83f967146c42937dca38a6",
+    "CHARACTERIZED_MANIFEST_V3.json": "d1a4f6dd1c894e57a08bf10c5574cfe300ceb406da83f967146c42937dca38a6",
+    "STATUS.json": "5fa2a219992156203b4776971421be1574bbba04c7578e8e622564a152fc5f62",
+    "STATUS_V3.json": "5fa2a219992156203b4776971421be1574bbba04c7578e8e622564a152fc5f62",
+    "BACKEND_APPROVAL.json": "66aa3f8862b45d0e0c96e083b1b17ff4211822b576874c4983ce1ec5ed50733c",
+    "NUMERICAL_POLICY_OVERLAY_INDEX.json": "058a94ce257d773f16e30bded521c9159ef9d7a424bf4312ba8a6cb8ba6adf8c",
+    "APPROVED_CHARACTERIZED_MANIFEST.json": "d9d214bef5bad658f3877c4c33cfdcbf993b1ada85c98b273fbe39ab97c618cd",
+    "FINAL_PHYSICAL_TERMINAL_AUDIT_ACCEPTANCE.json": "6fa1b02a60c13e567e982a949ce81d74166d81ce5bd8e11c6215322ace0f1d75",
+    "FINAL_REPRODUCTION_INPUT_AUDIT.json": "db6a5457445e144d79bde7b7de136a3bfae6a7b17db14f12670a4039a58a3423",
+    "reproduction_bundle/MANIFEST.json": "24ecbbc6a450c37e0e5faebe5fb3ff4a567f543ef74d92412aadd517bfe177d9"
+  },
+  "script_sha256": "318632659ba8ee02ec33662d04eb090226559529109d5f0ead9b66fb1b89533a",
+  "release_complete": false,
+  "epoch": 1793804920.2067423
+}

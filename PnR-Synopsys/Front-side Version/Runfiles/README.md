@@ -1,8 +1,18 @@
 # SCCAD 3 nm PDK — Sample PnR Scripts
 
+### Matched 144 nm ICC2 references and placement site
+
+Fresh ICC2 design libraries inherit the technology from the exact selected NDM. The frozen source TF is used when building that NDM. The selected placement site is `coreSite`, matching the selected LEF. Setup checks that the site exists, clears the previous default site, and selects `coreSite` before placement.
+
+An existing `impl_normal2D` library is reopened only when its adjacent `.usc144_provenance` record matches the final release binding, readiness file, exact standard-cell and declared SRAM reference paths, and all reference payload hashes. ICC2 then checks the actual native `ref_libs` attribute. A missing or mismatched record/reference is an error. The flow never rebinds a routed historical library. Continue with its original matched collateral, or use a fresh work directory.
+
+The selected57 native timing and matched NDM passed. Empty-library and read-only reference/site tests validate setup; no new chip PNR was run.
+
+
+
 Reference place-and-route scripts for the SCCAD-Lab 3 nm GAA FSPR PDK, ready to run on two open / openable academic test designs (ECG `point_scalar_mult`, OpenPiton `tile`) under either Cadence Innovus or Synopsys IC Compiler II.
 
-The scripts are end-to-end (synthesis netlist → routed `.def`) and have been sanity-run before this release; see `VERIFICATION_REPORT.md` for the quality-of-results checks. They are intended as starting points: clone, point `PDK_ROOT` at your PDK install, drop in your netlist + SDC, and run.
+The scripts cover synthesis-netlist to routed-DEF implementation. Previous chip sanity runs are historical. The current matched 144 nm selector edits have static and command-argument checks; no new chip PNR was run. Set `PDK_ROOT` to this repository root and follow the readiness gate described below.
 
 ---
 
@@ -37,24 +47,28 @@ Total: **11 files** (4 TCL scripts + 4 launchers + 2 pin files + 1 floorplan DEF
 
 ### PDK
 
-- **SCCAD 3 nm GAA FSPR PDK** (Front-Side Power Rail variant). FSPR_RVT is the configuration sanity-verified in this release; FSPR_LVT should work with the same script if the PDK ships the LVT 2d_db.
+Set `PDK_ROOT` to the USC-3N-2D repository root. The active front-side scripts source
+`PDK Development/Front-side Version/selected_collateral.tcl` and select exact RVT
+files from the repository. Standard-cell paths have no external flat-directory
+or historical-NDM fallback.
 
-Expected PDK layout under `$PDK_ROOT/`:
+| Input | Selected path relative to the repository |
+|---|---|
+| GDS | `PDK Development/Front-side Version/GDS/3nm_GAA_FSPR_144nm.gds` |
+| Model | `PDK Development/Front-side Version/MODEL/3nm_GAA_FSPR_RVT.sp` |
+| LEF/LIB | Exact files in each `PnR-*/Front-side Version/LEF` and `LIB` (Synopsys: `LIB_DB`) |
+| ICC2 NDM | `PnR-Synopsys/Front-side Version/NDM/3nm_GAA_FSPR_144nm_rvt.ndm` |
+| Verification | Exported fin-present 144 nm matched DRC/LVS/FSPR-PEX maps in `RELEASE_144nm_RVT/physical/rules/matched_144nm` |
 
-```
-$PDK_ROOT/
-├── 2d_tech_lef/                  # Innovus tech LEF, ICC2 .tf
-├── 2d_lef/                       # Standard-cell LEF
-├── 2d_db/                        # Liberty .lib / .db
-├── 2d_tch/                       # Innovus QRC techfiles
-├── 2d_ndm/                       # ICC2 NDM (tech + lib)
-├── 2d_tluplus/                   # ICC2 TLU+ parasitics
-└── openpiton_mem_L3_256k/        # OpenPiton SRAM hard macros (only needed for OpenPiton)
-    ├── 2d_hard_lef/              # SRAM LEF
-    └── 2d_hard_lib/              # SRAM Liberty / NDM
-```
+The matched 57-cell physical, full-RC characterization and native compilation
+checks passed. The selected NDM passed fresh names/site/interface/timing-content
+readback. `matched_release_readiness.tcl` binds the exact approved source set.
+Existing chip sanity-run statements describe historical runs; no new chip PNR
+was run for this update. See the raw data, scope and portable checks in
+`PDK Development/Front-side Version/RELEASE_144nm_RVT/README.md`.
 
-Innovus consumes `2d_tech_lef`, `2d_lef`, `2d_db`, `2d_tch`. ICC2 consumes `2d_ndm`, `2d_tluplus`, `2d_db`. The scripts derive these paths from `PDK_ROOT`; see §4 if your PDK uses a different directory layout.
+Optional OpenPiton SRAMs remain separate user-supplied hard macros; their explicit
+override variables do not change the selected standard-cell files.
 
 ### Sample design inputs
 
@@ -74,7 +88,7 @@ A reference set used during sanity verification is available from the SCCAD-Lab 
 ### Step 1 — set environment
 
 ```bash
-export PDK_ROOT=/path/to/sccad_fspr_v_rvt
+export PDK_ROOT=/path/to/USC-3N-2D
 # Optionally source your Cadence / Synopsys setup so innovus / icc2_shell are on PATH:
 # source /tools/software/cadence/setup.sh
 # source /tools/software/synopsys/setup.sh
@@ -140,25 +154,25 @@ Typical wall-clock on a 128-core host: ECG_innovus ≈ 2 h, ECG_icc2 ≈ 40 min,
 
 | Name | Required | Description |
 |---|---|---|
-| `PDK_ROOT` | yes | Root directory of the SCCAD-Lab PDK (e.g. `/path/to/sccad_fspr_v_rvt`). All other PDK paths derive from this. |
+| `PDK_ROOT` | yes | Root directory of the SCCAD-Lab PDK (e.g. `/path/to/USC-3N-2D`). All other PDK paths derive from this. |
 
 ### Internally-derived variables (set by the script)
 
-All four scripts auto-set the tool-specific path variables from `PDK_ROOT`. You do **not** need to set these unless your PDK uses a non-default directory layout.
+The scripts derive these standard-cell paths from the shared exact collateral map. Optional hardmacro variables remain explicit user inputs. There is no fallback to the historical flat-directory defaults.
 
 | Variable | Tool | Default value |
 |---|---|---|
-| `TECHLEF_DIR` | Innovus | `$PDK_ROOT/2d_tech_lef` |
-| `MACROLEF_DIR` | Innovus | `$PDK_ROOT/2d_lef` |
-| `MACROLIB_DIR` | Innovus | `$PDK_ROOT/2d_db` |
-| `TCH_DIR` | Innovus | `$PDK_ROOT/2d_tch` |
+| `TECHLEF_DIR` | Innovus | `$PDK_ROOT/PnR-Cadence/Front-side Version/TECH-LEF` |
+| `MACROLEF_DIR` | Innovus | `$PDK_ROOT/PnR-Cadence/Front-side Version/LEF` |
+| `MACROLIB_DIR` | Innovus | `$PDK_ROOT/PnR-Cadence/Front-side Version/LIB` |
+| `TCH_DIR` | Innovus | `$PDK_ROOT/PnR-Cadence/Front-side Version/QRC` |
 | `CAPTBL_DIR` | Innovus | optional; only needed if your PDK ships captbl files |
 | `HARDMACROLEF_DIR` | Innovus | `$PDK_ROOT/openpiton_mem_L3_256k/2d_hard_lef` (OpenPiton only) |
 | `HARDMACROLIB_DIR` | Innovus | `$PDK_ROOT/openpiton_mem_L3_256k/2d_hard_lib` (OpenPiton only) |
-| `NDM_DIR` | ICC2 | `$PDK_ROOT/2d_ndm` |
-| `TF_DIR` | ICC2 | `$PDK_ROOT/2d_tech_lef` |
-| `TLU_DIR` | ICC2 | `$PDK_ROOT/2d_tluplus` |
-| `MACRODB_DIR` | ICC2 | `$PDK_ROOT/2d_db` |
+| `NDM_DIR` | ICC2 | `$PDK_ROOT/PnR-Synopsys/Front-side Version/NDM` (only explicit new 144 nm NDM selected) |
+| `TF_DIR` | ICC2 | `$PDK_ROOT/PnR-Synopsys/Front-side Version/TF` |
+| `TLU_DIR` | ICC2 | `$PDK_ROOT/PnR-Synopsys/Front-side Version/ITF` |
+| `MACRODB_DIR` | ICC2 | `$PDK_ROOT/PnR-Synopsys/Front-side Version/LIB_DB` |
 | `HARDNDM` | ICC2 | `$PDK_ROOT/openpiton_mem_L3_256k/2d_hard_lib` (OpenPiton only) |
 | `build_name` | both | `point_scalar_mult` (ECG) / `tile` (OpenPiton). Controls input filenames. |
 
@@ -167,7 +181,7 @@ To override any of these, export the env var **before** invoking the launcher; t
 ### Example: override SRAM library path for OpenPiton
 
 ```bash
-export PDK_ROOT=/path/to/sccad_fspr_v_rvt
+export PDK_ROOT=/path/to/USC-3N-2D
 export HARDMACROLEF_DIR=/path/to/my_sram_lef
 export HARDMACROLIB_DIR=/path/to/my_sram_lib
 bash OpenPiton_innovus.run.sh
@@ -175,9 +189,9 @@ bash OpenPiton_innovus.run.sh
 
 ---
 
-## 5. Tested Configurations
+## 5. Historical consolidation tests
 
-The sanity runs in this release used the **FSPR_RVT** PDK variant on a 128-core Linux x86_64 host. Tool versions: Innovus 25.11-s102_1, IC Compiler II X-2025.06-SP2.
+The earlier consolidation sanity runs used the **FSPR_RVT** PDK variant on a 128-core Linux x86_64 host. Tool versions: Innovus 25.11-s102_1, IC Compiler II X-2025.06-SP2.
 
 | Variant | Innovus | ICC2 |
 |---|---|---|

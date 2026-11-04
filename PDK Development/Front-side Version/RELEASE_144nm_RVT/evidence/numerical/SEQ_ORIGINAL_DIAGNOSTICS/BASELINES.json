@@ -1,0 +1,261 @@
+{
+  "rows": [
+    {
+      "mode": "hspice",
+      "target_data": 1,
+      "kind": "nominal",
+      "margin_ps": 1000,
+      "rc": 0,
+      "metrics": {
+        "cq": 1.426875234e-10,
+        "qpre": 0.69999481955,
+        "qfinal": 1.74935892573e-05
+      },
+      "physical_capture": true,
+      "actual_settings": {
+        "method": "gear",
+        "maxord": 2,
+        "requested_reltol": 1e-06,
+        "requested_delmax_s": 2e-14,
+        "evidence": "pilot.lis"
+      },
+      "wall_s": 79.60578203201294,
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/seq_numeric_control/hspice_D1_nominal_+1000.00000000ps",
+      "deck_sha256": "cd125015c3ed4119dbede38393987c4860615a243cf4da5d33294fa36352ec7a",
+      "files": {
+        "cells.sp": "fbccd51c883fa8978d5c15e0f98d40a33256d5c01406e2ba134823e65cd6129a",
+        "LAUNCH.json": "9333e4691fe9a64670d25f570753bb92c4369933fd06a3a65590d3ed5a5c5078",
+        "model_native.scs": "1878ed3b42a64a0481393a2e9bcd8024c803a4c6ff0bff0c32b9da4fd6447a53",
+        "run.tcl": "6537cca18fa7e859fedf6b055f3b1660f89cc600be44e1d7de38ccc8c85fc904",
+        "MANIFEST.json": "fcfbc2ef0824e1cf3f6c21b1e40392f2ed53c45170d231044460815b0c80b330",
+        "model_hspice.sp": "5c1ed2c2f0bc5038369e86f95f12b9239eeabbe87668f49e92e63015f8e2be7b",
+        "aliases_hspice.sp": "a13fa015bb74d8212ae9512b0e32fe142f25d6a914858f74de23f9a07ae0274b",
+        "pilot.sp": "cd125015c3ed4119dbede38393987c4860615a243cf4da5d33294fa36352ec7a",
+        "stdout.log": "4d6261a6b857ff9a35c0470c39b3e865a0b0a448bd043a19b19378a663dc5b13",
+        "pilot.lis": "e42c21750dd96b244b101e7b518067284c109b83c447d91580c289c4f1336267",
+        "pilot.st0": "bcfd494abac33139d8b07174a18e0f85e292198a4f33e5b4d411468573426755",
+        "pilot.ic0": "83a1164f3977ab4bc307f8b387d69d24a3994444e33fc1f214bde9d7f6155eab",
+        "pilot.mt0": "582445a973d8e731d9e8c4b335e9940338a3440822030fe36df4da7bbbe48a5c"
+      }
+    },
+    {
+      "mode": "actual",
+      "target_data": 1,
+      "kind": "nominal",
+      "margin_ps": 1000,
+      "rc": 0,
+      "metrics": {
+        "cq": 1.42688e-10,
+        "qfinal": 1.75294e-05,
+        "qpre": 0.699995
+      },
+      "physical_capture": true,
+      "actual_settings": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200",
+          "200"
+        ]
+      },
+      "wall_s": 14.21977424621582,
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/seq_numeric_control/actual_D1_nominal_+1000.00000000ps",
+      "deck_sha256": "0db5197f3a133f6adafe229524e213bd8a629ad3f61b6f8cb1d2f6479935a577",
+      "files": {
+        "cells.sp": "fbccd51c883fa8978d5c15e0f98d40a33256d5c01406e2ba134823e65cd6129a",
+        "LAUNCH.json": "77867e1a2071ed8313d38e88f86670476e938378c0d8c00a000b89fb7032acee",
+        "model_native.scs": "1878ed3b42a64a0481393a2e9bcd8024c803a4c6ff0bff0c32b9da4fd6447a53",
+        "run.tcl": "6537cca18fa7e859fedf6b055f3b1660f89cc600be44e1d7de38ccc8c85fc904",
+        "MANIFEST.json": "fcfbc2ef0824e1cf3f6c21b1e40392f2ed53c45170d231044460815b0c80b330",
+        "model_hspice.sp": "5c1ed2c2f0bc5038369e86f95f12b9239eeabbe87668f49e92e63015f8e2be7b",
+        "aliases_hspice.sp": "a13fa015bb74d8212ae9512b0e32fe142f25d6a914858f74de23f9a07ae0274b",
+        "pilot.sp": "0db5197f3a133f6adafe229524e213bd8a629ad3f61b6f8cb1d2f6479935a577",
+        "stdout.log": "eca02787ba6a3e080c5a61049149b84f46824d2c51b33b716a19e0db296b0c06",
+        "spectre.log": "3567973a9753bf84b4789cc6af622ac8226742675ee8eb7c86b5f426c1b32d92",
+        "pilot.measure": "9ba225c3144d362698bfe8953f89d5d6964b35f86b28d22eaefd2eec8256b86b",
+        "pilot.mt0": "f889098c13133bc7691abf3c6576eafed54393a309c210322bf3c0a26789e9d4"
+      }
+    },
+    {
+      "mode": "actual",
+      "target_data": 0,
+      "kind": "nominal",
+      "margin_ps": 1000,
+      "rc": 0,
+      "metrics": {
+        "cq": 1.52508e-10,
+        "qfinal": 0.699991,
+        "qpre": 6.72856e-06
+      },
+      "physical_capture": true,
+      "actual_settings": {
+        "method": [
+          "traponly"
+        ],
+        "reltol": [
+          "1e-03"
+        ],
+        "maxstep": [
+          "200",
+          "200"
+        ]
+      },
+      "wall_s": 13.49048137664795,
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/seq_numeric_control/actual_D0_nominal_+1000.00000000ps",
+      "deck_sha256": "de1858ba0810e131a907f31be772db9f1d6bae5fd0402ac7dea1c2a2855f00ec",
+      "files": {
+        "cells.sp": "fbccd51c883fa8978d5c15e0f98d40a33256d5c01406e2ba134823e65cd6129a",
+        "LAUNCH.json": "38a9e149fcc3dd3fb8841233bb9d7a47c569ecc245b1094c35391ac77b2b382f",
+        "model_native.scs": "1878ed3b42a64a0481393a2e9bcd8024c803a4c6ff0bff0c32b9da4fd6447a53",
+        "run.tcl": "6537cca18fa7e859fedf6b055f3b1660f89cc600be44e1d7de38ccc8c85fc904",
+        "MANIFEST.json": "fcfbc2ef0824e1cf3f6c21b1e40392f2ed53c45170d231044460815b0c80b330",
+        "model_hspice.sp": "5c1ed2c2f0bc5038369e86f95f12b9239eeabbe87668f49e92e63015f8e2be7b",
+        "aliases_hspice.sp": "a13fa015bb74d8212ae9512b0e32fe142f25d6a914858f74de23f9a07ae0274b",
+        "pilot.sp": "de1858ba0810e131a907f31be772db9f1d6bae5fd0402ac7dea1c2a2855f00ec",
+        "stdout.log": "7072100622dfd22984a6661ce13bc64bc9636c195a09e1c4d84cc4452c303fd7",
+        "spectre.log": "43d0cb76187e35c0cde5a5690f76a7d2fc71bec830f851072cbc88ec49321724",
+        "pilot.measure": "4a88d5cc3c3d56ababb1ff1b7fb70051b02f64f0cbc1d5fc7a4a7731412b59ee",
+        "pilot.mt0": "26305192918daf1b2e3d145cf2e3419fc7b0c966e53074e07acba1843d3d9d81"
+      }
+    },
+    {
+      "mode": "hspice",
+      "target_data": 0,
+      "kind": "nominal",
+      "margin_ps": 1000,
+      "rc": 0,
+      "metrics": {
+        "cq": 1.5250757892e-10,
+        "qpre": 6.71639492056e-06,
+        "qfinal": 0.699990718931
+      },
+      "physical_capture": true,
+      "actual_settings": {
+        "method": "gear",
+        "maxord": 2,
+        "requested_reltol": 1e-06,
+        "requested_delmax_s": 2e-14,
+        "evidence": "pilot.lis"
+      },
+      "wall_s": 82.12660670280457,
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/seq_numeric_control/hspice_D0_nominal_+1000.00000000ps",
+      "deck_sha256": "59d2cc5cafd2d8d714df89740012da7481a93a5c17961f92b312e9f0792e03c4",
+      "files": {
+        "cells.sp": "fbccd51c883fa8978d5c15e0f98d40a33256d5c01406e2ba134823e65cd6129a",
+        "LAUNCH.json": "47590d1b0e50bc7adc34f125ea1774b06de448271ed0eabc86aef6a3556cca34",
+        "model_native.scs": "1878ed3b42a64a0481393a2e9bcd8024c803a4c6ff0bff0c32b9da4fd6447a53",
+        "run.tcl": "6537cca18fa7e859fedf6b055f3b1660f89cc600be44e1d7de38ccc8c85fc904",
+        "MANIFEST.json": "fcfbc2ef0824e1cf3f6c21b1e40392f2ed53c45170d231044460815b0c80b330",
+        "model_hspice.sp": "5c1ed2c2f0bc5038369e86f95f12b9239eeabbe87668f49e92e63015f8e2be7b",
+        "aliases_hspice.sp": "a13fa015bb74d8212ae9512b0e32fe142f25d6a914858f74de23f9a07ae0274b",
+        "pilot.sp": "59d2cc5cafd2d8d714df89740012da7481a93a5c17961f92b312e9f0792e03c4",
+        "stdout.log": "4d6261a6b857ff9a35c0470c39b3e865a0b0a448bd043a19b19378a663dc5b13",
+        "pilot.lis": "503d7133a699905e446c6dd81a7f67af85f885312453c081f2db113a7403a163",
+        "pilot.st0": "39a4f48afa2ad67956dc6c8455473b8c6a48b97dd9a209471c69f0d1e4f1656f",
+        "pilot.ic0": "674ee4a84ce50cf8a439c091095ccf9a572cf8ccd3c0d5d1481421fe91d36be6",
+        "pilot.mt0": "cccaddd813db6da116129e970c211125c603d014795910e15cdd25432e1ab27b"
+      }
+    },
+    {
+      "mode": "intended",
+      "target_data": 1,
+      "kind": "nominal",
+      "margin_ps": 1000,
+      "rc": 0,
+      "metrics": {
+        "cq": 1.42687e-10,
+        "qfinal": 1.75062e-05,
+        "qpre": 0.699995
+      },
+      "physical_capture": true,
+      "actual_settings": {
+        "method": [
+          "gear2only",
+          "gear2only"
+        ],
+        "reltol": [
+          "1e-06",
+          "1e-06",
+          "1e-06"
+        ],
+        "maxstep": [
+          "200",
+          "200"
+        ]
+      },
+      "wall_s": 0.09991931915283203,
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/seq_numeric_control/intended_D1_nominal_+1000.00000000ps",
+      "deck_sha256": "a86d8bf73a3331e1b1ab8cd7acdbb552db40d8b0eb8041f32e4cb40334f80969",
+      "files": {
+        "cells.sp": "fbccd51c883fa8978d5c15e0f98d40a33256d5c01406e2ba134823e65cd6129a",
+        "LAUNCH.json": "bb0def9a78c151abd56bb8e62fe582f73cf4885f5cbb1b752b9101ff7f477a56",
+        "model_native.scs": "1878ed3b42a64a0481393a2e9bcd8024c803a4c6ff0bff0c32b9da4fd6447a53",
+        "run.tcl": "6537cca18fa7e859fedf6b055f3b1660f89cc600be44e1d7de38ccc8c85fc904",
+        "MANIFEST.json": "fcfbc2ef0824e1cf3f6c21b1e40392f2ed53c45170d231044460815b0c80b330",
+        "model_hspice.sp": "5c1ed2c2f0bc5038369e86f95f12b9239eeabbe87668f49e92e63015f8e2be7b",
+        "aliases_hspice.sp": "a13fa015bb74d8212ae9512b0e32fe142f25d6a914858f74de23f9a07ae0274b",
+        "pilot.sp": "a86d8bf73a3331e1b1ab8cd7acdbb552db40d8b0eb8041f32e4cb40334f80969",
+        "stdout.log": "47cb0e7e2c9a9c2b1ce617a9f524f3f3574de2ab583dbfdd711b6e60f2bc9280",
+        "spectre.log": "269d205a94e19d02733d5087c268baf3693c8d8dae2b3c6791c3a30195174673",
+        "pilot.measure": "3b611859c62a6aa14fe0f955b384cf266b26930ee202f31419a67185f77aace7",
+        "pilot.mt0": "bf0bf0ccf23748816c9fd950cad3df75b17dc24232639a496f1f249229d74c4e"
+      }
+    },
+    {
+      "mode": "intended",
+      "target_data": 0,
+      "kind": "nominal",
+      "margin_ps": 1000,
+      "rc": 0,
+      "metrics": {
+        "cq": 1.52507e-10,
+        "qfinal": 0.699991,
+        "qpre": 6.72842e-06
+      },
+      "physical_capture": true,
+      "actual_settings": {
+        "method": [
+          "gear2only",
+          "gear2only"
+        ],
+        "reltol": [
+          "1e-06",
+          "1e-06",
+          "1e-06"
+        ],
+        "maxstep": [
+          "200",
+          "200"
+        ]
+      },
+      "wall_s": 0.2051863670349121,
+      "host": "gtcad-srv14.ece.gatech.edu",
+      "work": "/tmp/yhuang861/usc144_github_release_20261103/seq_numeric_control/intended_D0_nominal_+1000.00000000ps",
+      "deck_sha256": "773d510515a12081bd65cd69a5cf1c87d74c069cbd42158237888c33de0182f7",
+      "files": {
+        "cells.sp": "fbccd51c883fa8978d5c15e0f98d40a33256d5c01406e2ba134823e65cd6129a",
+        "LAUNCH.json": "251f72bcff108aecd74b622267ea5cde2b8a081fe30a4458ba897ef2ca4892cb",
+        "model_native.scs": "1878ed3b42a64a0481393a2e9bcd8024c803a4c6ff0bff0c32b9da4fd6447a53",
+        "run.tcl": "6537cca18fa7e859fedf6b055f3b1660f89cc600be44e1d7de38ccc8c85fc904",
+        "MANIFEST.json": "fcfbc2ef0824e1cf3f6c21b1e40392f2ed53c45170d231044460815b0c80b330",
+        "model_hspice.sp": "5c1ed2c2f0bc5038369e86f95f12b9239eeabbe87668f49e92e63015f8e2be7b",
+        "aliases_hspice.sp": "a13fa015bb74d8212ae9512b0e32fe142f25d6a914858f74de23f9a07ae0274b",
+        "pilot.sp": "773d510515a12081bd65cd69a5cf1c87d74c069cbd42158237888c33de0182f7",
+        "stdout.log": "4647f984f86ce716039a8298293753a2669650af9e1b71423b6bd884cd7b7ad9",
+        "spectre.log": "ffda7d8c2f4ecea9502b814b498ce963710bedc6e2a26053bb31e5280ad40b1a",
+        "pilot.measure": "ec07053a5d07331acb3b71ee5d17c432017dfb3f3e3015ed4227c969359499bf",
+        "pilot.mt0": "7f156ba048d74d508dbaa1bae9f2186a77f7348f7d3dad7d940f695f85317ef7"
+      }
+    }
+  ],
+  "errors": []
+}

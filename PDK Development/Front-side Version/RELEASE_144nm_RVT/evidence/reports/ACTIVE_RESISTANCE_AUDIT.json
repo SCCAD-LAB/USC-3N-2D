@@ -1,0 +1,34 @@
+{
+  "updated_utc": "2026-11-04T02:13:18.372711+00:00",
+  "published": {
+    "path": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/sources/github_FSPR.itf",
+    "sha256": "928fd7af16f76a514a14e6414c20b40b488ecd865e461028d907fb56bc8b1138",
+    "declaration_start_line": 210,
+    "thickness_um": 0.001,
+    "rho_ohm_um": 15.0,
+    "sheet_resistance_ohm_per_square": 15000.0
+  },
+  "historical": {
+    "path": "/cedar/cedar_coe/ece-limsk/sw.jung/pdk/3nm_GAA_a/v1.1/itf/3nm_FF_noBPR.itf",
+    "sha256": "8f8c561ceac02670dfe975569810f568e9a5fa988995b0e3e4352f2ceeae3259",
+    "declaration_start_line": 214,
+    "thickness_um": 0.001,
+    "rho_ohm_um": 0.001,
+    "sheet_resistance_ohm_per_square": 1.0
+  },
+  "sheet_resistance_ratio": 15000.0,
+  "two_square_resistance_published_ohm": 30000.0,
+  "two_square_resistance_old_ohm": 2.0,
+  "fixed_grid_sha256": "425ddaa74bdb6fd44752c73175404742927ab8312060b701783210731b92e805",
+  "native_evidence": "characterization/first_native_INV/PEX_SANITY_COMPARISON.json",
+  "cross_simulator_delay_isolation": "characterization/INV_delay_isolation/RESULT.json",
+  "diagnostic_only_SD_resistor_removal": "characterization/INV_delay_isolation/SD30K_CONTROL_RESULT.json",
+  "release_decision": "Retain the exact published GitHub grid and all its extracted diffusion resistances. Do not replace them with historical values, zeroed diagnostics, or fitted numbers to recover old timing.",
+  "model_boundary_scope": "BSIM-CMG RDSMOD0 distinguishes internal bias-dependent extension resistance from geometry-dependent bias-independent diffusion resistance. Published card has RGEOMOD0 and zero RSHS/RSHD defaults. Process calibration provenance is insufficient to establish empirical correctness or a unique overlap boundary; document this, and do not assert that resistance magnitude alone proves double counting.",
+  "primary_sources": [
+    "https://bsim.gitbooks.io/bsimcmg/content/Ch3.15.1.html",
+    "https://bsim.gitbooks.io/bsimcmg/content/Ch7.3.1.html",
+    "https://bsim.gitbooks.io/bsimcmg/content/Ch7.6.html"
+  ],
+  "status": "Source value difference and numerical causality established; physical silicon calibration not claimed."
+}

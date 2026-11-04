@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "rc": 0,
+  "work": "/tmp/yhuang861/usc144_github_release_20261103/native guarded create 1793802308",
+  "reference": "/tmp/yhuang861/usc144_github_release_20261103/native guarded create 1793802308/reference frames/fixture_physical.ndm",
+  "binding": "d73dd6e02dcfefb3fc444179e8d210384bbd1cd61aa8810eaf2ccad386344e78",
+  "physical_only_fixture": true,
+  "timing_DB_loaded": false,
+  "routed_design_runs": 0,
+  "native_errors": [],
+  "log_sha256": "ca9d90db3c8d6bb6788a671a631e6f8f5cee7863817ce0e24306f2c97bc72503"
+}

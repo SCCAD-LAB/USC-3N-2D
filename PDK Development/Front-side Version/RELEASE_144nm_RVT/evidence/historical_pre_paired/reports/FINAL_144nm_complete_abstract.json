@@ -1,0 +1,2783 @@
+{
+  "scope": "Generate routing pin access and obstructions from native-qualified GDS.\n\nPreserve names, directions, sites, symmetry and layer100 cell dimensions. Expose\nonly actual routing material connected to each original pin label. Block other\nrouting material, retaining conservative original obstructions outside pins.\nThis supplements native LVS; it does not infer nets through transistor channels.\n",
+  "complete": true,
+  "cells_verified": 57,
+  "total": 57,
+  "source_lef": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/sources/github_FSPR.lef",
+  "source_sha256": "e7727e83b4d12f204cf75f9e1e58adb892836ad50c7db6be7a490202593f1d0c",
+  "output_lef": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/reports/FINAL_144nm_complete_abstract.lef",
+  "output_sha256": "d3e4b6f5f414b7505f2712012d8249a235e852ea9fc19504f3fe45d601c3c1e7",
+  "source_dimensions_names_directions_sites_symmetry_preserved": true,
+  "all_physical_routing_material_represented_by_pin_or_obstruction": true,
+  "rows": [
+    {
+      "cell": "AND2x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AND2x1/iter001/inputs/cell.gds",
+      "gds_sha256": "4458e7c673f085f3c2bdbe8f7e895472facceda58c6e359103b513e0bcb650d7",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AND2x1/LATEST.json",
+      "native_gate_sha256": "4e19e388274622f912fa8d2ae95f76796ab3c862751c7cde3534498b3082ace3",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "AND3x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AND3x1/iter001/inputs/cell.gds",
+      "gds_sha256": "a689a74546b395fe1d6b7d35701ef3b8c920db124a34607556a494b9c6cd251c",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AND3x1/LATEST.json",
+      "native_gate_sha256": "ab60c2cdfa264e4b3163eb28b8651747cb91a15937a7da75c965cc16c90f2f5e",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "AND4x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AND4x1/iter001/inputs/cell.gds",
+      "gds_sha256": "492f4589c93f5650a49657e34da2c93bba795f4b8cf489648b501abd950ddc19",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AND4x1/LATEST.json",
+      "native_gate_sha256": "59eeb656eb4b64a4d37a5dad9f5a2b7e66b565e8d1d47d28e34fce0b3043bc92",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "AOI21x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AOI21x1/iter001/inputs/cell.gds",
+      "gds_sha256": "418c0ed024826e3685a7113ca9b64ec10ce892a187d8ae61f882e841f3bce619",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AOI21x1/LATEST.json",
+      "native_gate_sha256": "d721236c03dbf2818d483dfbce09c633151e8c809c97247a798cdfeef4ceae0f",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "AOI221x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AOI221x1/iter001/inputs/cell.gds",
+      "gds_sha256": "520c081ce33c3adedd1d5653fc256f8e5a206f04cd563c1e613b8caa32855a08",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AOI221x1/LATEST.json",
+      "native_gate_sha256": "8b13c99b7e5940cb0526a5699f885ff546164616e865a0f3fea828171c0221e7",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "E": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "AOI222x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AOI222x1/iter002/inputs/cell.gds",
+      "gds_sha256": "adf22644b9ce6b2989a98e62433be8cceb440cd69a53b60d925a6e98beaf3913",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AOI222x1/LATEST.json",
+      "native_gate_sha256": "d4a52ef676dab2fa915cbcb81740bbcd2eeddf31ae0b2c566df7b32bac1bb4f7",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "E": [
+          "M1"
+        ],
+        "F": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "AOI22x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AOI22x1/iter001/inputs/cell.gds",
+      "gds_sha256": "d12023c74a347cbe17046fe9fcd22a6c26f6fbea60637ade44b3e48be54d589b",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AOI22x1/LATEST.json",
+      "native_gate_sha256": "58f7e2eea184c28641c0b7c7f3c9581055012eba040bfeff9117708e03ce3964",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "AOI311x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AOI311x1/iter001/inputs/cell.gds",
+      "gds_sha256": "3258815cbddc679a1d4ad2ef8c7c293f0d655b45c786de7fcdf3e60679f3bf4c",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AOI311x1/LATEST.json",
+      "native_gate_sha256": "04f1324b9a87355c320dfa0ddc5c54f3a238238e15c5219e32ff6195ed55f537",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "E": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "AOI31x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AOI31x1/iter001/inputs/cell.gds",
+      "gds_sha256": "db3a1195708f01ff266b7fc3173fdd8b8774fc1ebe5d81aae785a0ab1037e138",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/AOI31x1/LATEST.json",
+      "native_gate_sha256": "7a7a8e843590bc9f98f6b3042274d78649b03a4361f17b4f6ce79df34414227c",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "BUFx1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx1/iter001/inputs/cell.gds",
+      "gds_sha256": "6a652b81b7bdacf4d6f4197be14b10a760b1341846ab6a23135c26a2b75d4d67",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx1/LATEST.json",
+      "native_gate_sha256": "7e9cf1043b2a7a150a7cb4f72da5311a45008c105faa92ff7099dd27f6eed8d3",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "BUFx10",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx10/iter001/inputs/cell.gds",
+      "gds_sha256": "baf9fc37bbbd70fcfded5c9edefac50a1004caa0ab08700d6ee52057913dc6de",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx10/LATEST.json",
+      "native_gate_sha256": "ca698761c13149d8fb9f862b5949e7c6c588a143f69937041f68f9588b43bd1b",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "BUFx2",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx2/iter001/inputs/cell.gds",
+      "gds_sha256": "38c4556b79562f5b6877231c08e7085f176524d8fb3767751cff14d063e413e4",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx2/LATEST.json",
+      "native_gate_sha256": "d7b0e78bd4ee6f3c3a0fe9cccaa22f85bc3b3176ffa8a5b583c47d47a9c208e9",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "BUFx3",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx3/iter002/inputs/cell.gds",
+      "gds_sha256": "d840847ea23d10b5189c4d16e6380af4e27ce8048e78c4e88b542bc6cb7ae1b2",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx3/LATEST.json",
+      "native_gate_sha256": "6f0bee2c744f883d53d4fc43a8a96c8cb280d64d27bcb343bf4a8252add6ec5e",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "BUFx4",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx4/iter001/inputs/cell.gds",
+      "gds_sha256": "89724047ce3bf1294042bacc2cb7a31b353502ffd832436c084ab2810f380b9b",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx4/LATEST.json",
+      "native_gate_sha256": "54dc66af6c5913cca391137fddcfb6060030f680cb5582acc0210d98f60e658e",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "BUFx5",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx5/iter001/inputs/cell.gds",
+      "gds_sha256": "595fb82efa49e387617a2e93c16badf89768f7b8f3ee56cb5ca27ae118de7b8d",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx5/LATEST.json",
+      "native_gate_sha256": "3c8a0e0798216211c117c3dcbf7421c93e5b187b9e62ed84753e24c28c05a372",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "BUFx6",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx6/iter001/inputs/cell.gds",
+      "gds_sha256": "a6d8e5193fc8cea26f6d1fc7195d1ec845767a92678fbda77810f18cd0f78fd6",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx6/LATEST.json",
+      "native_gate_sha256": "13cc4c1bb0916da9dc4239bb821aef15e59958da703189c1f499ef174224743f",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "BUFx7",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx7/iter001/inputs/cell.gds",
+      "gds_sha256": "7a84540a5fbc2df941c7755fdd76c19e357e9df937ada45206b16ac824a4d4b7",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx7/LATEST.json",
+      "native_gate_sha256": "784d7035d9fe42bed4ada9ac556525f4549d7b3174d7cd3cf6f3104915cfbd00",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "BUFx8",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx8/iter001/inputs/cell.gds",
+      "gds_sha256": "20943b1c179cd01b97664799fd12189a07632973db368526c4b67a0255824602",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/BUFx8/LATEST.json",
+      "native_gate_sha256": "3b78dee709af678df37c9cd1034cf710763aa1a74297b673dc0b730d77eb623c",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "DFFHQNx1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/DFFHQNx1/iter002/inputs/cell.gds",
+      "gds_sha256": "a8898881d3176779b003081c43b6793632c9e09270de7eaf2b9a23322825ff21",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/DFFHQNx1/LATEST.json",
+      "native_gate_sha256": "52444f39c4f7f1c90300802437845214e434ebdc22e653f35377f69e820c2a63",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "CK": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "QN": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "DFFHx1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/DFFHx1/iter003/inputs/cell.gds",
+      "gds_sha256": "03ae7f3fa1ff3e2f42eaa19b70aad10bff070e08b92a9cbbec934c1536b4bd2f",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/DFFHx1/LATEST.json",
+      "native_gate_sha256": "d974f7258f8717d2e5b43b8911fd0b2114e7cf28c062542037c62d62c3d02727",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "CK": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "QN": [
+          "M1"
+        ],
+        "RESET": [
+          "M1",
+          "M2",
+          "V1"
+        ],
+        "SET": [
+          "M1",
+          "M2",
+          "V1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "DHLx1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/DHLx1/iter003/inputs/cell.gds",
+      "gds_sha256": "febfbf9ea765d0818788d4a0649dda30c42286753799419582ae337ac6ce06eb",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/DHLx1/LATEST.json",
+      "native_gate_sha256": "60fc869e0e1bea928b5e7c3e9c5364cbeb689718586c7f1af3357bd7f639b676",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "CK": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "Q": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "INVx1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx1/iter001/inputs/cell.gds",
+      "gds_sha256": "970c16a7d5969f0de7dac8b86e4f0d462c1aa6f79514028c64345500720e5893",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx1/LATEST.json",
+      "native_gate_sha256": "a83e84b83b3c38abcd7765fd1557e4c28f7a8af33d6046c46d64e7ea127d772b",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "INVx10",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx10/iter001/inputs/cell.gds",
+      "gds_sha256": "9cd4e2d073358850c7db96a6e0a47498557123d085200955476bbb426d3e8949",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx10/LATEST.json",
+      "native_gate_sha256": "8224905e67f62b23b7fcd72cd01ca7ee2defc9227dbefb14c6bd3e10703ac945",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "INVx12",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx12/iter001/inputs/cell.gds",
+      "gds_sha256": "1962391ff1cd51ce5175337c03fef262f5498cd8b3f24d1a7d0cecbe6556c001",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx12/LATEST.json",
+      "native_gate_sha256": "f6bbebcc05c1a8496197ff2d9e79c9239f6f9a123793f8f5b1c7330075ac0e0a",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "INVx14",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx14/iter001/inputs/cell.gds",
+      "gds_sha256": "62fdcaf838e879c785569946b6d078410f542662f0d3d78daaa323326e73679b",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx14/LATEST.json",
+      "native_gate_sha256": "baa4f162fa379502ae91592e9ed5ff5598590142177246c1bbd11397425be773",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "INVx16",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx16/iter001/inputs/cell.gds",
+      "gds_sha256": "304838775f15669396cb292f6c964a480f278d52470e245530a88e7ab05e0070",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx16/LATEST.json",
+      "native_gate_sha256": "9ce3364cc625d310279daddb4bcd3bd89f54cbf513d99f2073cf3deff2e1bcf9",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "INVx2",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx2/iter001/inputs/cell.gds",
+      "gds_sha256": "cc75875f4f9a5e1b84051dd38c49a27d806a9e07780270b399874cf20bf61120",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx2/LATEST.json",
+      "native_gate_sha256": "c10cf407bd719b222d8fc8a012cc5139215bd55e1ad8a63350d2ba1e5b6508f8",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "INVx3",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx3/iter001/inputs/cell.gds",
+      "gds_sha256": "bb927cce0147f716db0fdbd47370a80b4bfb42097b7b0f3792c4f37400b355d4",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx3/LATEST.json",
+      "native_gate_sha256": "7e622211494cf159450ffe1869c0ecc46180c1b4a34845ba8e966d13754e140e",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "INVx4",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx4/iter001/inputs/cell.gds",
+      "gds_sha256": "56cd3118a95180320167b8daa583ce2c0cd95fc03b7efe3e9e777e76313e7a1c",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx4/LATEST.json",
+      "native_gate_sha256": "dd2398969fbf2de51c0299acbee4617b42d1d9fa84c501ce5e59e96fdceffeed",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "INVx5",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx5/iter001/inputs/cell.gds",
+      "gds_sha256": "11e2ac6d97559c99df546effedbc342c30660baf766ccafc045043aaacd5c653",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx5/LATEST.json",
+      "native_gate_sha256": "7618570e4594deddd9d36e96d6a22a7f8444d2d585ab1c4fd417edfc85731153",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "INVx6",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx6/iter001/inputs/cell.gds",
+      "gds_sha256": "db0ca80c384df43801cd9566ac3dee655187c783992b5e18e13b1012d2eafa20",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx6/LATEST.json",
+      "native_gate_sha256": "e69c99b9b3e447a648b8b2a96a4e1db81aa969eb65490e2fc177e7831cfd54fa",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "INVx7",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx7/iter001/inputs/cell.gds",
+      "gds_sha256": "750fe9ded7b9f311c95fd7b7ecd8bcb3d98b1762353a76a0c29046c9fa36f2aa",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx7/LATEST.json",
+      "native_gate_sha256": "fc30937e163eb576d80d8f86ad1c4b5929d5d6252b975dbdf948709f3c9b6f68",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "INVx8",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx8/iter001/inputs/cell.gds",
+      "gds_sha256": "954d8e204072e4bc35d6e9d1613bb5b9daf526481c48a67d900b95181d6e889a",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/INVx8/LATEST.json",
+      "native_gate_sha256": "c485e05c770cb6adcdee4953a9e89a16fe6d184de145a53904a5e75f36d0e564",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "MUX2x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/MUX2x1/iter001/inputs/cell.gds",
+      "gds_sha256": "e4d961f3f2c30fedea208d03e5fed3b3876baebe619c74ff933ffead2b6da892",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/MUX2x1/LATEST.json",
+      "native_gate_sha256": "ec3dc79e13a05d60a5dcd0a27cbfc8471db376e441202b6b61c80cd238bbb893",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "S": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "NAND2x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NAND2x1/iter001/inputs/cell.gds",
+      "gds_sha256": "7bc20032e761521661679d42c452c4b7d983c4b01540538690f576e1e471fe95",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NAND2x1/LATEST.json",
+      "native_gate_sha256": "7c3e91eb7f9f7b3b287145d33ccf722e176d381706a5a8439df60327e56ac1fe",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "NAND2x2",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NAND2x2/iter002/inputs/cell.gds",
+      "gds_sha256": "d5321a3540beb7cb24b253ff63cc70d6127267abae86ced45f3ee720559c0a9a",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NAND2x2/LATEST.json",
+      "native_gate_sha256": "9870eb5fa7c7ed953425cd67ca9263436301d89804ac3dbf5de5bc86b94a51bc",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "NAND3x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NAND3x1/iter001/inputs/cell.gds",
+      "gds_sha256": "77b95baeb7f8d6087454835f19fbad9994cf3b13f38e0c4ea812c173913631ad",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NAND3x1/LATEST.json",
+      "native_gate_sha256": "6f406d6a303ca9999c0d2c139e5c9bac3eac11c045ff77cf29e16bb624103a8f",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "NAND3x2",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NAND3x2/iter002/inputs/cell.gds",
+      "gds_sha256": "2704219d26c44bd1a9e8c29371dbc9e5edd204989cdbe318493a5776038f0b02",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NAND3x2/LATEST.json",
+      "native_gate_sha256": "441edd02b8ddb490b077904a015a1edbb9f1da2db615934e91128cc473ee6d67",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "NAND4x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NAND4x1/iter001/inputs/cell.gds",
+      "gds_sha256": "bdee27bdb7b9f87f3683aa406e0f0f06a0811c577f6144a76f43ea6ffce55d08",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NAND4x1/LATEST.json",
+      "native_gate_sha256": "e4aff5ef69d59751b6e037abe05d7c6dc7e450dc193f544b23b11e0ea71dbefa",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "NOR2x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NOR2x1/iter001/inputs/cell.gds",
+      "gds_sha256": "f3472a4b0da2aca70a05ba0372e8232a3c217516413ec28d80d679cd35af440b",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NOR2x1/LATEST.json",
+      "native_gate_sha256": "a30f36a876fc8e8c60127d9a245c074cf3a0ad36b734fe3176ee8f56c1043f04",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "NOR2x2",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NOR2x2/iter002/inputs/cell.gds",
+      "gds_sha256": "0a97cc3c0d5ff71cb6c065db44ff7df0b9bec31d87b79ad24941b5ef171c4306",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NOR2x2/LATEST.json",
+      "native_gate_sha256": "ae881fa7c060be622243ee0f63849c87789474033720f1b588161391c35edea0",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "NOR3x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NOR3x1/iter001/inputs/cell.gds",
+      "gds_sha256": "d2b6bfe4c9f69a6546ee4964f843d0af99a200f0a2c10e462a62cf7aeda09980",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NOR3x1/LATEST.json",
+      "native_gate_sha256": "0b339320b1a8bc943c15e000b35765ff6ffc17ba0cc51511112082dc298b3705",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "NOR3x2",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NOR3x2/iter002/inputs/cell.gds",
+      "gds_sha256": "2bb0237e1c4e8df852d749004498b7d0f634b88024a645c9052937f67ab4c9ed",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NOR3x2/LATEST.json",
+      "native_gate_sha256": "c4b13b1b14e3e5ef46b65dc9f4d197e334e84682758731b4265940bd87bfd3eb",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "NOR4x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NOR4x1/iter001/inputs/cell.gds",
+      "gds_sha256": "7749daba295a1d54fecfb048161d392450c28882c32cb002cbd3d42451a9c1a5",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/NOR4x1/LATEST.json",
+      "native_gate_sha256": "0e80642e79587c5ad96b494bd763cfa3aa7a7235b7e7d2435928d1f42c3ca38c",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "OAI21x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OAI21x1/iter001/inputs/cell.gds",
+      "gds_sha256": "a79313a86f47be266c96c90c20bfce8d45452a11e6f6325ba769086f28ccd9a7",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OAI21x1/LATEST.json",
+      "native_gate_sha256": "251917726df3b6a4b18126ead36b3385b8313f3e7cc4f2f58c381ffea2011f99",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "OAI221x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OAI221x1/iter001/inputs/cell.gds",
+      "gds_sha256": "32fc60874ca7b8713c36bb145d2279f412a96b382a0ec00083c537971f09cda2",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OAI221x1/LATEST.json",
+      "native_gate_sha256": "760b9e7ef8905bb377063f9cdd55d874098e67cf9604f049811fd36b0fc5a785",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "E": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "OAI222x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OAI222x1/iter002/inputs/cell.gds",
+      "gds_sha256": "8ba5a9fe0f9651edd19e05dee3c97d1d0018b93c21b13d2f2704decf2cd4f6bb",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OAI222x1/LATEST.json",
+      "native_gate_sha256": "b31d11d28aae8012afb66ed355bbf5dea129f1c366521cbbed0355b0ae8f7ad7",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "E": [
+          "M1"
+        ],
+        "F": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "OAI22x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OAI22x1/iter001/inputs/cell.gds",
+      "gds_sha256": "56726c51e59989e3af50b31f9bce1eb0caac9cfeb1095ad89ae643c32373207e",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OAI22x1/LATEST.json",
+      "native_gate_sha256": "dad44a81ec4ae4f54651fad4849005d20ae0ea76f41a7075d9095c29bb353de5",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "OAI311x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OAI311x1/iter001/inputs/cell.gds",
+      "gds_sha256": "2c68b464cc5bebe06351bdf7e885655f7db557206c9a137805935d442559347c",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OAI311x1/LATEST.json",
+      "native_gate_sha256": "04a65ee9d1fbbe8e1e1306857100858199ed5a903c08478ba9c7dff05746fd17",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "E": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "OAI31x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OAI31x1/iter001/inputs/cell.gds",
+      "gds_sha256": "6a16744102486636917216087db2f430291d0bf313c262b6b8b148065b59c984",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OAI31x1/LATEST.json",
+      "native_gate_sha256": "f36ee6756bcc9ea7713b210cb4f9c47f2ab69cbbe7b43e56ecfce67a134288a9",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "OR2x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OR2x1/iter001/inputs/cell.gds",
+      "gds_sha256": "49ce08fe2f9f0478546d6a0e8855fd57da6328039d73cfe819315ab30018e5b7",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OR2x1/LATEST.json",
+      "native_gate_sha256": "452a4d0961641ce634f836d3c04d6d2fb70d5f5c2a3ddc810fb651d08d5a2a8c",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "OR3x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OR3x1/iter001/inputs/cell.gds",
+      "gds_sha256": "7fee3bbb18a1028b996310cae822a98ec69d04be829fdcf5850790d71c467b42",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OR3x1/LATEST.json",
+      "native_gate_sha256": "1d5149a132b9401be82493ccc5746b9b393549cc09153db9a1d0ed7316f0ce13",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "OR4x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OR4x1/iter001/inputs/cell.gds",
+      "gds_sha256": "608f17420deeb4cc49fd740614e4c7fb82f7d00550e4ebfb0bcec2b1cbd476be",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/OR4x1/LATEST.json",
+      "native_gate_sha256": "7681658f9e9eb931a0efadd873228c3f1f1aa712a38483d994b1e5da53f74d2f",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "D": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "XNOR2x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/XNOR2x1/iter002/inputs/cell.gds",
+      "gds_sha256": "efb8c07896ff678b74152ebdde880d6569c68390b9aeff241962ce0a1223e179",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/XNOR2x1/LATEST.json",
+      "native_gate_sha256": "076b66edf96a6f5a8f98fce0b06a51b55f606be97336b90511785e8232d3ef69",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "XNOR3x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/XNOR3x1/iter002/inputs/cell.gds",
+      "gds_sha256": "5b0aed7c278faf95625f229e27da3863c103a75406c25743bacd6773687aa670",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/XNOR3x1/LATEST.json",
+      "native_gate_sha256": "1dfc54a08a80bdd31113bc81a03304e29e8bf1c2766beb0d68347514fee7dc7e",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "XOR2x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/XOR2x1/iter002/inputs/cell.gds",
+      "gds_sha256": "821bc06a95e175156648ea342a5f8e241adbaa364a4669864c55cad91188fe08",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/XOR2x1/LATEST.json",
+      "native_gate_sha256": "cee7106c8415be1760adf38d85c614337b5a231f1929f41962514a9b46c715b8",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    },
+    {
+      "cell": "XOR3x1",
+      "gds": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/XOR3x1/iter002/inputs/cell.gds",
+      "gds_sha256": "e5156bfe16681212fb163e47ea63dd2f786c9c6204087b6ef5fb6c747c65bedb",
+      "native_gate": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/cells/XOR3x1/LATEST.json",
+      "native_gate_sha256": "65ebb56b6281779fee1a89f99e4dee3aa85f7ec46bc54ac3e09d9ce41b5928ac",
+      "routing_unrepresented_area_um2": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0,
+        "M6": 0,
+        "M7": 0,
+        "M8": 0,
+        "M9": 0,
+        "V1": 0,
+        "V2": 0,
+        "V3": 0,
+        "V4": 0,
+        "V5": 0,
+        "V6": 0,
+        "V7": 0,
+        "V8": 0
+      },
+      "port_layers": {
+        "A": [
+          "M1"
+        ],
+        "B": [
+          "M1"
+        ],
+        "C": [
+          "M1"
+        ],
+        "VDD": [
+          "M1"
+        ],
+        "VSS": [
+          "M1"
+        ],
+        "Y": [
+          "M1"
+        ]
+      }
+    }
+  ],
+  "checks": [
+    {
+      "cell": "AND2x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "AND3x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "AND4x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "AOI21x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "AOI221x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "AOI222x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "AOI22x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "AOI311x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "AOI31x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "BUFx1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "BUFx10",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "BUFx2",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "BUFx3",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "BUFx4",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "BUFx5",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "BUFx6",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "BUFx7",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "BUFx8",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "DFFHQNx1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "DFFHx1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "DHLx1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "INVx1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "INVx10",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "INVx12",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "INVx14",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "INVx16",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "INVx2",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "INVx3",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "INVx4",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "INVx5",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "INVx6",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "INVx7",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "INVx8",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "MUX2x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "NAND2x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "NAND2x2",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "NAND3x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "NAND3x2",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "NAND4x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "NOR2x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "NOR2x2",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "NOR3x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "NOR3x2",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "NOR4x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "OAI21x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "OAI221x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "OAI222x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "OAI22x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "OAI311x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "OAI31x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "OR2x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "OR3x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "OR4x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "XNOR2x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "XNOR3x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "XOR2x1",
+      "all_pin_regions_connected_and_covered": true
+    },
+    {
+      "cell": "XOR3x1",
+      "all_pin_regions_connected_and_covered": true
+    }
+  ]
+}

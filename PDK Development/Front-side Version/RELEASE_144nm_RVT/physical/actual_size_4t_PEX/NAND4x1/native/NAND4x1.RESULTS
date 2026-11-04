@@ -1,0 +1,134 @@
+                               RESULTS: CLEAN
+
+                      ####  #      #####   ###   #   #
+                     #      #      #      #   #  ##  #
+                     #      #      ####   #####  # # #
+                     #      #      #      #   #  #  ##
+                      ####  #####  #####  #   #  #   #
+
+===========================================================================
+
+
+---------------------------------------------------------------------------
+ICV Execution
+---------------------------------------------------------------------------
+
+
+                                 IC Validator 
+
+          Version X-2025.06-SP3 for linux64 - Jan 27, 2026 cl#13071766
+
+                    Copyright (c) 1996 - 2026 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+      Inc.  This software may only be used in accordance with the terms and
+  conditions of a written license agreement with Synopsys, Inc.  All other use,
+   reproduction, or distribution of this software is strictly prohibited.  By
+   installing, accessing, using, or executing this software, you agree that it
+  will reside on, operate within, and have access to the computers and networks
+    where such software is used ("Host System"), and that Synopsys may access
+     components and data of the Host System as necessary for it to function
+ properly, to authenticate and validate license keys, to verify that it is used
+ only in conformity with the applicable license restrictions, and to communicate
+                 error messages and associated data to Synopsys.
+
+
+Called as: icv -i /tmp/yhuang861/usc144_github_release_20261103/full57/NAND4x1/iter001/inputs/cell.gds -c NAND4x1 -f GDSII -host_init gtcad-srv14.ece.gatech.edu:2 /tmp/yhuang861/usc144_github_release_20261103/full57/NAND4x1/iter001/drc/runset/sccad3nm_main.drc.rs
+
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Input file name:        /tmp/yhuang861/usc144_github_release_20261103/full57/NAND4x1/iter001/inputs/cell.gds
+Top cell name:          NAND4x1
+Layout format:          GDSII
+Runset file:            /tmp/yhuang861/usc144_github_release_20261103/full57/NAND4x1/iter001/drc/runset/sccad3nm_main.drc.rs
+Working directory:      /tmp/yhuang861/usc144_github_release_20261103/full57/NAND4x1/iter001/drc
+Run details directory:  /tmp/yhuang861/usc144_github_release_20261103/full57/NAND4x1/iter001/drc/run_details
+Layout error file:      NAND4x1.LAYOUT_ERRORS
+User name:              yhuang861
+Time started:           2026/11/03 08:32:31PM
+Time ended:             2026/11/03 08:32:44PM
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+---------------------------------------------------------------------------
+Results Summary
+---------------------------------------------------------------------------
+
+Rule and DRC Error Summary
+
+121 total rules were run.
+0 rules NOT EXECUTED.
+0 rules have violations.
+There are 0 total violations.
+Refer to NAND4x1.LAYOUT_ERRORS
+
+
+---------------------------------------------------------------------------
+Assign Layer Statistics
+---------------------------------------------------------------------------
+
+Utilized Assign Layers = 22
+ Empty Utilized Assign Layers = 12
+ Non-Empty Utilized Assign Layers = 10
+Pruned Assign Layers = 10
+
+
+---------------------------------------------------------------------------
+Run Configuration
+---------------------------------------------------------------------------
+
+run_options()
+ verbose_results_file = { ERRORS }
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+hierarchy_options()
+ delete = { }
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+error_options()
+ error_limit_per_check = 100
+ match_errors = { }
+ match_errors_processing_mode = HIERARCHICAL
+ match_errors_tolerance = 0.0000
+ violation_options = { }
+ report_empty_violations = false
+ clean_classifications = { }
+ report_error_details_limit_per_check = 100000
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Production Environment Variables
+
+HOME = "/nethome/yhuang861"
+ICV_HOME_DIR = "/tools/software/synopsys/icvalidator/X-2025.06-SP3"
+LM_LICENSE_FILE = "1055@ansyslic.ecs.gatech.edu"
+PATH = "/tools/software/synopsys/icvalidator/X-2025.06-SP3/bin/LINUX.64:/tools/software/synopsys/icvalidator/X-2025.06-SP3/contrib/bin/LINUX.64:/nethome/yhuang861/perl5/bin:/nethome/yhuang861/.opencode/bin:/usr/share/Modules/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/dell/srvadmin/bin:/tools/software/mathworks/matlab/latest/bin:/usr/apps/bin:/nethome/yhuang861/bin:/nethome/yhuang861/.local/bin"
+SNPSLMD_LICENSE_FILE = "1910@ece-winlic.ece.gatech.edu"
+USER = "yhuang861"
+
+6 production environment variables set.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Debug Environment Variables
+
+0 debug environment variables set.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Distributed Processing
+ Distributed Cores = 2
+
+
+---------------------------------------------------------------------------
+Performance Statistics
+---------------------------------------------------------------------------
+
+IC Validator Run Time = 0:00:13
+Peak Single Command Memory = 0.000 GB
+
+Distributed Host Memory Usage
+gtcad-srv14.ece.gatech.edu (2/2)  ....  Average=0.285 GB, Peak=0.285 GB / 375.890 GB
+IC Validator is done.

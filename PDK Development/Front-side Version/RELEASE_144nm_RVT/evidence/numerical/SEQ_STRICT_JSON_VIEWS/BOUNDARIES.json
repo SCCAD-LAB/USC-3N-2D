@@ -1,0 +1,1828 @@
+{
+  "original_source": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/BOUNDARIES.json",
+  "original_sha256": "f052d88302f0008885e130c5107530461c19cd6381ea17f733f6fadd330f3bb4",
+  "derivation": "Original diagnostics preserved. Map nonfinite values to null with explicit failure reason.",
+  "data": {
+    "rows": [
+      {
+        "mode": "actual",
+        "target_data": 1,
+        "kind": "setup",
+        "baseline_cq_ps": 142.68800000000002,
+        "allowed_degradation_ps": 14.268800000000002,
+        "criterion": "physicalcapture AND CQ<=nominal+max(.1*nominal,2ps)",
+        "failure_bound_ps": 27.34375,
+        "success_bound_ps": 27.40478515625,
+        "bracket_width_ps": 0.06103515625,
+        "samples": [
+          {
+            "margin_ps": -500.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_-500.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 500.0,
+            "success": true,
+            "cq_ps": 142.69799999999998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+500.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -250.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_-250.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 142.705,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 142.705,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 125.0,
+            "success": true,
+            "cq_ps": 142.653,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+125.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 62.5,
+            "success": true,
+            "cq_ps": 142.594,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+62.50000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 31.25,
+            "success": true,
+            "cq_ps": 148.917,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+31.25000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 15.625,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+15.62500000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 23.4375,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+23.43750000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 27.34375,
+            "success": false,
+            "cq_ps": 157.078,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+27.34375000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 29.296875,
+            "success": true,
+            "cq_ps": 151.968,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+29.29687500ps/RESULT.json"
+          },
+          {
+            "margin_ps": 28.3203125,
+            "success": true,
+            "cq_ps": 154.159,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+28.32031250ps/RESULT.json"
+          },
+          {
+            "margin_ps": 27.83203125,
+            "success": true,
+            "cq_ps": 155.50099999999998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+27.83203125ps/RESULT.json"
+          },
+          {
+            "margin_ps": 27.587890625,
+            "success": true,
+            "cq_ps": 156.255,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+27.58789062ps/RESULT.json"
+          },
+          {
+            "margin_ps": 27.4658203125,
+            "success": true,
+            "cq_ps": 156.657,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+27.46582031ps/RESULT.json"
+          },
+          {
+            "margin_ps": 27.40478515625,
+            "success": true,
+            "cq_ps": 156.865,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_setup_+27.40478516ps/RESULT.json"
+          }
+        ]
+      },
+      {
+        "mode": "actual",
+        "target_data": 0,
+        "kind": "setup",
+        "baseline_cq_ps": 152.508,
+        "allowed_degradation_ps": 15.250800000000002,
+        "criterion": "physicalcapture AND CQ<=nominal+max(.1*nominal,2ps)",
+        "failure_bound_ps": 21.05712890625,
+        "success_bound_ps": 21.1181640625,
+        "bracket_width_ps": 0.06103515625,
+        "samples": [
+          {
+            "margin_ps": -500.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_-500.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 500.0,
+            "success": true,
+            "cq_ps": 152.525,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+500.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -250.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_-250.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 152.54,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 152.54,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 125.0,
+            "success": true,
+            "cq_ps": 152.561,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+125.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 62.5,
+            "success": true,
+            "cq_ps": 152.79,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+62.50000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 31.25,
+            "success": true,
+            "cq_ps": 155.042,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+31.25000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 15.625,
+            "success": false,
+            "cq_ps": 194.505,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+15.62500000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 23.4375,
+            "success": true,
+            "cq_ps": 163.225,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+23.43750000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 19.53125,
+            "success": false,
+            "cq_ps": 171.49599999999998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+19.53125000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 21.484375,
+            "success": true,
+            "cq_ps": 166.897,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+21.48437500ps/RESULT.json"
+          },
+          {
+            "margin_ps": 20.5078125,
+            "success": false,
+            "cq_ps": 169.047,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+20.50781250ps/RESULT.json"
+          },
+          {
+            "margin_ps": 20.99609375,
+            "success": false,
+            "cq_ps": 167.941,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+20.99609375ps/RESULT.json"
+          },
+          {
+            "margin_ps": 21.240234375,
+            "success": true,
+            "cq_ps": 167.41299999999998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+21.24023438ps/RESULT.json"
+          },
+          {
+            "margin_ps": 21.1181640625,
+            "success": true,
+            "cq_ps": 167.674,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+21.11816406ps/RESULT.json"
+          },
+          {
+            "margin_ps": 21.05712890625,
+            "success": false,
+            "cq_ps": 167.807,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_setup_+21.05712891ps/RESULT.json"
+          }
+        ]
+      },
+      {
+        "mode": "actual",
+        "target_data": 1,
+        "kind": "hold",
+        "baseline_cq_ps": 142.68800000000002,
+        "allowed_degradation_ps": 14.268800000000002,
+        "criterion": "physicalcapture AND CQ<=nominal+max(.1*nominal,2ps)",
+        "failure_bound_ps": 6.9580078125,
+        "success_bound_ps": 7.01904296875,
+        "bracket_width_ps": 0.06103515625,
+        "samples": [
+          {
+            "margin_ps": -500.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_-500.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 500.0,
+            "success": true,
+            "cq_ps": 142.68800000000002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+500.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -250.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_-250.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 142.68800000000002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 142.68800000000002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 125.0,
+            "success": true,
+            "cq_ps": 142.687,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+125.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 62.5,
+            "success": true,
+            "cq_ps": 142.683,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+62.50000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 31.25,
+            "success": true,
+            "cq_ps": 142.436,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+31.25000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 15.625,
+            "success": true,
+            "cq_ps": 143.181,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+15.62500000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 7.8125,
+            "success": true,
+            "cq_ps": 153.309,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+7.81250000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 3.90625,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+3.90625000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 5.859375,
+            "success": false,
+            "cq_ps": 166.031,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+5.85937500ps/RESULT.json"
+          },
+          {
+            "margin_ps": 6.8359375,
+            "success": false,
+            "cq_ps": 157.906,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+6.83593750ps/RESULT.json"
+          },
+          {
+            "margin_ps": 7.32421875,
+            "success": true,
+            "cq_ps": 155.389,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+7.32421875ps/RESULT.json"
+          },
+          {
+            "margin_ps": 7.080078125,
+            "success": true,
+            "cq_ps": 156.581,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+7.08007812ps/RESULT.json"
+          },
+          {
+            "margin_ps": 6.9580078125,
+            "success": false,
+            "cq_ps": 157.225,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+6.95800781ps/RESULT.json"
+          },
+          {
+            "margin_ps": 7.01904296875,
+            "success": true,
+            "cq_ps": 156.899,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D1_hold_+7.01904297ps/RESULT.json"
+          }
+        ]
+      },
+      {
+        "mode": "actual",
+        "target_data": 0,
+        "kind": "hold",
+        "baseline_cq_ps": 152.508,
+        "allowed_degradation_ps": 15.250800000000002,
+        "criterion": "physicalcapture AND CQ<=nominal+max(.1*nominal,2ps)",
+        "failure_bound_ps": -14.95361328125,
+        "success_bound_ps": -14.892578125,
+        "bracket_width_ps": 0.06103515625,
+        "samples": [
+          {
+            "margin_ps": -500.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_-500.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 500.0,
+            "success": true,
+            "cq_ps": 152.508,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_+500.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -250.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_-250.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 0.0,
+            "success": true,
+            "cq_ps": 151.68300000000002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_+0.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 152.508,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 0.0,
+            "success": true,
+            "cq_ps": 151.68300000000002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_+0.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -250.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_-250.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": -125.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_-125.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": -62.5,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_-62.50000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": -31.25,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_-31.25000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": -15.625,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_-15.62500000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": -7.8125,
+            "success": true,
+            "cq_ps": 152.545,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_-7.81250000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -11.71875,
+            "success": true,
+            "cq_ps": 153.906,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_-11.71875000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -13.671875,
+            "success": true,
+            "cq_ps": 156.85399999999998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_-13.67187500ps/RESULT.json"
+          },
+          {
+            "margin_ps": -14.6484375,
+            "success": true,
+            "cq_ps": 163.416,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_-14.64843750ps/RESULT.json"
+          },
+          {
+            "margin_ps": -15.13671875,
+            "success": false,
+            "cq_ps": 171.898,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_-15.13671875ps/RESULT.json"
+          },
+          {
+            "margin_ps": -14.892578125,
+            "success": true,
+            "cq_ps": 166.96900000000002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_-14.89257812ps/RESULT.json"
+          },
+          {
+            "margin_ps": -15.0146484375,
+            "success": false,
+            "cq_ps": 169.137,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_-15.01464844ps/RESULT.json"
+          },
+          {
+            "margin_ps": -14.95361328125,
+            "success": false,
+            "cq_ps": 167.97899999999998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/actual_D0_hold_-14.95361328ps/RESULT.json"
+          }
+        ]
+      },
+      {
+        "mode": "intended",
+        "target_data": 1,
+        "kind": "setup",
+        "baseline_cq_ps": 142.687,
+        "allowed_degradation_ps": 14.2687,
+        "criterion": "physicalcapture AND CQ<=nominal+max(.1*nominal,2ps)",
+        "failure_bound_ps": 27.34375,
+        "success_bound_ps": 27.40478515625,
+        "bracket_width_ps": 0.06103515625,
+        "samples": [
+          {
+            "margin_ps": -500.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_-500.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 500.0,
+            "success": true,
+            "cq_ps": 142.697,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+500.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -250.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_-250.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 142.70399999999998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 142.70399999999998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 125.0,
+            "success": true,
+            "cq_ps": 142.653,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+125.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 62.5,
+            "success": true,
+            "cq_ps": 142.593,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+62.50000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 31.25,
+            "success": true,
+            "cq_ps": 148.916,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+31.25000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 15.625,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+15.62500000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 23.4375,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+23.43750000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 27.34375,
+            "success": false,
+            "cq_ps": 157.078,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+27.34375000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 29.296875,
+            "success": true,
+            "cq_ps": 151.96699999999998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+29.29687500ps/RESULT.json"
+          },
+          {
+            "margin_ps": 28.3203125,
+            "success": true,
+            "cq_ps": 154.158,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+28.32031250ps/RESULT.json"
+          },
+          {
+            "margin_ps": 27.83203125,
+            "success": true,
+            "cq_ps": 155.5,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+27.83203125ps/RESULT.json"
+          },
+          {
+            "margin_ps": 27.587890625,
+            "success": true,
+            "cq_ps": 156.25400000000002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+27.58789062ps/RESULT.json"
+          },
+          {
+            "margin_ps": 27.4658203125,
+            "success": true,
+            "cq_ps": 156.656,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+27.46582031ps/RESULT.json"
+          },
+          {
+            "margin_ps": 27.40478515625,
+            "success": true,
+            "cq_ps": 156.864,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_setup_+27.40478516ps/RESULT.json"
+          }
+        ]
+      },
+      {
+        "mode": "intended",
+        "target_data": 1,
+        "kind": "hold",
+        "baseline_cq_ps": 142.687,
+        "allowed_degradation_ps": 14.2687,
+        "criterion": "physicalcapture AND CQ<=nominal+max(.1*nominal,2ps)",
+        "failure_bound_ps": 6.9580078125,
+        "success_bound_ps": 7.01904296875,
+        "bracket_width_ps": 0.06103515625,
+        "samples": [
+          {
+            "margin_ps": -500.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_-500.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 500.0,
+            "success": true,
+            "cq_ps": 142.687,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+500.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -250.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_-250.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 142.687,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 142.687,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 125.0,
+            "success": true,
+            "cq_ps": 142.68599999999998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+125.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 62.5,
+            "success": true,
+            "cq_ps": 142.68200000000002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+62.50000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 31.25,
+            "success": true,
+            "cq_ps": 142.435,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+31.25000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 15.625,
+            "success": true,
+            "cq_ps": 143.183,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+15.62500000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 7.8125,
+            "success": true,
+            "cq_ps": 153.305,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+7.81250000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 3.90625,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+3.90625000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 5.859375,
+            "success": false,
+            "cq_ps": 166.033,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+5.85937500ps/RESULT.json"
+          },
+          {
+            "margin_ps": 6.8359375,
+            "success": false,
+            "cq_ps": 157.895,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+6.83593750ps/RESULT.json"
+          },
+          {
+            "margin_ps": 7.32421875,
+            "success": true,
+            "cq_ps": 155.382,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+7.32421875ps/RESULT.json"
+          },
+          {
+            "margin_ps": 7.080078125,
+            "success": true,
+            "cq_ps": 156.572,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+7.08007812ps/RESULT.json"
+          },
+          {
+            "margin_ps": 6.9580078125,
+            "success": false,
+            "cq_ps": 157.215,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+6.95800781ps/RESULT.json"
+          },
+          {
+            "margin_ps": 7.01904296875,
+            "success": true,
+            "cq_ps": 156.889,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D1_hold_+7.01904297ps/RESULT.json"
+          }
+        ]
+      },
+      {
+        "mode": "intended",
+        "target_data": 0,
+        "kind": "setup",
+        "baseline_cq_ps": 152.507,
+        "allowed_degradation_ps": 15.250699999999998,
+        "criterion": "physicalcapture AND CQ<=nominal+max(.1*nominal,2ps)",
+        "failure_bound_ps": 21.05712890625,
+        "success_bound_ps": 21.1181640625,
+        "bracket_width_ps": 0.06103515625,
+        "samples": [
+          {
+            "margin_ps": -500.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_-500.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 500.0,
+            "success": true,
+            "cq_ps": 152.524,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+500.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -250.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_-250.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 152.538,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 152.538,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 125.0,
+            "success": true,
+            "cq_ps": 152.56,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+125.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 62.5,
+            "success": true,
+            "cq_ps": 152.789,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+62.50000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 31.25,
+            "success": true,
+            "cq_ps": 155.041,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+31.25000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 15.625,
+            "success": false,
+            "cq_ps": 194.479,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+15.62500000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 23.4375,
+            "success": true,
+            "cq_ps": 163.225,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+23.43750000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 19.53125,
+            "success": false,
+            "cq_ps": 171.50300000000001,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+19.53125000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 21.484375,
+            "success": true,
+            "cq_ps": 166.897,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+21.48437500ps/RESULT.json"
+          },
+          {
+            "margin_ps": 20.5078125,
+            "success": false,
+            "cq_ps": 169.048,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+20.50781250ps/RESULT.json"
+          },
+          {
+            "margin_ps": 20.99609375,
+            "success": false,
+            "cq_ps": 167.941,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+20.99609375ps/RESULT.json"
+          },
+          {
+            "margin_ps": 21.240234375,
+            "success": true,
+            "cq_ps": 167.412,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+21.24023438ps/RESULT.json"
+          },
+          {
+            "margin_ps": 21.1181640625,
+            "success": true,
+            "cq_ps": 167.674,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+21.11816406ps/RESULT.json"
+          },
+          {
+            "margin_ps": 21.05712890625,
+            "success": false,
+            "cq_ps": 167.807,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_setup_+21.05712891ps/RESULT.json"
+          }
+        ]
+      },
+      {
+        "mode": "intended",
+        "target_data": 0,
+        "kind": "hold",
+        "baseline_cq_ps": 152.507,
+        "allowed_degradation_ps": 15.250699999999998,
+        "criterion": "physicalcapture AND CQ<=nominal+max(.1*nominal,2ps)",
+        "failure_bound_ps": -14.95361328125,
+        "success_bound_ps": -14.892578125,
+        "bracket_width_ps": 0.06103515625,
+        "samples": [
+          {
+            "margin_ps": -500.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_-500.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 500.0,
+            "success": true,
+            "cq_ps": 152.507,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_+500.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -250.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_-250.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 0.0,
+            "success": true,
+            "cq_ps": 151.68300000000002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_+0.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 152.507,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 0.0,
+            "success": true,
+            "cq_ps": 151.68300000000002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_+0.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -250.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_-250.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": -125.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_-125.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": -62.5,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_-62.50000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": -31.25,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_-31.25000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": -15.625,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_-15.62500000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": -7.8125,
+            "success": true,
+            "cq_ps": 152.547,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_-7.81250000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -11.71875,
+            "success": true,
+            "cq_ps": 153.906,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_-11.71875000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -13.671875,
+            "success": true,
+            "cq_ps": 156.85399999999998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_-13.67187500ps/RESULT.json"
+          },
+          {
+            "margin_ps": -14.6484375,
+            "success": true,
+            "cq_ps": 163.427,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_-14.64843750ps/RESULT.json"
+          },
+          {
+            "margin_ps": -15.13671875,
+            "success": false,
+            "cq_ps": 171.878,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_-15.13671875ps/RESULT.json"
+          },
+          {
+            "margin_ps": -14.892578125,
+            "success": true,
+            "cq_ps": 166.947,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_-14.89257812ps/RESULT.json"
+          },
+          {
+            "margin_ps": -15.0146484375,
+            "success": false,
+            "cq_ps": 169.16,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_-15.01464844ps/RESULT.json"
+          },
+          {
+            "margin_ps": -14.95361328125,
+            "success": false,
+            "cq_ps": 168.004,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/intended_D0_hold_-14.95361328ps/RESULT.json"
+          }
+        ]
+      },
+      {
+        "mode": "hspice",
+        "target_data": 1,
+        "kind": "setup",
+        "baseline_cq_ps": 142.6875234,
+        "allowed_degradation_ps": 14.268752340000002,
+        "criterion": "physicalcapture AND CQ<=nominal+max(.1*nominal,2ps)",
+        "failure_bound_ps": 27.34375,
+        "success_bound_ps": 27.40478515625,
+        "bracket_width_ps": 0.06103515625,
+        "samples": [
+          {
+            "margin_ps": -500.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_-500.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 500.0,
+            "success": true,
+            "cq_ps": 142.697463533,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+500.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -250.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_-250.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 142.70428339699998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 142.70428339699998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 125.0,
+            "success": true,
+            "cq_ps": 142.653011435,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+125.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 62.5,
+            "success": true,
+            "cq_ps": 142.593741135,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+62.50000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 31.25,
+            "success": true,
+            "cq_ps": 148.917924016,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+31.25000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 15.625,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+15.62500000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 23.4375,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+23.43750000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 27.34375,
+            "success": false,
+            "cq_ps": 157.08136381399999,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+27.34375000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 29.296875,
+            "success": true,
+            "cq_ps": 151.969609883,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+29.29687500ps/RESULT.json"
+          },
+          {
+            "margin_ps": 28.3203125,
+            "success": true,
+            "cq_ps": 154.16073232099998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+28.32031250ps/RESULT.json"
+          },
+          {
+            "margin_ps": 27.83203125,
+            "success": true,
+            "cq_ps": 155.502877357,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+27.83203125ps/RESULT.json"
+          },
+          {
+            "margin_ps": 27.587890625,
+            "success": true,
+            "cq_ps": 156.25729784400002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+27.58789062ps/RESULT.json"
+          },
+          {
+            "margin_ps": 27.4658203125,
+            "success": true,
+            "cq_ps": 156.65976910199998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+27.46582031ps/RESULT.json"
+          },
+          {
+            "margin_ps": 27.40478515625,
+            "success": true,
+            "cq_ps": 156.868036254,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_setup_+27.40478516ps/RESULT.json"
+          }
+        ]
+      },
+      {
+        "mode": "hspice",
+        "target_data": 1,
+        "kind": "hold",
+        "baseline_cq_ps": 142.6875234,
+        "allowed_degradation_ps": 14.268752340000002,
+        "criterion": "physicalcapture AND CQ<=nominal+max(.1*nominal,2ps)",
+        "failure_bound_ps": 6.9580078125,
+        "success_bound_ps": 7.01904296875,
+        "bracket_width_ps": 0.06103515625,
+        "samples": [
+          {
+            "margin_ps": -500.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_-500.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 500.0,
+            "success": true,
+            "cq_ps": 142.6875234,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+500.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -250.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_-250.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 142.6875234,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 142.6875234,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 125.0,
+            "success": true,
+            "cq_ps": 142.686056168,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+125.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 62.5,
+            "success": true,
+            "cq_ps": 142.682423455,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+62.50000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 31.25,
+            "success": true,
+            "cq_ps": 142.43519805900002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+31.25000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 15.625,
+            "success": true,
+            "cq_ps": 143.18259235800002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+15.62500000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 7.8125,
+            "success": true,
+            "cq_ps": 153.302046347,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+7.81250000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 3.90625,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+3.90625000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 5.859375,
+            "success": false,
+            "cq_ps": 166.02743823900002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+5.85937500ps/RESULT.json"
+          },
+          {
+            "margin_ps": 6.8359375,
+            "success": false,
+            "cq_ps": 157.89161387800002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+6.83593750ps/RESULT.json"
+          },
+          {
+            "margin_ps": 7.32421875,
+            "success": true,
+            "cq_ps": 155.378939877,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+7.32421875ps/RESULT.json"
+          },
+          {
+            "margin_ps": 7.080078125,
+            "success": true,
+            "cq_ps": 156.569297253,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+7.08007812ps/RESULT.json"
+          },
+          {
+            "margin_ps": 6.9580078125,
+            "success": false,
+            "cq_ps": 157.211608101,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+6.95800781ps/RESULT.json"
+          },
+          {
+            "margin_ps": 7.01904296875,
+            "success": true,
+            "cq_ps": 156.886266358,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D1_hold_+7.01904297ps/RESULT.json"
+          }
+        ]
+      },
+      {
+        "mode": "hspice",
+        "target_data": 0,
+        "kind": "setup",
+        "baseline_cq_ps": 152.50757892000001,
+        "allowed_degradation_ps": 15.250757892000001,
+        "criterion": "physicalcapture AND CQ<=nominal+max(.1*nominal,2ps)",
+        "failure_bound_ps": 21.05712890625,
+        "success_bound_ps": 21.1181640625,
+        "bracket_width_ps": 0.06103515625,
+        "samples": [
+          {
+            "margin_ps": -500.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_-500.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 500.0,
+            "success": true,
+            "cq_ps": 152.524169994,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+500.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -250.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_-250.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 152.538844103,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 0.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+0.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 152.538844103,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 125.0,
+            "success": true,
+            "cq_ps": 152.560182152,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+125.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 62.5,
+            "success": true,
+            "cq_ps": 152.78957260500002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+62.50000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 31.25,
+            "success": true,
+            "cq_ps": 155.042021083,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+31.25000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 15.625,
+            "success": false,
+            "cq_ps": 194.522021137,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+15.62500000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 23.4375,
+            "success": true,
+            "cq_ps": 163.227399932,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+23.43750000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 19.53125,
+            "success": false,
+            "cq_ps": 171.50849697200002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+19.53125000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 21.484375,
+            "success": true,
+            "cq_ps": 166.900574161,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+21.48437500ps/RESULT.json"
+          },
+          {
+            "margin_ps": 20.5078125,
+            "success": false,
+            "cq_ps": 169.052103952,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+20.50781250ps/RESULT.json"
+          },
+          {
+            "margin_ps": 20.99609375,
+            "success": false,
+            "cq_ps": 167.944477436,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+20.99609375ps/RESULT.json"
+          },
+          {
+            "margin_ps": 21.240234375,
+            "success": true,
+            "cq_ps": 167.415152242,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+21.24023438ps/RESULT.json"
+          },
+          {
+            "margin_ps": 21.1181640625,
+            "success": true,
+            "cq_ps": 167.67790545,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+21.11816406ps/RESULT.json"
+          },
+          {
+            "margin_ps": 21.05712890625,
+            "success": false,
+            "cq_ps": 167.810713929,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_setup_+21.05712891ps/RESULT.json"
+          }
+        ]
+      },
+      {
+        "mode": "hspice",
+        "target_data": 0,
+        "kind": "hold",
+        "baseline_cq_ps": 152.50757892000001,
+        "allowed_degradation_ps": 15.250757892000001,
+        "criterion": "physicalcapture AND CQ<=nominal+max(.1*nominal,2ps)",
+        "failure_bound_ps": -14.95361328125,
+        "success_bound_ps": -14.892578125,
+        "bracket_width_ps": 0.06103515625,
+        "samples": [
+          {
+            "margin_ps": -500.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_-500.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 500.0,
+            "success": true,
+            "cq_ps": 152.50757892000001,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_+500.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -250.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_-250.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": 0.0,
+            "success": true,
+            "cq_ps": 151.682389288,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_+0.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 250.0,
+            "success": true,
+            "cq_ps": 152.50757892000001,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_+250.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": 0.0,
+            "success": true,
+            "cq_ps": 151.682389288,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_+0.00000000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -250.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_-250.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": -125.0,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_-125.00000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": -62.5,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_-62.50000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": -31.25,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_-31.25000000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": -15.625,
+            "success": false,
+            "cq_ps": null,
+            "physical_capture": false,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_-15.62500000ps/RESULT.json",
+            "missing_crossing_reason": "No valid CQ crossing reported: capture/degradation FAIL, never zero."
+          },
+          {
+            "margin_ps": -7.8125,
+            "success": true,
+            "cq_ps": 152.54652198,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_-7.81250000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -11.71875,
+            "success": true,
+            "cq_ps": 153.906118574,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_-11.71875000ps/RESULT.json"
+          },
+          {
+            "margin_ps": -13.671875,
+            "success": true,
+            "cq_ps": 156.854737733,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_-13.67187500ps/RESULT.json"
+          },
+          {
+            "margin_ps": -14.6484375,
+            "success": true,
+            "cq_ps": 163.427489692,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_-14.64843750ps/RESULT.json"
+          },
+          {
+            "margin_ps": -15.13671875,
+            "success": false,
+            "cq_ps": 171.87999277100002,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_-15.13671875ps/RESULT.json"
+          },
+          {
+            "margin_ps": -14.892578125,
+            "success": true,
+            "cq_ps": 166.949726056,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_-14.89257812ps/RESULT.json"
+          },
+          {
+            "margin_ps": -15.0146484375,
+            "success": false,
+            "cq_ps": 169.16225956,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_-15.01464844ps/RESULT.json"
+          },
+          {
+            "margin_ps": -14.95361328125,
+            "success": false,
+            "cq_ps": 168.00607765499998,
+            "physical_capture": true,
+            "result": "/cedar/cedar_coe/ece-limsk/yhuang861/GRO/.planning/experiments_migrated_20261022/usc144_github_release_20261103/physical/simulator_settings_review/SEQ_NUMERIC_CONTROL/samples/hspice_D0_hold_-14.95361328ps/RESULT.json"
+          }
+        ]
+      }
+    ],
+    "errors": []
+  }
+}

@@ -29,18 +29,20 @@
 # USER CONFIGURATION
 #=====================================================================
 # Set PDK_ROOT before invoking this script:
-#   export PDK_ROOT=/path/to/sccad_fspr
+#   export PDK_ROOT=/path/to/USC-3N-2D
 # All other paths derive from PDK_ROOT.
 
 if {![info exists ::env(PDK_ROOT)]} {
-    puts "ERROR: please set PDK_ROOT to the released PDK root before sourcing this script"
+    puts "ERROR: please set PDK_ROOT to the USC-3N-2D repository root before sourcing this script"
     exit 1
 }
-set techDir $::env(PDK_ROOT)
-set ::env(TECHLEF_DIR)  "$techDir/2d_tech_lef"
-set ::env(MACROLEF_DIR) "$techDir/2d_lef"
-set ::env(MACROLIB_DIR) "$techDir/2d_db"
-set ::env(TCH_DIR)      "$techDir/2d_tch"
+set techDir [file normalize $::env(PDK_ROOT)]
+source [file join $techDir {PDK Development/Front-side Version/selected_collateral.tcl}]
+fspr_require_matched_release
+set ::env(TECHLEF_DIR) [file dirname $::fspr_tech_lef(Cadence)]
+set ::env(MACROLEF_DIR) [file dirname $::fspr_std_lef(Cadence)]
+set ::env(MACROLIB_DIR) [file dirname $::fspr_lib(Cadence)]
+set ::env(TCH_DIR) [file dirname $::fspr_qrc_tch]
 # CAPTBL_DIR is optional (some PDKs ship captbl files; FSPR uses QRC techfiles).
 # Uncomment if your PDK has a 2d_captbl dir:
 #   set ::env(CAPTBL_DIR) "$techDir/2d_captbl"
@@ -69,7 +71,7 @@ set vars(PowerEffort)   high
 set vars(Route,HorizontalMetals) "M2 M4 M6 M8"
 set vars(Route,VerticalMetals)   "M1 M3 M5 M7"
 set vars(Route,DRIter)           20
-set vars(Place,SiteDef)          "core"
+set vars(Place,SiteDef)          $::fspr_site
 set vars(Route,RedundantVias)    0
 
 set vars(FloorPlan,AspectRatio)     1
@@ -164,21 +166,21 @@ proc prc_Enc_setupConfig { } {
         suppressMessage TECHLIB-459
         suppressMessage TECHLIB-436
 
-        set LEFfiles ""
+        set LEFfiles {}
 
         # TECHLEF setup
         set techLEF "$::env(TECHLEF_DIR)"
         if { $techLEF != "" } {
-            foreach fileName [glob -d $techLEF *lef] {
-                append LEFfiles " $fileName "
+            foreach fileName [list $::fspr_tech_lef(Cadence)] {
+                lappend LEFfiles $fileName
             }
         }
 
         # MACROLEF setup
         set macroLEF "$::env(MACROLEF_DIR)"
         if { $macroLEF != "" } {
-            foreach fileName [glob -d $macroLEF *lef] {
-                append LEFfiles " $fileName "
+            foreach fileName [list $::fspr_std_lef(Cadence)] {
+                lappend LEFfiles $fileName
             }
         }
 
@@ -187,7 +189,7 @@ proc prc_Enc_setupConfig { } {
             set hardmacroLEF "$::env(HARDMACROLEF_DIR)"
             if { $hardmacroLEF != "" } {
                 foreach fileName [glob -d $hardmacroLEF *lef] {
-                    append LEFfiles " $fileName "
+                    lappend LEFfiles $fileName
                 }
             }
         }
@@ -204,7 +206,7 @@ proc prc_Enc_setupConfig { } {
         setLibraryUnit -time $vars(LibUnit,Time) -cap $vars(LibUnit,Cap)
 
         set rda_Input(ui_settop) 0
-        set rda_Input(ui_leffile) "$LEFfiles"
+        set rda_Input(ui_leffile) $LEFfiles
 
         global init
         set init_design_uniquify 0
@@ -214,7 +216,7 @@ proc prc_Enc_setupConfig { } {
         set init_design_settop {0}
         set init_top_cell {}
         set init_io_file ""
-        set init_lef_file "$LEFfiles"
+        set init_lef_file $LEFfiles
         set delaycal_use_default_delay_limit {1000}
         set delaycal_default_net_delay {1000.0ps}
         set delaycal_default_net_load {0.5pf}
@@ -231,13 +233,13 @@ proc prc_Enc_setupConfig { } {
 # Single-corner MMMC: curRC / curLib / curCon / curDel / curAnal
 proc prc_Enc_mmmcConfig { } {
     uplevel \#0 {
-        set LIBfiles ""
+        set LIBfiles {}
 
         # MACROLIB setup
         set macroLIB "$::env(MACROLIB_DIR)"
         if { $macroLIB != "" } {
-            foreach fileName [glob -d $macroLIB *lib] {
-                append LIBfiles " $fileName "
+            foreach fileName [list $::fspr_lib(Cadence)] {
+                lappend LIBfiles $fileName
             }
         }
 
@@ -246,44 +248,44 @@ proc prc_Enc_mmmcConfig { } {
             set hardmacroLIB "$::env(HARDMACROLIB_DIR)"
             if { $hardmacroLIB != "" } {
                 foreach fileName [glob -d $hardmacroLIB *lib] {
-                    append LIBfiles " $fileName "
+                    lappend LIBfiles $fileName
                 }
             }
         }
 
-        set CAPfiles ""
+        set CAPfiles {}
         if { [info exists ::env(CAPTBL_DIR)] } {
             set CAP "$::env(CAPTBL_DIR)"
             if { $CAP != "" } {
                 foreach fileName [glob -d $CAP *capTbl] {
-                    append CAPfiles "$fileName"
+                    lappend CAPfiles $fileName
                 }
             }
         }
 
-        set TCHfiles ""
-        set MAPfiles ""
+        if {[llength $CAPfiles] > 1} {error "Expected one explicit cap-table file"}
+        set CAPfile [lindex $CAPfiles 0]
+        set TCHfile ""
+        set MAPfile ""
         if { [info exists ::env(TCH_DIR)] } {
             set TCH "$::env(TCH_DIR)"
             if { $TCH != "" } {
-                foreach fileName [glob -d $TCH *tch] {
-                    append TCHfiles "$fileName"
-                }
-                set MAPfiles [lindex [glob -nocomplain -d $TCH *.layermap] 0]
+                set TCHfile $::fspr_qrc_tch
+                set MAPfile $::fspr_qrc_map
             }
         }
 
         # Single-corner MMMC
         if { [info exists ::env(CAPTBL_DIR)] && ![info exists ::env(TCH_DIR)] } {
-            create_rc_corner -name curRC -cap_table "$CAPfiles"
+            create_rc_corner -name curRC -cap_table $CAPfile
         } elseif { ![info exists ::env(CAPTBL_DIR)] && [info exists ::env(TCH_DIR)] } {
-            create_rc_corner -name curRC -qx_tech_file "$TCHfiles"
+            create_rc_corner -name curRC -qx_tech_file $TCHfile
         } elseif { [info exists ::env(CAPTBL_DIR)] && [info exists ::env(TCH_DIR)] } {
-            create_rc_corner -name curRC -cap_table "$CAPfiles"
-            update_rc_corner -name curRC -qx_tech_file "$TCHfiles"
+            create_rc_corner -name curRC -cap_table $CAPfile
+            update_rc_corner -name curRC -qx_tech_file $TCHfile
         }
-        if { $MAPfiles ne "" } {
-            setExtractRCMode -engine postRoute -lefTechFileMap "$MAPfiles"
+        if { $MAPfile ne "" } {
+            setExtractRCMode -engine postRoute -lefTechFileMap $MAPfile
         }
 
         if { [info exists vars(ExtractionEngine,ScalingRes)] } {
@@ -308,7 +310,7 @@ proc prc_Enc_mmmcConfig { } {
         update_rc_corner -name curRC -preRoute_clkres   {0}
         update_rc_corner -name curRC -preRoute_res      $scaling_res2
         update_rc_corner -name curRC -T                 {25}
-        create_library_set    -name curLib  -timing "$LIBfiles"
+        create_library_set    -name curLib  -timing $LIBfiles
         create_constraint_mode -name curCon -sdc_files "$SDCfile"
         create_delay_corner   -name curDel  -library_set curLib -rc_corner curRC
         create_analysis_view  -name curAnal -constraint_mode curCon -delay_corner curDel

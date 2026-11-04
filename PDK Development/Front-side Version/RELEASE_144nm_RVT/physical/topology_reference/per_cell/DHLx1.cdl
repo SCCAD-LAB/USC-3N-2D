@@ -1,0 +1,22 @@
+* CANDIDATE independent circuit from preserved2024 prior-layout DSPF.
+* All resistive segments collapsed to ideal wires; capacitors omitted for LVS topology.
+* Not extracted from the new144nmDUT. Requires independent review before gold admission.
+* Source /cedar/cedar_coe/ece-limsk/sw.jung/pdk/LIB_issue_fix/final_w17_pdk/1_fspr/10_liberate_final_fspr_rvt/NETLIST/DHLx1.spf
+.SUBCKT DHLx1 CK D Q VDD VSS
+MMM17 Q MM11:GATE VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM8 MM11:DRN MM11:GATE VDD VDD pmos_rvt l=0.012u w=0.015u
+MMM12 MM12:DRN MM11:DRN VDD VDD pmos_rvt l=0.012u w=0.015u
+MMM13 MM11:GATE MM13:GATE MM12:DRN VDD pmos_rvt l=0.012u w=0.015u
+MMM5 MM11:GATE MM0:DRN MM4:DRN VDD pmos_rvt l=0.012u w=0.03u
+MMM4 MM4:DRN D VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM3 MM13:GATE MM0:DRN VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM2 MM0:DRN CK VDD VDD pmos_rvt l=0.012u w=0.03u
+MMM11 MM11:DRN MM11:GATE VSS VSS nmos_rvt l=0.012u w=0.015u
+MMM15 MM14:SRC MM11:DRN VSS VSS nmos_rvt l=0.012u w=0.015u
+MMM14 MM11:GATE MM0:DRN MM14:SRC VSS nmos_rvt l=0.012u w=0.015u
+MMM6 MM11:GATE MM13:GATE MM6:SRC VSS nmos_rvt l=0.012u w=0.03u
+MMM7 MM6:SRC D VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM1 MM13:GATE MM0:DRN VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM0 MM0:DRN CK VSS VSS nmos_rvt l=0.012u w=0.03u
+MMM16 Q MM11:GATE VDD VDD pmos_rvt l=0.012u w=0.03u
+.ends DHLx1
